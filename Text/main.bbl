@@ -1,0 +1,76 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WCSDG{\etalchar{+}}08}
+
+\bibitem[Cas09]{ContinuousVerif}
+Barbara Casati.
+\newblock {\em Verification of continuous predictands}.
+\newblock Joint Working Group on Forecast Verification Research (JWGFVR), Jún
+  2009.
+
+\bibitem[CWS{\etalchar{+}}08]{MET:MET52}
+B.~Casati, L.~J. Wilson, D.~B. Stephenson, P.~Nurmi, A.~Ghelli, M.~Pocernich,
+  U.~Damrath, E.~E. Ebert, B.~G. Brown, and S.~Mason.
+\newblock Forecast verification: current status and future directions.
+\newblock {\em Meteorological Applications}, 15(1):3--18, 2008.
+
+\bibitem[FJB12]{IntroToVerif}
+Tressa~L. Fowler, Tara~L .Jensen, and Barbara~G. Brown.
+\newblock {\em Introduction to Forecast Verification}.
+\newblock 2012.
+
+\bibitem[Gol]{Golding}
+Professor~Brian Golding.
+\newblock Weather forecasting part 1.
+\newblock
+  \url{http://www.rmets.org/weather-and-climate/weather/weather-forecasting}.
+\newblock [Prístupné online: 6.12.2014].
+
+\bibitem[LE11]{Comet}
+Dr.~Arlene Laing and Dr. Jenni-Louise Evans.
+\newblock {\em Introduction to Tropical Meteorology 2nd Edition}.
+\newblock UCAR, Október 2011.
+
+\bibitem[Lyn07]{Origins}
+Peter Lynch.
+\newblock The origins of computer weather prediction and climate modeling.
+\newblock {\em Journal of Computational Physics 227 (2008) 3431–3444},
+  Február 2007.
+
+\bibitem[NCE14]{Products}
+NCEP.
+\newblock {Inventory of Data Products on the NOAA Servers}.
+\newblock \url{http://www.nco.ncep.noaa.gov/pmb/products/}, November 2014.
+\newblock [Prístupné online: 10.11.2014].
+
+\bibitem[Nur03]{RecommendOnVerif}
+Pertti Nurmi.
+\newblock {\em Recommendations on the verification of local weather forecasts}.
+\newblock European Centre for Medium Range Weather Forecasts, Decmeber 2003.
+
+\bibitem[Vas98]{WeatherStation}
+Tim Vasquez.
+\newblock {\em Observer Handbook}.
+\newblock International Weather Watchers, 1995, 1998.
+
+\bibitem[WCSDG{\etalchar{+}}08]{WRF}
+Joseph B.~Klemp William C.~Skamarock, Jimy Dudhia, David~O. Gill, Dale~M.
+  Barker, Michael~G. Duda, Xiang-Yu Huang, Wei Wang, and Jordan~G. Powers.
+\newblock {\em A Description of the Advanced Research WRF Version 3}.
+\newblock National Center for Atmospheric Research, Jún 2008.
+
+\bibitem[Wei14]{StatMedian}
+Eric~W. Weisstein.
+\newblock {Statistical Median}.
+\newblock \url{http://mathworld.wolfram.com/StatisticalMedian.html}, 2014.
+
+\bibitem[WMO94]{GRIB}
+WMO.
+\newblock {\em A GUIDE TO THE CODE FORM FM 92-IX Ext. GRIB Edition 1}.
+\newblock WMO, Máj 1994.
+
+\bibitem[WMO03]{GRIB12}
+WMO.
+\newblock {\em Introduction to GRIB Edition1 and GRIB Edition 2}.
+\newblock WMO, Jún 2003.
+
+\end{thebibliography}

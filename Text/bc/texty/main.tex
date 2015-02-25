@@ -1,0 +1,105 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper]{geometry}
+\usepackage{slovak}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{program}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{titlesec}
+
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+\lstset{language=XML}
+
+\renewcommand\baselinestretch{1.5} % riadkovanie jeden a pol 1.3
+
+% pekne pokope definujeme potrebne udaje
+\def\mftitle{Editor voxelovej grafiky}
+\def\mfthesistype{Bakalárska práca}
+\def\mfauthor{Marek Kružliak}
+\def\mfadvisor{RNDr. Martin Samuelčík, PhD.}
+\def\mfplacedate{Bratislava, 2013}
+\def\mfprogram{Aplikovaná informatika}
+
+\ifx\pdfoutput\undefined\relax\else\pdfinfo{ /Title (\mftitle) /Author (\mfauthor) /Creator (PDFLaTeX) } \fi
+
+\begin{document}
+
+% obal
+\input{obal.tex}
+% titulna strana
+\input{titulna_strana.tex}
+% Zadanie
+\newgeometry{top=0.3cm, bottom=0.0cm}
+\thispagestyle{empty}
+\noindent\makebox[\textwidth]{\includegraphics[width=597pt,height=845pt,keepaspectratio]{zadanie.png}}
+\restoregeometry
+%prehlasenie
+\input{prehlasenie.tex}\eject
+% Podakovanie
+\input{podakovanie.tex}
+
+\setcounter{page}{1}
+\pagenumbering{Roman}
+% abstrakt
+\input{abstrakt.tex}
+\eject
+\input{abstractEng.tex}
+\tableofcontents
+%zoznam obrazkov a tabuliek
+\listoffigures
+\begingroup
+\let\clearpage\relax
+\listoftables
+\endgroup
+%zoznam skratiek
+\input{skratky.tex}
+
+\eject
+\setcounter{page}{1} 
+\pagenumbering{arabic}
+
+\input{01intro.tex}
+\input{02objemova_grafika.tex}
+\input{03existujuce_riesenia.tex}
+\input{04implementacia.tex}
+\input{05vysledky.tex}
+\input{06zaver.tex}
+
+
+\bibliographystyle{alpha}
+\raggedright
+\bibliography{literatura}
+
+
+\end{document}

@@ -1,0 +1,19 @@
+\select@language {slovak}
+\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{1}
+\contentsline {chapter}{\numberline {2}Verifik\IeC {\'a}cia predpovedn\IeC {\'y}ch modelov po\IeC {\v c}asia}{2}
+\contentsline {section}{\numberline {2.1}Predpovedn\IeC {\'y} model po\IeC {\v c}asia}{2}
+\contentsline {subsection}{\numberline {2.1.1}WRF model}{4}
+\contentsline {section}{\numberline {2.2}D\IeC {\'a}ta}{4}
+\contentsline {subsection}{\numberline {2.2.1}Predpovedan\IeC {\'e} d\IeC {\'a}ta}{5}
+\contentsline {subsection}{\numberline {2.2.2}Pozorovan\IeC {\'e} d\IeC {\'a}ta}{6}
+\contentsline {subsection}{\numberline {2.2.3}P\IeC {\'a}rovanie d\IeC {\'a}t}{6}
+\contentsline {section}{\numberline {2.3}Meranie chyby predpovede}{8}
+\contentsline {subsection}{\numberline {2.3.1}Stredn\IeC {\'a} chyba predpovede}{8}
+\contentsline {subsection}{\numberline {2.3.2}Stredn\IeC {\'a} absol\IeC {\'u}tna chyba}{9}
+\contentsline {subsection}{\numberline {2.3.3}Stredn\IeC {\'a} kvadratick\IeC {\'a} chyba}{9}
+\contentsline {subsection}{\numberline {2.3.4}V\IeC {\v s}eobecn\IeC {\'a} kumulovan\IeC {\'a} chyba}{9}
+\contentsline {subsection}{\numberline {2.3.5}Medi\IeC {\'a}n absol\IeC {\'u}tnych ch\IeC {\'y}b}{11}
+\contentsline {chapter}{\numberline {3}Predch\IeC {\'a}dzaj\IeC {\'u}ce pr\IeC {\'a}ce}{12}
+\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{13}
+\contentsline {section}{\numberline {4.1}Charakteristika d\IeC {\'a}t}{13}
+\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh palety farieb}{13}

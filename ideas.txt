@@ -1,0 +1,4 @@
+boxplot, violinpplot, fanchart - co to je?
+https://www.stat.auckland.ac.nz/~ihaka/120/lectures.html
+http://courses.iicm.tugraz.at/ivis/
+http://comminfo.rutgers.edu/~aspoerri/Teaching/InfoVisOnline/Lectures/Lectures.htm

@@ -1,0 +1,35 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+The style file: alpha.bst
+Database file #1: literatura.bib
+Name 1 in "E.A. Karabassi, G. Papaioannou, and T. Theoharis" has a comma at the end for entry BufferVox
+while executing---line 1185 of file alpha.bst
+Name 1 in "E.A. Karabassi, G. Papaioannou, and T. Theoharis" has a comma at the end for entry BufferVox
+while executing---line 1185 of file alpha.bst
+Warning--empty journal in DisplayList
+Warning--empty journal in paint3d
+Warning--empty journal in RealTime
+Name 1 in "E.A. Karabassi, G. Papaioannou, and T. Theoharis" has a comma at the end for entry BufferVox
+while executing---line 1250 of file alpha.bst
+Warning--empty journal in BufferVox
+Warning--empty journal in voxel3d
+Warning--empty journal in glut
+Warning--empty journal in OpenGL
+Warning--empty journal in assimp
+Warning--empty journal in binvox
+Warning--empty journal in dotGame
+Warning--empty journal in pugixml
+Warning--empty journal in VolumeGraphics
+Warning--empty journal in zoxel
+Warning--empty journal in Rotate
+Warning--empty journal in mvs
+Warning--empty journal in viewvox
+Warning--empty journal in qubicle
+Warning--empty journal in VoxelGames
+Warning--empty journal in Voxelization
+Warning--empty journal in fraps
+Warning--empty journal in Voxlap
+Warning--empty journal in Sculpting
+Warning--empty journal in sproxel
+Warning--empty journal in devil
+Warning--empty journal in RayTracing
+(There were 3 error messages)

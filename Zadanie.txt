@@ -1,0 +1,46 @@
+Názov (SK): Vizualizácia verifikácie predpovednıch modelov poèasia
+Názov (EN): Visualization of forecast models verification
+Cie¾:
+Cie¾om práce je návrh a implementácia techník vizualizácie vısledkov 
+verifikácie numerickıch predpovedí poèasia. 
+Dôraz bude kladenı na kompaktné zobrazenie tıchto mnohorozmernıch dát a 
+rıchlu identifikáciu trendov a vzorov, za úèelom odhalenia chıb nastavenia predpovedného modelu.
+Práca bude zahàòa taktie implementáciu samotnej verifikácie ako súèas postprocessingu na
+konkrétnom predpovednom modely poèasia. 
+Nepovinnou èasou je paralelizácia tohoto procesu a niektorıch èastí vıpoètu modelu.
+
+Literatúra:
+Exploratory Visualization for Weather Data Verification
+Lundblad, P. ; Lofving, H. ; Elovsson, A. ; Johansson, J.
+
+K¾uèové slová:
+vizualizácia informácií, verifikácia, predpovednı model poèasia
+
+
+Názov (SK): Vizualizácia verifikácie predpovednıch modelov poèasia
+Názov (EN): Visualization of forecast models verification
+Cie¾:
+Cie¾om práce je návrh a implementácia techník vizualizácie vısledkov
+verifikácie numerickıch predpovedí poèasia.
+Dôraz bude kladenı na kompaktné zobrazenie tıchto mnohorozmernıch dát a
+rıchlu identifikáciu trendov a vzorov, za úèelom odhalenia chıb nastavenia
+predpovedného modelu.
+Práca bude zahàòa taktie implementáciu samotnej verifikácie ako súèas
+postprocessingu na
+konkrétnom predpovednom modely poèasia.
+Nepovinnou èasou je paralelizácia tohoto procesu a niektorıch èastí
+vıpoètu modelu.
+
+Literatúra:
+Exploratory Visualization for Weather Data Verification
+Lundblad, P. ; Lofving, H. ; Elovsson, A. ; Johansson, J.
+    
+Skamarock,
+W. C., Klemp, J. B., Dudhia, J., Gill, D. O., Barker, D.
+M., Duda, M., Huang, X.-Y., Wang, W., Powers, J. G., 2008: A
+Description of the Advanced Research WRF Version 3, NCAR Technical Note.
+
+        
+    
+    Mason, S. J., 2008: Understanding forecast verification
+      statistics, Meteorological Applications 15: 31-40

@@ -1,0 +1,88 @@
+\select@language {slovak}
+\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{1}
+\contentsline {section}{\numberline {1.1}Motiv\IeC {\'a}cia}{1}
+\contentsline {section}{\numberline {1.2}Cie\IeC {\v l}}{2}
+\contentsline {chapter}{\numberline {2}Objemov\IeC {\'a} grafika}{3}
+\contentsline {section}{\numberline {2.1}Objemov\IeC {\'e} d\IeC {\'a}ta}{4}
+\contentsline {section}{\numberline {2.2}Voxel}{5}
+\contentsline {section}{\numberline {2.3}Porovnanie s povrchovou grafikou}{5}
+\contentsline {subsection}{\numberline {2.3.1}Nev\IeC {\'y}hody}{6}
+\contentsline {subsection}{\numberline {2.3.2}V\IeC {\'y}hody}{6}
+\contentsline {section}{\numberline {2.4}Komer\IeC {\v c}n\IeC {\'e} vyu\IeC {\v z}itie}{8}
+\contentsline {subsection}{\numberline {2.4.1}Hern\IeC {\'y} priemysel}{8}
+\contentsline {subsection}{\numberline {2.4.2}Umenie}{9}
+\contentsline {chapter}{\numberline {3}Existuj\IeC {\'u}ce rie\IeC {\v s}enia}{10}
+\contentsline {section}{\numberline {3.1}Digit\IeC {\'a}lne soch\IeC {\'a}rstvo}{10}
+\contentsline {section}{\numberline {3.2}Editory voxelovej grafiky}{11}
+\contentsline {subsection}{\numberline {3.2.1}Paint3D}{11}
+\contentsline {subsubsection}{V\IeC {\'y}hody:}{12}
+\contentsline {subsubsection}{Nev\IeC {\'y}hody:}{12}
+\contentsline {subsection}{\numberline {3.2.2}Voxel3D}{13}
+\contentsline {subsubsection}{V\IeC {\'y}hody:}{13}
+\contentsline {subsubsection}{Nev\IeC {\'y}hody:}{14}
+\contentsline {subsection}{\numberline {3.2.3}3D Dot Game Hero Editor}{15}
+\contentsline {subsubsection}{V\IeC {\'y}hody:}{15}
+\contentsline {subsubsection}{Nev\IeC {\'y}hody:}{16}
+\contentsline {subsection}{\numberline {3.2.4}Zoxel}{17}
+\contentsline {subsubsection}{V\IeC {\'y}hody:}{17}
+\contentsline {subsubsection}{Nev\IeC {\'y}hody:}{17}
+\contentsline {subsection}{\numberline {3.2.5}Sproxel}{18}
+\contentsline {subsubsection}{V\IeC {\'y}hody:}{18}
+\contentsline {subsubsection}{Nev\IeC {\'y}hody:}{19}
+\contentsline {subsection}{\numberline {3.2.6}Qubicle}{20}
+\contentsline {subsubsection}{V\IeC {\'y}hody:}{20}
+\contentsline {subsubsection}{Nev\IeC {\'y}hody:}{21}
+\contentsline {section}{\numberline {3.3}2D grafick\IeC {\'e} editory}{22}
+\contentsline {section}{\numberline {3.4}Zhrnutie poznatkov z testovania}{22}
+\contentsline {chapter}{\numberline {4}Implement\IeC {\'a}cia}{24}
+\contentsline {section}{\numberline {4.1}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{24}
+\contentsline {subsection}{\numberline {4.1.1}C++}{24}
+\contentsline {subsection}{\numberline {4.1.2}OpenGL}{25}
+\contentsline {subsection}{\numberline {4.1.3}DevIL}{25}
+\contentsline {subsection}{\numberline {4.1.4}Microsoft Visual Studio 2012}{26}
+\contentsline {subsection}{\numberline {4.1.5}Assimp}{26}
+\contentsline {subsection}{\numberline {4.1.6}pugixml}{26}
+\contentsline {section}{\numberline {4.2}Rendering}{27}
+\contentsline {subsection}{\numberline {4.2.1}Rendering voxelu}{27}
+\contentsline {subsection}{\numberline {4.2.2}Rendering objektu}{28}
+\contentsline {subsection}{\numberline {4.2.3}Rendering sc\IeC {\'e}ny}{28}
+\contentsline {section}{\numberline {4.3}Voxelov\IeC {\'e} Objekty}{28}
+\contentsline {subsection}{\numberline {4.3.1}Z\IeC {\'a}kladn\IeC {\'e} tvary}{29}
+\contentsline {subsubsection}{Kv\IeC {\'a}der}{29}
+\contentsline {subsubsection}{Elipsoid}{29}
+\contentsline {subsubsection}{Valec}{31}
+\contentsline {subsubsection}{Ihlan}{31}
+\contentsline {subsubsection}{Ku\IeC {\v z}e\IeC {\v l}}{32}
+\contentsline {subsection}{\numberline {4.3.2}Booleanovsk\IeC {\'e} oper\IeC {\'a}cie nad objektami}{32}
+\contentsline {subsection}{\numberline {4.3.3}Transform\IeC {\'a}cie objektov}{33}
+\contentsline {subsubsection}{Transl\IeC {\'a}cia}{33}
+\contentsline {subsubsection}{\IeC {\v S}k\IeC {\'a}lovanie}{33}
+\contentsline {subsubsection}{Rot\IeC {\'a}cia}{33}
+\contentsline {subsubsection}{Mapovanie text\IeC {\'u}r}{34}
+\contentsline {section}{\numberline {4.4}N\IeC {\'a}stroje}{34}
+\contentsline {subsection}{\numberline {4.4.1}Selekcia}{35}
+\contentsline {subsubsection}{Selekcia objektov}{35}
+\contentsline {subsubsection}{Selekcia voxelov}{36}
+\contentsline {subsection}{\numberline {4.4.2}\IeC {\v S}tetec}{37}
+\contentsline {subsection}{\numberline {4.4.3}Guma}{37}
+\contentsline {subsection}{\numberline {4.4.4}Kvap\IeC {\'a}tko}{38}
+\contentsline {subsection}{\numberline {4.4.5}V\IeC {\'y}pl\IeC {\v n}}{38}
+\contentsline {subsubsection}{3D flood fill}{38}
+\contentsline {subsection}{\numberline {4.4.6}Kamera}{39}
+\contentsline {subsection}{\numberline {4.4.7}Posun objektov}{40}
+\contentsline {section}{\numberline {4.5}Import/Export}{40}
+\contentsline {subsection}{\numberline {4.5.1}Polyg\IeC {\'o}nov\IeC {\'y} model}{40}
+\contentsline {subsubsection}{Import}{40}
+\contentsline {subsubsection}{Voxeliz\IeC {\'a}cia}{41}
+\contentsline {subsubsection}{Export}{43}
+\contentsline {subsection}{\numberline {4.5.2}Bitmapa}{44}
+\contentsline {subsection}{\numberline {4.5.3}Voxelov\IeC {\'e} form\IeC {\'a}ty}{44}
+\contentsline {subsection}{\numberline {4.5.4}XML}{45}
+\contentsline {chapter}{\numberline {5}V\IeC {\'y}sledky}{47}
+\contentsline {section}{\numberline {5.1}Metodika merania}{47}
+\contentsline {section}{\numberline {5.2}Rendering}{48}
+\contentsline {section}{\numberline {5.3}Voxeliz\IeC {\'a}cia}{49}
+\contentsline {section}{\numberline {5.4}Voxelov\IeC {\'e} objekty}{50}
+\contentsline {section}{\numberline {5.5}N\IeC {\'a}stroje}{51}
+\contentsline {section}{\numberline {5.6}Import/Export}{52}
+\contentsline {section}{\numberline {5.7}U\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} prostredie}{54}

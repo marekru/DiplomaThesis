@@ -1,0 +1,142 @@
+\begin{thebibliography}{PTTK06}
+
+\bibitem[Ahn08]{DisplayList}
+Song~Ho Ahn.
+\newblock www.songho.ca/opengl/gl\_displaylist.html.
+\newblock 2008.
+
+\bibitem[BSc02]{Winter}
+Andrew Steven~Winter BSc.
+\newblock {\em Field-Based Modelling and Rendering}.
+\newblock PhD thesis, University of Wales, December 2002.
+
+\bibitem[Cor10]{paint3d}
+Atomic Corporation.
+\newblock Paint3d http://www.paint3d.net/.
+\newblock 2010.
+
+\bibitem[EHS06]{RealTime}
+Klaus Engel, Markus Hadwiger, and Christof~Rezk Salama.
+\newblock Real-time volume graphics.
+\newblock 2006.
+
+\bibitem[EKT99]{BufferVox}
+G.~Papaioannou E.A.~Karabassi and T.~Theoharis.
+\newblock A fast depth-buffer-based voxelization algorithm.
+\newblock 4:5–10, 1999.
+
+\bibitem[Eve08]{voxel3d}
+Everygraph.
+\newblock Voxel3d http://www.everygraph.com/voxel3d/.
+\newblock November 2008.
+
+\bibitem[Gro96]{glut}
+The~Khronos Group.
+\newblock Glut http://www.opengl.org/resources/libraries/glut/.
+\newblock 1996.
+
+\bibitem[Gro13]{OpenGL}
+The~Khronos Group.
+\newblock www.opengl.org/about/.
+\newblock 2013.
+
+\bibitem[GSKN12]{assimp}
+Alexander Gessler, Thomas Schulze, Kim Kulling, and David Nadlinger.
+\newblock Assimp http://assimp.sourceforge.net/.
+\newblock Júl 2012.
+
+\bibitem[HZM12]{binvox}
+Eric Haines, Qingnan Zhou, and Patrick Min.
+\newblock Binvox 3d mesh voxelizer http://www.cs.princeton.edu/~min/binvox/.
+\newblock November 2012.
+
+\bibitem[Inc09]{dotGame}
+Include.
+\newblock 3d dot game hero editor http://designer.3ddotgameheroes.eu/.
+\newblock 2009.
+
+\bibitem[Kap12]{pugixml}
+Arseny Kapoulkine.
+\newblock pugixml http://pugixml.org/.
+\newblock Máj 2012.
+
+\bibitem[KCY93]{VolumeGraphics}
+Arie Kaufman, Daniel Cohen, and Ronie Yagel.
+\newblock Volume graphics.
+\newblock 26(7):51--64, July 1993.
+
+\bibitem[Kin13]{zoxel}
+Graham King.
+\newblock Zoxel http://zoxel.blogspot.sk/.
+\newblock Apríl 2013.
+
+\bibitem[Leu03]{Rotate}
+Michel Leunen.
+\newblock Rotating a bitmap www.leunen.com/cbuilder/rotbmp.html.
+\newblock 2003.
+
+\bibitem[Mic13]{mvs}
+Microsoft.
+\newblock Microsoft visual studio 2012 http://www.microsoft.com/visualstudio/.
+\newblock 2013.
+
+\bibitem[Min12]{viewvox}
+Patrick Min.
+\newblock Viewvox 3d voxel model viewer
+  http://www.cs.princeton.edu/~min/viewvox/.
+\newblock November 2012.
+
+\bibitem[Min13]{qubicle}
+Minddesk.
+\newblock Qubicle http://www.minddesk.com/.
+\newblock Október 2005-2013.
+
+\bibitem[Mob13]{VoxelGames}
+MobyGames.
+\newblock
+  http://www.mobygames.com/game-group/visual-technique-style-voxel-graphics/.
+\newblock 1999-2013.
+
+\bibitem[Pal08]{Tomas}
+Tomáš Palkovič.
+\newblock Web rozhranie pre voxelizáciu geometrických dát.
+\newblock Bakalárska práca, Univerzita Komenského v Bratislave Fakulta
+  matematiky, fyziky a informatiky, 2008.
+
+\bibitem[PTTK06]{Voxelization}
+George Passalis, George Toderici, Theoharis Theoharis, and Ioannis~A.
+  Kakadiaris.
+\newblock General voxelization algorithm with scalable gpu implementation.
+\newblock Marec 2006.
+
+\bibitem[Pty13]{fraps}
+Beepa Pty.
+\newblock Fraps http://www.fraps.com/.
+\newblock 2013.
+
+\bibitem[SD06]{Voxlap}
+Ken Silverman and Tom Dobrowolski.
+\newblock http://advsys.net/ken/voxlap.htm.
+\newblock 2000-2006.
+
+\bibitem[Shp11]{Sculpting}
+Andrew Shpagin.
+\newblock http://3d-coat.com/voxel-sculpting/.
+\newblock 2011.
+
+\bibitem[VG12]{sproxel}
+Alexey Volynskov and Andrw Gardner.
+\newblock Sproxel https://code.google.com/p/sproxel/.
+\newblock Október 2012.
+
+\bibitem[WWD10]{devil}
+Denton Woods, Nicolas Weber, and Meloni Dario.
+\newblock Devil http://openil.sourceforge.net/.
+\newblock Jún 2010.
+
+\bibitem[YKC92]{RayTracing}
+Ronie Yagel, Arie Kaufman, and Daniel Cohen.
+\newblock Discrete ray tracing.
+\newblock 12:19 -- 28, 1992.
+
+\end{thebibliography}

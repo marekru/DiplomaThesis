@@ -1,0 +1,24 @@
+\clearpage
+\begin{Huge}
+\textbf{Záver} \\
+\end{Huge}
+
+V práci sme v stručnosti opísali základné poznatky z objemovej grafiky a dôležitosť nástroja na manipuláciu s voxelmi. Zadefinovali sme pojem \textit{voxel} a preskúmali sme výhody a nevýhody tohto elementu i v komerčnej sfére.
+
+Uviedli sme malú vzorku existujúcich voxelových editorov a opísali sme výhody a nevýhody, ktorými sme sa inšpirovali, jednotlivo pre každý program.
+Nadobudnuté poznatky sme ďalej aplikovali pri implementácii samotného voxelového editora.
+
+Výsledkom práce je teda plne funkčný program s možnosťou vytvoriť takmer ľubovoľný voxelový objekt alebo scénu s obmedzením na rozmery. Vytvorená aplikácia ponúka uspkojivé množstvo modelovacích respektíve kresliacich nástrojov a taktiež možnosť importovať a exportovať scénu do XML, WaveFront(.obj) alebo aj rôznych binárnych voxelových formátov. V práci sme tiež opísali a implementovali algoritmus voxelizácie uzavretých polygónových objektov slúžiaci na import modelov do scény. \\
+
+\textbf{Budúca práca} \\
+
+Prakticky je možné prerobiť akúkoľvek funkciu nad rastrami, aby pracovala nad voxelmi, a presne tam vidíme ďalšiu možnosť vývoja aplikácie. Vo všeobecnosti je ďalší postup obmedzený iba našou fantáziou a časom, a preto spomenieme iba pár majoritných vylepšení. 
+
+V prvom rade by bolo dôležité umožniť do prostredia vkladať a zobrazovať väčšie objemy dát. V momentálnom stave môžu mať objekty, bez vplyvu na rýchlosť, rozmery v ráde desiatok. Takýto stav je však nedostačujúci ale pri voxelových editoroch celkom bežný. Budúca snaha by bola optimalizovať uchovávanie dát a rendering, aby bolo možné vytvárať objekty v ráde stoviek až tisícok ako to je pri bežných rastrových nástrojoch.
+
+Kedže sme implementovali iba jednoduché planárne mapovanie textúry na objekt, bolo by zaujímavé vytvoriť zložitejšie spôsoby textúrovania objektov s rôznymi nastaveniami.
+
+K lepšiemu ovládaniu nástroja a obzvlášť k lepšiemu manipulovaniu s obsahom objektov by dopomohla funkcionalita kreslenia po vrstvách. Takto by bolo možné sa postupne posúvať po vrstvách objektu a vyplňovať bunky príslušnou farbou, čím by sa značne uľahčila práca.
+
+Ďalším dôležitým chýbajúcim prvkom v aplikácii je možnosť vyrenderovania objektu do obrázka. Toto by si vyžadovalo komplikovanejší prístup a použitie renderovacích algoritmov v diskrétnom priestore, ako je napríklad diskrétny raytracing, ktorý opísal Ronie Yagel \cite{RayTracing}.
+Okrem statického renderovania, by bolo veľmi zaujímvé vyrenderovať voxelovú animáciu, čo by vyžadovalo aj príslušné nástroje na správu framov, časovania, pohybu voxelov a podobne.
