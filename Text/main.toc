@@ -13,10 +13,12 @@
 \contentsline {subsection}{\numberline {2.3.3}Stredn\IeC {\'a} kvadratick\IeC {\'a} chyba}{9}
 \contentsline {subsection}{\numberline {2.3.4}V\IeC {\v s}eobecn\IeC {\'a} kumulovan\IeC {\'a} chyba}{9}
 \contentsline {subsection}{\numberline {2.3.5}Medi\IeC {\'a}n absol\IeC {\'u}tnych ch\IeC {\'y}b}{11}
-\contentsline {chapter}{\numberline {3}Predch\IeC {\'a}dzaj\IeC {\'u}ce pr\IeC {\'a}ce}{12}
+\contentsline {chapter}{\numberline {3}Predch\IeC {\'a}dzaj\IeC {\'u}ce rie\IeC {\v s}enia}{12}
 \contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{13}
-\contentsline {section}{\numberline {4.1}Charakteristika d\IeC {\'a}t}{13}
-\contentsline {section}{\numberline {4.2}N}{13}
-\contentsline {section}{\numberline {4.3}N\IeC {\'a}vrh palety farieb}{13}
+\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{13}
+\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{13}
+\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{13}
+\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia ot\IeC {\'a}zok kladen\IeC {\'y}ch na d\IeC {\'a}ta}{13}
+\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh palety farieb}{13}
 \contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{14}
 \contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{15}

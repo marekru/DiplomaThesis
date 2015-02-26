@@ -4,7 +4,12 @@ Verifikácia je proces, ktorý má overiť správnosť fungovania predpovedného
 Ciele verifikácie môžeme rozdeliť do troch skupín: \textit{administratívne}, \textit{vedecké} a \textit{ekonomické}.
 Medzi \textit{administratívne ciele} patrí monitorovanie úspešnosti predpovedania modelu a nasmerovanie užívateľov na jeho správnu konfiguráciu alebo voľbu iného modelu. \textit{Vedeckými cieľmi} sú identifikovanie a oprava slabín modelu a taktiež vylepšovanie predpovedí. \textit{Ekonomickými cieľmi} sú rozhodovanie, kam majú smerovať investície do výskumu a iné závažné ekonomické rozhodnutia. \cite{IntroToVerif}
 
-%\textbf{TODO co sa da secko verifikovat alebo take daco...}
+%TODO co sa da secko verifikovat alebo take daco...
+% Standard verification methods:
+% 	Methods for dichotomous (yes/no) forecasts
+% 	Methods for multi-category forecasts
+% 	Methods for forecasts of continuous variables
+% 	Methods for probabilistic forecasts 
 
 \section{Predpovedný model počasia}
 
@@ -60,6 +65,7 @@ Narozdiel od predpovedaných dát, pozorované dáta nemajú štandardizovaný f
 Aby sme zhrnuli charakteristiku týchto dát, jedná sa o niekoľko meraných veličín, nameraných v konštantných časových krokoch - napríklad každú minútu alebo každú hodinu - v jednom konkrétnom geografickom bode a zvyčajne pri povrchu zeme, teda ak sa nejedná o upper air merania, ktoré sa uskutočňujú v štandardných výškových hladinách, ktoré sa merajú v hPa.
 
 \subsection{Párovanie dát}
+%TODO novy pristup
 Z predpovedného modelu a rovnako aj z merania získame veľké množstvo hodnôt. Aby sme mohli korektne porovnať predpovede s pozorovaniami, je nevyhnutné nájsť správne párovanie týchto hodnôt, teda zistiť, ktorú hodnotu porovnať s ktorou, aby sme získali zmysluplný výsledok.
 
 Vždy sa snažíme nájsť správnu predpoveď pre pozrovanie a nie naopak.
@@ -175,3 +181,5 @@ Nech je daná usporiadaná postupnosť $ Y_1, \ldots , Y_N $, tak potom $ median
 \]
 Z daného vzorca môžeme vidieť podobné vlastnosti ako má MAE, avšak MAD je robustnejší a extrémne chyby nemajú na skóre žiaden efekt.
 
+%TODO pridat LEPS - http://www.cawcr.gov.au/projects/verification/LEPS.php
+% preto treba aj zmenit nejake veci 
