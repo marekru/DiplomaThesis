@@ -1,0 +1,468 @@
+<?xml version="1.0" standalone="yes"?><results>
+<!--Result file containing the results for a single metric by lead period.
+Some metrics, such as reliability diagrams, have results for specific thresholds 
+(e.g. probability thresholds).  In that case, the results are stored by lead period 
+and then by threshold value.  The actual data associated with a result always appears 
+within a 'values' tag.  A metric result that comprises a single value will appear as a 
+single value in this tag.  A metric result that comprises a 1D matrix will appear as a 
+row of values separated by commas in the input order.  A metric result that comprises a 
+2D matrix will appear as a sequence of rows, each with a 'values' tag, which are written 
+in the input order.  For example, a diagram metric with an x and y axis will comprise 
+two rows of data (i.e. two rows within two separate 'values' tags).  The default input 
+order would be data for the x axis followed by data for the y axis.  Data that refer to 
+cumulative probabilities are, by default, always defined in increasing size of probability.--><meta_data>
+	<thresholds_type>true</thresholds_type>
+	<original_file_id>05455500_CAL.Streamflow.ICK_INF_ONE_OBS_ONE_MEAN_1D_MEAN_RAW.Reliability_diagram.xml</original_file_id>
+</meta_data><result>
+	<lead_hour>0.0</lead_hour>
+	<threshold_data>
+		<threshold>
+			<threshold_value>GT 0.00583 (Pr=0.025)</threshold_value>
+			<data>
+				<values>-999.0, -999.0, 0.54878, 0.71429, 0.97944</values>
+				<values>-999.0, -999.0, 1.0, 0.8726, 0.99905</values>
+				<values>0.0, 0.0, 82.0, 416.0, 12651.0</values>
+				<values>-999.0, -999.0, 0.99506, 0.99506, 0.99506</values>
+				<values>-999.0, -999.0, 0.77192, 0.85467, 0.98725</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>-999.0, -999.0, 0.53187, 0.71429, 0.97495</values>
+							<values>-999.0, -999.0, 0.98162, 0.74639, 0.99776</values>
+							<values>0.0, 0.0, 36.2, 263.0, 12414.0</values>
+							<values>-999.0, -999.0, 0.98506, 0.98506, 0.98506</values>
+							<values>-999.0, -999.0, 0.76248, 0.84969, 0.98128</values>
+						</lower_bound>
+						<upper_bound>
+							<values>-999.0, -999.0, 0.56478, 0.71429, 0.98285</values>
+							<values>-999.0, -999.0, 0.99903, 0.99095, 0.99976</values>
+							<values>0.0, 0.0, 146.5, 612.5, 12825.0</values>
+							<values>-999.0, -999.0, 0.99917, 0.99917, 0.99917</values>
+							<values>-999.0, -999.0, 0.78038, 0.85676, 0.99031</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>-999.0, -999.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 0.02291 (Pr=0.1)</threshold_value>
+			<data>
+				<values>-999.0, -999.0, 0.52569, 0.71429, 0.96735</values>
+				<values>-999.0, -999.0, 0.41626, 0.65294, 0.94778</values>
+				<values>0.0, 0.0, 406.0, 850.0, 11893.0</values>
+				<values>-999.0, -999.0, 0.91231, 0.91231, 0.91231</values>
+				<values>-999.0, -999.0, 0.719, 0.8133, 0.93983</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>-999.0, 0.28571, 0.50722, 0.71429, 0.96354</values>
+							<values>-999.0, 0.0, 0.31373, 0.56933, 0.93203</values>
+							<values>0.0, 0.0, 204.0, 648.0, 11597.0</values>
+							<values>-999.0, 0.89177, 0.89262, 0.89262, 0.89262</values>
+							<values>-999.0, 0.58874, 0.70872, 0.80345, 0.92963</values>
+						</lower_bound>
+						<upper_bound>
+							<values>-999.0, 0.28571, 0.53827, 0.71429, 0.97229</values>
+							<values>-999.0, 0.48459, 0.72201, 0.77035, 0.97531</values>
+							<values>0.0, 0.0, 555.0, 1042.0, 12233.0</values>
+							<values>-999.0, 0.92687, 0.9546, 0.9546, 0.9546</values>
+							<values>-999.0, 0.60629, 0.73649, 0.83444, 0.9624</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>-999.0, 29.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 0.07052 (Pr=0.25)</threshold_value>
+			<data>
+				<values>0.11231, 0.28571, 0.5129, 0.71429, 0.96183</values>
+				<values>0.01833, 0.34352, 0.48437, 0.68545, 0.91233</values>
+				<values>491.0, 687.0, 2143.0, 1650.0, 8178.0</values>
+				<values>0.75101, 0.75101, 0.75101, 0.75101, 0.75101</values>
+				<values>0.43166, 0.51836, 0.63195, 0.73265, 0.85642</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>0.10323, 0.28571, 0.50889, 0.71429, 0.9565</values>
+							<values>0.0, 0.02332, 0.34576, 0.53741, 0.87581</values>
+							<values>42.0, 274.6, 1476.0, 1406.0, 7791.0</values>
+							<values>0.72979, 0.72979, 0.72979, 0.72979, 0.72979</values>
+							<values>0.42432, 0.50775, 0.62224, 0.72204, 0.84444</values>
+						</lower_bound>
+						<upper_bound>
+							<values>0.14286, 0.28571, 0.52547, 0.71429, 0.96479</values>
+							<values>0.04822, 0.46627, 0.56956, 0.74286, 0.93367</values>
+							<values>705.5, 938.0, 2298.0, 1747.33333, 9776.0</values>
+							<values>0.79038, 0.79038, 0.79038, 0.79038, 0.79038</values>
+							<values>0.46461, 0.53808, 0.65444, 0.75246, 0.87634</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 0.23194 (Pr=0.5)</threshold_value>
+			<data>
+				<values>0.10502, 0.28571, 0.49847, 0.71429, 0.95367</values>
+				<values>0.02591, 0.18433, 0.42315, 0.64313, 0.86781</values>
+				<values>2586.0, 1812.0, 2479.0, 1317.0, 4955.0</values>
+				<values>0.50171, 0.50171, 0.50171, 0.50171, 0.50171</values>
+				<values>0.30336, 0.39371, 0.50009, 0.608, 0.72769</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>0.09748, 0.28571, 0.49591, 0.71429, 0.9503</values>
+							<values>0.01789, 0.14235, 0.3759, 0.58198, 0.8458</values>
+							<values>2167.0, 1604.0, 2314.33333, 1222.33333, 4651.0</values>
+							<values>0.47327, 0.47327, 0.47327, 0.47327, 0.47327</values>
+							<values>0.28803, 0.37949, 0.48553, 0.59378, 0.71311</values>
+						</lower_bound>
+						<upper_bound>
+							<values>0.11202, 0.28571, 0.50259, 0.71429, 0.9574</values>
+							<values>0.04436, 0.22783, 0.46658, 0.7, 0.88848</values>
+							<values>2915.5, 1976.0, 2666.0, 1435.0, 5375.66667</values>
+							<values>0.53723, 0.53723, 0.53723, 0.53723, 0.53723</values>
+							<values>0.32191, 0.41147, 0.51852, 0.62576, 0.74612</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 0.60975 (Pr=0.75)</threshold_value>
+			<data>
+				<values>0.09215, 0.28571, 0.49105, 0.71429, 0.94581</values>
+				<values>0.01466, 0.08812, 0.25627, 0.4962, 0.83247</values>
+				<values>6069.0, 1566.0, 1955.0, 1052.0, 2507.0</values>
+				<values>0.25378, 0.25378, 0.25378, 0.25378, 0.25378</values>
+				<values>0.17297, 0.26975, 0.37242, 0.48403, 0.5998</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>0.08536, 0.28571, 0.48853, 0.71429, 0.94122</values>
+							<values>0.00928, 0.06243, 0.21671, 0.45005, 0.79144</values>
+							<values>5686.0, 1381.25, 1786.33333, 921.0, 2258.0</values>
+							<values>0.23006, 0.23006, 0.23006, 0.23006, 0.23006</values>
+							<values>0.16069, 0.25788, 0.36072, 0.47217, 0.58751</values>
+						</lower_bound>
+						<upper_bound>
+							<values>0.0989, 0.28571, 0.49524, 0.71429, 0.94922</values>
+							<values>0.02111, 0.11508, 0.29167, 0.54193, 0.86265</values>
+							<values>6536.0, 1738.0, 2111.0, 1141.75, 2771.0</values>
+							<values>0.27493, 0.27493, 0.27493, 0.27493, 0.27493</values>
+							<values>0.18389, 0.28032, 0.38443, 0.49461, 0.61071</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 1.509 (Pr=0.9)</threshold_value>
+			<data>
+				<values>0.07762, 0.28571, 0.48691, 0.71429, 0.93661</values>
+				<values>0.01067, 0.0964, 0.16999, 0.46022, 0.79528</values>
+				<values>9837.0, 861.0, 1053.0, 465.0, 933.0</values>
+				<values>0.10062, 0.10062, 0.10062, 0.10062, 0.10062</values>
+				<values>0.08912, 0.19317, 0.29376, 0.40745, 0.51861</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>0.0702, 0.28571, 0.48315, 0.71429, 0.93209</values>
+							<values>0.00786, 0.069, 0.14434, 0.40281, 0.74529</values>
+							<values>9517.0, 769.0, 938.33333, 401.16667, 789.5</values>
+							<values>0.08956, 0.08956, 0.08956, 0.08956, 0.08956</values>
+							<values>0.08292, 0.18764, 0.28854, 0.40194, 0.51261</values>
+						</lower_bound>
+						<upper_bound>
+							<values>0.08408, 0.28571, 0.49209, 0.71429, 0.94208</values>
+							<values>0.01438, 0.1253, 0.20892, 0.53319, 0.83742</values>
+							<values>10157.0, 954.0, 1182.0, 535.33333, 1062.0</values>
+							<values>0.11278, 0.11278, 0.11278, 0.11278, 0.11278</values>
+							<values>0.09551, 0.19925, 0.30069, 0.41353, 0.52586</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 2.9322 (Pr=0.95)</threshold_value>
+			<data>
+				<values>0.05743, 0.28571, 0.48541, 0.71429, 0.9297</values>
+				<values>0.01049, 0.16029, 0.32842, 0.51366, 0.85433</values>
+				<values>11819.0, 418.0, 475.0, 183.0, 254.0</values>
+				<values>0.05004, 0.05004, 0.05004, 0.05004, 0.05004</values>
+				<values>0.05373, 0.16788, 0.26773, 0.38216, 0.48987</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>0.04923, 0.28571, 0.48167, 0.71429, 0.91914</values>
+							<values>0.0078, 0.10569, 0.25192, 0.46746, 0.78594</values>
+							<values>11593.0, 363.0, 418.16667, 117.8, 202.28571</values>
+							<values>0.04419, 0.04419, 0.04419, 0.04419, 0.04419</values>
+							<values>0.04887, 0.16495, 0.26476, 0.37924, 0.48375</values>
+						</lower_bound>
+						<upper_bound>
+							<values>0.06538, 0.28571, 0.49364, 0.71429, 0.93547</values>
+							<values>0.01346, 0.20892, 0.39052, 0.69427, 0.91845</values>
+							<values>11996.0, 496.0, 567.5, 220.66667, 316.0</values>
+							<values>0.0574, 0.0574, 0.0574, 0.0574, 0.0574</values>
+							<values>0.05889, 0.17157, 0.27384, 0.38585, 0.49465</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 5.62808 (Pr=0.97734)</threshold_value>
+			<data>
+				<values>0.00251, 0.28571, 0.48626, 0.71429, 0.85714</values>
+				<values>0.01103, 0.5, 0.52885, 0.90625, 0.88462</values>
+				<values>12879.0, 108.0, 104.0, 32.0, 26.0</values>
+				<values>0.02304, 0.02304, 0.02304, 0.02304, 0.02304</values>
+				<values>0.01278, 0.15438, 0.25465, 0.36866, 0.44009</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>0.00192, 0.28571, 0.4718, 0.71429, 0.85714</values>
+							<values>0.00788, 0.28859, 0.4625, 0.66414, 0.78378</values>
+							<values>12761.66667, 82.09091, 76.55556, 20.5, 13.73684</values>
+							<values>0.01939, 0.01939, 0.01939, 0.01939, 0.01939</values>
+							<values>0.01091, 0.15255, 0.24714, 0.36684, 0.43838</values>
+						</lower_bound>
+						<upper_bound>
+							<values>0.01984, 0.28571, 0.49708, 0.71429, 0.87831</values>
+							<values>0.01406, 0.548, 0.67164, 0.93939, 0.99475</values>
+							<values>12939.0, 156.0, 144.28571, 45.36364, 48.125</values>
+							<values>0.02683, 0.02683, 0.02683, 0.02683, 0.02683</values>
+							<values>0.02152, 0.15628, 0.26035, 0.37057, 0.45036</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 6.56721 (Pr=0.98277)</threshold_value>
+			<data>
+				<values>0.0017, 0.28571, 0.48526, 0.71429, 0.85714</values>
+				<values>0.00979, 0.4375, 0.60317, 0.7619, 0.92308</values>
+				<values>12972.0, 80.0, 63.0, 21.0, 13.0</values>
+				<values>0.01734, 0.01734, 0.01734, 0.01734, 0.01734</values>
+				<values>0.00952, 0.15153, 0.2513, 0.36581, 0.43724</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>0.00142, 0.28571, 0.46652, 0.71429, 0.85714</values>
+							<values>0.00776, 0.32653, 0.49091, 0.55159, 0.77692</values>
+							<values>12925.5, 53.22222, 47.42857, 11.5, 7.18605</values>
+							<values>0.01459, 0.01459, 0.01459, 0.01459, 0.01459</values>
+							<values>0.00813, 0.15016, 0.24188, 0.36444, 0.43587</values>
+						</lower_bound>
+						<upper_bound>
+							<values>0.00216, 0.28571, 0.4968, 0.71429, 0.85714</values>
+							<values>0.01208, 0.56757, 0.74074, 0.93257, 0.99548</values>
+							<values>13013.0, 96.0, 88.9, 29.55556, 20.0</values>
+							<values>0.02075, 0.02075, 0.02075, 0.02075, 0.02075</values>
+							<values>0.0113, 0.15324, 0.2575, 0.36752, 0.43895</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 1000.0, 1000.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 8.8108 (Pr=0.99)</threshold_value>
+			<data>
+				<values>8.1E-4, 0.28571, 0.48701, 0.71429, 0.85714</values>
+				<values>0.00665, 0.54545, 0.68182, 0.6, 1.0</values>
+				<values>13078.0, 33.0, 22.0, 10.0, 6.0</values>
+				<values>0.01004, 0.01004, 0.01004, 0.01004, 0.01004</values>
+				<values>0.00542, 0.14788, 0.24853, 0.36216, 0.43359</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>5.9E-4, 0.28571, 0.45479, 0.71429, 0.85714</values>
+							<values>0.00512, 0.38189, 0.51724, 0.24303, 0.9453</values>
+							<values>13052.0, 19.79167, 15.63158, 1.55263, 2.0</values>
+							<values>0.00819, 0.00819, 0.00819, 0.00819, 0.0082</values>
+							<values>0.00446, 0.14696, 0.23232, 0.36125, 0.43268</values>
+						</lower_bound>
+						<upper_bound>
+							<values>0.00114, 0.28571, 0.50549, 0.71429, 0.85714</values>
+							<values>0.00857, 0.7065, 0.83333, 0.96776, 0.99712</values>
+							<values>13095.9375, 42.9, 35.95, 16.66667, 10.51724</values>
+							<values>0.01223, 0.01223, 0.01223, 0.01224, 0.01223</values>
+							<values>0.00659, 0.14898, 0.25762, 0.36326, 0.43469</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 993.0, 998.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 9.11855 (Pr=0.99083)</threshold_value>
+			<data>
+				<values>6.9E-4, 0.28571, 0.47205, 0.71429, 0.85714</values>
+				<values>0.00611, 0.57143, 0.65217, 0.57143, 1.0</values>
+				<values>13085.0, 28.0, 23.0, 7.0, 6.0</values>
+				<values>0.0092, 0.0092, 0.0092, 0.0092, 0.0092</values>
+				<values>0.00495, 0.14746, 0.24063, 0.36174, 0.43317</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>5.3E-4, 0.28571, 0.45455, 0.71429, 0.85714</values>
+							<values>0.00474, 0.36111, 0.48649, 0.0, 0.83</values>
+							<values>13063.25, 16.81818, 14.38462, 0.2381, 1.61818</values>
+							<values>0.00746, 0.00746, 0.00746, 0.00745, 0.00747</values>
+							<values>0.00407, 0.14659, 0.2318, 0.36087, 0.43231</values>
+						</lower_bound>
+						<upper_bound>
+							<values>9.9E-4, 0.28571, 0.50476, 0.71429, 0.85714</values>
+							<values>0.00796, 0.69475, 0.83118, 0.98521, 0.99591</values>
+							<values>13102.58333, 38.92308, 33.82353, 14.8, 9.69444</values>
+							<values>0.01131, 0.01131, 0.01131, 0.01132, 0.01131</values>
+							<values>0.00608, 0.14852, 0.25724, 0.3628, 0.43424</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 965.0, 998.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 11.21765 (Pr=0.995)</threshold_value>
+			<data>
+				<values>4.4E-4, 0.28571, 0.46154, 0.71429, 0.85714</values>
+				<values>0.00389, 0.5, 0.46154, 1.0, 0.66667</values>
+				<values>13120.0, 12.0, 13.0, 1.0, 3.0</values>
+				<values>0.00502, 0.00502, 0.00502, 0.00502, 0.00502</values>
+				<values>0.00273, 0.14537, 0.23328, 0.35965, 0.43108</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>3.1E-4, 0.28571, 0.4381, 0.71429, 0.85714</values>
+							<values>0.00289, 0.23775, 0.27778, 0.0, 0.0</values>
+							<values>13107.3125, 7.1087, 4.91176, 0.0, 0.0</values>
+							<values>0.00393, 0.00393, 0.00393, 0.00391, 0.00392</values>
+							<values>0.00216, 0.14482, 0.22171, 0.3591, 0.43053</values>
+						</lower_bound>
+						<upper_bound>
+							<values>5.9E-4, 0.28571, 0.50631, 0.71429, 0.85714</values>
+							<values>0.00511, 0.69755, 0.84413, 0.99177, 0.98494</values>
+							<values>13130.38462, 20.3125, 19.11111, 3.38462, 4.76471</values>
+							<values>0.00639, 0.00639, 0.00639, 0.00641, 0.00638</values>
+							<values>0.00346, 0.14605, 0.25598, 0.36035, 0.43177</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 1000.0, 1000.0, 763.0, 909.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 13.87869 (Pr=0.99769)</threshold_value>
+			<data>
+				<values>2.4E-4, 0.28571, 0.53571, 0.71429, -999.0</values>
+				<values>0.0019, 0.5, 0.5, 1.0, -999.0</values>
+				<values>13138.0, 6.0, 4.0, 1.0, 0.0</values>
+				<values>0.00236, 0.00236, 0.00236, 0.00236, -999.0</values>
+				<values>0.0013, 0.14404, 0.26904, 0.35832, -999.0</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>1.2E-4, 0.28571, 0.45694, 0.71429, 0.85714</values>
+							<values>0.00137, 0.0, 0.0, 0.43333, 0.0</values>
+							<values>13130.05263, 0.73469, 0.80357, 0.0, 0.0</values>
+							<values>0.00174, 0.00174, 0.00174, 0.00174, 0.00175</values>
+							<values>9.8E-4, 0.14373, 0.23028, 0.35801, 0.42945</values>
+						</lower_bound>
+						<upper_bound>
+							<values>3.4E-4, 0.28571, 0.57143, 0.71429, 0.85714</values>
+							<values>0.00259, 0.97652, 0.94416, 0.98226, 0.91</values>
+							<values>13143.36364, 10.04348, 8.88095, 2.32759, 0.0</values>
+							<values>0.00306, 0.00306, 0.00306, 0.00309, 0.00295</values>
+							<values>0.00167, 0.14439, 0.28705, 0.35869, 0.43005</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 986.0, 995.0, 512.0, 18.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+		<threshold>
+			<threshold_value>GT 18.42083 (Pr=0.999)</threshold_value>
+			<data>
+				<values>8.0E-5, 0.28571, 0.5, -999.0, -999.0</values>
+				<values>9.1E-4, 1.0, 0.5, -999.0, -999.0</values>
+				<values>13146.0, 1.0, 2.0, 0.0, 0.0</values>
+				<values>0.00106, 0.00106, 0.00106, -999.0, -999.0</values>
+				<values>5.7E-4, 0.14339, 0.25053, -999.0, -999.0</values>
+				<sampling_intervals>
+					<main_interval>
+						<bounds>0.05, 0.95</bounds>
+						<lower_bound>
+							<values>2.0E-5, 0.28571, 0.42857, -999.0, -999.0</values>
+							<values>6.1E-4, 0.0, 0.0, -999.0, -999.0</values>
+							<values>13141.23529, 0.0, 0.0, 0.0, 0.0</values>
+							<values>6.6E-4, 6.6E-4, 6.8E-4, -999.0, -999.0</values>
+							<values>3.7E-4, 0.14319, 0.21469, -999.0, -999.0</values>
+						</lower_bound>
+						<upper_bound>
+							<values>1.2E-4, 0.28571, 0.56734, -999.0, -999.0</values>
+							<values>0.00145, 0.98979, 0.98226, -999.0, -999.0</values>
+							<values>13148.53704, 4.0, 3.85484, 0.0, 0.0</values>
+							<values>0.00152, 0.00149, 0.00149, -999.0, -999.0</values>
+							<values>8.2E-4, 0.14362, 0.28638, -999.0, -999.0</values>
+						</upper_bound>
+					</main_interval>
+					<sample_size>
+						<values>1000.0, 674.0, 612.0, -999.0, -999.0</values>
+					</sample_size>
+				</sampling_intervals>
+			</data>
+		</threshold>
+	</threshold_data>
+</result></results>

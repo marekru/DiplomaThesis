@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?><results>
+<!--
+	Result file containing the results for a single metric by lead period.
+	Some metrics, such as reliability diagrams, have results for specific thresholds 
+	(e.g. probability thresholds).  In that case, the results are stored by lead period 
+	and then by threshold value.  The actual data associated with a result always appears 
+	within a 'values' tag.  A metric result that comprises a single value will appear as a 
+	single value in this tag.  A metric result that comprises a 1D matrix will appear as a 
+	row of values separated by commas in the input order.  A metric result that comprises a 
+	2D matrix will appear as a sequence of rows, each with a 'values' tag, which are written 
+	in the input order.  For example, a diagram metric with an x and y axis will comprise 
+	two rows of data (i.e. two rows within two separate 'values' tags).  The default input 
+	order would be data for the x axis followed by data for the y axis.  Data that refer to 
+	cumulative probabilities are, by default, always defined in increasing size of probability.
+-->
+	<meta_data>
+		<thresholds_type>true</thresholds_type>
+		<original_file_id>Test2.Streamflow.Reliability_diagram.xml</original_file_id>
+	</meta_data>
+	<result>
+		<lead_hour>24.0</lead_hour>
+		<threshold_data>
+			<threshold>
+				<threshold_value>GT 30.025 (Pr=0.75)</threshold_value>
+				<data>
+					<values>0.00956, 0.27572, 0.50242, 0.69303, 0.99681</values>
+					<values>0.02446, 0.26144, 0.23684, 0.5, 0.85199</values>
+					<values>5888.0, 153.0, 76.0, 56.0, 2189.0</values>
+					<values>0.25054, 0.25054, 0.25054, 0.25054, 0.25054</values>
+					<values>0.13005, 0.26313, 0.37648, 0.47178, 0.62367</values>
+				</data>
+			</threshold>
+			<threshold>
+				<threshold_value>GT 60.418 (Pr=0.9)</threshold_value>
+				<data>
+					<values>0.00608, 0.28006, 0.49605, 0.69878, 0.99457</values>
+					<values>0.01071, 0.24615, 0.31148, 0.45833, 0.7382</values>
+					<values>7191.0, 130.0, 61.0, 48.0, 932.0</values>
+					<values>0.10022, 0.10022, 0.10022, 0.10022, 0.10022</values>
+					<values>0.05315, 0.19014, 0.29813, 0.3995, 0.54739</values>
+				</data>
+			</threshold>
+		</threshold_data>
+	</result>
+</results>

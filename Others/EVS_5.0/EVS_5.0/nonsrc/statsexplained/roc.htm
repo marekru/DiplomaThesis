@@ -1,0 +1,146 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+ 
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>RELATIVE OPERATING CHARACTERISTIC (ROC)</b>
+
+<p> The Relative Operating Characteristic (ROC; also known as the Receiver Operating Characteristic) measures 
+the quality of a forecast for the occurrence of a discrete event, such as rainfall or flooding. For a probability forecast, 
+the ROC curve measures the quality of a binary prediction or "decision" based on the forecast probability. A binary prediction 
+is generated from the forecast by defining a probability threshold above which the discrete event is considered to occur. 
+For example, a decision maker might issue a flood warning when the forecast probability of a flood exceeds 0.9.  
+The ROC curve plots the forecast quality for several probability thresholds. Each threshold corresponds to a different 
+level of risk aversion. For example, given a decision on whether to issue a flood warning, a probability threshold of 0.7 
+corresponds to a higher level of risk aversion (i.e. a lower threshold for warning) than a probability of 0.9.  
+As the threshold declines, the probability of correctly detecting an event (the Probability of Detection or POD) will 
+increase, but the probably of "crying wolf" (the probability of False Detection or POFD) will also increase.  
+The ROC curve plots the trade off between POD and POFD on two axes:</p>
+
+<p></p>
+<table border="1" cellpadding="10">
+<tr>
+<td colspan="10"><p><b>Y-axis</b></p></td>
+<td colspan="30">
+
+<p>
+The POD or probability with which an event is correctly forecast to occur. The POD is estimated from n sample data as 
+the total number of correct forecasts divided by the total number of occurrences. For an event defined by the exceedance 
+of a real-valued threshold, t, which is forecast to occur when the forecast probability exceeds a probability threshold, p<sub>t</sub>, 
+the POD is given by
+</p>
+
+<p><a><img src="images/ROC_1.gif" align=middle></a></p>
+
+<p>where <a><img src="images/ROC_3.gif" align=middle></a> is a step function that assumes value 1 if the condition, {·}, is met and 0 otherwise.</p> 
+
+</td>
+</tr>
+<tr>
+<td colspan="10"><p><b>X-axis</b></p></td>
+<td colspan="30">
+
+<p>
+The POFD or probability with which an event is incorrectly forecast to not occur (i.e. the event occurs, but the forecast was 
+for non-occurrence). The POFD is estimated from n sample data as the total number of incorrect forecasts divided by the total 
+number of non-occurrences
+</p>
+
+<p><a><img src="images/ROC_2.gif" align=middle></a></p>
+</tr>
+</td>
+</table>
+<p></p>
+
+<p>These values are computed for probability thresholds that exhaust the unit interval, which is normally 
+defined by a number of plotting points, q, that separate the unit interval, [0,1], into q thresholds at equal
+intervals 
+
+<p><img src="images/ROC_4.gif"></p> 
+
+<p>Additionally, the curve is forced to intersect (0,0), and (1,1). </p>
+
+<p>For an ensemble forecasting system to perform well in terms of ROC, the POD must be high relative to the 
+POFD. An ensemble forecasting system that produces forecasts in line with climatological expectation will have 
+as many "successful" predictions as the climatological probability of the event implies. A skillful 
+forecasting system will always produce a ROC curve that lies above the diagonal line.</p> 
+
+<p>Practical applications of the ROC in the medical, atmospheric, and other sciences frequently fit a smooth
+curve to the empirical POD and POFD data.  A common approach is to fit a binormal model, which assumes that the 
+POD and POFD are normally distributed, each with given mean and variance (standard deviation).  Experience has 
+shown that the binormal model typically provides a good fit to the empirical POD and POFD, even when they are 
+"significantly" non-normal (i.e. the binormal approximation is robust).  The binormal model is given by</p>
+
+<p><img src="images/ROC_5.gif"></p> 
+
+<p>Here, <img src="images/ROC_6.gif" align=middle> is the cumulative distribution function of the standard normal distribution, 
+<img src="images/ROC_7.gif" align=middle> and <img src="images/ROC_8.gif" align=middle> are, respectively, the means of the POD
+and POFD, and <img src="images/ROC_9.gif" align=middle> and <img src="images/ROC_10.gif" align=middle> are their corresponding standard
+deviations.</p>
+
+<p>There are several approaches to estimating the parameters of the binormal model, a and b (or the means and 
+standard deviations from which they are derived; for example, see Cai and Moskowitz, 2004). The simplest and 
+most direct approach stems from the observation that</p>
+
+<p><img src="images/ROC_11.gif"></p> 
+
+<p>Hence, the parameters, a and b, are the intercept and slope, respectively, of a linear (regression) relationship 
+between the POD and POFD <i>following</i> their transformation to the probit scale.  The EVS estimates these parameters through 
+ordinary least squares regression.  While the resulting model fit is mathematically correct, the standard errors of 
+the model (or confidence intervals for the associated <a href="rocscore.htm">ROC Score</a>) cannot be computed in 
+this way, and are not reported by the EVS.  Since the parameters of the binormal model are estimated from the empirical 
+POD and POFD, the model fit will depend on the number of probability thresholds used to compute the ROC curve.  The 
+number of thresholds cannot (usefully) exceed the number of ensemble members, m, (or m+1 thresholds) from which the POD and 
+POFD are derived, as the ensemble forecast only contains information at these thresholds (members).  However, the 
+binormal curve is plotted for a large number of points in between these thresholds, in order to convey the smoothness 
+of the fitted model.</p>
+
+<p>The <a href="rocscore.htm">ROC Score</a> is derived from the Area Under the Curve (AUC). For the binormal model,
+the AUC is an analytical function of the binormal model parameters</p>
+
+<p><img src="images/ROC_12.gif"></p> 
+
+<p>Upon request, the binormal approximation to the <a href="rocscore.htm">ROC Score</a> is provided by the 
+EVS. Since the model fit depends on the number of thresholds used to compute the ROC curve, the number of 
+thresholds must be defined when computing the binormal approximation to the <a href="rocscore.htm">ROC Score</a>. 
+For an exact comparison between the binormal ROC curve and the binormal <a href="rocscore.htm">ROC Score</a> 
+(or AUC), the same number of thresholds, q, must be used for each metric.</p> 
+
+<p><b>Online resources:</b></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Receiver_operating_characteristic">http://en.wikipedia.org/wiki/Receiver_operating_characteristic</a>
+<br><a href="http://www-psych.stanford.edu/~lera/psych115s/notes/signal/">http://www-psych.stanford.edu/~lera/psych115s/notes/signal/</a><br></p>
+
+<p><b>Offline resources:</b></p>
+
+<p>Cai, T. and Moskowitz, C.S. (2004) Semi-parametric estimation of the binormal ROC curve for continuous diagnostic tests.
+<i>Biostatistics</i>, <b>5(4)</b>, 573-586.</p>
+
+<p>Mason, S. J. and Graham, N.E. (2002) Areas beneath the relative operating characteristics (ROC) and relative operating levels (ROL) curves: Statistical significance and interpretation. <i>
+Quarterly Journal of the Royal Meteorological Society</i>, <b>128</b>, 2145–2166.</p>
+
+<p> Jolliffe, I.T. and Stephenson, D.B. (eds) (2003) <i>Forecast Verification: 
+A Practitioner's Guide in Atmospheric Science.</i> John Wiley and Sons, Chichester, 240 pp.</p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+</body>
+
+</html>

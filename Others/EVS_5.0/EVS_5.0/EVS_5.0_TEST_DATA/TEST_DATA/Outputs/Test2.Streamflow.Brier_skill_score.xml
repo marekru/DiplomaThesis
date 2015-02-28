@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?><results>
+<!--
+	Result file containing the results for a single metric by lead period.
+	Some metrics, such as reliability diagrams, have results for specific thresholds 
+	(e.g. probability thresholds).  In that case, the results are stored by lead period 
+	and then by threshold value.  The actual data associated with a result always appears 
+	within a 'values' tag.  A metric result that comprises a single value will appear as a 
+	single value in this tag.  A metric result that comprises a 1D matrix will appear as a 
+	row of values separated by commas in the input order.  A metric result that comprises a 
+	2D matrix will appear as a sequence of rows, each with a 'values' tag, which are written 
+	in the input order.  For example, a diagram metric with an x and y axis will comprise 
+	two rows of data (i.e. two rows within two separate 'values' tags).  The default input 
+	order would be data for the x axis followed by data for the y axis.  Data that refer to 
+	cumulative probabilities are, by default, always defined in increasing size of probability.
+-->
+	<meta_data>
+		<thresholds_type>true</thresholds_type>
+		<original_file_id>Test2.Streamflow.Brier_skill_score.xml</original_file_id>
+	</meta_data>
+	<result>
+		<lead_hour>24.0</lead_hour>
+		<threshold_data>
+			<threshold>
+				<threshold_value>GT 30.025 (Pr=0.75)</threshold_value>
+				<data>
+					<values>0.67213, 0.04579, 0.71793, 1.0, 0.03077, 0.70601, 1.00311, 0.13322, 0.91013, 0.00348, 0.06089, 0.17688, 0.52913, -999.0, -999.0, -999.0, -999.0, -999.0</values>
+				</data>
+			</threshold>
+			<threshold>
+				<threshold_value>GT 60.418 (Pr=0.9)</threshold_value>
+				<data>
+					<values>0.51704, 0.11119, 0.62823, 1.0, 0.04141, 0.67056, 1.11211, 0.13457, 3.61096, 0.00226, 0.18959, 0.0672, 0.60336, -999.0, -999.0, -999.0, -999.0, -999.0</values>
+				</data>
+			</threshold>
+		</threshold_data>
+	</result>
+</results>

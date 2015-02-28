@@ -1,0 +1,98 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>THE SPREAD-BIAS DIAGRAM</b>
+
+
+<p>For continuous random variables, such as temperature and streamflow, the SBD provides a simple measure of conditional reliability.  
+It involves counting the fraction of observations, <img src="images/SBD_1.gif" align=middle>, that fall within a probability interval 
+of fixed width on the support of the ith forecast, <img src="images/SBD_2.gif" align=middle></p>
+
+<p><img src="images/SBD_3.gif"> </p>
+
+<p>An ensemble forecasting system is reliable over the interval, I, if it captures observations in proportion to the width of that interval</p>
+<p><img src="images/SBD_4.gif" align=middle> </p>
+
+<p>By defining k windows on the unit interval, <img src="images/SBD_5.gif" align=middle>, the reliability can be determined for the entire range 
+of forecast probabilities.  In practice, the k windows may cover any subintervals of the unit interval.  Certain windows may be preferred 
+for some applications or for sampling reasons.  For example, if the forecasts are uncertain in the tails, windows centered on the forecast 
+median may be preferred.  The SBD shows the observed frequency, <img src="images/SBD_1.gif" align=middle>, against the expected frequency, 
+d-c.  Any deviation from the diagonal line represents a lack of reliability in the forecast probabilities.  More specifically, the ensemble forecasts 
+are unreliable if the observed frequency, <img src="images/SBD_1.gif" align=middle>, deviates from the expected frequency by more than the 
+sampling uncertainty of <img src="images/SBD_1.gif" align=middle>.  If the k windows each cover a probability interval of 1/k, the expected frequency 
+has a uniform probability distribution, and the actual reliability can be tested for its goodness-of-fit to a uniform distribution (e.g. using 
+the one-sided Cramer von Mises test; Anderson, 1962; Elmore, 2005; Broecker, 2008).</p>  
+
+<p>For continuous random variables, the expected <img src="images/SBD_1.gif" align=middle> is equal to the width of the interval, I, and is, therefore, 
+strictly increasing as the width increases (see above).  However, for mixed random variables, such as precipitation and wind-speed, the discrete 
+portion of the probability distribution comprises an infinite number of intervals of different width.  Although the window definition could be 
+adapted for this case (see Hamill and Colucci, 1997 for a similar discussion), the rank histogram or reliability diagram may be preferred 
+for mixed random variables.</p>
+
+<p>While the SBD is analogous to the cumulative rank histogram, it explicitly defines the width of the interval, I, into which observations fall.  
+When these windows are based on non-exceedence probabilities and are uniform in width (as well as non-overlapping and exhaustive), 
+the SBD is also analogous to the Probability Integral Transform (PIT) (Casella and Berger, 1990), although the latter involves fitting a 
+parametric cdf to the ensemble forecast distribution prior to evaluating the PIT (Gneiting et al., 2005).  In that case, the SBD, the cumulative 
+rank histogram and the PIT can also be summarized with the reliability component of the <img src="images/SBD_6.gif" align=middle>  (Hersbach, 2000), 
+which tests whether an observation falls below a threshold with a frequency proportional to the cumulative probability of that threshold 
+(averaged across all thresholds).</p>
+
+<p><b>Online resources:</b></p>
+
+<p><a href="http://cawcr.gov.au/bmrc/wefor/staff/eee/EPSverif/scores/scores.html#rank%20histogram">http://cawcr.gov.au/bmrc/wefor/staff/eee/EPSverif/scores/scores.html#rank histogram</a></p>
+
+<p><b>Offline resources:</b></p>
+
+<p>Anderson, T.W. (1962) On the Distribution of the Two-Sample Cramer-von Mises Criterion. <i>The Annals of Mathematical 
+Statistics</i>, <b>33(3)</b>, 1148–1159.</p>
+
+<p>Anderson, J. L. (1996) A method for producing and evaluating probabilistic forecasts from 
+ensemble model integrations.  <i>Journal of Climate</i>, <b>9</b>,
+1518-1530.</p>
+
+<p>Broecker, J. (2008) On reliability analysis of multi-categorical forecasts. <i>Nonlinear Processes in Geophysics</i>, <b>15(4)</b>, 
+661–673.</p>
+<p>Casella, G. and Berger, R. L. (1990) <i>Statistical Inference.</i> Duxbury Press, 650 pp.</p>
+<p>Gneiting, T. A., Raftery, E., Westveld III, A.H. and Goldman, T. (2005) Calibrated probabilistic forecasting 
+using ensemble Model Output Statistics and minimum CRPS estimation.  <i>Monthly Weather Review</i>, <b>133</b>,
+1098-1118.</p>
+
+<p>Hamill, T.M., and Colucci, S.J. (1997) Verification of Eta–RSM Short-Range Ensemble Forecasts. <i>Monthly Weather Review</i>, 
+<b>125</b>, 1312–1327.</p>
+<p>Hersbach, H. (2000) Decomposition of the continuous ranked probability score 
+for ensemble prediction systems. <i>Weather and Forecasting</i>, <b>15</b>, 559-570.</p>
+<p>Elmore, K.L. (2005) Alternatives to the Chi-Square Test for Evaluating Rank Histograms from Ensemble 
+Forecasts. <i>Weather and Forecasting</i>, <b>20(5)</b>, 789-795.</p>
+
+<p>Hamill, T.M. (1997) Reliability diagrams for multicategory probabilistic forecasts. <i>Weather and 
+Forecasting</i>, <b>12</b>, 736-741.</p>
+
+<p>Hamill, T.M. (2001) Interpretation of rank histograms for verifying ensemble forecasts.
+<i>Monthly Weather Review</i>, <b>129</b>, 550-560.</p>
+
+<p>Talagrand O. (1997) Assimilation of observations, an introduction. <i>Journal of the
+Meteorological Society of Japan</i>, <b>75</b>, 191-209.</p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+</body>
+
+</html>

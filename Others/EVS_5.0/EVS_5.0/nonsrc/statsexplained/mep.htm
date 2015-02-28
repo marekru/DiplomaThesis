@@ -1,0 +1,60 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>MEAN ERROR OF PROBABILITY DIAGRAM</b>
+
+<p>The mean error of probability diagram (MEPD) measures the reliability of an ensemble forecasting
+system in an unconditional sense.  Let z<sub>ij</sub> denote the jth of m ensemble members from the ith of 
+n ensemble forecasts and let x<sup>o</sup><sub>i</sub> denote the observed outcome associated 
+with the ith ensemble forecast.  The forecast climatology has an empirical distribution function, <img src="images/MEP_1.gif" align=middle>, 
+which is computed from the n ensemble forecasts as</p>
+
+<p><img src="images/MEP_2.gif"></p> 
+
+<p>and <img src="images/MEP_3.gif" align=middle> is a step function that assumes value 1 if the condition is met and 0 otherwise.  
+Let <img src="images/MEP_4.gif" align=middle> denote an interval of fixed width on the support of <img src="images/MEP_1.gif" align=middle>.  
+The MEPD counts the fraction of observations that fall within the interval, H, namely</p>
+<p><img src="images/MEP_5.gif" align=middle></p> 
+<p>An ensemble forecasting system is unconditionally reliable or marginally calibrated over the interval, H, if it captures 
+observations in proportion to the width of that interval</p>
+
+<p><img src="images/MEP_6.gif"></p> 
+
+
+<p>The MEPD shows <img src="images/MEP_7.gif" align=middle> against the width of H for each of k windows that span the unit interval.  In practice, 
+the k windows may cover any subintervals of the unit interval.  The MEPD is similar to the quantile-quantile (Q-Q) plot (Wilks, 2006) and the 
+probability-probability (P-P) plot (Shorack and Wellner, 1986; Gneiting et al., 2007).  The Q-Q plot compares the order statistics of 
+two samples, or the order statistics of one sample against the values of a theoretical distribution at corresponding quantiles (Wilks, 2006).  
+The P-P plot compares the quantiles corresponding to these order statistics.  Indeed, the MEPD is equivalent to a P-P plot of the 
+climatological distributions of the ensemble forecasts and observations when evaluated for the n intervals,  <img src="images/MEP_8.gif" align=middle>. 
+As indicated above, the MEPD assumes asymptotic convergence of <img src="images/MEP_7.gif" align=middle> as <img src="images/MEP_9.gif" align=middle>.  In practice, 
+this may be evaluated by comparing the <img src="images/MEP_7.gif" align=middle> for g subsamples of the n available data.</p>
+
+<p><b>Offline resources:</b></p>
+
+<p>Gneiting, T., F. Balabdaoui, and Raftery, A. E. (2007) Probabilistic forecasts, calibration and sharpness. 
+<i>Journal of the Royal Statistical Society Series B: Statistical Methodology</i>, <b>69(2)</b>, 243-268.</p>
+<p>Shorack, G.R., and Wellner, J.A. (1986) <i>Empirical Processes with Applications to Statistics.</i> John Wiley and Sons Inc., 976 pp.</p>
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+</body>
+
+</html>

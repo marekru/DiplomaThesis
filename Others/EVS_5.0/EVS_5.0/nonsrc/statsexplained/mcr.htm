@@ -1,0 +1,50 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>THE MEAN CAPTURE RATE</b>
+
+<p>A key aspect of forecast quality is the probability of making a given error in real terms.  
+The Probability Score (PS) of Wilson <i>et al.</i> (1999) is useful here because it identifies the 
+probability with which a given, real-valued, error is exceeded.  The PS is defined for a 
+symmetric window, w, around the observation, x</p>
+
+<p><img src="images/MCR_1.gif"></p>
+
+<p>It conveys the extent to which an observation is captured by the forecast, where a high probability
+implies greater forecast performance.  The disadvantages of the PS include its subjectivity 
+and sensitivity to hedging, whereby the expected value of the PS is maximized for sharp forecasts.  
+By averaging the PS over a set of n ensemble forecasts and repeating for all possible windows, w, 
+the probability of exceeding a given acceptable error can be determined, and is referred to as 
+the Mean Capture Rate (MCR)</p>
+
+<p><img src="images/MCR_2.gif"></p>
+
+<p>It should be noted that sensitivity to hedging does not apply to the MCR, as it is not a score.</p>
+
+<p><b>Offline resources:</b></p>
+
+<p>Wilson, L.J., Burrows, W.R. and Lanzinger, A. (1999) A strategy for verification of weather element 
+forecasts from an ensemble prediction system. <i>Monthly Weather Review</i>, <b>127</b>, 956-970.</p> 
+
+</body>
+
+</html>

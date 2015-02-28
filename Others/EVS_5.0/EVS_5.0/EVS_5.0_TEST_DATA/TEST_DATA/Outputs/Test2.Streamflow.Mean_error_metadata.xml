@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?><results>
+<!--
+	Result file containing the results for a single metric by lead period.
+	Some metrics, such as reliability diagrams, have results for specific thresholds 
+	(e.g. probability thresholds).  In that case, the results are stored by lead period 
+	and then by threshold value.  The actual data associated with a result always appears 
+	within a 'values' tag.  A metric result that comprises a single value will appear as a 
+	single value in this tag.  A metric result that comprises a 1D matrix will appear as a 
+	row of values separated by commas in the input order.  A metric result that comprises a 
+	2D matrix will appear as a sequence of rows, each with a 'values' tag, which are written 
+	in the input order.  For example, a diagram metric with an x and y axis will comprise 
+	two rows of data (i.e. two rows within two separate 'values' tags).  The default input 
+	order would be data for the x axis followed by data for the y axis.  Data that refer to 
+	cumulative probabilities are, by default, always defined in increasing size of probability.
+-->
+	<meta_data>
+		<thresholds_type>false</thresholds_type>
+		<original_file_id>Test2.Streamflow.Mean_error_metadata.xml</original_file_id>
+	</meta_data>
+	<result>
+		<lead_hour>24.0</lead_hour>
+		<data>
+			<values>All data, 0.75, 0.9</values>
+			<values>All data, 30.025, 60.418</values>
+			<values>8362.0, 2095.0, 838.0</values>
+		</data>
+	</result>
+	<result>
+		<lead_hour>48.0</lead_hour>
+		<data>
+			<values>All data, 0.75, 0.9</values>
+			<values>All data, 30.025, 60.418</values>
+			<values>8361.0, 2093.0, 838.0</values>
+		</data>
+	</result>
+	<result>
+		<lead_hour>72.0</lead_hour>
+		<data>
+			<values>All data, 0.75, 0.9</values>
+			<values>All data, 30.025, 60.418</values>
+			<values>8360.0, 2093.0, 839.0</values>
+		</data>
+	</result>
+	<result>
+		<lead_hour>96.0</lead_hour>
+		<data>
+			<values>All data, 0.75, 0.9</values>
+			<values>All data, 30.025, 60.418</values>
+			<values>8359.0, 2093.0, 839.0</values>
+		</data>
+	</result>
+	<result>
+		<lead_hour>120.0</lead_hour>
+		<data>
+			<values>All data, 0.75, 0.9</values>
+			<values>All data, 30.025, 60.418</values>
+			<values>8358.0, 2093.0, 837.0</values>
+		</data>
+	</result>
+</results>

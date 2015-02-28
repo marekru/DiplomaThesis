@@ -14,11 +14,27 @@
 \contentsline {subsection}{\numberline {2.3.4}V\IeC {\v s}eobecn\IeC {\'a} kumulovan\IeC {\'a} chyba}{9}
 \contentsline {subsection}{\numberline {2.3.5}Medi\IeC {\'a}n absol\IeC {\'u}tnych ch\IeC {\'y}b}{11}
 \contentsline {chapter}{\numberline {3}Predch\IeC {\'a}dzaj\IeC {\'u}ce rie\IeC {\v s}enia}{12}
-\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{13}
-\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{13}
-\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{13}
-\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{13}
-\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia ot\IeC {\'a}zok kladen\IeC {\'y}ch na d\IeC {\'a}ta}{13}
-\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh palety farieb}{13}
-\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{14}
-\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{15}
+\contentsline {section}{\numberline {3.1}Verifika\IeC {\v c}n\IeC {\'y} softv\IeC {\'e}r}{12}
+\contentsline {subsection}{\numberline {3.1.1}\IeC {\v S}tatistick\IeC {\'y} softv\IeC {\'e}r}{12}
+\contentsline {subsubsection}{Tabu\IeC {\v l}kov\IeC {\'y} softv\IeC {\'e}r}{12}
+\contentsline {subsubsection}{MATLAB}{13}
+\contentsline {subsubsection}{Minitab}{13}
+\contentsline {subsubsection}{R}{13}
+\contentsline {subsubsection}{SAS}{13}
+\contentsline {subsubsection}{IDL}{13}
+\contentsline {subsection}{\numberline {3.1.2}\IeC {\v S}pecializovan\IeC {\'y} softv\IeC {\'e}r}{13}
+\contentsline {subsubsection}{NCL}{13}
+\contentsline {subsubsection}{MET}{13}
+\contentsline {subsubsection}{EVS}{13}
+\contentsline {section}{\numberline {3.2}Vizualiz\IeC {\'a}cia verifik\IeC {\'a}cie}{13}
+\contentsline {subsection}{\numberline {3.2.1}Scatterplot}{13}
+\contentsline {subsection}{\numberline {3.2.2}Boxplot}{13}
+\contentsline {subsection}{\numberline {3.2.3}Time series plot}{13}
+\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{14}
+\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{14}
+\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{14}
+\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{14}
+\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{14}
+\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{14}
+\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{15}
+\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{16}

@@ -1,0 +1,33 @@
+***************************************************************************************************************
+*                                 THIS IS A BUG REPORT TEMPLATE FOR THE EVS                                   *
+***************************************************************************************************************
+*    Please e-mail the completed report to james.d.brown@noaa.gov using the e-mail subject: EVS bug report    *
+***************************************************************************************************************
+
+# Version or Build: <Version or Build of the EVS>
+
+EVS 3.0
+
+
+# Module or component: <Name of tested module or component or the EVS window in which it occurred>
+
+
+
+# Platform / Operating System:
+
+
+
+# Type of error: <coding error / design error / suggestion / UI / documentation / text error / hardware error >
+
+
+
+# Priority (if applicable):
+ 
+
+
+# Severity (if applicable):
+
+
+
+# Description: <mention here the steps to reproduce, the expected result and the actual result>
+

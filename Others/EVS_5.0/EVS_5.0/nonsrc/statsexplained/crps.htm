@@ -1,0 +1,74 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>MEAN CONTINUOUS RANKED PROBABILITY SCORE</b>
+
+<p>The Continuous Ranked Probability Score (CRPS) summarizes the quality of a continuous probability 
+forecast with a single number (a score).  It measures the integrated square difference between 
+the cumulative distribution function (cdf) of the forecast variable, F<sub>Y</sub>(y), and the 
+corresponding cdf of the observed variable, <img src="images/CRPS_1.gif" align=middle></p>
+
+<p><img src="images/CRPS_2.gif"></p>
+
+<p>where <img src="images/CRPS_1.gif" align=middle> is a step function that assumes probability 1.0 for 
+values greater than or equal to the observation, and 0.0 otherwise.  
+In practice, the CRPS is averaged across n pairs of forecasts and observations, 
+which leads to the mean CRPS</p>
+
+<p><img src="images/CRPS_3.gif"></p>
+
+<p>The numeric value of the mean CRPS will vary with application and is difficult
+to interpret in absolute terms (e.g. in terms of specific forecast errors).  However, 
+the CRPS has some desirable mathematical properties, including its insensitivity to 
+hedging (i.e. the expected value of the score cannot be improved, <i>a priori</i>, by 
+adopting a particular forecasting strategy).  Other scores, such as the Probability Score 
+of Wilson <i>et al.</i> (1999), may be hedged (in this case by issuing sharper forecasts).</p>
+
+<p>Optionally, the mean CRPS may be decomposed into contributions due to (lack of)
+reliability, resolution and uncertainty (Hersbach, 2000), where </p>
+
+<p><img src="images/CRPS_4.gif">.</p>
+
+<p><b>Online resources:</b></p>
+
+<p><a href="http://www.stat.washington.edu/www/research/reports/2004/tr463.pdf">http://www.stat.washington.edu/www/research/reports/2004/tr463.pdf</a>
+<br><a href="http://www.stat.washington.edu/www/research/reports/2004/tr449.pdf">http://www.stat.washington.edu/www/research/reports/2004/tr449.pdf</a></br></p>
+
+<p><b>Offline resources:</b></p>
+
+<p>Hersbach, H. (2000) Decomposition of the continuous ranked probability score 
+for ensemble prediction systems. <i>Weather and Forecasting</i>, <b>15</b>, 559-570.</p>
+
+<p>Jolliffe, I.T. and Stephenson, D.B. (eds) (2003) <i>Forecast Verification: 
+A Practitioner's Guide in Atmospheric Science.</i> John Wiley and Sons, Chichester, 240 pp.</p>
+
+<p>Murphy, A.H. (1973) A new vector partition of the probability score. <i>Journal of Applied Meteorology</i>, <b>12</b>, 
+595-600. </p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+<p>Wilson, L.J., Burrows, W.R. and Lanzinger, A. (1999) A strategy for verification of weather element 
+forecasts from an ensemble prediction system. <i>Monthly Weather Review</i>, <b>127</b>, 956-970.</p> 
+
+</body>
+
+</html>

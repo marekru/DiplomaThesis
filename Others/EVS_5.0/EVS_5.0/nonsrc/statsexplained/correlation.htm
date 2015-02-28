@@ -1,0 +1,61 @@
+<html>
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<b>CORRELATION COEFFICIENT</b>
+
+<p>The correlation coefficient measures the strength of linear association between two variables.  Here, 
+it measures the linear relationship between n pairs of forecasts and corresponding observations, where the 
+forecasts are given by a measure of central tendency of the ensemble members (the mean average value, by default).  
+A correlation coefficient of -1.0 denotes a perfect inverse linear relationship (i.e. the observed values increase when the forecasts values decline and 
+vice versa).  The ensemble forecast average may be perfectly correlated with the observations and 
+still contain biases, because the correlation coefficient is normalized by the overall
+mean of each variable.  A correlation coefficient of 0.0 denotes the absence of any 
+linear association between the forecasts and observations.  However, a low 
+correlation coefficient may occur in the presence of a strong non-linear relationship, because 
+the correlation coefficient measures linear association only.</p>
+
+<p>EVS computes the Pearson product-moment correlation coefficient, r, which is given by</p>
+
+<p><img src="images/CORR_1.gif">,</p>
+
+<p>where <img src="images/CORR_2.gif" align=middle> is the sample covariance between the ensemble forecast averages 
+and their corresponding observations.  The sample standard deviations of the forecasts and observations are 
+denoted <img src="images/CORR_3.gif" align=middle> and <img src="images/CORR_4.gif" align=middle>, respectively.  
+The sample covariance between the n pairs of forecasts and observations is
+
+<p><img src="images/CORR_5.gif">,</p>
+
+<p>where <img src="images/CORR_6.gif" align=middle> and <img src="images/CORR_7.gif" align=middle>
+are the sample means of the forecasts and observations, respectively.</p>
+
+<p><b>Online resources:</b></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Correlation">http://en.wikipedia.org/wiki/Correlation</a></p>
+
+<p><b>Offline resources:</b></p>
+
+<p> Jolliffe, I.T. and Stephenson, D.B. (eds) (2003) <i>Forecast Verification: 
+A Practitioner's Guide in Atmospheric Science.</i> John Wiley and Sons, Chichester, 240 pp.</p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+</body>
+
+</html>

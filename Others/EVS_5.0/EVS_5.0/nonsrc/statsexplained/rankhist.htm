@@ -1,0 +1,94 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>THE RANK HISTOGRAM</b>
+
+
+<p>The rank histogram provides a simple measure of conditional reliability. It is similar to the 
+<a href="spreadbias.htm">spread-bias diagram</a> and involves counting the fraction of observations that fall between any 
+two ranked ensemble members in the forecast distribution (the spread-bias diagram uses an explicit probability 
+interval derived from the members). If the forecasting system is reliable in terms of the rank histogram, 
+the probability that an observation falls between any two ranked ensemble members is approximately uniform. 
+Indeed, the actual reliability can be tested for its goodness-of-fit to a uniform distribution (e.g. using 
+the one-sided Cramer von Mises test; Anderson, 1962; Elmore, 2005; Broecker, 2008).</p>
+
+<p>Notwithstanding any sampling and observational uncertainties (see below), a lack of uniformity in the rank histogram is
+indicative of an unreliable forecasting system. Greater than expected probabilities in the tails of the rank histogram 
+(i.e. in low and high bins) can lead to a "U" shape, which is indicative of a lack of spread in the ensemble. Greater than
+expected probabilities in the center of the rank histogram (i.e. in central bins) can lead to an inverted "U" shape, 
+which is indicative of too much spread in the ensemble. Other systematic features, such as a gradient, or a combination
+of features, may be indicative of biases in the mean and possibly higher moments of the ensemble.</p>
+
+<p>While a perfectly reliable ensemble (in the context of the rank histogram) will ordinarily produce a rank histogram that
+is approximately uniform (given any sampling uncertainty), systematic non-uniformities are possible when the observations are 
+uncertain, even if they are unbiased in the mean. The precise effects of observational uncertainty will depend upon the 
+shapes of the two probability distributions (forecast and observed), but observational uncertainties typically exaggerate the 
+probability of falling in the tails of the forecast distribution, falsely indicating a lack of spread in the ensemble or a
+"U-shaped" rank histogram (Hamill, 2001). 
+</p>
+
+<p>When computing the rank histogram, ties are handled by randomly assigning one of the tied ranks (i.e. assigning the observation
+randomly to one of the tied bins). In particular, this avoids the appearance of bias for mixed variables, such as 
+precipitation; an artifact that stems from consistently assigning the observation to the lower (or higher) of the tied bins 
+when the bins are, in fact, indistinguishable.</p>
+  
+
+<p><b>Online resources:</b></p>
+
+<p><a href="http://cawcr.gov.au/bmrc/wefor/staff/eee/EPSverif/scores/scores.html#rank%20histogram">http://cawcr.gov.au/bmrc/wefor/staff/eee/EPSverif/scores/scores.html#rank histogram</a></p>
+
+<p><b>Offline resources:</b></p>
+
+<p>Anderson, T.W. (1962) On the Distribution of the Two-Sample Cramer-von Mises Criterion. <i>The Annals of Mathematical 
+Statistics</i>, <b>33(3)</b>, 1148–1159.</p>
+
+<p>Anderson, J. L. (1996) A method for producing and evaluating probabilistic forecasts from 
+ensemble model integrations.  <i>Journal of Climate</i>, <b>9</b>,
+1518-1530.</p>
+
+<p>Broecker, J. (2008) On reliability analysis of multi-categorical forecasts. <i>Nonlinear Processes in Geophysics</i>, <b>15(4)</b>, 
+661–673.</p>
+<p>Casella, G. and Berger, R. L. (1990) <i>Statistical Inference.</i> Duxbury Press, 650 pp.</p>
+<p>Gneiting, T. A., Raftery, E., Westveld III, A.H. and Goldman, T. (2005) Calibrated probabilistic forecasting 
+using ensemble Model Output Statistics and minimum CRPS estimation.  <i>Monthly Weather Review</i>, <b>133</b>,
+1098-1118.</p>
+
+<p>Hamill, T.M., and Colucci, S.J. (1997) Verification of Eta–RSM Short-Range Ensemble Forecasts. <i>Monthly Weather Review</i>, 
+<b>125</b>, 1312–1327.</p>
+<p>Hersbach, H. (2000) Decomposition of the continuous ranked probability score 
+for ensemble prediction systems. <i>Weather and Forecasting</i>, <b>15</b>, 559-570.</p>
+<p>Elmore, K.L. (2005) Alternatives to the Chi-Square Test for Evaluating Rank Histograms from Ensemble 
+Forecasts. <i>Weather and Forecasting</i>, <b>20(5)</b>, 789-795.</p>
+
+<p>Hamill, T.M. (1997) Reliability diagrams for multicategory probabilistic forecasts. <i>Weather and 
+Forecasting</i>, <b>12</b>, 736-741.</p>
+
+<p>Hamill, T.M. (2001) Interpretation of rank histograms for verifying ensemble forecasts.
+<i>Monthly Weather Review</i>, <b>129</b>, 550-560.</p>
+
+<p>Talagrand O. (1997) Assimilation of observations, an introduction. <i>Journal of the
+Meteorological Society of Japan</i>, <b>75</b>, 191-209.</p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+</body>
+
+</html>

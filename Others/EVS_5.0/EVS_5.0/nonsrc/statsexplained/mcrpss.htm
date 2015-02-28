@@ -1,0 +1,60 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>THE MEAN CONTINUOUS RANKED PROBABILITY SKILL SCORE</b>
+
+<p>The Mean Continuous Ranked Probability Skill Score (<img src="images/MCRPSS_1.gif" align=middle>) measures the performance 
+of one forecasting system relative to another in terms of the <a href="crps.htm">Continuous Ranked Probability Score</a> 
+(<img src="images/MCRPSS_2.gif" align=middle>).  The <img src="images/MCRPSS_2.gif" align=middle> measures the average square error of a 
+probability forecast across all possible event thresholds. The <img src="images/MCRPSS_1.gif" align=middle> comprises a ratio 
+of the <img src="images/MCRPSS_2.gif" align=middle> for the forecasting system to be evaluated (the "main forecasting system"), 
+<img src="images/MCRPSS_3.gif" align=middle>, over the <img src="images/MCRPSS_2.gif" align=middle> for the reference forecasting system, 
+<img src="images/MCRPSS_4.gif" align=middle></p>
+
+<p><img src="images/MCRPSS_5.gif"></p>
+
+<p>As a measure of average square error in probability, values for the <img src="images/MCRPSS_2.gif" align=middle> 
+approaching zero are preferred.  It follows that a <img src="images/MCRPSS_1.gif" align=middle> closer to 1 is preferred, 
+as this indicates a low <img src="images/MCRPSS_2.gif" align=middle> of the main forecasting system relative to the 
+<img src="images/MCRPSS_2.gif" align=middle> of the reference forecasting system.  Unlike the <img src="images/MCRPSS_2.gif" align=middle>, 
+the <img src="images/MCRPSS_1.gif" align=middle> is not "strictly proper" (i.e. it can be hedged).  Also, the 
+<img src="images/MCRPSS_1.gif" align=middle> may behave erratically for forecasts of rare events because their 
+errors of probability are necessarily small and their sampling uncertainties are likely high.</p>
+
+<p><b>Online resources:</b></p>
+
+<p><a href="http://www.stat.washington.edu/www/research/reports/2004/tr463.pdf">http://www.stat.washington.edu/www/research/reports/2004/tr463.pdf</a>
+<br><a href="http://www.stat.washington.edu/www/research/reports/2004/tr449.pdf">http://www.stat.washington.edu/www/research/reports/2004/tr449.pdf</a></br></p>
+
+<p><b>Offline resources:</b></p>
+
+<p> Hersbach, H. (2000) Decomposition of the continuous ranked probability score 
+for ensemble prediction systems. <i>Weather and Forecasting</i>, <b>15</b>, 559-570.</p>
+
+<p> Jolliffe, I.T. and Stephenson, D.B. (eds) (2003) <i>Forecast Verification: 
+A Practitioner’s Guide in Atmospheric Science.</i> John Wiley and Sons, Chichester, 240 pp.</p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+</body>
+
+</html>

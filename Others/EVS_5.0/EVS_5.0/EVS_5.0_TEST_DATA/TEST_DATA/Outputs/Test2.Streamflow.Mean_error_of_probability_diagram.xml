@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?><results>
+<!--
+	Result file containing the results for a single metric by lead period.
+	Some metrics, such as reliability diagrams, have results for specific thresholds 
+	(e.g. probability thresholds).  In that case, the results are stored by lead period 
+	and then by threshold value.  The actual data associated with a result always appears 
+	within a 'values' tag.  A metric result that comprises a single value will appear as a 
+	single value in this tag.  A metric result that comprises a 1D matrix will appear as a 
+	row of values separated by commas in the input order.  A metric result that comprises a 
+	2D matrix will appear as a sequence of rows, each with a 'values' tag, which are written 
+	in the input order.  For example, a diagram metric with an x and y axis will comprise 
+	two rows of data (i.e. two rows within two separate 'values' tags).  The default input 
+	order would be data for the x axis followed by data for the y axis.  Data that refer to 
+	cumulative probabilities are, by default, always defined in increasing size of probability.
+-->
+	<meta_data>
+		<thresholds_type>true</thresholds_type>
+		<original_file_id>Test2.Streamflow.Mean_error_of_probability_diagram.xml</original_file_id>
+	</meta_data>
+	<result>
+		<lead_hour>24.0</lead_hour>
+		<threshold_data>
+			<threshold>
+				<threshold_value>All data</threshold_value>
+				<data>
+					<values>0.0099, 0.0198, 0.0297, 0.0396, 0.0495, 0.05941, 0.06931, 0.07921, 0.08911, 0.09901, 0.10891, 0.11881, 0.12871, 0.13861, 0.14851, 0.15842, 0.16832, 0.17822, 0.18812, 0.19802, 0.20792, 0.21782, 0.22772, 0.23762, 0.24752, 0.25743, 0.26733, 0.27723, 0.28713, 0.29703, 0.30693, 0.31683, 0.32673, 0.33663, 0.34653, 0.35644, 0.36634, 0.37624, 0.38614, 0.39604, 0.40594, 0.41584, 0.42574, 0.43564, 0.44554, 0.45545, 0.46535, 0.47525, 0.48515, 0.49505, 0.50495, 0.51485, 0.52475, 0.53465, 0.54455, 0.55446, 0.56436, 0.57426, 0.58416, 0.59406, 0.60396, 0.61386, 0.62376, 0.63366, 0.64356, 0.65347, 0.66337, 0.67327, 0.68317, 0.69307, 0.70297, 0.71287, 0.72277, 0.73267, 0.74257, 0.75248, 0.76238, 0.77228, 0.78218, 0.79208, 0.80198, 0.81188, 0.82178, 0.83168, 0.84158, 0.85149, 0.86139, 0.87129, 0.88119, 0.89109, 0.90099, 0.91089, 0.92079, 0.93069, 0.94059, 0.9505, 0.9604, 0.9703, 0.9802, 0.9901</values>
+					<values>0.05536, 0.0617, 0.07294, 0.08011, 0.0831, 0.0892, 0.09351, 0.09996, 0.10821, 0.1173, 0.12316, 0.13249, 0.14361, 0.14887, 0.15545, 0.15975, 0.16645, 0.17207, 0.17829, 0.18247, 0.18809, 0.19275, 0.20065, 0.2089, 0.21499, 0.22336, 0.23174, 0.23843, 0.24704, 0.25242, 0.25864, 0.26868, 0.27789, 0.29057, 0.30193, 0.3158, 0.33098, 0.34665, 0.36195, 0.37606, 0.38874, 0.4001, 0.41193, 0.42437, 0.43549, 0.44434, 0.45522, 0.46789, 0.47961, 0.49181, 0.50389, 0.51692, 0.52864, 0.54012, 0.55064, 0.56642, 0.57826, 0.59034, 0.60122, 0.61282, 0.62501, 0.63578, 0.64534, 0.65527, 0.66758, 0.67631, 0.68612, 0.69855, 0.71063, 0.72044, 0.73084, 0.74447, 0.75607, 0.76647, 0.77903, 0.78788, 0.79636, 0.80737, 0.81717, 0.82698, 0.83893, 0.84778, 0.85508, 0.86548, 0.87349, 0.8833, 0.89179, 0.8992, 0.90697, 0.91582, 0.92347, 0.93041, 0.93675, 0.94189, 0.9487, 0.95647, 0.96437, 0.97035, 0.97955, 0.98912</values>
+				</data>
+			</threshold>
+		</threshold_data>
+	</result>
+</results>

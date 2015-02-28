@@ -1,0 +1,77 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>MODIFIED BOX PLOT OF FORECAST ERRORS PER FORECAST AND LEAD TIME</b>
+
+<p>Constructs a modified box plot where the errors are plotted against time (in hours) 
+from the first available forecast and for one forecast lead time.</p> 
+
+<p>Conventional box plots (or box-and-whisker diagrams) provide a discrete representation 
+of a continuous empirical probability distribution (Tukey, 1977).</p>  
+
+<p>Building on this idea, an empirical pdf may be 
+summarized with an arbitrary set of percentile bins of which an arbitrary 
+proportion may be shaded (e.g. the middle 60%), to convey the outer 
+and inner probability densities, respectively.  The percentile bins are 
+specified as probabilities in the probability threshold parameter box 
+(e.g. 0.1 represents a percentile bin of 0-10%).  An example is given below.</p>  
+
+<p>Modified box plots were derived from 6-hourly forecasts of temperature 
+and precipitation at Huntingdon, PA, USA.  The temperature forecasts were evaluated
+at lead day 1 for the period 12/1993-12/1998.  The precipitation forecasts were
+evaluated at lead day 1 for the period 08/2002-09/2005.  The plots were generated 
+for deciles of the empirical pdfs, of which the middle 60 percent were shaded.  <i>Figure
+1</i> shows the temperature errors against forecast date, F<sub>E</sub>(e)
+or F<sub>E|T</sub>(e|t), while <i>figure 2 </i>shows the temperature errors 
+against forecast value, F<sub>E|Y</sub>(e|y), ordered by increasing y and 
+binned such that each box contains 0.05% of the forecasts.  <i>Figure 3</i> shows
+precipitation errors against observed values, ordered by increasing magnitude 
+of precipitation and for positive observed precipitation only, F<sub>E|X</sub>(e|x)
+where x &gt; 0.  The boxes were averaged for duplicate values of x.  These plots 
+reveal a range of conditional biases in the temperature and precipitation 
+forecasts.  For example, the latter consistently underpredict large observed events (<i>figure 3</i>).
+This is consistent with the calibration of meteorological models for 'average conditions'.  Similarly, 
+the temperature forecasts display clear periodic biases in the ensemble mean, 
+both with time (<i>figure 1</i>) and forecast value (<i>figure 2</i>).
+
+<p><b>Figure 1:</b> Temperature forecast errors against
+forecast time at Huntingdon, PA
+
+<p><img src="images/BOX_1.gif">
+
+<p><b>Figure 2:</b> Temperature forecast errors against (binned)
+forecast value at Huntingdon, PA
+
+<p><img src="images/BOX_2.gif">
+
+<p><b>Figure 3:</b> Errors in precipitation forecasts against
+observed value at Huntingdon, PA
+
+<p><img src="images/BOX_3.gif">
+
+<p><b>Offline resources:</b></p>
+
+<p>Tukey, J.W. (1977) <i>Exploratory Data Analysis</i>. Addison-Wesley, Reading, MA. 688pp.</p>
+
+</body>
+
+</html>

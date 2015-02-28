@@ -1,0 +1,50 @@
+<html>
+
+
+<head>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<b>MEAN ABSOLUTE ERROR</b>
+
+<p>The mean absolute error (MAE) measures the mean absolute difference between a set of forecasts
+and corresponding observations.  Here, it measures the mean absolute difference between 
+the center of the ensemble forecast (the mean average value, by default) and the observations.</p>
+
+<p>The MAE of the center of the ensemble forecast, 
+<img src="images/MAE_1.gif" align=middle>, given the observation, x, is</p>
+
+<p><sub><img src="images/MAE_2.gif"></sub>.</p>
+
+<p>The MAE provides a measure of error spread in the center of the forecast distribution.  
+It is similar to the <a href="rmse.htm">Root Mean Square Error (RMSE)</a>, except the RMSE employs 
+square deviations, such that large errors contribution proportionally more to the overall score. 
+The MAE generalizes to the <a href="crps.htm">Continuous Ranked Probability Score (CRPS)</a> 
+for ensemble or probability forecasts. 
+</body>
+
+<p><b>Offline resources:</b></p>
+
+<p>Jolliffe, I.T. and Stephenson, D.B. (eds) (2003) <i>Forecast Verification: 
+A Practitioner's Guide in Atmospheric Science.</i> John Wiley and Sons, Chichester, 240 pp.</p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+</html>

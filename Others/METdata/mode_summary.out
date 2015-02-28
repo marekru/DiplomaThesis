@@ -1,0 +1,40 @@
+Read 54 lines from MODE file: mode_120000L_20050807_120000V_000000A_obj.txt 
+Total Number of Files Processed = 1 
+Total Number of Single Objects = 20 
+Number of Single Fcst Objects = 8 
+Number of Matched Single Fcst Objects = 8 
+Number of Unmatched Single Fcst Objects = 0 
+Number of Single Obs Objects = 12 
+Number of Matched Single Obs Objects = 8 
+Number of Unmatched Single Obs Objects = 4 
+Total Number of Cluster Objects = 16 
+Total Number of Fcst Cluster Objects = 8 
+Total Number of Obs Cluster Objects = 8 
+Total Area of Objects = 3245 
+Area of Single Fcst Objects = 622 
+Area of Matched Single Fcst Objects = 622 
+Area of Unmatched Single Fcst Objects = 0 
+Area of Single Obs Objects = 2623 
+Area of Matched Single Obs Objects = 2380 
+Area of Unmatched Single Obs Objects = 243 
+Median of Max Interest by Fcst Object = 0.88003 
+Median of Max Interest by Obs Object = 0.87655 
+Median of Max Interest by Fcst+Obs Objects = 0.87655 
+Cluster Pair Centroid Distance:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  2.309   3.779   5.517   5.531   7.129   9.480 
+Cluster Pair Centroid X-Offsets:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-7.0330 -1.9740  2.2100  0.7144  2.8040  6.6840 
+Cluster Pair Centroid Y-Offsets:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-3.7900 -1.7960  0.3904  1.5580  6.2180  6.8920 
+Cluster Pair Centroid X,Y Offsets and Distance [8]:
+(-1.6446, -1.6213) 2.3093
+(3.7667, 1.4292) 4.0287
+(2.0484, 6.1713) 6.5024
+(2.3717, 6.8919) 7.2886
+(-2.9609, -0.6484) 3.0311
+(2.4829, -3.7898) 4.5307
+(-7.0331, 6.3564) 9.4799
+(6.6839, -2.3218) 7.0757

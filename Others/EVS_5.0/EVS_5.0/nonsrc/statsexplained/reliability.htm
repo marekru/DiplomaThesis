@@ -1,0 +1,82 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>RELIABILITY DIAGRAM</b>
+
+<p>The reliability diagram measures the accuracy with which a discrete event is forecast by an ensemble 
+or probabilistic forecasting system.  The discrete event may be defined in several ways.  For example, 
+flooding is a discrete event that involves the exceedence of a flow threshold.  According to the reliability 
+diagram, an event should be observed to occur with the same relative frequency as its forecast probability
+of occurrence over a large number of such forecast-observation pairs.  For example, over a large number of cases
+where flooding is forecast to occur with a probability of 0.95, it should be observed to occur roughly 95% of 
+the time.  However, the calculation of the observed relative frequency is subject to sampling uncertainty.  
+For example, there may be few cases in the historic record where flooding is forecast to occur with probability 
+0.95.  In practice, the forecasts are binned into discrete probability intervals and the observed relative 
+frequencies are plotted against the average forecast probability within each bin.  The sampling uncertainty 
+will decline as the width of the bin increases, but the precision of the diagram will also decline.</p>
+
+<p>The Reliability diagram plots the average forecast probability within each bin on the x-axis.  
+For a forecast event defined by the non-exceedence of some threshold, t, the average
+probability of the forecasts that fall in the <i>k</i>th forecast bin, B<sub>k</sub> is given by:</p>
+
+<p><img src="images/REL_1.gif"></p>
+
+<p>where I<sub>k</sub> denotes the set of all indices, <img src="images/REL_2.gif" align=middle>, whose forecasts (and associated paired observations)
+fall in the <i>k</i>th bin and #I<sub>k</sub> denotes the number of elements in that set.  The y-axis shows the corresponding fraction of observations 
+that fall in the <i>k</i>th bin:</p>
+
+<p><img src="images/REL_3.gif"></p>
+
+<p>where <img src="images/REL_4.gif" align=middle> is a step function that has value 1 if 
+the observation exceeds the threshold, t, and 0 otherwise.  If the forecast is perfectly reliable, the observed 
+fraction within each bin will equal the average of the associated forecast probabilities, forming a diagonal line 
+on the reliability diagram.  Deviation from the diagonal line represents bias in the forecast 
+probabilities, notwithstanding sampling uncertainty.  The reliability diagram may be computed for several discrete
+events.  Each event is represented by a separate reliability curve.</p>
+
+<p>Collectively, the number of forecasts that fall within each of the <i>k</i> bins, #I<sub>k</sub>, is referred to 
+as the 'sharpness' of the forecasts and is displayed as a histogram for each of the forecast bins.  Ideally, 
+the forecast probabilities will be sharp, i.e. issued with little uncertainty, but also reliable.</p> 
+
+<p><b>Online resources:</b></p>
+
+<p><a href="http://www.cawcr.gov.au/projects/verification/#Methods_for_probabilistic_forecasts">
+http://www.cawcr.gov.au/projects/verification/#Methods_for_probabilistic_forecasts</a></p>
+
+<p><b>Offline resources:</b></p>
+
+<p>Hsu, W.-R. and Murphy, A.H. (1986) The attributes diagram: A geometrical framework for assessing the
+quality of probability forecasts. <i>International Journal of Forecasting</i>, <b>2</b>,
+285-293.</p>
+
+<p>Mason, S. J. and Graham, N.E. (2002) Areas beneath the relative operating characteristics (ROC) 
+and relative operating levels (ROL) curves: Statistical significance and interpretation. <i>Quarterly Journal
+of the Royal Meteorological Society</i>,<b>128</b>, 2145-2166.</p>
+
+<p>Jolliffe, I.T. and Stephenson, D.B. (eds) (2003) <i>Forecast
+Verification: A Practitioner's Guide in Atmospheric Science.</i> John Wiley and
+Sons, Chichester, 240 pp.</p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+</body>
+
+</html>

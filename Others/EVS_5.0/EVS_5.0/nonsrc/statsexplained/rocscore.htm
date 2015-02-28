@@ -1,0 +1,85 @@
+<html>
+
+<style>
+<!--
+ /* Style Definitions */
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+p
+	{font-size:12.0pt;
+	font-family:"Verdana";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+-->
+</style>
+ 
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<b>RELATIVE OPERATING CHARACTERISTIC (ROC) SCORE</b>
+
+<p>The <a href="roc.htm">Relative Operating Characteristic</a> (also known as the Receiver Operating Characteristic) measures 
+the quality of a forecast for the occurrence of a discrete event, such as rainfall or flooding.
+It does not consider the quality of forecasts that predict no occurrence of the event defined (e.g. no rainfall 
+or no flooding).</p>
+ 
+<p>The ROC Score is based on the area underneath the ROC curve or AUC, which is normalized
+by the AUC of a reference forecast, <a><img src="images/ROCS_1.gif"></a> (Mason and Graham, 2002). The 
+AUC of the climatological probability forecast is 0.5, which corresponds to the diagonal line in 
+the ROC plot.  Thus, the ROC Score for the climatological probability forecast is</p>
+
+<p><a><img src="images/ROCS_2.gif"></a></p>
+
+<p>As discussed under the <a href="roc.htm">Relative Operating Characteristic</a>, practical applications of 
+ROC analysis in the medical, atmospheric, and other sciences frequently fit a smooth curve to the paired values
+of the Probability of Detection (POD) and Probability of False Detection (POFD) derived from the sample data.  
+A common approach is to fit a binormal model, which assumes that the POD and POFD are normally distributed, each 
+with given mean and variance (standard deviation).  Experience has shown that the binormal model typically 
+provides a good fit to the empirical POD and POFD, even when the sample data are "significantly" non-normal 
+(i.e. the binormal approximation is robust).  The binormal approximation to the AUC (and hence the ROC Score) 
+is given by</p>
+
+<p><a><img src="images/ROCS_3.gif"></a></p>
+
+<p>Here, a and b are the parameters of the binormal model, and <img src="images/ROCS_4.gif"> is the cumulative 
+distribution function of the standard normal distribution.  The parameters a and b are, respectively, the 
+intercept and slope of the (assumed) linear relationship between the POD and POFD <i>following</i> their
+transformation to the probit scale (see the discussion under the <a href="roc.htm">Relative Operating 
+Characteristic</a>).  Unlike the empirical AUC (Mason and Graham, 2002), which bypasses the calculation of
+the ROC curve, the binormal approximation to the AUC (and ROC Score) is based on the q pairs of (POD, POFD) 
+data from which the empirical ROC curve is computed (where q is the number of probability thresholds).  Thus, 
+for an exact comparison between the binormal ROC curve and the binormal ROC Score, the same number of thresholds, 
+q, must be used for each metric.  However, the binormal ROC Score will be closest to the empirical ROC Score 
+when the ROC curve is constructed from m+1 probability thresholds, where m is the (fixed) number of ensemble 
+members in each forecast.  Put differently, the empirical AUC, described by Mason and Graham (2002), approximates 
+the area under the ROC curve when constructed with as many probability thresholds as the (fixed) number of 
+ensemble members in each forecast.</p>
+
+<p>By default, the algorithm described in Mason and Graham (2002) is used to compute the empirical AUC. 
+Optionally, the AUC may be derived from the empirical ROC curve, which is constructed for a specified number of points. 
+In that case, the empirical ROC curve is integrated using the trapezoid rule. In most cases, the algorithm described 
+by Mason and Graham (2002) generates larger values of the empirical AUC (skill) than integrating the empirical 
+ROC curve.</p> 
+
+<p><b>Online resources:</b></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Receiver_operating_characteristic">http://en.wikipedia.org/wiki/Receiver_operating_characteristic</a>
+<br><a href="http://www-psych.stanford.edu/~lera/psych115s/notes/signal/">http://www-psych.stanford.edu/~lera/psych115s/notes/signal/</a><br></p>
+
+<p><b>Offline resources:</b></p>
+
+<p>Mason, S. J. and Graham, N.E. (2002) Areas beneath the relative operating characteristics (ROC) and relative operating levels (ROL) curves: Statistical significance and interpretation. <i>
+Quarterly Journal of the Royal Meteorological Society</i>, <b>128</b>, 2145–2166.</p>
+
+<p> Jolliffe, I.T. and Stephenson, D.B. (eds) (2003) <i>Forecast Verification: 
+A Practitioner's Guide in Atmospheric Science.</i> John Wiley and Sons, Chichester, 240 pp.</p>
+
+<p>Wilks, D.S. (2006) <i>Statistical Methods in the Atmospheric Sciences, 2nd ed.</i> Academic Press, 627pp.</p>
+
+</body>
+
+</html>
