@@ -18,23 +18,23 @@
 \contentsline {subsection}{\numberline {3.1.1}\IeC {\v S}tatistick\IeC {\'y} softv\IeC {\'e}r}{12}
 \contentsline {subsubsection}{Tabu\IeC {\v l}kov\IeC {\'y} softv\IeC {\'e}r}{12}
 \contentsline {subsubsection}{MATLAB}{13}
-\contentsline {subsubsection}{Minitab}{13}
-\contentsline {subsubsection}{R}{13}
-\contentsline {subsubsection}{SAS}{13}
-\contentsline {subsubsection}{IDL}{13}
-\contentsline {subsection}{\numberline {3.1.2}\IeC {\v S}pecializovan\IeC {\'y} softv\IeC {\'e}r}{13}
-\contentsline {subsubsection}{NCL}{13}
-\contentsline {subsubsection}{MET}{13}
-\contentsline {subsubsection}{EVS}{13}
-\contentsline {section}{\numberline {3.2}Vizualiz\IeC {\'a}cia verifik\IeC {\'a}cie}{13}
-\contentsline {subsection}{\numberline {3.2.1}Scatterplot}{13}
-\contentsline {subsection}{\numberline {3.2.2}Boxplot}{13}
-\contentsline {subsection}{\numberline {3.2.3}Time series plot}{13}
-\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{14}
-\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{14}
-\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{14}
-\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{14}
-\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{14}
-\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{14}
-\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{15}
-\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{16}
+\contentsline {subsubsection}{Minitab}{14}
+\contentsline {subsubsection}{R}{14}
+\contentsline {subsubsection}{SAS}{14}
+\contentsline {subsubsection}{IDL}{14}
+\contentsline {subsection}{\numberline {3.1.2}\IeC {\v S}pecializovan\IeC {\'y} softv\IeC {\'e}r}{14}
+\contentsline {subsubsection}{NCL}{14}
+\contentsline {subsubsection}{MET}{14}
+\contentsline {subsubsection}{EVS}{14}
+\contentsline {section}{\numberline {3.2}Vizualiz\IeC {\'a}cia verifik\IeC {\'a}cie}{14}
+\contentsline {subsection}{\numberline {3.2.1}Scatterplot}{14}
+\contentsline {subsection}{\numberline {3.2.2}Boxplot}{14}
+\contentsline {subsection}{\numberline {3.2.3}Time series plot}{14}
+\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{15}
+\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{15}
+\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{15}
+\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{15}
+\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{15}
+\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{15}
+\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{16}
+\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{17}
