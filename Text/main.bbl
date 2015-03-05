@@ -47,6 +47,12 @@ Pertti Nurmi.
 \newblock {\em Recommendations on the verification of local weather forecasts}.
 \newblock European Centre for Medium Range Weather Forecasts, Decmeber 2003.
 
+\bibitem[Poc11]{VerifSoft}
+Matthew Pocernich.
+\newblock {\em Forecast Verification: A Practitioner's Guide in Atmospheric
+  Science}, chapter Appendix - Verification Software, pages 232--240.
+\newblock John Wiley and Sons, Ltd., 2nd edition, December 2011.
+
 \bibitem[Vas98]{WeatherStation}
 Tim Vasquez.
 \newblock {\em Observer Handbook}.

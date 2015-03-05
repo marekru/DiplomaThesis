@@ -1,6 +1,48 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: main.aux
 The style file: alpha.bst
 Database file #1: literatura.bib
-Warning--I didn't find a database entry for "keylist"
 Warning--empty publisher in IntroToVerif
+Warning--can't use both author and editor fields in VerifSoft
+You've used 14 entries,
+            2543 wiz_defined-function locations,
+            653 strings with 6743 characters,
+and the built_in function-call counts, 4777 in all, are:
+= -- 438
+> -- 234
+< -- 12
++ -- 80
+- -- 77
+* -- 320
+:= -- 804
+add.period$ -- 44
+call.type$ -- 14
+change.case$ -- 81
+chr.to.int$ -- 14
+cite$ -- 16
+duplicate$ -- 204
+empty$ -- 354
+format.name$ -- 99
+if$ -- 954
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 14
+newline$ -- 76
+num.names$ -- 42
+pop$ -- 127
+preamble$ -- 1
+purify$ -- 103
+quote$ -- 0
+skip$ -- 150
+stack$ -- 0
+substring$ -- 149
+swap$ -- 28
+text.length$ -- 12
+text.prefix$ -- 10
+top$ -- 0
+type$ -- 88
+warning$ -- 2
+while$ -- 37
+width$ -- 16
+write$ -- 176
 (There were 2 warnings)

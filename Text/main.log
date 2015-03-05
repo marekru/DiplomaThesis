@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  3 MAR 2015 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  5 MAR 2015 16:04
 entering extended mode
 **main.tex
 (main.tex
@@ -1042,7 +1042,7 @@ Kapitola 3.
 [12
 
 ]
-Overfull \hbox (5.63728pt too wide) in paragraph at lines 19--22
+Overfull \hbox (5.63728pt too wide) in paragraph at lines 27--31
 \OT1/cmr/m/it/12 MATLAB \OT1/cmr/m/n/12 je in-te-raktvne pro-stre-die s vlast
 nym prog-ra-mo-vacm ja-zy-kom, ktory je vyuzvany
  []
@@ -1063,10 +1063,10 @@ Kapitola 6.
 
 ]) [19] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 8518 strings out of 493698
- 116208 string characters out of 3151686
- 205068 words of memory out of 3000000
- 11653 multiletter control sequences out of 15000+200000
+ 8519 strings out of 493698
+ 116219 string characters out of 3151686
+ 205076 words of memory out of 3000000
+ 11654 multiletter control sequences out of 15000+200000
  15233 words of font info for 57 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,16n,47p,927b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1080,7 +1080,7 @@ pe1/public/amsfonts/cm/cmr10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr1
 /public/amsfonts/cm/cmsy10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/miktex/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (30 pages, 575217 bytes).
+Output written on main.pdf (30 pages, 575828 bytes).
 PDF statistics:
  158 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
