@@ -53,6 +53,24 @@ Mali by sme však podotknúť, že podobne ako väčšina štatistického softv�
 
 \subsection{Scatterplot}
 
-\subsection{Boxplot}
+\subsection{Krabicový graf}
+Krabicový graf je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo nám naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 [Tukey], uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{5-number summary})[Potter], ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor [Wickham], ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
+
+\subsubsection{Konštrukcia krabicového diagramu}
+
+Na zostavenie krabicového diagramu potrebujeme týchto 5 hodnôt: medián, horný kvartál a dolný kvartál, maximum, minimum. (pozri obrázok \ref{fig:boxplot}) Prvé tri hodnoty sú takzvané kvartály, ktoré rozdeľujú súbor dát na 4 rovnako veľké časti a ďalšie dve sú extrémne hodnoty, ktoré ohraničujú celý dátový súbor. 
+
+%TODO nakreslit dalsie variacie boxplotu do toho isteho diagramu alebo to dat dalej?
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 2.5in]{svg2}
+	\caption{Krabicový diagram}
+	\label{fig:boxplot}
+\end{figure}
+
+
+
+
 
 \subsection{Time series plot}
