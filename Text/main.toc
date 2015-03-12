@@ -28,14 +28,15 @@
 \contentsline {subsubsection}{EVS}{14}
 \contentsline {section}{\numberline {3.2}Vizualiz\IeC {\'a}cia verifik\IeC {\'a}cie}{14}
 \contentsline {subsection}{\numberline {3.2.1}Scatterplot}{14}
-\contentsline {subsection}{\numberline {3.2.2}Krabicov\IeC {\'y} graf}{14}
+\contentsline {subsection}{\numberline {3.2.2}Krabicov\IeC {\'y} diagram}{14}
 \contentsline {subsubsection}{Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{15}
-\contentsline {subsection}{\numberline {3.2.3}Time series plot}{15}
-\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{16}
-\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{16}
-\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{16}
-\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{16}
-\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{16}
-\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{16}
-\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{17}
-\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{18}
+\contentsline {subsection}{\numberline {3.2.3}\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{16}
+\contentsline {subsection}{\numberline {3.2.4}Time series plot}{16}
+\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{17}
+\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{17}
+\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{17}
+\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{17}
+\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{17}
+\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{17}
+\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{18}
+\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{19}

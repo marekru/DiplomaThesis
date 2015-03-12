@@ -53,14 +53,34 @@ Mali by sme však podotknúť, že podobne ako väčšina štatistického softv�
 
 \subsection{Scatterplot}
 
-\subsection{Krabicový graf}
-Krabicový graf je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo nám naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 [Tukey], uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{5-number summary})[Potter], ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor [Wickham], ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
+\subsection{Krabicový diagram}
+Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 [Tukey], uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{5-number summary})[Potter], ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor [Wickham], ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
 
 \subsubsection{Konštrukcia krabicového diagramu}
 
-Na zostavenie krabicového diagramu potrebujeme týchto 5 hodnôt: medián, horný kvartál a dolný kvartál, maximum, minimum. (pozri obrázok \ref{fig:boxplot}) Prvé tri hodnoty sú takzvané kvartály, ktoré rozdeľujú súbor dát na 4 rovnako veľké časti a ďalšie dve sú extrémne hodnoty, ktoré ohraničujú celý dátový súbor. 
+Na zostavenie krabicového diagramu potrebujeme týchto 5 hodnôt: medián, horný a dolný kvartil, maximum, minimum. (pozri obrázok \ref{fig:boxplot}) Prvé tri hodnoty sú takzvané kvartily (Q1, Q2, Q3), ktoré rozdeľujú súbor dát na 4 rovnako veľké časti a ďalšie dve sú extrémne hodnoty, ktoré ohraničujú celú dátovú množinu. 
 
-%TODO nakreslit dalsie variacie boxplotu do toho isteho diagramu alebo to dat dalej?
+Zovšeobecnenie kvartilov sú kvantily ktoré rozdeľujú množinu na $n$ rovnakých častí a preto môžme o kvartile hovoriť ako o 4-kvantile. Medián hodnôt je 2-kvantil a teda rozdeľuje množinu na 2 rovnaké časti a je definovaný rovnako ako v časti \ref{subsec:mad}. Ďalej horný (Q1) a dolný (Q3) kvartil získame ako medián hodnôt pod a nad hodnotou Q2, pričom hodnotu Q2 nezahŕňame do výpočtov. 
+
+Na obrázku \ref{fig:boxplot} vidíme, že krabica v grafe určuje pozície horného a dolného kvartilu, zatiaľ čo vnútro krabice znázorňuje takzvané \textit{IQR}. Táto skratka označuje \textit{interquartile range}, čo sa dá preložiť ako \textit{medzikvartilový rozsah}. IQR definujeme ako rozdiel kvartilov Q3 a Q1:
+\[
+	IQR = Q3 - Q1
+\]
+IQR nám hovorí o vzdialenosti týchto dvoch kvartilov, preto nám môže byť tento vzorec na pohľad podozrivý, keďže sa javí, že IQR by mohlo nadobúdať aj záporné hodnoty. My však vieme z definície Q3 a Q1, že $ Q3 > Q1 $ a ich rozdiel je teda vždy nezáporný (Hovoríme o rozdiele Q3 od Q1, tak ako je definované IQR).
+
+Malú obmenu pôvodného návrhu krabicového diagramu od Tukeyho, vidíme na obrázku \ref{fig:boxplot} b), kde malé bodky znázorňujú hodnoty nazývané \textit{outlier}, teda hodnoty ležiace ďaleko od hlavného dátového tela, a hviezdička v strede diagramu určuje priemer hodnôt. Môžme si všimnúť, že konce čiar vychádzajúcich z boxu nemôžu byť extrémy celej množiny dát, ale sú iba extrémami vypočítaných z dát bez \textit{outlier}-ov.
+
+Otázkou zostáva ako určiť, ktorá hodnota je \textit{outlier} a ktorá nie je. Na zodpovedanie tejto otázky sa využíva už spomínaný rozsah IQR. Pomocou neho sa definujú hranice \textit{inner fences} ($f_{1}, f_{2}$) a \textit{outer fences} ($F_{1}, F_{2}$), za ktorými hovoríme už o \textit{outlier}-och alebo o ďalekých \textit{outlier}-och. Definované sú nasledovne:
+\[f_{1} = Q1 - c \times IQR\]	
+\[f_{2} = Q3 + c \times IQR\]
+\[F_{1} = Q1 - C \times IQR\]
+\[F_{2} = Q3 + C \times IQR\]
+
+Konštanty $ c $ a $ C $ sú v niektorých zdrojoch definované rôzne. Najčastejšie sa však vyskytujú hodnoty $ c = 1.5 $ a $ C = 3$, tak ako ich určil pôvodný autor krabicového diagramu [Tukey].
+   
+%TODO tu budu 2 boxploty Bez a S outliermi a priemerom
+
+
 
 \begin{figure}
 	\centering
@@ -68,6 +88,14 @@ Na zostavenie krabicového diagramu potrebujeme týchto 5 hodnôt: medián, horn
 	\caption{Krabicový diagram}
 	\label{fig:boxplot}
 \end{figure}
+
+
+\subsection{Ďalšie variácie krabicového diagramu}
+
+ 
+ %TODO tu bude obrázok všetkých rôznych boxplotov
+
+
 
 
 
