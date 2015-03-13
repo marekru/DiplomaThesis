@@ -77,24 +77,46 @@ Otázkou zostáva ako určiť, ktorá hodnota je \textit{outlier} a ktorá nie j
 \[F_{2} = Q3 + C \times IQR\]
 
 Konštanty $ c $ a $ C $ sú v niektorých zdrojoch definované rôzne. Najčastejšie sa však vyskytujú hodnoty $ c = 1.5 $ a $ C = 3$, tak ako ich určil pôvodný autor krabicového diagramu [Tukey].
-   
-%TODO tu budu 2 boxploty Bez a S outliermi a priemerom
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 3.5in]{boxplot}
+	\caption{Pôvodný návrh krabicového diagramu, ako bol prezentovaný v práci \textit{Exploratory Data Analysis}(1977)[Tukey] }
+	\label{fig:boxplot}
+\end{figure}
+
+
+\subsubsection{Ďalšie variácie krabicového diagramu}
+
+Popularita krabicového diagramu nevyhnutne viedla k jeho vývoji a modifikáciám. Môžeme hovoriť o dvoch druhoch modifikácií. Jednak \textit{syntaktickej} (vizuálnej), kedy sa zachovávajú všetky vlastnosti a informácie ako v pôvodnom diagrame, len sa menia vizuálne prvky grafu. A modifikácii \textit{sémantickej} pridaním ďalšej popisnej informácie do grafu, čo má na záver vplyv aj na jeho vizuálnu stránku.
+
+Na obrázku \ref{fig:boxplotmodif1} môžme vidieť niektoré vizuálne variácie krabicového diagramu.
 
 
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 2.5in]{svg2}
-	\caption{Krabicový diagram}
-	\label{fig:boxplot}
+	\includegraphics[width = 3.5in]{boxplot}
+	\caption{Pôvodný návrh krabicového diagramu, ako bol prezentovaný v práci \textit{Exploratory Data Analysis}(1977)[Tukey] }
+	\label{fig:boxplotmodif1}
 \end{figure}
 
 
-\subsection{Ďalšie variácie krabicového diagramu}
+\begin{figure}
+	\centering
+	\includegraphics[width = 3.5in]{boxplot}
+	\caption{Pôvodný návrh krabicového diagramu, ako bol prezentovaný v práci \textit{Exploratory Data Analysis}(1977)[Tukey] }
+	\label{fig:boxplotmodif2}
+\end{figure}
 
+- koeficient asymetrie
  
  %TODO tu bude obrázok všetkých rôznych boxplotov
 
+
+\subsubsection{Úloha krabicového diagramu vo verifikácii}
+
+ - z teho tutorialu sem dat vecicky
 
 
 
