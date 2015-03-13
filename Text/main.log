@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  13 MAR 2015 15:31
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  13 MAR 2015 23:45
 entering extended mode
 **main.tex
 (S:\School\DiplomaThesis\Text\main.tex
@@ -1077,24 +1077,26 @@ nym prog-ra-mo-vacm ja-zy-kom, ktory je vyuzvany
 [13] [14] [15] <boxplot.pdf, id=104, 230.8625pt x 200.75pt>
 File: boxplot.pdf Graphic file (type pdf)
  <use boxplot.pdf>
-Package pdftex.def Info: boxplot.pdf used on input line 83.
+Package pdftex.def Info: boxplot.pdf used on input line 86.
 (pdftex.def)             Requested size: 252.94499pt x 219.95265pt.
 
-Overfull \hbox (0.27875pt too wide) in paragraph at lines 91--92
+Overfull \hbox (0.27875pt too wide) in paragraph at lines 94--95
 \OT1/cmr/m/n/12 Popularita kra-bi-coveho dia-gramu ne-vy-hnutne viedla k jeho 
 vyvoji a mo-di-fikaciam. M^ozeme
  []
 
+<boxplot2.pdf, id=105, 281.05pt x 200.75pt>
+File: boxplot2.pdf Graphic file (type pdf)
+ <use boxplot2.pdf>
+Package pdftex.def Info: boxplot2.pdf used on input line 102.
+(pdftex.def)             Requested size: 289.07999pt x 206.49605pt.
 File: boxplot.pdf Graphic file (type pdf)
+
 <use boxplot.pdf>
-Package pdftex.def Info: boxplot.pdf used on input line 99.
+Package pdftex.def Info: boxplot.pdf used on input line 110.
 (pdftex.def)             Requested size: 252.94499pt x 219.95265pt.
-File: boxplot.pdf Graphic file (type pdf)
- <use boxplot.pdf>
-Package pdftex.def Info: boxplot.pdf used on input line 107.
-(pdftex.def)             Requested size: 252.94499pt x 219.95265pt.
- [16 <S:/School/DiplomaThesis/Text/boxplot.pdf>] [17]) (S:\School\DiplomaThesis
-\Text\04design.tex [18]
+ [16 <S:/School/DiplomaThesis/Text/boxplot.pdf>] [17 <S:/School/DiplomaThesis/T
+ext/boxplot2.pdf>]) (S:\School\DiplomaThesis\Text\04design.tex [18]
 Kapitola 4.
 ) (S:\School\DiplomaThesis\Text\05implementation.tex [19
 
@@ -1111,10 +1113,10 @@ Kapitola 6.
 ]) [23]
 (S:\School\DiplomaThesis\Text\main.aux) ) 
 Here is how much of TeX's memory you used:
- 8403 strings out of 493921
- 118080 string characters out of 3147293
+ 8408 strings out of 493921
+ 118159 string characters out of 3147293
  196810 words of memory out of 3000000
- 11502 multiletter control sequences out of 15000+200000
+ 11506 multiletter control sequences out of 15000+200000
  17436 words of font info for 66 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,16n,47p,985b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1133,9 +1135,9 @@ nts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (34 pages, 825885 bytes).
+Output written on main.pdf (34 pages, 1137749 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
+ 273 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
