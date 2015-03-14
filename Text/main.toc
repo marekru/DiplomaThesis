@@ -32,13 +32,15 @@
 \contentsline {subsection}{\numberline {3.2.3}Krabicov\IeC {\'y} diagram}{14}
 \contentsline {subsubsection}{Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{15}
 \contentsline {subsubsection}{\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{16}
-\contentsline {subsubsection}{\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{18}
-\contentsline {subsection}{\numberline {3.2.4}Time series plot}{18}
-\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{19}
-\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{19}
-\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{19}
-\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{19}
-\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{19}
-\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{19}
-\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{20}
-\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{21}
+\contentsline {paragraph}{N}{17}
+\contentsline {paragraph}{K}{18}
+\contentsline {subsubsection}{\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{19}
+\contentsline {subsection}{\numberline {3.2.4}Time series plot}{19}
+\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{20}
+\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{20}
+\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{20}
+\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{20}
+\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{20}
+\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{20}
+\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{21}
+\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{22}
