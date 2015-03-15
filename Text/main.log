@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  14 MAR 2015 19:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  15 MAR 2015 19:29
 entering extended mode
 **main.tex
 (S:\School\DiplomaThesis\Text\main.tex
@@ -1074,77 +1074,83 @@ Overfull \hbox (5.63728pt too wide) in paragraph at lines 27--31
 nym prog-ra-mo-vacm ja-zy-kom, ktory je vyuzvany
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
-[15] <boxplot.pdf, id=104, 230.8625pt x 200.75pt>
+<boxplot.pdf, id=104, 230.8625pt x 200.75pt>
 File: boxplot.pdf Graphic file (type pdf)
  <use boxplot.pdf>
-Package pdftex.def Info: boxplot.pdf used on input line 87.
+Package pdftex.def Info: boxplot.pdf used on input line 99.
 (pdftex.def)             Requested size: 252.94499pt x 219.95265pt.
 
-Overfull \hbox (0.27875pt too wide) in paragraph at lines 95--96
+Overfull \hbox (0.27875pt too wide) in paragraph at lines 107--108
 \OT1/cmr/m/n/12 Popularita kra-bi-coveho dia-gramu ne-vy-hnutne viedla k jeho 
 vyvoji a mo-di-fikaciam. M^ozeme
  []
 
-<boxplot2.pdf, id=105, 281.05pt x 200.75pt>
+[16] <boxplot2.pdf, id=108, 281.05pt x 200.75pt>
 File: boxplot2.pdf Graphic file (type pdf)
  <use boxplot2.pdf>
-Package pdftex.def Info: boxplot2.pdf used on input line 100.
+Package pdftex.def Info: boxplot2.pdf used on input line 112.
 (pdftex.def)             Requested size: 289.07999pt x 206.49605pt.
- [16 <S:/School/DiplomaThesis/Text/boxplot.pdf>] [17 <S:/School/DiplomaThesis/T
-ext/boxplot2.pdf>] <boxplot3.pdf, id=205, 481.8pt x 200.75pt>
+ [17 <S:/School/DiplomaThesis/Text/boxplot.pdf>]
+<boxplot3.pdf, id=157, 481.8pt x 200.75pt>
 File: boxplot3.pdf Graphic file (type pdf)
  <use boxplot3.pdf>
-Package pdftex.def Info: boxplot3.pdf used on input line 130.
+Package pdftex.def Info: boxplot3.pdf used on input line 132.
 (pdftex.def)             Requested size: 433.62pt x 180.67944pt.
- [18 <S:/School/DiplomaThesis/Text/boxplot3.pdf>]) (S:\School\DiplomaThesis\Tex
-t\04design.tex
-[19]
+ [18 <S:/School/DiplomaThesis/Text/boxplot2.pdf>]
+Overfull \hbox (2.49905pt too wide) in paragraph at lines 144--145
+[]\OT1/cmr/m/n/12 V nie-ktorych prpadoch kra-bi-covy dia-gram zakryva skut
+ocny tvar dat, teda jeho sikmost[]
+ []
+
+[19 <S:/School/DiplomaThesis/Text/boxplot3.pdf>])
+(S:\School\DiplomaThesis\Text\04design.tex [20]
 Kapitola 4.
-) (S:\School\DiplomaThesis\Text\05implementation.tex [20
+) (S:\School\DiplomaThesis\Text\05implementation.tex [21
 
 ]
 Kapitola 5.
-) (S:\School\DiplomaThesis\Text\06results.tex [21
+) (S:\School\DiplomaThesis\Text\06results.tex [22
 
 ]
 Kapitola 6.
-) (S:\School\DiplomaThesis\Text\main.bbl [22
+) (S:\School\DiplomaThesis\Text\main.bbl [23
 
-] [23
+] [24
 
-]) [24]
+]) [25]
 (S:\School\DiplomaThesis\Text\main.aux) ) 
 Here is how much of TeX's memory you used:
- 8418 strings out of 493921
- 118316 string characters out of 3147293
- 196810 words of memory out of 3000000
- 11515 multiletter control sequences out of 15000+200000
- 17436 words of font info for 66 fonts, out of 3000000 for 9000
+ 8420 strings out of 493921
+ 118342 string characters out of 3147293
+ 195810 words of memory out of 3000000
+ 11516 multiletter control sequences out of 15000+200000
+ 17795 words of font info for 67 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,16n,47p,985b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc
 /dvips/cm-super/cm-super-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (35 pages, 1335144 bytes).
+ts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (36 pages, 1348088 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
+ 315 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -51,10 +51,22 @@ Mali by sme však podotknúť, že podobne ako väčšina štatistického softv�
 
 \section{Vizualizácia verifikácie}
 
-\subsection{Scatterplot}
+\subsection{Bodový graf}
+Najjednoduchším spôsobom porovnania dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram}, známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}.
 
 
-\subsection{QQ plot}
+
+\subsubsection{Konštrukcia bodového grafu}
+Bodový graf na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať vizualizujeme tak, že spravíme zobrazenie jednej premennej na $ x $-ovú súradnicu a zobrazenie druhej premennej na $ y $-ovú súradnicu. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
+Na obrázku XYZ vidíme príklad výsledného bodového grafu, ktorý vznikne takýmto postupom.
+
+Bodový graf ponúka mnoho spôsobov, ako pridať ďalší rozmer informácie do vizualizácie. Môžeme zvoliť odlišnú súradnicovú sústavu, čím veľmi jednoducho vytvoríme napríklad 3D bodový graf [ TODO ref ]. Ďalšou možnosťou rozšírenia je zmena vykresľovaného symbolu, ktorému môžme nastavovať rôzne parametre, do ktorých možno zakódovať nové informácie. Zvyčajne sú týmito parametrami farba[ TODO ref ], alfa-transparencia[ TODO ref ], veľkosť[ TODO ref ], tvar[ TODO ref ] a podobne. Tieto modifikácie si v komunite vizuálnej analýzy vyslúžili aj vlastné názvy a teoretické zázemie, avšak v našej práci sa týmto druhom diagramov nebudeme venovať.
+
+\subsubsection{Kantil-kvantil graf}
+Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil-kvantil graf}, skrátene \textit{Q-Q graf} (Q z anglického \textit{quantil}).
+
+\subsubsection{Úloha bodového grafu vo verifikácii}
+
 
 \subsection{Krabicový diagram}
 Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 [Tukey], uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{5-number summary})[Potter], ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor [Wickham], ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
@@ -103,8 +115,8 @@ Popularita krabicového diagramu nevyhnutne viedla k jeho vývoji a modifikáci�
 \end{figure}
 
 
-\paragraph
-Na obrázkoch \ref{fig:boxplotmodif1} b-f) môžme vidieť niektoré vizuálne variácie krabicového diagramu. Vznik prvých troch motivovala snaha maximalizovať takzvaný \textit{data-ink} [Tuf83], teda množstvo atramentu alebo počet pixlov, ktoré zodpovedajú nejakým dátam. Autori sa teda snažili čo najviac znížiť počet vizuálnych prvkov a ponechať len tie, ktoré skutočne nesú nejakú informáciu. 
+\paragraph{}
+{\large \textbf{\textit{N}}}a obrázkoch \ref{fig:boxplotmodif1} b-f) môžme vidieť niektoré vizuálne variácie krabicového diagramu. Vznik prvých troch motivovala snaha maximalizovať takzvaný \textit{data-ink} [Tuf83], teda množstvo atramentu alebo počet pixlov, ktoré zodpovedajú nejakým dátam. Autori sa teda snažili čo najviac znížiť počet vizuálnych prvkov a ponechať len tie, ktoré skutočne nesú nejakú informáciu. 
 
 Na obrázku \ref{fig:boxplotmodif1} b) a c) vidíme dve z viacero riešení navrhnutých v knihe \textit{The Visual Display of Quantitative} [Tuf83], ktoré autor nazýva \textit{kvartilový graf}. Preceptuálne štúdie [Stock] však ukázali, že tieto variácie sú výrazne menej presné ako originálny návrh.
 
@@ -115,16 +127,6 @@ Obrázok \ref{fig:boxplotmodif1} e) znázorňuje predchodcu krabicového diagram
 Ako posledný príklad vizuálnej modifikácie uvádzame pridanie farieb do krabicového diagramu. Táto farebná variácia uchováva tvar diagramu, avšak časť nad mediánom je zafarbená inou farbou ako hodnoty pod. Autori článku odporúčajú červenú a modrú farbu, tak ako na obrázku \ref{fig:boxplotmodif1} f). Cieľom tohto prístupu bolo chápať krabicový diagram ako jednu percepčnú jednotku a nahradiť 5 symbolov jedným, čím sa mala znížiť námaha pozorovateľa pri analýze a taktiež uľahčiť porovnávanie viacerých diagramov navzájom. 
 
 
-\paragraph
-Krabicový diagram umožňuje svojim vzhľadom zakódovanie ďalšej informácie do grafu. Na obrázku \ref{fig:boxplotmodif2} vidíme aspoň niektoré najčastejšie úpravy... 
-
-Len rok po oficiálnom publikovaní krabicového diagramu vznikol článok [McGill], ktorý zhŕňa jeho tri najčastejšie používané modifikácie, ktoré môžme vidieť na obrázkoch \ref{fig:boxplotmodif2}a) a \ref{fig:boxplotmodif2}b) a tretí je ich kombináciou. V prvom prípade sa využíva šírka boxu na zakódovanie veľkosti množiny, ktorú skrýva za sebou diagram. Takýto graf sa nazýva \textit{Krabicový diagram s variabilnou šírkou}.  
-
-V druhom prípade ide o takzvaný \textit{Vrúbkovaný krabicový diagram}. V tomto grafe sú pridané \textit{vrúbky}, ktoré zhruba naznačujú ako výrazné sú rozdiely v miere spoľahlivosti rôznych dátových množín.
-
-%TODO Chainman ...
-
-
 \begin{figure}
 	\centering
 	\includegraphics[width = 6in]{boxplot3}
@@ -132,15 +134,23 @@ V druhom prípade ide o takzvaný \textit{Vrúbkovaný krabicový diagram}. V to
 	\label{fig:boxplotmodif2}
 \end{figure}
 
-- koeficient asymetrie
 
+\paragraph{}
+{\large \textbf{\textit{K}}}rabicový diagram umožňuje svojim vzhľadom zakódovanie ďalšej informácie do grafu. Na obrázku \ref{fig:boxplotmodif2} vidíme aspoň niektoré najčastejšie úpravy... 
+
+Len rok po oficiálnom publikovaní krabicového diagramu vznikol článok [McGill], ktorý zhŕňa jeho tri najčastejšie používané modifikácie, z ktorých prvé dve môžme vidieť na obrázkoch \ref{fig:boxplotmodif2}a) a \ref{fig:boxplotmodif2}b) a tretí je ich kombináciou. V prvom prípade sa využíva šírka boxu na zakódovanie veľkosti množiny, ktorú skrýva za sebou diagram. Takýto graf sa nazýva \textit{Krabicový diagram s variabilnou šírkou}.  
+V druhom prípade ide o takzvaný \textit{Vrúbkovaný krabicový diagram}. V tomto grafe sú pridané \textit{vrúbky}, ktoré zhruba naznačujú ako výrazné sú rozdiely v miere spoľahlivosti rôznych dátových množín. 
+
+V niektorých prípadoch krabicový diagram zakrýva skutočný tvar dát, teda jeho šikmosť alebo modalitu, keďže jeho vzhľad nabáda k tomu, aby si užívateľ myslel, že sú dát zacentrované na stred a unimodálne. V práci s názvom \textit{Can the Box Plot be Improved?} [...] autor uvádza príklad kedy skutočne rôznorodé dáta generujú rovnaký krabicový diagram. Tento problém rieši elegantným a čistým spôsobom pridaním hrubej čiary na základe koeficientu asymetrickosti $ \gamma $. Na obrázku \ref{fig:boxplotmodif2}c) môžme vidieť zľava asymetrické dáta, na stred zarovnané dáta a bimodálne dáta.
 
 \subsubsection{Úloha krabicového diagramu vo verifikácii}
 
- - z teho tutorialu sem dat vecicky
+Ako sme spomenuli v úvode tejto sekcie, vo všeobecnosti je úlohou krabicového diagramu zobraziť distribúciu dát v kompaktnom tvare a teda slúži na rýchle porovnanie distribúcií viacerých skupín dát.
+Pri verifikácii spojitej predpovede sa používa na viacero účelov a my tu spomenieme len niekoľko z nich. 
 
+V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovaní za istý časový interval. V takomto prípade máme vedľa seba iba dva krabicové diagramy, ktoré navzájom porovnávame. Použitie krabicového diagramu v takomto prípade, kedy jeden graf pozostáva iba z niekoľkých (2 až 4) krabicových diagramov považujeme za zbytočné. Pri takomto počte nie je potreba na redukciu vizuálnych prvkov a existujú lepšie techniky na vizualizáciu distribúcie, ktoré sprostredkúvajú viacej informácie a teda môže byť analýza efektívnejšia. 
 
-
+Ďalším použitím je porovnanie distribúcie chýb predpovedí, či už pre rôzne merania, konkrétne predpovedané časy, rôzne predpovedné modely a podobne. Tu považujeme použitie krabicového diagramu za opodstatnené, keďže ide zväčša o porovnávanie väčšieho množstva distribúcií, a tak je jeho jednoduchosť, čitateľnosť, kompaktnosť a iné jeho vlastnosti potrebné.
 
 
 

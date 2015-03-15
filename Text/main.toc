@@ -27,20 +27,22 @@
 \contentsline {subsubsection}{MET}{14}
 \contentsline {subsubsection}{EVS}{14}
 \contentsline {section}{\numberline {3.2}Vizualiz\IeC {\'a}cia verifik\IeC {\'a}cie}{14}
-\contentsline {subsection}{\numberline {3.2.1}Scatterplot}{14}
-\contentsline {subsection}{\numberline {3.2.2}QQ plot}{14}
-\contentsline {subsection}{\numberline {3.2.3}Krabicov\IeC {\'y} diagram}{14}
+\contentsline {subsection}{\numberline {3.2.1}Bodov\IeC {\'y} graf}{14}
+\contentsline {subsubsection}{Kon\IeC {\v s}trukcia bodov\IeC {\'e}ho grafu}{14}
+\contentsline {subsubsection}{Kantil-kvantil graf}{15}
+\contentsline {subsubsection}{\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{15}
+\contentsline {subsection}{\numberline {3.2.2}Krabicov\IeC {\'y} diagram}{15}
 \contentsline {subsubsection}{Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{15}
-\contentsline {subsubsection}{\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{16}
-\contentsline {paragraph}{N}{17}
-\contentsline {paragraph}{K}{18}
+\contentsline {subsubsection}{\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{18}
 \contentsline {subsubsection}{\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{19}
-\contentsline {subsection}{\numberline {3.2.4}Time series plot}{19}
-\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{20}
-\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{20}
-\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{20}
-\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{20}
-\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{20}
-\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{20}
-\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{21}
-\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{22}
+\contentsline {subsection}{\numberline {3.2.3}Time series plot}{20}
+\contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{21}
+\contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{21}
+\contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{21}
+\contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{21}
+\contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{21}
+\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{21}
+\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{22}
+\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{23}
