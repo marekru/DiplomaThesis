@@ -52,15 +52,14 @@ Mali by sme však podotknúť, že podobne ako väčšina štatistického softv�
 \section{Vizualizácia verifikácie}
 
 \subsection{Bodový graf}
-Najjednoduchším spôsobom porovnania dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram}, známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}.
-
+Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram} a známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}. Bodový graf je vhodný na štúdium kolerácie dvoch premenných a taktiež je výborný pri odhaľovaní takzvaných \textit{outlier}-v, teda hodnôt, ktoré sa nejakým spôsobom výrazne odlišujú od tých ostatných. Taktiež nám nepriamo podáva správu o distribúcii hodnôt, čo však pri ich veľkom počte môže byť skreslené, keďže sa body začnú postupne prekrývať, a tak nemožno určiť v akej oblasti je viacej, či menej bodov.
 
 
 \subsubsection{Konštrukcia bodového grafu}
-Bodový graf na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať vizualizujeme tak, že spravíme zobrazenie jednej premennej na $ x $-ovú súradnicu a zobrazenie druhej premennej na $ y $-ovú súradnicu. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
+Bodový graf na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať vizualizujeme tak, že spravíme zobrazenie jednej premennej na $ x $-ovú súradnicovú os a zobrazenie druhej premennej na $ y $-ovú os. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
 Na obrázku XYZ vidíme príklad výsledného bodového grafu, ktorý vznikne takýmto postupom.
 
-Bodový graf ponúka mnoho spôsobov, ako pridať ďalší rozmer informácie do vizualizácie. Môžeme zvoliť odlišnú súradnicovú sústavu, čím veľmi jednoducho vytvoríme napríklad 3D bodový graf [ TODO ref ]. Ďalšou možnosťou rozšírenia je zmena vykresľovaného symbolu, ktorému môžme nastavovať rôzne parametre, do ktorých možno zakódovať nové informácie. Zvyčajne sú týmito parametrami farba[ TODO ref ], alfa-transparencia[ TODO ref ], veľkosť[ TODO ref ], tvar[ TODO ref ] a podobne. Tieto modifikácie si v komunite vizuálnej analýzy vyslúžili aj vlastné názvy a teoretické zázemie, avšak v našej práci sa týmto druhom diagramov nebudeme venovať.
+Bodový graf ponúka mnoho spôsobov, ako pridať ďalší rozmer informácie do vizualizácie. Môžeme zvoliť odlišnú súradnicovú sústavu, čím veľmi jednoducho vytvoríme napríklad 3D bodový graf [ TODO ref ]. Ďalšou možnosťou rozšírenia je zmena vykresľovaného symbolu, ktorému môžme nastavovať rôzne parametre, do ktorých možno zakódovať nové informácie. Zvyčajne sú týmito parametrami farba[ TODO ref ], alfa-transparencia[ TODO ref ], veľkosť[ TODO ref ], tvar [GSS, ESPUEPPAS] a podobne. Tieto modifikácie si v komunite vizuálnej analýzy vyslúžili aj vlastné názvy a teoretické zázemie, avšak v našej práci sa týmto druhom diagramov nebudeme venovať.
 
 \subsubsection{Kantil-kvantil graf}
 Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil-kvantil graf}, skrátene \textit{Q-Q graf} (Q z anglického \textit{quantil}).

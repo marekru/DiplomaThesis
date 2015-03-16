@@ -35,8 +35,8 @@
 \contentsline {subsubsection}{Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{15}
 \contentsline {subsubsection}{\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{17}
 \contentsline {paragraph}{}{17}
-\contentsline {paragraph}{}{18}
-\contentsline {subsubsection}{\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {subsubsection}{\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{20}
 \contentsline {subsection}{\numberline {3.2.3}Time series plot}{20}
 \contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{21}
 \contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{21}
