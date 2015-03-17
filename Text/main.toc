@@ -26,7 +26,7 @@
 \contentsline {subsubsection}{NCL}{14}
 \contentsline {subsubsection}{MET}{14}
 \contentsline {subsubsection}{EVS}{14}
-\contentsline {section}{\numberline {3.2}Vizualiz\IeC {\'a}cia verifik\IeC {\'a}cie}{14}
+\contentsline {section}{\numberline {3.2}Techniky vizualiz\IeC {\'a}cie vo verifik\IeC {\'a}cii}{14}
 \contentsline {subsection}{\numberline {3.2.1}Bodov\IeC {\'y} graf}{14}
 \contentsline {subsubsection}{Kon\IeC {\v s}trukcia bodov\IeC {\'e}ho grafu}{14}
 \contentsline {subsubsection}{Kantil-kvantil graf}{15}
@@ -44,5 +44,9 @@
 \contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{21}
 \contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{21}
 \contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{21}
-\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{22}
-\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{23}
+\contentsline {subsection}{\numberline {4.2.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{21}
+\contentsline {subsubsection}{Density plot}{22}
+\contentsline {subsubsection}{Kvantilov\IeC {\'y} diagram}{22}
+\contentsline {subsubsection}{Funkcion\IeC {\'a}lny krabicov\IeC {\'y} diagram}{22}
+\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{23}
+\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{24}

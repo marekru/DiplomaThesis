@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  16 MAR 2015 20:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  17 MAR 2015 18:36
 entering extended mode
 **main.tex
 (main.tex
@@ -1032,7 +1032,7 @@ Package pdftex.def Info: GridToPoint.jpg used on input line 88.
 (pdftex.def)             Requested size: 180.67499pt x 150.06656pt.
 
 [7 <./PointtoGrid.jpg> <./GridToPoint.jpg>] [8]
-Overfull \hbox (6.98894pt too wide) in paragraph at lines 146--149
+Overfull \hbox (6.98894pt too wide) in paragraph at lines 147--150
 \OT1/cmr/m/n/12 mozno vy-jad-rit[] l[]ubovol[]nu zo spo-me-nutych statistic
 kych metod. Taketo vy-jad-re-nie umoznuje
  []
@@ -1048,17 +1048,17 @@ nym prog-ra-mo-vacm ja-zy-kom, ktory je vyuzvany
  []
 
 [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 [16] <boxplot.pdf, id=107, 230.8625pt x 200.75pt>
 File: boxplot.pdf Graphic file (type pdf)
  <use boxplot.pdf>
-Package pdftex.def Info: boxplot.pdf used on input line 98.
+Package pdftex.def Info: boxplot.pdf used on input line 100.
 (pdftex.def)             Requested size: 252.94499pt x 219.95265pt.
 
-Overfull \hbox (0.27875pt too wide) in paragraph at lines 106--107
+Overfull \hbox (0.27875pt too wide) in paragraph at lines 108--109
 \OT1/cmr/m/n/12 Popularita kra-bi-coveho dia-gramu ne-vy-hnutne viedla k jeho 
 vyvoji a mo-di-fikaciam. M^ozeme
  []
@@ -1066,15 +1066,15 @@ vyvoji a mo-di-fikaciam. M^ozeme
 <boxplot2.pdf, id=108, 281.05pt x 200.75pt>
 File: boxplot2.pdf Graphic file (type pdf)
  <use boxplot2.pdf>
-Package pdftex.def Info: boxplot2.pdf used on input line 111.
+Package pdftex.def Info: boxplot2.pdf used on input line 113.
 (pdftex.def)             Requested size: 289.07999pt x 206.49605pt.
  [17 <./boxplot.pdf>] <boxplot3.pdf, id=157, 481.8pt x 200.75pt>
 File: boxplot3.pdf Graphic file (type pdf)
  <use boxplot3.pdf>
-Package pdftex.def Info: boxplot3.pdf used on input line 131.
+Package pdftex.def Info: boxplot3.pdf used on input line 133.
 (pdftex.def)             Requested size: 433.62pt x 180.67944pt.
  [18 <./boxplot2.pdf>]
-Overfull \hbox (2.49905pt too wide) in paragraph at lines 143--144
+Overfull \hbox (2.49905pt too wide) in paragraph at lines 145--146
 []\OT1/cmr/m/n/12 V nie-ktorych prpadoch kra-bi-covy dia-gram zakryva skut
 ocny tvar dat, teda jeho sikmost[]
  []
@@ -1083,22 +1083,22 @@ ocny tvar dat, teda jeho sikmost[]
 Kapitola 4.
 ) (05implementation.tex [21
 
-]
+] [22]
 Kapitola 5.
-) (06results.tex [22
+) (06results.tex [23
 
 ]
 Kapitola 6.
-) (main.bbl [23
+) (main.bbl [24
 
-] [24
+] [25
 
-]) [25] (main.aux) ) 
+]) [26] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 8559 strings out of 493698
- 116756 string characters out of 3151686
- 205122 words of memory out of 3000000
- 11686 multiletter control sequences out of 15000+200000
+ 8563 strings out of 493698
+ 116827 string characters out of 3151686
+ 205169 words of memory out of 3000000
+ 11690 multiletter control sequences out of 15000+200000
  17795 words of font info for 67 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,16n,47p,985b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1114,9 +1114,9 @@ ype1/public/amsfonts/cm/cmr7.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr8
 1/public/amsfonts/cm/cmti10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/miktex/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (36 pages, 1338750 bytes).
+Output written on main.pdf (37 pages, 1340475 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
+ 322 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

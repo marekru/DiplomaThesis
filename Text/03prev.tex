@@ -49,9 +49,11 @@ Mali by sme však podotknúť, že podobne ako väčšina štatistického softv�
 
 %TODO tabuľka softvéru
 
-\section{Vizualizácia verifikácie}
+\section{Techniky vizualizácie vo verifikácii}
+\label{sec:prevvis}
 
 \subsection{Bodový graf}
+\label{subsec:scatterplot}
 Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram} a známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}. Bodový graf je vhodný na štúdium kolerácie dvoch premenných a taktiež je výborný pri odhaľovaní takzvaných \textit{outlier}-v, teda hodnôt, ktoré sa nejakým spôsobom výrazne odlišujú od tých ostatných. Taktiež nám nepriamo podáva správu o distribúcii hodnôt, čo však pri ich veľkom počte môže byť skreslené, keďže sa body začnú postupne prekrývať, a tak nemožno určiť v akej oblasti je viacej, či menej bodov.
 
 
@@ -66,8 +68,8 @@ Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil
 
 \subsubsection{Úloha bodového grafu vo verifikácii}
 
-
 \subsection{Krabicový diagram}
+\label{subsec:boxplot}
 Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 [Tukey], uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{5-number summary})[Potter], ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor [Wickham], ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
 
 \subsubsection{Konštrukcia krabicového diagramu}
