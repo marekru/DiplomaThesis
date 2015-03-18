@@ -15,13 +15,21 @@
 \subsection{Návrh vizualizácie distribúcie chýb}
 Pri verifikácii predpovede spojitej premennej sme použili štatistické metódy spomenuté v sekcii \ref{sec:errormeasurement}, ktorých výsledok sme následne vizualizovali. Pôvodné dáta však zostali skryté za použitým matematickým modelom, a tak sme stratili informáciu o distribúcii chyby. Pri verifikácii sa štandardne používajú dve metódy na priamu, či nepriamu vizualizáciu a analýzu distribúcie, ktoré sme opísali v sekcii \ref{sec:prevvis}. Týmito metódami sú bodový graf (pozri podsekciu \ref{subsec:scatterplot}) a krabicový diagram (pozri podsekciu \ref{subsec:boxplot}).
 
-Pri návrh vizualizácie sme vyskúšali niekoľko vizualizačných techník, .... bla bla bla %TODO something logical here
+Pri návrh vizualizácie sme vyskúšali niekoľko vizualizačných techník a zvážili ich silné a slabé stránky. 
 
-\subsubsection{Density plot}
+\subsubsection{Graf hustoty} %Density plot
 
 
-\subsubsection{Kvantilový diagram} %TODO toto je v skutocnosti daco insie, musim nastuduvat
+\subsubsection{Kvantilový diagram} 
 
 
 \subsubsection{Funkcionálny krabicový diagram}
+Pre pochopenie dát je dôležité, aby sme sa vedeli pozrieť na hodnoty v ich kontexte. Všetky predošlé techniky uvažovali o chybe ako o samostatnej hodnote pre určitý predpovedný čas, avšak chyby sa nenachádzajú len v kontexte predpovedného času, ale aj v kontexte konkrétnej predpovede. Preto môžme uvažovať o predpovediach ako o funkciách $ x_{i}(t) $, kde $ i \in \{1..n\}$ je poradie predpovede a $ t \in I $ je čas predpovede, kde $ I $ je časový interval predpovede z $ \mathbb{R} $ (v našom prípade sa jednalo o dvojdňovú, teda 48 hodinovú predpoveď).
 
+
+	
+
+
+\subsubsection{Porovnanie metód ...}
+
+Tu bude pekný obrázok a obkeci.

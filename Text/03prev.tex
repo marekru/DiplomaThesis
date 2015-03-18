@@ -68,6 +68,8 @@ Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil
 
 \subsubsection{Úloha bodového grafu vo verifikácii}
 
+\subsection{Histogram}
+
 \subsection{Krabicový diagram}
 \label{subsec:boxplot}
 Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 [Tukey], uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{5-number summary})[Potter], ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor [Wickham], ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
@@ -143,6 +145,8 @@ Len rok po oficiálnom publikovaní krabicového diagramu vznikol článok [McGi
 V druhom prípade ide o takzvaný \textit{Vrúbkovaný krabicový diagram}. V tomto grafe sú pridané \textit{vrúbky}, ktoré zhruba naznačujú ako výrazné sú rozdiely v miere spoľahlivosti rôznych dátových množín. 
 
 V niektorých prípadoch krabicový diagram zakrýva skutočný tvar dát, teda jeho šikmosť alebo modalitu, keďže jeho vzhľad nabáda k tomu, aby si užívateľ myslel, že sú dát zacentrované na stred a unimodálne. V práci s názvom \textit{Can the Box Plot be Improved?} [...] autor uvádza príklad kedy skutočne rôznorodé dáta generujú rovnaký krabicový diagram. Tento problém rieši elegantným a čistým spôsobom pridaním hrubej čiary na základe koeficientu asymetrickosti $ \gamma $. Na obrázku \ref{fig:boxplotmodif2}c) môžme vidieť zľava asymetrické dáta, na stred zarovnané dáta a bimodálne dáta.
+
+Krabicový diagram umožňuje mnoho ďalších rozšírení napríklad pridaním informácie o hustote dát (histogramový krabicový diagram, vázový diagram, huslový diagram [...]), rozšírením pre viacrozmerné dáta (vrecový graf, 2D krabicový diagram [...] ) alebo zobrazením hodnôt v inej súradnicovej sústave (napríklad polárnej - vejárový graf [...]). Opis týchto techník je však nad rámec tejto práce, preto ho tu ani nebudeme uvádzať.
 
 \subsubsection{Úloha krabicového diagramu vo verifikácii}
 

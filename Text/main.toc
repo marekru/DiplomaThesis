@@ -31,13 +31,14 @@
 \contentsline {subsubsection}{Kon\IeC {\v s}trukcia bodov\IeC {\'e}ho grafu}{14}
 \contentsline {subsubsection}{Kantil-kvantil graf}{15}
 \contentsline {subsubsection}{\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{15}
-\contentsline {subsection}{\numberline {3.2.2}Krabicov\IeC {\'y} diagram}{15}
-\contentsline {subsubsection}{Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{15}
+\contentsline {subsection}{\numberline {3.2.2}Histogram}{15}
+\contentsline {subsection}{\numberline {3.2.3}Krabicov\IeC {\'y} diagram}{15}
+\contentsline {subsubsection}{Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{16}
 \contentsline {subsubsection}{\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{17}
-\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{18}
 \contentsline {paragraph}{}{19}
 \contentsline {subsubsection}{\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{20}
-\contentsline {subsection}{\numberline {3.2.3}Time series plot}{20}
+\contentsline {subsection}{\numberline {3.2.4}Time series plot}{20}
 \contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{21}
 \contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{21}
 \contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{21}
@@ -45,8 +46,9 @@
 \contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{21}
 \contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{21}
 \contentsline {subsection}{\numberline {4.2.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{21}
-\contentsline {subsubsection}{Density plot}{22}
+\contentsline {subsubsection}{Graf hustoty}{22}
 \contentsline {subsubsection}{Kvantilov\IeC {\'y} diagram}{22}
 \contentsline {subsubsection}{Funkcion\IeC {\'a}lny krabicov\IeC {\'y} diagram}{22}
+\contentsline {subsubsection}{Porovnanie met\IeC {\'o}d ...}{22}
 \contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{23}
 \contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{24}
