@@ -23,12 +23,30 @@ Pri návrh vizualizácie sme vyskúšali niekoľko vizualizačných techník a z
 \subsubsection{Kvantilový diagram} 
 
 
-\subsubsection{Funkcionálny krabicový diagram}
+\subsubsection{Funkčný krabicový diagram}
 Pre pochopenie dát je dôležité, aby sme sa vedeli pozrieť na hodnoty v ich kontexte. Všetky predošlé techniky uvažovali o chybe ako o samostatnej hodnote pre určitý predpovedný čas, avšak chyby sa nenachádzajú len v kontexte predpovedného času, ale aj v kontexte konkrétnej predpovede. Preto môžme uvažovať o predpovediach ako o funkciách $ x_{i}(t) $, kde $ i \in \{1..n\}$ je poradie predpovede a $ t \in I $ je čas predpovede, kde $ I $ je časový interval predpovede z $ \mathbb{R} $ (v našom prípade sa jednalo o dvojdňovú, teda 48 hodinovú predpoveď).
 
+Takýmto spôsobom sme sa dostali do novej situácie, kedy nechceme vizualizovať distribúciu jednotlivých chýb, ale celých predpovedí, ktoré chápeme ako funkcie. Na riešenie tohto problému existuje niekoľko spôsobov, z ktorých sme si zvolili \textit{funkčný krabicový diagram} \cite{FunctionalBoxplot}, keďže myšlienkovo vychádza z klasického krabicového diagramu, ktorý je jednak na túto situáciu vhodný ale je tiež medzi užívateľmi dobre známy a zaužívaný.
 
-	
-
+Ako sme spomenuli v časti \ref{fig:boxplot}, klasický krabicový diagram potrebuje na svoju konštrukciu 5 hodnôt: 3 kvartily a 2 extrémy. Aby sme tieto hodnoty našli pre funkcie, musíme ich vedieť porovnať a povedať, ktorá je "väčšia" alebo "menšia". Autori funkčného krabicového diagramu riešia problém s využitím takzvanej hĺbky pásma (\textit{band depth}) \cite{BandDepth}. Grafom $ G $ funkcie $ x $ je množina bodov $ G = \{ (t,x(t)) : t \in I \} $. Pásmo $ \mathcal{B} $ (\textit{band}) v $ \mathbb{R}^{2}  $ ohraničené krivkami $ x_{i_{1}}, x_{i_{2}}, .. , x_{i_{k}} $, kde $ k \geq 2 $ je definované takto:
+\[
+	\mathcal{B}(x_{i_{1}}, x_{i_{2}}, .. , x_{i_{k}}) = \{ (t,y) : t \in I, \min_{r=1..k}x_{i_{r}}(t) \leq y \leq \min_{r=1..k}x_{i_{r}}(t) \}
+\]
+Pásmo $ \mathcal{B} $ je teda množina všetkých bodov existujúcich medzi extrémami všetkých kriviek, ktoré doň vstupujú ako parameter. 
+Pomocou týchto dvoch funkcií môžme definovať pomocnú funkciu $ BD_{n}^{(j)}(x) $ pre krivku $ x $, ktorá vyzerá takto:
+\[
+	BD^{(j)}_{n}(x) = {n \choose j}^{-1} \sum_{1 \leq i_{1} < i_{2} < ... < i_{j} \leq n} \mathcal{I}\{ G(x) \subset \mathcal{B}(x_{i_{1}}, ... ,x_{i_{j}}) \}, j \geq 2
+\]
+kde $ j $ je počet kriviek definujúce pásmo $ \mathcal{B} $, $ n $ je celkový počet kriviek a $ \mathcal{I} $ je takáto funkcia:
+\[
+	\mathcal{I}(x) = \left\{
+	\begin{array}{ll}
+	1 & \mbox{ak platí x}  \\
+	0 & \mbox{ak neplatí x} 
+	\end{array}
+	\right.
+\]
+Pomocná funkcia $ BD $ pre krivku $ x $ definuje pomer všetkých $ j $-tic, v ktorých pásme sa graf $ G(x) $ nachádza ku všetkým $ j $-ticiam, ktoré možno z $ n $ kriviek vybrať.
 
 \subsubsection{Porovnanie metód ...}
 

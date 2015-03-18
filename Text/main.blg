@@ -4,45 +4,46 @@ The style file: alpha.bst
 Database file #1: literatura.bib
 Warning--empty publisher in IntroToVerif
 Warning--can't use both author and editor fields in VerifSoft
-You've used 14 entries,
+Warning--empty publisher in Potter
+You've used 37 entries,
             2543 wiz_defined-function locations,
-            653 strings with 6743 characters,
-and the built_in function-call counts, 4777 in all, are:
-= -- 438
-> -- 234
-< -- 12
-+ -- 80
-- -- 77
-* -- 320
-:= -- 804
-add.period$ -- 44
-call.type$ -- 14
-change.case$ -- 81
-chr.to.int$ -- 14
-cite$ -- 16
-duplicate$ -- 204
-empty$ -- 354
-format.name$ -- 99
-if$ -- 954
+            811 strings with 9745 characters,
+and the built_in function-call counts, 12880 in all, are:
+= -- 1254
+> -- 563
+< -- 28
++ -- 184
+- -- 178
+* -- 886
+:= -- 2137
+add.period$ -- 119
+call.type$ -- 37
+change.case$ -- 207
+chr.to.int$ -- 37
+cite$ -- 40
+duplicate$ -- 530
+empty$ -- 982
+format.name$ -- 235
+if$ -- 2601
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 76
-num.names$ -- 42
-pop$ -- 127
+missing$ -- 34
+newline$ -- 196
+num.names$ -- 113
+pop$ -- 259
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 255
 quote$ -- 0
-skip$ -- 150
+skip$ -- 414
 stack$ -- 0
-substring$ -- 149
-swap$ -- 28
-text.length$ -- 12
-text.prefix$ -- 10
+substring$ -- 586
+swap$ -- 59
+text.length$ -- 28
+text.prefix$ -- 22
 top$ -- 0
-type$ -- 88
-warning$ -- 2
-while$ -- 37
-width$ -- 16
-write$ -- 176
-(There were 2 warnings)
+type$ -- 256
+warning$ -- 3
+while$ -- 117
+width$ -- 40
+write$ -- 478
+(There were 3 warnings)

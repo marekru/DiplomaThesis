@@ -1,17 +1,34 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{WCSDG{\etalchar{+}}08}
 
+\bibitem[Car94]{Carr}
+Daniel~B. Carr.
+\newblock {A Colorful Variation On Box Plots}.
+\newblock {\em Statistical Computing \& Statistical Graphics Newsletter},
+  5(3):19--23, December 1994.
+
 \bibitem[Cas09]{ContinuousVerif}
 Barbara Casati.
 \newblock {\em Verification of continuous predictands}.
 \newblock Joint Working Group on Forecast Verification Research (JWGFVR), Jún
   2009.
 
+\bibitem[CM05]{Chamnein}
+Chamnein Choonpradub and Don McNeil.
+\newblock Can the box plot be improved?
+\newblock {\em Songklanakarin Journal of Science and Technology},
+  27(3):649--657, 2005.
+
 \bibitem[CWS{\etalchar{+}}08]{MET:MET52}
 B.~Casati, L.~J. Wilson, D.~B. Stephenson, P.~Nurmi, A.~Ghelli, M.~Pocernich,
   U.~Damrath, E.~E. Ebert, B.~G. Brown, and S.~Mason.
 \newblock Forecast verification: current status and future directions.
 \newblock {\em Meteorological Applications}, 15(1):3--18, 2008.
+
+\bibitem[Fis10]{FanChart}
+Wolfram Fischer.
+\newblock {\em Neue Grafiken zur Datenvisualisierung}.
+\newblock Z I M – Zentrum für Informatik und wirtschaftliche Medizin., 2010.
 
 \bibitem[FJB12]{IntroToVerif}
 Tressa~L. Fowler, Tara~L .Jensen, and Barbara~G. Brown.
@@ -25,16 +42,44 @@ Professor~Brian Golding.
   \url{http://www.rmets.org/weather-and-climate/weather/weather-forecasting}.
 \newblock [Prístupné online: 6.12.2014].
 
+\bibitem[HN98]{ViolinPlot}
+Jerry~L. Hintze and Ray~D. Nelson.
+\newblock Violin plots: A box plot-density trace synergism.
+\newblock {\em The American Statistician}, 52(2):181--184, Máj 1998.
+
 \bibitem[LE11]{Comet}
 Dr.~Arlene Laing and Dr. Jenni-Louise Evans.
 \newblock {\em Introduction to Tropical Meteorology 2nd Edition}.
 \newblock UCAR, Október 2011.
+
+\bibitem[LPR09]{BandDepth}
+Sara López-Pintado and Juan Romo.
+\newblock On the concept of depth for functional data.
+\newblock {\em Journal of the American Statistical Association},
+  104(486):718--734, 2009.
 
 \bibitem[Lyn07]{Origins}
 Peter Lynch.
 \newblock The origins of computer weather prediction and climate modeling.
 \newblock {\em Journal of Computational Physics 227 (2008) 3431–3444},
   Február 2007.
+
+\bibitem[Mic13]{VBA}
+Microsoft.
+\newblock ??? visual basic for applications.
+\newblock \url{https://}, Január 2013.
+\newblock [Prístupné online: 19.1. 2013].
+
+\bibitem[Mic15]{Excel}
+Microsoft.
+\newblock {Microsoft Excel}.
+\newblock \url{https://products.office.com/en-us/excel}, 2015.
+\newblock [Prístupné online: 18.3.2015].
+
+\bibitem[MTL78]{McGill}
+Robert McGill, John~W. Tukey, and Wayne~A. Larsen.
+\newblock Variations of box plots.
+\newblock {\em The American Statistician}, 32(1):12--16, Február 1978.
 
 \bibitem[NCE14]{Products}
 NCEP.
@@ -47,11 +92,86 @@ Pertti Nurmi.
 \newblock {\em Recommendations on the verification of local weather forecasts}.
 \newblock European Centre for Medium Range Weather Forecasts, Decmeber 2003.
 
+\bibitem[Ope13]{OpenOfficeBasic}
+Apache OpenOffice.
+\newblock Openoffice.org basic programming guide.
+\newblock \url{https://wiki.openoffice.org/wiki/Documentation/BASIC_Guide},
+  Január 2013.
+\newblock [Prístupné online: 19.1. 2013].
+
+\bibitem[Ope15]{OpenOfficeCalc}
+Apache OpenOffice.
+\newblock {OpenOffice.org Calculate}.
+\newblock \url{https://www.openoffice.org/product/calc.html}, 2015.
+\newblock [Prístupné online: 18.3.2015].
+
+\bibitem[PKR07]{VisualSummaryPotter}
+Kristin Potter, Joe Kniss, and Richard Riesenfeld.
+\newblock Visual summary statistics.
+\newblock Technical Report UUCS-07-004, University of Utah, 2007.
+
 \bibitem[Poc11]{VerifSoft}
 Matthew Pocernich.
 \newblock {\em Forecast Verification: A Practitioner's Guide in Atmospheric
   Science}, chapter Appendix - Verification Software, pages 232--240.
-\newblock John Wiley and Sons, Ltd., 2nd edition, December 2011.
+\newblock John Wiley \& Sons, Ltd., 2nd edition, December 2011.
+
+\bibitem[Pot06]{Potter}
+Kristin Potter.
+\newblock Methods for presenting statistical information: The box plot.
+\newblock In Hans Hagen, Andreas Kerren, and Peter Dannenmann, editors, {\em
+  Visualization of Large and Unstructured Data Sets}, volume S-4 of {\em
+  GI-Edition Lecture Notes in Informatics (LNI)}, pages 97--106. 2006.
+
+\bibitem[RRT99]{Bagplot}
+Peter~J. Rousseeuw, Ida Ruts, and John~W. Tukey.
+\newblock The bagplot: A bivariate boxplot.
+\newblock {\em The American Statistician}, 53(4):382--287, November 1999.
+
+\bibitem[SB91]{Stock}
+William Stock and John Behrens.
+\newblock {Box, Line, and Midgap Plots: Effects of Display Characteristics on
+  the Accuracy and Bias of Estimates of Whisker Length}.
+\newblock {\em Journal of Educational Statistics}, 16(1):1--20, 1991.
+
+\bibitem[SG11]{FunctionalBoxplot}
+Ying Sun and Marc~G. Genton.
+\newblock {Functional Boxplots}.
+\newblock {\em Journal of Computational and Graphical Statistics},
+  20(2):316--334, Jún 2011.
+
+\bibitem[SOA04]{Schwertman}
+Neil~C. Schwertman, Margaret~Ann Owens, and Robiah Adnan.
+\newblock A simple more general boxplot method for identifying outliers.
+\newblock {\em Computational Statistics \& Data Analysis}, 47(1):165--174,
+  2004.
+
+\bibitem[Spe52]{Spear}
+Mary~Eleanor Spear.
+\newblock {\em Charting Statistics}.
+\newblock McGraw-Hill Book Company, Inc., 1952.
+
+\bibitem[TM15]{Matlab}
+Inc. The~MathWorks.
+\newblock Matlab the language of technical computing.
+\newblock \url{http://www.mathworks.com/products/matlab/}, Marec 2015.
+\newblock [Prístupné online: 18.3. 2015].
+
+\bibitem[Ton05]{Boxplot2D}
+Phattrawan Tongkumchum.
+\newblock Two-dimensional box plot.
+\newblock {\em Songklanakarin Journal of Science and Technology},
+  27(4):859--866, 2005.
+
+\bibitem[Tuf83]{Tufte83}
+Edward~R. Tufte.
+\newblock {\em The Visual Display of Quantitative Information}.
+\newblock Graphics Press, Cheshire, Connecticut, 1983.
+
+\bibitem[Tuk77]{Tukey}
+John~W. Tukey.
+\newblock {\em Exploratory Data Analysis}.
+\newblock Addison-Wesley, 1977.
 
 \bibitem[Vas98]{WeatherStation}
 Tim Vasquez.
@@ -78,5 +198,15 @@ WMO.
 WMO.
 \newblock {\em Introduction to GRIB Edition1 and GRIB Edition 2}.
 \newblock WMO, Jún 2003.
+
+\bibitem[WS12]{Wickham}
+Hadley Wickham and Lisa Stryjewski.
+\newblock 40 years of boxplots.
+\newblock Technical report, had.co.nz, 2012.
+
+\bibitem[Yoa88]{HistVasePlot}
+YoavBenjamini.
+\newblock Opening the box of a boxplot.
+\newblock {\em The American Statistician}, 42(4):257--262, November 1988.
 
 \end{thebibliography}
