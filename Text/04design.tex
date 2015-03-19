@@ -20,7 +20,11 @@ Pri návrh vizualizácie sme vyskúšali niekoľko vizualizačných techník a z
 \subsubsection{Graf hustoty} %Density plot
 
 
-\subsubsection{Kvantilový diagram} 
+\subsubsection{Pruhový kvantilový diagram} 
+Z časti \ref{subsec:scatterplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
+Prirodzeným rozšírením je zobrazovať nielen jeden kvantil, ale mnoho kvantilov súčasne. Zvyčajne sú to tieto kvantily $ Q_{0.02}, Q_{0.98}, Q_{0.25}, Q_{0.75}, Q_{0.5} $. V našej práci sme využili toto rozšírenie na lepšie zobrazenie distribúcie a navrhli sme takzvaný \textit{pruhový kvantilový diagram}.
+
+Jeden \textit{pruh} v grafe je definovaný dvoma alebo jednou množinou kvantilov. Prvá množina je spodný kvantil a druhá množina je k nej protiľahlý kvantil. Spodnými kvantilmi sú kvantily menšie ako 0.5. Teda ak máme spodný kvantil $ Q_{0.25} $, tak k nemu protiľahlý kvantil je $ Q_{0.75} $. Jediný pruh definovaný jednou množinou je medián, teda kvantil $ Q_{0.5} $.
 
 
 \subsubsection{Funkčný krabicový diagram}
@@ -28,7 +32,7 @@ Pre pochopenie dát je dôležité, aby sme sa vedeli pozrieť na hodnoty v ich 
 
 Takýmto spôsobom sme sa dostali do novej situácie, kedy nechceme vizualizovať distribúciu jednotlivých chýb, ale celých predpovedí, ktoré chápeme ako funkcie. Na riešenie tohto problému existuje niekoľko spôsobov, z ktorých sme si zvolili \textit{funkčný krabicový diagram} \cite{FunctionalBoxplot}, keďže myšlienkovo vychádza z klasického krabicového diagramu, ktorý je jednak na túto situáciu vhodný ale je tiež medzi užívateľmi dobre známy a zaužívaný.
 
-Ako sme spomenuli v časti \ref{fig:boxplot}, klasický krabicový diagram potrebuje na svoju konštrukciu 5 hodnôt: 3 kvartily a 2 extrémy. Aby sme tieto hodnoty našli pre funkcie, musíme ich vedieť porovnať a povedať, ktorá je "väčšia" alebo "menšia". Autori funkčného krabicového diagramu riešia problém s využitím takzvanej hĺbky pásma (\textit{band depth}) \cite{BandDepth}. Grafom $ G $ funkcie $ x $ je množina bodov $ G = \{ (t,x(t)) : t \in I \} $. Pásmo $ \mathcal{B} $ (\textit{band}) v $ \mathbb{R}^{2}  $ ohraničené krivkami $ x_{i_{1}}, x_{i_{2}}, .. , x_{i_{k}} $, kde $ k \geq 2 $ je definované takto:
+Ako sme spomenuli v časti \ref{subsec:boxplot}, klasický krabicový diagram potrebuje na svoju konštrukciu 5 hodnôt: 3 kvartily a 2 extrémy. Aby sme tieto hodnoty našli pre funkcie, musíme ich vedieť porovnať a povedať, ktorá je \textquotedblleft väčšia\textquotedblright alebo \textquotedblleft menšia\textquotedblright. Autori funkčného krabicového diagramu riešia problém s využitím takzvanej pásmovej hĺbky (\textit{band depth}) \cite{BandDepth}. Grafom $ G $ funkcie $ x $ je množina bodov $ G = \{ (t,x(t)) : t \in I \} $. Pásmo $ \mathcal{B} $ (\textit{band}) v $ \mathbb{R}^{2}  $ ohraničené krivkami $ x_{i_{1}}, x_{i_{2}}, .. , x_{i_{k}} $, kde $ k \geq 2 $ je definované takto:
 \[
 	\mathcal{B}(x_{i_{1}}, x_{i_{2}}, .. , x_{i_{k}}) = \{ (t,y) : t \in I, \min_{r=1..k}x_{i_{r}}(t) \leq y \leq \min_{r=1..k}x_{i_{r}}(t) \}
 \]
@@ -47,13 +51,13 @@ kde $ j $ je počet kriviek definujúce pásmo $ \mathcal{B} $, $ n $ je celkov�
 	\right.
 \]
 Pomocná funkcia $ BD $ pre krivku $ x $ definuje pomer všetkých pásem zložených z $ j $ kriviek, v ktorých sa graf $ G(x) $ nachádza, ku všetkým možným $ j $-ticiam kriviek vybraným z $ n $. 
-Samotná funkcia hĺbky pásma $ \mathcal{BD} $ pre krivku $ x $ je definovaná takto:
+Samotná funkcia pásmovej hĺbky $ \mathcal{BD} $ pre krivku $ x $ je definovaná takto:
 \[
 	\mathcal{BD}_{n, J}(x) = \sum_{j = 2}^{J} BD^{(j)}_{n}(x), J \geq 2
 \]
 Hĺbka pásma $ \mathcal{BD} $ je teda suma všetkých $ BD $ pre počet kriviek 2 až $ J $.
 
-Autor článku definujúci pojem hĺbka pásma navrhol taktiež flexibilnejšiu verziu s použitím pomocnej funkcie $ MBD $ (\textit{modified band depth}) \cite{BandDepth}. V pravom rade je potrebné zadefinovať si funkciu $ A $, ktorá určí všetky časové body, kedy sa krivka $ x $ nachádza v pásme $ B $.
+Autor článku definujúci pojem pásmová hĺbka navrhol taktiež flexibilnejšiu verziu s použitím pomocnej funkcie $ MBD $ (\textit{modified band depth}) \cite{BandDepth}. V pravom rade je potrebné zadefinovať si funkciu $ A $, ktorá určí všetky časové body, kedy sa krivka $ x $ nachádza v pásme $ B $.
 \[
 	A(x, B) = \{ t \in I : (t, x(t)) \in G(x) \wedge (t, x(t)) \in B \}
 \]
@@ -74,7 +78,31 @@ V našej aplikácii sme sa rozhodli, že budeme pásmo definovať pomocou iba dv
 Teraz, keď sme úspešne definovali mieru, podľa ktorej môžme usporiadať funkcie resp. ich krivky, je veľmi ľahké skonštruovať funkčný krabicový diagram.
 
 \paragraph{}
-Nech sú naše funkcie predpovedí $ x_{1},.., x_{n} $ usporiadané podľa $ \mathcal{BD}' $.
+Nech sú naše funkcie predpovedí $ x_{1},.., x_{n} $ usporiadané zostupne podľa $ \mathcal{BD}' $. Potom krivka pre funkciu $ x_{1} $ má najvyššiu pásmovú hĺbku a predstavuje strednú hodnotu pre množinu funkcií, teda niečo podobné ako medián hodnôt pri krabicovom diagrame. Pri konštrukcii funkcionálneho diagramu nám taktiež pomôže koncept centrálneho regiónu \cite{Liu}. Centrálny región $ C $ pre 50\% kriviek je pásmo vytvorené z 50\% najhlbších kriviek, teda:
+\[
+	C_{0.5} = B(x_{1}, x_{2}, .., x_{\lceil n / 2 \rceil} )
+\] 
+Vidíme, že Centrálny región $ C_{0.5} $ zaobaľuje 50\% najhlbších kriviek, a teda sa jedná o akúsi analógiu pre medzikvartálový rozsah (IQR) v klasickom krabicovom diagrame (pozri sekciu \ref{subsec:boxplot}), ktorý ohraničoval 50\% centrálnych dát. Zobrazením hraničných bodov tohto regiónu získame obálku myšlienkovo totožnú boxu v krabicovom diagrame (pozri obrázok \ref{fig:functionalboxplot}b) ). Táto myšlienka sa dá použiť ďalej a môžme, tak ako na obrázku \ref{fig:functionalboxplot}c) , zobraziť taktiež 25\%-ný a 75\%-ný centrálny región $ C_{0.25} $, $ C_{0.75} $, avšak kvôli nižšej čitateľnosti grafu sme túto alternatívu nepoužili.
+
+V prípade, že nepotrebujeme identifikovať \textit{outlier}-ov, tak extremálne hodnoty je už veľmi jednoduché získať, pretože ich tvorí pásmo zložené zo všetkých kriviek $ B(x_{1}, .., x_{n}) $. V opačnom prípade musíme najprv identifikovať \textit{outlier}-ov, ktorých potom vylúčime z výpočtov. Opäť sa využíva myšlienka z klasického krabicového diagramu, kedy sa \textit{outlier} určil pomocou hodnoty $ c \times IQR $, kde $ c $ bolo zvyčajne 1.5. Hranice sa teda získajú naškálovaním centrálneho regiónu so škálovacím faktorom 1.5 a všetky krivky, ktoré sa v tomto regióne nenachádzajú, budú považované za \textit{outlier}-ov. Test na \textit{outlier}-a vyzerá teda takto:
+\[	y_{i}(t) = 1.5 \times x_{i}(t) \]
+\[	isOutlier(x) = [ G(x) \nsubseteq B(y_{1},..,y_{\lceil n / 2 \rceil}) ] \]
+Na obrázku \ref{fig:functionalboxplot}b) môžme vidieť červené prerušované čiary, ktorými sú \textit{outlier}-i znázornené.
+
+V našej práci sme do diagramu pridali ešte jednu krivku pre ľubovoľnú štatistiku vypočítanú z chýb ako napríklad MFE, MAE alebo RMSE (pozri sekciu \ref{sec:errormeasurement}). Takto môžme spraviť porovnanie distribúcie chýb s vypočítanou štatistikou.
+%TODO to je troška klamstvo ne?
+
+
+\begin{figure}
+	\centering
+	\hspace*{-0.9in}
+	\includegraphics[width = 7.5in]{functionalboxplot}
+	\caption{Obrázky z článku \textit{Functional Boxplots}  \cite{FunctionalBoxplot}  a) Funkcie meraní teploty hladiny mora b) Funkčný krabicový diagram c) Rozšírený Funkčný krabicový diagram o centrálne regióny $ C_{0.25} $ a $ C_{0.75} $ }
+	\label{fig:functionalboxplot}
+\end{figure}
+
+
+%TODO obrazok pasmo
 
 \subsubsection{Porovnanie metód}
 
