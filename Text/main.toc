@@ -49,6 +49,6 @@
 \contentsline {subsubsection}{Graf hustoty}{23}
 \contentsline {subsubsection}{Kvantilov\IeC {\'y} diagram}{23}
 \contentsline {subsubsection}{Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{23}
-\contentsline {subsubsection}{Porovnanie met\IeC {\'o}d ...}{24}
-\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{25}
-\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{26}
+\contentsline {subsubsection}{Porovnanie met\IeC {\'o}d}{25}
+\contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{26}
+\contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{27}

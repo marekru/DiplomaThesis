@@ -46,8 +46,34 @@ kde $ j $ je počet kriviek definujúce pásmo $ \mathcal{B} $, $ n $ je celkov�
 	\end{array}
 	\right.
 \]
-Pomocná funkcia $ BD $ pre krivku $ x $ definuje pomer všetkých $ j $-tic, v ktorých pásme sa graf $ G(x) $ nachádza ku všetkým $ j $-ticiam, ktoré možno z $ n $ kriviek vybrať.
+Pomocná funkcia $ BD $ pre krivku $ x $ definuje pomer všetkých pásem zložených z $ j $ kriviek, v ktorých sa graf $ G(x) $ nachádza, ku všetkým možným $ j $-ticiam kriviek vybraným z $ n $. 
+Samotná funkcia hĺbky pásma $ \mathcal{BD} $ pre krivku $ x $ je definovaná takto:
+\[
+	\mathcal{BD}_{n, J}(x) = \sum_{j = 2}^{J} BD^{(j)}_{n}(x), J \geq 2
+\]
+Hĺbka pásma $ \mathcal{BD} $ je teda suma všetkých $ BD $ pre počet kriviek 2 až $ J $.
 
-\subsubsection{Porovnanie metód ...}
+Autor článku definujúci pojem hĺbka pásma navrhol taktiež flexibilnejšiu verziu s použitím pomocnej funkcie $ MBD $ (\textit{modified band depth}) \cite{BandDepth}. V pravom rade je potrebné zadefinovať si funkciu $ A $, ktorá určí všetky časové body, kedy sa krivka $ x $ nachádza v pásme $ B $.
+\[
+	A(x, B) = \{ t \in I : (t, x(t)) \in G(x) \wedge (t, x(t)) \in B \}
+\]
+V spomínanom článku autori využívajú alternatívnu definíciu funkcie $ A $, do ktorej vstupuje $ j + 1 $ kriviek. Jej význam zostáva rovnaký ako pri našej definícii, avšak náš prístup považujeme za jednoduchší a zrozumiteľnejší. S využitím \textit{Lebesguevoej miery} $ \lambda $ autori ďalej definujú funkciu $ \lambda_{r} $, ktorá nám dáva "pomer času, ktorý krivka strávi v pásme":
+\[
+	\lambda_{r}(A) = \dfrac{\lambda(A)}{\lambda(I)} 
+\]
+Nová pomocná funkcia $ MBD $ je definovaná nasledovne:
+\[
+	MBD^{(j)}_{n}(x) = {n \choose j}^{-1} \sum_{1 \leq i_{1} < i_{2} < ... < i_{j} \leq n} \lambda_{r}\{ A(x, \mathcal{B}(x_{i_{1}}, ... ,x_{i_{j}})) \}, j \geq 2
+\]
+Ak platí, že $ G(x) \subset \mathcal{B}(x_{i_{1}}, ... ,x_{i_{j}}) $, tak funkcia $ MBD $ sa degeneruje na $ BD $ \cite{FunctionalBoxplot}.
+
+V našej aplikácii sme sa rozhodli, že budeme pásmo definovať pomocou iba dvoch kriviek, čo nám vzorec výrazne zjednodušilo. Taktiež to implikovalo fakt, že pri výpočte $ MBD $ nie je potrebné $ {n \choose j}^{-1} $, keďže berieme pásma zložené vždy z rovnakého počtu kriviek. Pre naše účely sme si taktiež zjednodušili funkciu $ \lambda_{r} $ na $ \lambda $, keďže nepotrebujeme vlastnosť tejto funkcie, ktorá dosahovala to, že $ MBD $ pre špeciálny prípad degeneruje na $ BD $. Po týchto úpravách výsledný vzorec pre naše $ \mathcal{BD}' $ vyzerá nasledovne:
+\[
+	\mathcal{BD}'_{n}(x) = \sum_{1 \leq i_{1} < i_{2} \leq n} \lambda\{ A(x, \mathcal{B}(x_{i_{1}},x_{i_{2}})) \}
+\]
+
+
+
+\subsubsection{Porovnanie metód}
 
 Tu bude pekný obrázok a obkeci.
