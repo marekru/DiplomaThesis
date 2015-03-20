@@ -21,11 +21,14 @@ Pri návrh vizualizácie sme vyskúšali niekoľko vizualizačných techník a z
 Z časti \ref{subsec:scatterplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
 Prirodzeným rozšírením je zobrazovať nielen jeden kvantil, ale mnoho kvantilov súčasne. Zvyčajne sú to tieto kvantily $ Q_{0.02}, Q_{0.98}, Q_{0.25}, Q_{0.75}, Q_{0.5} $. V našej práci sme využili toto rozšírenie na lepšie zobrazenie distribúcie a navrhli sme takzvaný \textit{pruhový kvantilový diagram}.
 
-Jeden \textit{pruh} v grafe definujeme pomocou dvojíc hodnôt - spodným a jeho protiľahlým kvantilom.
+Jeden \textit{pruh} v grafe definujeme pomocou dvojíc hodnôt v čase - spodným a jeho protiľahlým kvantilom. Spodným kvantilom je kvanitl $ Q_{\alpha} $ a k nemu protiľahlý je kvantil $ Q_{1 - \alpha} $, kde $ 0 \leq \alpha \leq \frac{1}{2} $. Vidíme teda, že pruh ohraničuje hodnoty v okolí stredu usporiadanej množiny dát. Špeciálnym prípadom pruhu je pre $ \alpha = \frac{1}{2} $, vtedy spodný aj horný kvantil je $ Q_{0.5} $, čo je vlastne medián.
 
-Jeden \textit{pruh} v grafe je definovaný dvoma alebo jednou množinou kvantilov. Prvá množina je spodný kvantil a druhá množina je k nej protiľahlý kvantil. Spodnými kvantilmi sú kvantily menej ako $ Q_{0.5} $. Teda ak máme spodný kvantil $ Q_{0.25} $, tak k nemu protiľahlý kvantil je $ Q_{0.75} $ a jediný pruh definovaný jednou množinou je medián, teda kvantil $ Q_{0.5} $. 
+Pri návrhu vizualizácie sme sa snažili, aby mohol mať diagram variabilný počet pruhov a taktiež, aby .... Tento problém sme vyriešili tak, že sme
 
-Takto definovaný pruh vizualizujeme ako plochu medzi dvoma ohraničujucími množinami kvantilov, ktoré tento pruh definujú.
+% TODO obrázok a zrozumitelnejšie vysvetliť
+Takto definovaný pruh sa potom vizualizuje, ako plocha medzi krivkami, ktoré tvoria dvojice hodnôt patriace danému pruhu.
+
+
 
 %TODO toto musím ešte celé premyslieť!
 
