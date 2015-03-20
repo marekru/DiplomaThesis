@@ -44,12 +44,12 @@
 \contentsline {section}{\numberline {4.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{22}
 \contentsline {subsection}{\numberline {4.2.1}Charakteristika d\IeC {\'a}t}{22}
 \contentsline {subsection}{\numberline {4.2.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{22}
-\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh farebnej palety}{22}
-\contentsline {subsection}{\numberline {4.2.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{22}
+\contentsline {subsection}{\numberline {4.2.3}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{22}
 \contentsline {subsubsection}{Graf hustoty}{23}
 \contentsline {subsubsection}{Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{23}
 \contentsline {subsubsection}{Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{23}
 \contentsline {paragraph}{}{25}
 \contentsline {subsubsection}{Porovnanie met\IeC {\'o}d}{26}
+\contentsline {subsection}{\numberline {4.2.4}N\IeC {\'a}vrh farebnej palety}{26}
 \contentsline {chapter}{\numberline {5}Implement\IeC {\'a}cia}{28}
 \contentsline {chapter}{\numberline {6}V\IeC {\'y}sledky}{29}
