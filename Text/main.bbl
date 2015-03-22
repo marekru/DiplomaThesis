@@ -184,6 +184,13 @@ Tim Vasquez.
 \newblock {\em Observer Handbook}.
 \newblock International Weather Watchers, 1995, 1998.
 
+\bibitem[VWvH{\etalchar{+}}07]{Viegas}
+Fernanda~B. Viegas, Martin Wattenberg, Frank van Ham, Jesse Kriss, and Matt
+  McKeon.
+\newblock Manyeyes: A site for visualization at internet scale.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  13(6):1121--1128, November 2007.
+
 \bibitem[WCSDG{\etalchar{+}}08]{WRF}
 Joseph B.~Klemp William C.~Skamarock, Jimy Dudhia, David~O. Gill, Dale~M.
   Barker, Michael~G. Duda, Xiang-Yu Huang, Wei Wang, and Jordan~G. Powers.

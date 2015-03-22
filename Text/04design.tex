@@ -12,21 +12,70 @@
 \subsection{Návrh vizualizácie distribúcie chýb}
 Pri verifikácii predpovede spojitej premennej sme použili štatistické metódy spomenuté v sekcii \ref{sec:errormeasurement}, ktorých výsledok sme následne vizualizovali. Pôvodné dáta však zostali skryté za použitým matematickým modelom, a tak sme stratili informáciu o distribúcii chyby. Pri verifikácii sa štandardne používajú dve metódy na priamu, či nepriamu vizualizáciu a analýzu distribúcie, ktoré sme opísali v sekcii \ref{sec:prevvis}. Týmito metódami sú bodový graf (pozri podsekciu \ref{subsec:scatterplot}) a krabicový diagram (pozri podsekciu \ref{subsec:boxplot}).
 
-Pri návrh vizualizácie sme vyskúšali niekoľko vizualizačných techník a zvážili ich silné a slabé stránky. 
+Pri návrhu vizualizácie sme vyskúšali niekoľko vizualizačných techník a zvážili ich silné a slabé stránky. 
 
 \subsubsection{Graf hustoty} %Density plot
 
+Jedným z viacerých spôsobov, ako pomerne presne určiť distribúciu chýb je pomocou \textit{grafu hustoty}. Ten sa skonštruuje jednoducho z \textit{funkcie hustoty}, ktorú získame \textit{odhadom hustoty} z dát. 
+
+Prvý pohľad na dáta by nám vravel, že ide o dvojrozmerné dáta a teda je potrebné použiť odhad hustoty dvoch premenných. Takýto postup by samozrejme bol možný, ale doviedol by nás k chybnej vizualizácii a tak aj k mylnej predstave o dátach. Dôvodom je to, že máme záujem o analýzu distribúcie chýb pre každú hodinu predpovede zvlášť, čo znamená, že chcem zistiť distribúciu iba v jednom smere.
+
+Pre vytvorenie grafu hustoty, v prvom rade je potrebné vybrať správny spôsob odhadu hustoty. Jedným z bežne používaným štandardným spôsobom je odhad hustoty pomocou jadra, po anglicky známy ako \textit{kernel density estimation} (KDE) [ref Rosenblatt 56, parzen 62].
+
+Nech máme $ n $ hodnôt $ x_{i}, 1 \leq i \leq n $, z ktorých chceme určiť odhad hustoty, potom estimátor hustoty $ \hat{f}_h(x) $, ktorý aproximuje \textit{funkciu hustoty pravdepodobnosti} (PDF) $ f $, sa vypočíta takto:
+\[
+	\hat{f}_h(x) = \dfrac{1}{nh} \sum_{i=0}^{n}K\Big(\dfrac{x - x_{i}}{h}\Big)
+\]
+kde $ h $ je šírka jadra a $ K(x) $ je funkcia jadra (skrátene iba jadro), ktorá by mala spĺňať nasledovné vlastnosti:
+\[  K(x) \geq 0 \]
+\[  \int K(x) dx = 1 \]
+tieto vlastnosti hovoria, že $ K(x) $ je na celom definičnom obore nezáporná a jej integrál je rovný 1, teda sa jedná o normalizovanú funkciu. Bolo preštudovaných mnoho jadier, ako napríklad uniformné, triangulárne, Epanechnikovo [29], kvadratické, Gaussové, kosínusové a veľa ďalších. Najbežnejšie a zrejme aj najpraktickejšie [18] je Gaussovo (normálne) jadro, ktoré sme použili aj my:
+\[
+	K(x) = \dfrac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^2}
+\]
+Voľba jadra však nemá na výsledok až taký vplyv, ako voľba šírky jadra $ h $. My sme použili výpočet šírky jadra na základe dátovej množiny, ktorý aproximuje optimálnu šírku jadra [Scott 1992; Bowman and Azzalini 1997] \footnote{Optimálna šírka jadra je taká, ktorá minimalizuje \textit{strednú integrovanú kvadratickú chybu}.}. Všeobecne pre $ d $ dimenzionálne dáta je vzorec nasledovný:
+\[
+	h = \sigma \Big(\frac{4}{(d + 2)n}\Big)^{\frac{1}{d+4}}
+\]
+kde $ \sigma $ je smerodajná odchýlka vypočítaná z daných dát a $ n $ je veľkosť dátovej množiny. V našom prípade je $ d = 1 $, a tak sa nám vzorec zjednoduší na
+\[
+	h = \sigma \Big(\dfrac{4}{3n}\Big)^{\frac{1}{5}}
+\] 
+Aby sme zjednodušili výpočet, tak sme si konštanty vypočítali predom a zaokrúhlili na 2 desatinné miesta, čo považujeme za dostačujúce. Výsledný vzorec, ktorý sa nakoniec objavil v aplikácii je takýto:
+\[
+	h = 1.06 \times \sigma \times n^{-\frac{1}{5}}
+\]
+
+Takýmto spôsobom sme si pre každú hodinu predpovede určili samostatnú funkciu $ \hat{f}_{h}(x) $, ktorú môžme vizualizovať. Zvyčajne sa funkcie hustoty vizualizujú ako bežné funkcie, teda pomocou čiarového diagramu, tak ako na obrázku \ref{fig:XY}. V našom prípade by bol tento prístup nepraktický, keďže máme veľké množstvo funkcií, tak jednak by bola takáto vizualizácia nepraktická pri porovnávaní distribúcií a taktiež na to nemáme potrebný vizuálny priestor.
+
+Opäť sme teda zvolili štandardné riešenie, ako ušetriť vzácny priestor a to tak, že hodnoty, ktoré by boli zobrazené na $ y $-ovú os zobrazíme na zvolenú farebnú škálu. Vďaka tomu by teoreticky mohol mať graf hustoty pre jeden čas predpovede šírku 1 pixel bez straty akejkoľvek informácie.
+
+Vieme, že pre ľudí nie je také jednoduché pozorovať malé rozdiely medzi dvoma farbami. Testovaním sme zistili, že pri takejto vizualizácii, že tento fakt spôsobuje problémy aj pri našej vizualizácii, kedy sa pre pozorovateľa strácajú výkyvy hodnôt
+% TODO najst dobre riesenie na toto a potom to dopisat
+
+
 
 \subsubsection{Pruhový kvantilový diagram} 
-Z časti \ref{subsec:scatterplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
+Z časti \ref{subsec:scatterplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram [ref] zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
 Prirodzeným rozšírením je zobrazovať nielen jeden kvantil, ale mnoho kvantilov súčasne. Zvyčajne sú to tieto kvantily $ Q_{0.02}, Q_{0.98}, Q_{0.25}, Q_{0.75}, Q_{0.5} $. V našej práci sme využili toto rozšírenie na lepšie zobrazenie distribúcie a navrhli sme takzvaný \textit{pruhový kvantilový diagram}.
 
 Jeden \textit{pruh} v grafe definujeme pomocou dvojíc hodnôt v čase - spodným a jeho protiľahlým kvantilom. Spodným kvantilom je kvanitl $ Q_{\alpha} $ a k nemu protiľahlý je kvantil $ Q_{1 - \alpha} $, kde $ 0 \leq \alpha \leq \frac{1}{2} $. Vidíme teda, že pruh ohraničuje hodnoty v okolí stredu usporiadanej množiny dát. Špeciálnym prípadom pruhu je pre $ \alpha = \frac{1}{2} $, vtedy spodný aj horný kvantil je $ Q_{0.5} $, čo je vlastne medián.
 
-Pri návrhu vizualizácie sme sa snažili, aby mohol mať diagram variabilný počet pruhov a taktiež, aby .... Tento problém sme vyriešili tak, že sme
+Pri návrhu vizualizácie sme sa snažili, aby mohol mať diagram variabilný počet pruhov a taktiež, aby rozostup medzi pruhmi bol pravidelný. Pri riešení tohto problému, sme sa inšpirovali krabicovým diagramom, kde sa hodnoty delia mediánom na dve časti, ktoré sa ďalej taktiež delia ich mediánom. Ide teda o rekurzívne delenie usporiadanej množiny na polovicu do hĺbky 2. Túto myšlienku sme rozšírili na ľubovoľnú hĺbku delenia $ d $. Potom $ i $-ty pruh $ \mathcal{P}_{d}(i) $ pre hĺbku $ d $ definujeme takto:
+\[
+	p_{d}(i) = (Q_{\alpha},Q_{1 - \alpha}) , \alpha = i \times (0.5)^d 	
+\]
+\[
+	\mathcal{P}_{d}(i) = \{ (t,p_{d}(i)) : t \in I \}
+\]
+a množina všetkých pruhov grafu pre hĺbku delenia $ d $ je definovaná takto:
+\[
+	\{ \mathcal{P}_{d}(i) : 0 \leq i \leq 2^{d-1} , i \in \mathbb{N} \}
+\]
+Aby sme sa vyhli rekruzii, vypočítali sme si krok medzi susednými kvantilmi pri hĺbke $ d $, ktorý je $ (0.5)^d $, a jednotlivé pruhy sme generovali s týmto krokom. Pri rekruzívnom delení sa vygeneruje $ 2^d $ kvantilov a z nich je možné vyrobiť $ 2^{d - 1} $ pruhov, preto sme index $ i $ obmedzili na $ i \leq 2^{d-1} $. Z tohto vidíme, že počet pruhov grafe s rastúcou hĺbkou rastie exponenciálne, preto odporúčame, aby $ d $ bolo maximálne 4, kedy sa nám množina rozdelí na 16 častí 15 hexadecilmi a tak vznikne 8 pruhov.
 
-% TODO obrázok a zrozumitelnejšie vysvetliť
-Takto definovaný pruh sa potom vizualizuje, ako plocha medzi krivkami, ktoré tvoria dvojice hodnôt patriace danému pruhu.
+% TODO obrázok 
+Na obrázku \ref{fig:pruh} vidíme, že takto definovaný pruh sa potom vizualizuje, ako plocha medzi krivkami, ktoré tvoria dvojice hodnôt patriace danému pruhu, s výnimkou špeciálneho prípadu $ Q_{0.5} $, ktorý vizualizujeme ako krivku.
 
 
 
@@ -113,6 +162,8 @@ V našej práci sme do diagramu pridali ešte jednu krivku pre ľubovoľnú šta
 \subsubsection{Porovnanie metód}
 
 Tu bude pekný obrázok a obkeci.
-
+Graf hustoty je presnejsi, ale menej citatelny.
+Pruhovy kvantilovy diagram nahradzuje krabicovy diagram.
+Funkcionalny krabicovy riesi distribuciu funkcii.
 
 \subsection{Návrh farebnej palety}
