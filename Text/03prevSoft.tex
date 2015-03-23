@@ -1,0 +1,70 @@
+\Chapter{Predchádzajúce riešenia 1}{Verifikačný softvér}
+
+Verifikácia predpovedných modelov počasia je úloha dokonale stvorená pre automatizáciu. 
+Z tohto dôvodu meteorológovia začali využívať dostupný štatistický softvér 
+a neskôr boli taktiež vyvíjané špecializované nástroje určené pre verifikáciu.
+Môžeme teda rozdeliť verifikačný softvér do dvoch základných kategórií a to \textit{štatistický} a \textit{špecializovaný}, ktorý je zväčša podporovaný rôznymi národnými a medzinárodnými organizáciami.
+
+\section{Štatistický softvér}
+%TODO
+Spoločnou črtou: \\
+	- obmedzená funkcionalita \\
+	- obmedzená vizualizácia \\
+	- slabé / žiadne GUI \\
+	- vyžaduje znalosť špecifického programovacieho jazyka \\
+	- ...
+
+
+\subsection{Tabuľkový softvér}
+Napriek tomu, že je tabuľkový softvér na výpočet štatistík zamietnutý komunitou vedcov a štatistikov ako nevhodný a neprofesionálny, tak je využívaný, a to pomerne často, aj vo vedeckých kruhoch. 
+Výhodou je, že novému užívateľovi umožňuje okamžite vidieť všetky kroky v základných procedúrach verifikácie a teda je výborný pre výučbové účely. \cite{VerifSoft} 
+Najznámejší kus softvéru z pomedzi komerčných produktov je \textit{Microsoft Excel} \cite{Excel} a z voľne dostupných je jeho opensoruce náprotivok \textit{Open Office Calculate} \cite{OpenOfficeCalc}. Oba programy zahrňujú základné štatistické funkcie ako napríklad stredná kvadratická chyba (\textit{MSE}) pre spojité predpovede (pozri odsek \ref{subsec:mse}) a taktiež umožňujú generovanie jednoduchých grafov na základe tabuľkových dát. Tabuľkový softvér neposkytuje priamo funkcionalitu na výpočet ďalších sofistikovanejších verifikačných štatistík, avšak umožňuje ich implementáciu pomocou makro programovania v špecifickom jazyku. Pre Microsoft Excel je to \textit{Microsoft Visual Basic for Applications}(VBA) \cite{VBA} a pre Open Office Calculate zasa \textit{OpenOffice.org Basic} \cite{OpenOfficeBasic}. Oba jazyky patria do rodiny \textit{Basic} jazykov, takže majú mnoho podobných prvkov.  
+
+
+\subsection{MATLAB}
+\textit{MATLAB} je interaktívne prostredie s vlastným programovacím jazykom, ktorý je využívaný miliónmi inžinierov a vedcov po celom svete \cite{Matlab} a tým nevynímajúc meteorológov a ďalších odborníkov pracujúcich v atmosférickom výskume. 
+Zvyčajne sa MATLAB využíva na výskum a protoypovanie nových metód a procedúr \cite{VerifSoft}, pretože umožňuje rýchlu a jednoduchú implementáciu, keďže jeho súčasťou je mnoho matematických knižníc a je prispôsobený na prácu s maticami dát.
+Výhodou MATLABU je, že umožňuje tvorbu GUI a taktiež poskytuje kreslenie rôznorodých grafov a diagramov.
+Mali by sme však podotknúť, že podobne ako väčšina štatistického softvéru, aj \textit{MATLAB} je komerčný produkt. Jeho cena za jednu licenciu je \$2,650 (k roku 2015), čo je pomerne vysoká suma, ak vezmeme do úvahy za akým účelom chceme tento softvér využívať a ako dobre je naň prispôsobený.
+
+\subsection{R}
+Často používaným a pomerne mocným nástrojom je \textit{open source} skriptovací jazyk \textit{R} [www.r-project.org]. V posledných desaťročiach sa stal dominantným jazykom v oblasti štatistického výskumu. Napriek tomu, že ide o voľne stiahnuteľný softvér, tak jeho základný balík obsahuje všetky funkcie, ktoré obsahujú aj platené produkty. R-ko však nezostáva len pri tom, pretože v dobe písania tejto práce (marec 2015) bolo dostupných vyše 6400 užívateľských balíkov s rôznorodou funkcionalitou. Pre nás je dôležití, že medzi týmito balíkmi sa objavil aj balík určený na verifikáciu s názvom \textit{\textbf{verification}} [NCAR, 2010]. Tento balík obsahuje základné funkcie verifikácie na výpočet štatistík pre spojité, kategorické ale i pravdepodobnostné predpovede. 
+
+Jazyk R neslúži iba na rôznorodé štatistické výpočty, ale poskytuje aj veľmi dobre parametrizovateľnú vizualizáciu. V balíkoch jazyka sa nachádzajú funkcie pre čiarové diagramy, krabicové diagramy, bodové grafy a mnohé iné komplexnejšie vizualizácie, ale taktiež funkcie na zobrazenie základných vizuálnych prvkov, ktorými možno vytvoriť úplne novú osobitnú vizualizáciu.
+
+\subsection[SAS]{Statistical Analysis Software (SAS)}
+\textit{Statistical Analysis Software} \cite{SAS}, skrátene SAS, je opäť štatistický programovací jazyk aj so svojim vývojovým prostredím. V oblasti bioštatistiky a farmakológie je veľmi uznávaným a často používaným jazykom. Keďže je veľká podobnosť v používaných metódach medzi verifikáciou predpovedí a spomínanými odvetviami \cite{VerifSoft}, SAS poskytuje funkcionalitu použiteľnú aj pre verifikáciu. Okrem iného SAS ponúka základné, ale aj niektoré pokročilejšie nástroje na vizualizáciu dát. Opäť však musíme podotknúť, že ide o komerčný produkt, ktorého cena licencie je pomerne vysoká.
+
+\subsection[IDL]{Interactive Data Language (IDL)}
+IDL, teda \textit{Interactive Data Language} je opäť jeden z matematických programovacích jazykov, ktoré patria medzi menej používané v komunite atmosferického výskumu. Napriek tomu niektorí výskumníci medzi, ktorými je aj \textit{Beth Ebert} z \textit{Centre for Australian Weather and Climate Research} (CAWCR) uverejnili na svojich webstránkach kód obsahujúci metódy verifikácie napísané v IDL:
+\begin{itemize}
+	\item Metódy pre verifikáciu pravdepodobnosti zrážok 	(\url{http://www.cawcr.gov.au/projects/verification/POP3/POP3.html})
+	\item Priestorové metódy (\url{http://
+		www.cawcr.gov.au/staff/eee/#Interests})
+\end{itemize} 
+IDL na používanie požaduje taktiež získanie platenej licencie, čo obmedzuje počet užívateľov a rovnako aj zdieľanie kódu medzi, ktorý by si mohol ktokoľvek spustiť.
+
+
+\section{Špecializovaný softvér}
+
+\subsection[NCL]{NCAR Command Language (NCL)}
+Ako väčšina softvérových riešení v predchádzajúcej sekcii, tak aj \textit{NCL}, teda \textit{NCAR Command Language} \cite{NCL http://www.ncl.ucar.edu/} je skriptovací jazyk s vlastnou syntaxou a interpreterom. Ide o voľne šíriteľný produkt od \textit{National Center for Atmospheric Research} (NCAR), a jeho zameranie je pochopiteľne na atmosferický výskum. Jeho primárnym cieľom je spravovanie a manipulácia klimatologických dát z predpovedných modelov, čo je jedna zo základných častí verifikácie. NCL obsahuje balík funkcií, ktorými je ľahké implementovať štatistiky verifikácie spojitých premenných, ktoré sme spomínali v časti \ref{sec:errormeasurement}. 
+
+Súčasťou jazyka je aj možnosť vizualizácie predpovedných dát, ale taktiež aj niektoré jednoduché štatistické vizualizačné nástroje použiteľné vo verifikácii. Vzhľadom na to, že ide o meteorologický softvér, tak množstvo funkcií slúžiacich na verifikáciu je nedostačujúci, čoho príčinou môže byť, že verifikácia predpovedných modelov je ešte stále vo svojich začiatkoch \cite{VerifSoft}. Sme si istý, že ako metódy aj používané praktiky pokročia, tak budú vytvorené komunitou NCL vytvorené na tento účel funkcie.
+
+\subsection[MET]{Model Evaluation Tools (MET)}
+MET was developed by and is supported at the National Center for Atmospheric Research (NCAR) by the Developmental Testbed Center (DTC) with funding from the US Air Force Weather Agency and NOAA. The tool has been designed to work directly with versions of the Weather Research and Forecasting (WRF) modelling system, but can be modified to be useful for other types of forecasts. Much of the analysis presented in Chapter 6 utilized MET. MET provides a variety of verification techniques, including:\\
+ 
+ Standard verification scores comparing gridded model data to point-based observations. \\
+ Standard verification scores comparing gridded model data to gridded observations. \\
+ Spatial verification methods comparing gridded model data to gridded observations using neighbourhood, object-based and intensity-scale decomposition approaches. \\
+ Probabilistic verification methods comparing gridded model data to point-based or gridded observations. \\
+ 
+Another powerful addition to MET is the MODE tool. MODE provides object-based methods to identify and match forecasts and observations – matching them by treating them as geometrical features. Figure 6.8 was created using MODE. Strengths of MET include the strong institutional support provided to method development, instruction and research. This includes biannual MET tutorials, which accompany WRF tutorials taught at NCAR. Additionally, there is an annual MET workshop that focuses on newdevelopments inMET. The project is open source and available to researchers from most countries (subject to US trade restrictions). MET uses a number of libraries created by other organizations to read and process data. This requires that a number of libraries be installed locally on the user’s machine. While many systems are supported, installation is an issue. In general, while MET may be an extremely useful tool for people familiar with operating and conducting research in numerical weather forecasts, the system has a steep learning curve for
+
+\subsection[EVS]{Ensemble Verification System (EVS)}
+
+
+\section{Zhrnutie}
+V tejto časti sme sa snažili prehľadným spôsobom v tabuľke \ref{tab:XY} zhrnúť porovnanie spomenutého softvéru využívaného pri verifikácii.
+%TODO tabuľka softvéru
