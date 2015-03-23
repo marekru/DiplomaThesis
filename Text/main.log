@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  22 MAR 2015 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  23 MAR 2015 17:13
 entering extended mode
 **main.tex
 (main.tex
@@ -1053,46 +1053,60 @@ nym prog-ra-mo-vacm ja-zy-kom, ktory je vyuzvany
  []
 
 
-Overfull \hbox (0.68156pt too wide) in paragraph at lines 36--37
+Overfull \hbox (0.68156pt too wide) in paragraph at lines 33--34
 \OT1/cmr/m/n/12 statistickeho vyskumu. Na-priek tomu, ze ide o vol[]ne stia
 -hnu-tel[]ny softver, tak jeho zakladny
  []
 
-[13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+[13]
+
+LaTeX Warning: Citation `SAS' on page 14 undefined on input line 38.
+
+
+Overfull \hbox (25.41734pt too wide) in paragraph at lines 43--44
+[]\OT1/cmr/m/n/12 Metody pre ve-ri-fikaciu prav-de-po-dob-nosti zrazok ($\O
+T1/cmtt/m/n/12 http : / / www . cawcr . gov . au / projects /$
+ []
+
+
+Overfull \hbox (4.53145pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/n/12 IDL na pouzvanie pozaduje tak-tiez zskanie pla-te-nej li
+-cen-cie, co ob-me-dzuje pocet uzvatel[]ov
+ []
+
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
-[16] <boxplot.pdf, id=108, 230.8625pt x 200.75pt>
+[17] <boxplot.pdf, id=112, 230.8625pt x 200.75pt>
 File: boxplot.pdf Graphic file (type pdf)
  <use boxplot.pdf>
-Package pdftex.def Info: boxplot.pdf used on input line 107.
+Package pdftex.def Info: boxplot.pdf used on input line 111.
 (pdftex.def)             Requested size: 252.94499pt x 219.95265pt.
 
-Overfull \hbox (0.27875pt too wide) in paragraph at lines 115--116
+Overfull \hbox (0.27875pt too wide) in paragraph at lines 119--120
 \OT1/cmr/m/n/12 Popularita kra-bi-coveho dia-gramu ne-vy-hnutne viedla k jeho 
 vyvoji a mo-di-fikaciam. M^ozeme
  []
 
-[17 <./boxplot.pdf>] <boxplot2.pdf, id=156, 281.05pt x 200.75pt>
+<boxplot2.pdf, id=113, 281.05pt x 200.75pt>
 File: boxplot2.pdf Graphic file (type pdf)
-
-<use boxplot2.pdf>
-Package pdftex.def Info: boxplot2.pdf used on input line 120.
+ <use boxplot2.pdf>
+Package pdftex.def Info: boxplot2.pdf used on input line 124.
 (pdftex.def)             Requested size: 289.07999pt x 206.49605pt.
- [18 <./boxplot2.pdf>]
-<boxplot3.pdf, id=209, 481.8pt x 200.75pt>
+ [18 <./boxplot.pdf>] <boxplot3.pdf, id=161, 481.8pt x 200.75pt>
 File: boxplot3.pdf Graphic file (type pdf)
  <use boxplot3.pdf>
-Package pdftex.def Info: boxplot3.pdf used on input line 140.
+Package pdftex.def Info: boxplot3.pdf used on input line 144.
 (pdftex.def)             Requested size: 433.62pt x 180.67944pt.
-
-Overfull \hbox (2.49905pt too wide) in paragraph at lines 152--153
+ [19 <./boxplot2.pdf>]
+Overfull \hbox (2.49905pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/12 V nie-ktorych prpadoch kra-bi-covy dia-gram zakryva skut
 ocny tvar dat, teda jeho sikmost[]
  []
 
-[19 <./boxplot3.pdf>] [20]) (04design.tex [21]
+[20 <./boxplot3.pdf>]) (04design.tex [21]
 Kapitola 4.
 [22
 
@@ -1119,7 +1133,7 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 100.
 
-[26] [27] [28] <functionalboxplot.pdf, id=277, 552.2123pt x 282.09639pt>
+[26] [27] [28] <functionalboxplot.pdf, id=278, 552.2123pt x 282.09639pt>
 File: functionalboxplot.pdf Graphic file (type pdf)
 
 <use functionalboxplot.pdf>
@@ -1151,10 +1165,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8630 strings out of 493698
- 117755 string characters out of 3151686
+ 8632 strings out of 493698
+ 117774 string characters out of 3151686
  205490 words of memory out of 3000000
- 11748 multiletter control sequences out of 15000+200000
+ 11750 multiletter control sequences out of 15000+200000
  18754 words of font info for 71 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,16n,47p,1001b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1172,9 +1186,9 @@ s/type1/public/amsfonts/cm/cmsy8.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/
 cmti10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/miktex/font
 s/type1/public/amsfonts/cm/cmtt12.pfb><C:/miktex/fonts/type1/public/amsfonts/eu
 ler/eusm10.pfb><C:/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (48 pages, 1524078 bytes).
+Output written on main.pdf (48 pages, 1527057 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
+ 406 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

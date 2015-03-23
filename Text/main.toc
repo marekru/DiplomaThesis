@@ -18,26 +18,25 @@
 \contentsline {subsection}{\numberline {3.1.1}\IeC {\v S}tatistick\IeC {\'y} softv\IeC {\'e}r}{12}
 \contentsline {subsubsection}{Tabu\IeC {\v l}kov\IeC {\'y} softv\IeC {\'e}r}{12}
 \contentsline {subsubsection}{MATLAB}{13}
-\contentsline {subsubsection}{Minitab}{13}
 \contentsline {subsubsection}{R}{13}
 \contentsline {subsubsection}{SAS}{14}
 \contentsline {subsubsection}{IDL}{14}
-\contentsline {subsection}{\numberline {3.1.2}\IeC {\v S}pecializovan\IeC {\'y} softv\IeC {\'e}r}{14}
-\contentsline {subsubsection}{NCL}{14}
-\contentsline {subsubsection}{MET}{14}
-\contentsline {subsubsection}{EVS}{14}
-\contentsline {section}{\numberline {3.2}Techniky vizualiz\IeC {\'a}cie vo verifik\IeC {\'a}cii}{14}
-\contentsline {subsection}{\numberline {3.2.1}Bodov\IeC {\'y} graf}{14}
+\contentsline {subsection}{\numberline {3.1.2}\IeC {\v S}pecializovan\IeC {\'y} softv\IeC {\'e}r}{15}
+\contentsline {subsubsection}{NCL}{15}
+\contentsline {subsubsection}{MET}{15}
+\contentsline {subsubsection}{EVS}{15}
+\contentsline {section}{\numberline {3.2}Techniky vizualiz\IeC {\'a}cie vo verifik\IeC {\'a}cii}{15}
+\contentsline {subsection}{\numberline {3.2.1}Bodov\IeC {\'y} graf}{15}
 \contentsline {subsubsection}{Kon\IeC {\v s}trukcia bodov\IeC {\'e}ho grafu}{15}
-\contentsline {subsubsection}{Kantil-kvantil graf}{15}
-\contentsline {subsubsection}{\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{15}
-\contentsline {subsection}{\numberline {3.2.2}Histogram}{15}
-\contentsline {subsection}{\numberline {3.2.3}Krabicov\IeC {\'y} diagram}{15}
+\contentsline {subsubsection}{Kantil-kvantil graf}{16}
+\contentsline {subsubsection}{\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{16}
+\contentsline {subsection}{\numberline {3.2.2}Histogram}{16}
+\contentsline {subsection}{\numberline {3.2.3}Krabicov\IeC {\'y} diagram}{16}
 \contentsline {subsubsection}{Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{16}
-\contentsline {subsubsection}{\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{17}
+\contentsline {subsubsection}{\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{18}
 \contentsline {paragraph}{}{18}
-\contentsline {paragraph}{}{19}
-\contentsline {subsubsection}{\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{20}
+\contentsline {paragraph}{}{20}
+\contentsline {subsubsection}{\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{21}
 \contentsline {subsection}{\numberline {3.2.4}Time series plot}{21}
 \contentsline {chapter}{\numberline {4}N\IeC {\'a}vrh rie\IeC {\v s}enia}{22}
 \contentsline {section}{\numberline {4.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{22}
