@@ -50,8 +50,19 @@ IDL na používanie požaduje taktiež získanie platenej licencie, čo obmedzuj
 \subsection{Špecializovaný softvér}
 
 \subsubsection[NCL]{NCAR Command Language (NCL)}
+Ako väčšina softvérových riešení v predchádzajúcej sekcii, tak aj \textit{NCL}, teda \textit{NCAR Command Language} \cite{NCL http://www.ncl.ucar.edu/} je skriptovací jazyk s vlastnou syntaxou a interpreterom. Ide o voľne šíriteľný produkt od \textit{National Center for Atmospheric Research} (NCAR), a jeho zameranie je pochopiteľne na atmosferický výskum. Jeho primárnym cieľom je spravovanie a manipulácia klimatologických dát z predpovedných modelov, čo je jedna zo základných častí verifikácie. NCL obsahuje balík funkcií, ktorými je ľahké implementovať štatistiky verifikácie spojitých premenných, ktoré sme spomínali v časti \ref{sec:errormeasurement}. 
+
+Súčasťou jazyka je aj možnosť vizualizácie predpovedných dát, ale taktiež aj niektoré jednoduché štatistické vizualizačné nástroje použiteľné vo verifikácii. Vzhľadom na to, že ide o meteorologický softvér, tak množstvo funkcií slúžiacich na verifikáciu je nedostačujúci, čoho príčinou môže byť, že verifikácia predpovedných modelov je ešte stále vo svojich začiatkoch \cite{VerifSoft}. Sme si istý, že ako metódy aj používané praktiky pokročia, tak budú vytvorené komunitou NCL vytvorené na tento účel funkcie.
 
 \subsubsection[MET]{Model Evaluation Tools (MET)}
+MET was developed by and is supported at the National Center for Atmospheric Research (NCAR) by the Developmental Testbed Center (DTC) with funding from the US Air Force Weather Agency and NOAA. The tool has been designed to work directly with versions of the Weather Research and Forecasting (WRF) modelling system, but can be modified to be useful for other types of forecasts. Much of the analysis presented in Chapter 6 utilized MET. MET provides a variety of verification techniques, including:\\
+ 
+ Standard verification scores comparing gridded model data to point-based observations. \\
+ Standard verification scores comparing gridded model data to gridded observations. \\
+ Spatial verification methods comparing gridded model data to gridded observations using neighbourhood, object-based and intensity-scale decomposition approaches. \\
+ Probabilistic verification methods comparing gridded model data to point-based or gridded observations. \\
+ 
+Another powerful addition to MET is the MODE tool. MODE provides object-based methods to identify and match forecasts and observations – matching them by treating them as geometrical features. Figure 6.8 was created using MODE. Strengths of MET include the strong institutional support provided to method development, instruction and research. This includes biannual MET tutorials, which accompany WRF tutorials taught at NCAR. Additionally, there is an annual MET workshop that focuses on newdevelopments inMET. The project is open source and available to researchers from most countries (subject to US trade restrictions). MET uses a number of libraries created by other organizations to read and process data. This requires that a number of libraries be installed locally on the user’s machine. While many systems are supported, installation is an issue. In general, while MET may be an extremely useful tool for people familiar with operating and conducting research in numerical weather forecasts, the system has a steep learning curve for
 
 \subsubsection[EVS]{Ensemble Verification System (EVS)}
 
@@ -168,3 +179,5 @@ V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovan
 Ďalším použitím je porovnanie distribúcie chýb predpovedí, či už pre rôzne merania, konkrétne predpovedané časy, rôzne predpovedné modely a podobne. Tu považujeme použitie krabicového diagramu za opodstatnené, keďže ide zväčša o porovnávanie väčšieho množstva distribúcií, a tak je jeho jednoduchosť, čitateľnosť, kompaktnosť a iné jeho vlastnosti potrebné.
 
 \subsection{Time series plot}
+
+\subsection{Taylorov diagram}
