@@ -1,24 +1,19 @@
-\chapter{Návrh riešenia}
+\chapter{Návrh vizualizácie}
 
+\section{Charakteristika dát}
 
-\section{Návrh systému}
+\section{Špecifikácia požiadaviek na vizualizáciu}
 
-\section{Návrh vizualizácie}
+\section{Návrh rozloženia prvkov vizualizácie}
 
-\subsection{Charakteristika dát}
+\section{Návrh vizualizácie štatistík verifikácie} 
 
-\subsection{Špecifikácia požiadaviek na vizualizáciu}
-
-\subsection{Návrh rozloženia prvkov vizualizácie}
-
-\subsection{Návrh vizualizácie štatistík verifikácie} 
-
-\subsection{Návrh vizualizácie distribúcie chýb}
+\section{Návrh vizualizácie distribúcie chýb}
 Pri verifikácii predpovede spojitej premennej sme použili štatistické metódy spomenuté v sekcii \ref{sec:errormeasurement}, ktorých výsledok sme následne vizualizovali. Pôvodné dáta však zostali skryté za použitým matematickým modelom, a tak sme stratili informáciu o distribúcii chyby. Pri verifikácii sa štandardne používajú dve metódy na priamu, či nepriamu vizualizáciu a analýzu distribúcie, ktoré sme opísali v sekcii \ref{sec:prevvis}. Týmito metódami sú bodový graf (pozri podsekciu \ref{subsec:scatterplot}) a krabicový diagram (pozri podsekciu \ref{subsec:boxplot}).
 
 Pri návrhu vizualizácie sme vyskúšali niekoľko vizualizačných techník a zvážili ich silné a slabé stránky. 
 
-\subsubsection{Graf hustoty} %Density plot
+\subsection{Graf hustoty} %Density plot
 
 Jedným z viacerých spôsobov, ako pomerne presne určiť distribúciu chýb je pomocou \textit{grafu hustoty}. Ten sa skonštruuje jednoducho z \textit{funkcie hustoty}, ktorú získame \textit{odhadom hustoty} z dát. 
 
@@ -58,7 +53,7 @@ Vieme, že pre ľudí nie je také jednoduché pozorovať malé rozdiely medzi d
 % TODO najst dobre riesenie na toto a potom to dopisat
 
 
-\subsubsection{Pruhový kvantilový diagram} 
+\subsection{Pruhový kvantilový diagram} 
 Z časti \ref{subsec:scatterplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram [ref] zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
 Prirodzeným rozšírením je zobrazovať nielen jeden kvantil, ale mnoho kvantilov súčasne. Zvyčajne sú to tieto kvantily $ Q_{0.02}, Q_{0.98}, Q_{0.25}, Q_{0.75}, Q_{0.5} $. V našej práci sme využili toto rozšírenie na lepšie zobrazenie distribúcie a navrhli sme takzvaný \textit{pruhový kvantilový diagram}.
 
@@ -85,7 +80,7 @@ Na obrázku \ref{fig:pruh} vidíme, že takto definovaný pruh sa potom vizualiz
 %TODO toto musím ešte celé premyslieť!
 
 
-\subsubsection{Funkčný krabicový diagram}
+\subsection{Funkčný krabicový diagram}
 Pre pochopenie dát je dôležité, aby sme sa vedeli pozrieť na hodnoty v ich kontexte. Všetky predošlé techniky uvažovali o chybe ako o samostatnej hodnote pre určitý predpovedný čas, avšak chyby sa nenachádzajú len v kontexte predpovedného času, ale aj v kontexte konkrétnej predpovede. Preto môžme uvažovať o predpovediach ako o funkciách $ x_{i}(t) $, kde $ i \in \{1..n\}$ je poradie predpovede a $ t \in I $ je čas predpovede, kde $ I $ je časový interval predpovede z $ \mathbb{R} $ (v našom prípade sa jednalo o dvojdňovú, teda 48 hodinovú predpoveď).
 
 Takýmto spôsobom sme sa dostali do novej situácie, kedy nechceme vizualizovať distribúciu jednotlivých chýb, ale celých predpovedí, ktoré chápeme ako funkcie. Na riešenie tohto problému existuje niekoľko spôsobov, z ktorých sme si zvolili \textit{funkčný krabicový diagram} \cite{FunctionalBoxplot}, keďže myšlienkovo vychádza z klasického krabicového diagramu, ktorý je jednak na túto situáciu vhodný ale je tiež medzi užívateľmi dobre známy a zaužívaný.
@@ -162,14 +157,14 @@ V našej práci sme do diagramu pridali ešte jednu krivku pre ľubovoľnú šta
 
 %TODO obrazok pasmo
 
-\subsubsection{Porovnanie metód}
+\subsection{Porovnanie metód}
 
 Tu bude pekný obrázok a obkeci. \\
 Graf hustoty je presnejsi, ale menej citatelny. \\
 Pruhovy kvantilovy diagram nahradzuje krabicovy diagram. \\
 Funkcionalny krabicovy riesi distribuciu funkcii.
 
-\subsection{Návrh farebnej palety}
+\section{Návrh farebnej palety}
 - rainbow a preco zle \\
 - monochrome cez 3 farby \\
 - monochrome 2 farby ostro rozdelene \\
