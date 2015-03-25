@@ -13,6 +13,17 @@ Barbara Casati.
 \newblock Joint Working Group on Forecast Verification Research (JWGFVR), Jún
   2009.
 
+\bibitem[Cen14]{METuserguide}
+Developmental~Testbed Center.
+\newblock {\em Model Evaluation Tools Version 5.0, User’s Guide 5.0}.
+\newblock DTC, September 2014.
+
+\bibitem[Cen15]{MET}
+Developmental~Testbed Center.
+\newblock {Model Evaluation Tools}.
+\newblock \url{http://www.dtcenter.org/met/users/}, Marec 2015.
+\newblock [Prístupné online: 19.3. 2015].
+
 \bibitem[CM05]{Chamnein}
 Chamnein Choonpradub and Don McNeil.
 \newblock Can the box plot be improved?
@@ -35,6 +46,12 @@ Tressa~L. Fowler, Tara~L .Jensen, and Barbara~G. Brown.
 \newblock {\em Introduction to Forecast Verification}.
 \newblock 2012.
 
+\bibitem[Fou15]{RProject}
+The~R Foundation.
+\newblock {The R Project for Statistical Computing}.
+\newblock \url{http://www.r-project.org/}, Marec 2015.
+\newblock [Prístupné online: 19.3. 2015].
+
 \bibitem[Gol]{Golding}
 Professor~Brian Golding.
 \newblock Weather forecasting part 1.
@@ -46,6 +63,17 @@ Professor~Brian Golding.
 Jerry~L. Hintze and Ray~D. Nelson.
 \newblock Violin plots: A box plot-density trace synergism.
 \newblock {\em The American Statistician}, 52(2):181--184, Máj 1998.
+
+\bibitem[Ins15]{SAS}
+SAS Institute.
+\newblock {Statistical Analysis Software}.
+\newblock \url{http://www.sas.com}, Marec 2015.
+\newblock [Prístupné online: 19.3. 2015].
+
+\bibitem[Lab14]{VerifPackage}
+NCAR Research~Applications Laboratory.
+\newblock {\em Weather Forecast Verification Utilities}.
+\newblock NCAR, Júl 2014.
 
 \bibitem[LE11]{Comet}
 Dr.~Arlene Laing and Dr. Jenni-Louise Evans.
@@ -152,6 +180,12 @@ Neil~C. Schwertman, Margaret~Ann Owens, and Robiah Adnan.
 \newblock {\em Computational Statistics \& Data Analysis}, 47(1):165--174,
   2004.
 
+\bibitem[Sol15]{IDL}
+Exelis Visual~Information Solutions.
+\newblock {Interactive Data Language}.
+\newblock \url{http://www.exelisvis.com/ProductsServices/IDL.aspx}, Marec 2015.
+\newblock [Prístupné online: 19.3. 2015].
+
 \bibitem[Spe52]{Spear}
 Mary~Eleanor Spear.
 \newblock {\em Charting Statistics}.
@@ -178,6 +212,12 @@ Edward~R. Tufte.
 John~W. Tukey.
 \newblock {\em Exploratory Data Analysis}.
 \newblock Addison-Wesley, 1977.
+
+\bibitem[UCA15]{NCL}
+UCAR.
+\newblock {NCAR Command Language}.
+\newblock \url{http://www.ncl.ucar.edu/}, Marec 2015.
+\newblock [Prístupné online: 19.3. 2015].
 
 \bibitem[Vas98]{WeatherStation}
 Tim Vasquez.
