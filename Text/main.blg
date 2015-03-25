@@ -1,5 +1,4 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.4)
-The top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: alpha.bst
 Database file #1: verification.bib
 Database file #2: prevSoft.bib
@@ -10,45 +9,4 @@ Database file #6: results.bib
 Warning--empty publisher in IntroToVerif
 Warning--can't use both author and editor fields in VerifSoft
 Warning--empty publisher in Potter
-You've used 49 entries,
-            2543 wiz_defined-function locations,
-            891 strings with 11607 characters,
-and the built_in function-call counts, 16677 in all, are:
-= -- 1633
-> -- 720
-< -- 37
-+ -- 233
-- -- 227
-* -- 1125
-:= -- 2758
-add.period$ -- 161
-call.type$ -- 49
-change.case$ -- 272
-chr.to.int$ -- 49
-cite$ -- 52
-duplicate$ -- 673
-empty$ -- 1282
-format.name$ -- 302
-if$ -- 3375
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 36
-newline$ -- 262
-num.names$ -- 149
-pop$ -- 350
-preamble$ -- 1
-purify$ -- 335
-quote$ -- 0
-skip$ -- 538
-stack$ -- 0
-substring$ -- 726
-swap$ -- 74
-text.length$ -- 37
-text.prefix$ -- 29
-top$ -- 0
-type$ -- 352
-warning$ -- 3
-while$ -- 148
-width$ -- 52
-write$ -- 636
 (There were 3 warnings)

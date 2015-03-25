@@ -50,18 +50,18 @@
 \contentsline {subsection}{\numberline {5.5.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{31}
 \contentsline {paragraph}{}{33}
 \contentsline {subsection}{\numberline {5.5.4}Porovnanie met\IeC {\'o}d}{34}
-\contentsline {section}{\numberline {5.6}N\IeC {\'a}vrh farebnej palety}{35}
-\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{37}
-\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{37}
-\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{37}
-\contentsline {subsection}{\numberline {6.2.1}Java}{37}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{37}
-\contentsline {subsection}{\numberline {6.2.3}d3.js}{37}
-\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{37}
-\contentsline {subsection}{\numberline {6.3.1}CSV}{37}
-\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{37}
-\contentsline {subsection}{\numberline {6.3.3}GRIB}{37}
-\contentsline {subsection}{\numberline {6.3.4}...}{37}
-\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{37}
-\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{37}
-\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky}{38}
+\contentsline {section}{\numberline {5.6}N\IeC {\'a}vrh farebnej palety}{34}
+\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{38}
+\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{38}
+\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{38}
+\contentsline {subsection}{\numberline {6.2.1}Java}{38}
+\contentsline {subsection}{\numberline {6.2.2}JavaScript}{38}
+\contentsline {subsection}{\numberline {6.2.3}d3.js}{38}
+\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{38}
+\contentsline {subsection}{\numberline {6.3.1}CSV}{38}
+\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{38}
+\contentsline {subsection}{\numberline {6.3.3}GRIB}{38}
+\contentsline {subsection}{\numberline {6.3.4}...}{38}
+\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{38}
+\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{38}
+\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky}{39}
