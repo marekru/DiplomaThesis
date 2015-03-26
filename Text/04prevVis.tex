@@ -110,3 +110,47 @@ V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovan
 \section{Time series plot}
 
 \section{Taylorov diagram}
+Taylorov diagram bol špeciálne navrhnutý pre verifikáciu modelov počasia, ktorého autorom je Karl. E. Taylor \cite{Taylor}. Podľa slov autora úlohou diagramu je štatistické zhrnutie, ako dobre si dátové vzory zodpovedajú v zmysle troch metrík: koeficient korelácie, strednej kvadratickej chyby a smerodajnej odchýlky. Použitie taylorovho diagramu nie je tak časté ako pri predchádzajúcich vizualizačných technikách, možno aj z dôvodu horšej čitateľnosti grafu a taktiež nemá takú veľkú tradíciu v štatistike, ako predošlé techniky. Podobnú snahu zobraziť tri štatistiky súčasne v jednom grafe mal aj Boer a Lambert vo svojom BLT diagrame \cite{Boer}. Tento typ grafu je veľmi podobný taylorovmu grafu, a keďže jeho použitie je ešte zriedkavejšie, tak sa mu v tejto práci nebudeme venovať.
+  
+\subsection{Konštrukcia taylorovho diagramu}
+Taylorov graf porovnáva jednu alebo viacero dátových množín ($ f $) s jednou referenčnou množinou $ r $. Označme si hodnoty v porovnávanej množine $ f_{n} $ a s nimi spárované referenčné hodnoty $ r_{n} $, ktoré sú definované na $ N $ diskrétnych bodoch (napríklad v čase alebo priestore). Ako sme už spomenuli, taylorov graf vizualizuje 3 štatistiky súčasne, na čo využíva ich vzájomný geometrický vzťah. Týmito štatistikami sú: koeficient korelácie $ R $, centrovaná stredná kvadratická chyba $ E' $ a smerodajné odchýlky $ \sigma_{f} $ a $ \sigma_{r} $ pre $ f, r $.  Vzorce na výpočet sú nasledovné:
+\[
+	R = \dfrac{\frac{1}{N} \sum_{n=1}^{N}(f_{n} - \bar{f})(r_{n} - \bar{r})  }{\sigma_{f}\sigma_{r}}
+\]
+, kde $ \bar{f} $ a $ \bar{r} $ sú priemerné hodnoty daných množín.
+\[
+	E' = \sqrt{\frac{1}{N} \sum_{n=1}^{N}[(f_{n} - \bar{f}) - (r_{n} - \bar{r})]^2 }
+\]
+Pre pripomenutie chceme upozorniť, že nejde o strednú kvadratickú chybu, ktorá bola spomenutá v časti \ref{sec:errormeasurement}, ale o \textit{centrovanú} strednú kvadratickú chybu, ktorá je relatívna k stredu, teda priemeru skúmaných množín.
+
+Rovnako pre $ \sigma_{f} $ aj $ \sigma_{r} $ je výpočet nasledovný:
+\[
+\sigma_{x} = \sqrt{\frac{1}{N} \sum_{n=1}^{N}[(x_{n} - \bar{x})]^2 }
+\]
+
+Kľúčovým bodom v konštrukcii diagramu je, že s využitím týchto troch respektíve štyroch štatistík môžme skonštruovať nasledovný vzťah:
+\[
+	E'^{2} = \sigma_{f}^{2} + \sigma_{r}^{2} - 2\sigma_{f}\sigma_{r}R
+\]
+, ktorý sa nápadne podobá na kosínusovú vetu:
+\[
+	a^{2} = b^{2} + c^{2} - 2bc\cos\alpha 
+\]
+, kde $ a, b $ a $ c $ sú dĺžky strán trojuholníka a uhol $ \alpha $ je protiľahlý uhol pre stranu $ a $. Geometrický vzťah pre $ R, E', \sigma_{f} $ a $ \sigma_{r} $ je zobrazený na obrázku \ref{fig:gemrelationship}. Ako vidíme na obrázku \ref{fig:taylordiagram}, jedna dátová množina sa pomocou týchto troch spomenutých hodnôt a vyššie uvedeného geometrického vzťahu zobrazí na grafe s polárnymi súradnicami. Azimutálna pozícia bodu nám hovorí o korelačnom koeficiente medzi množinami, preto sa vždy referenčný bod nachádza v najnižšej úrovni grafu, kde je korelácia rovná jednej. Vzdialenosť od počiatočného bodu $ 0 $ nám udáva smerodajnú odchýlku $ \sigma $ a vzdialenosť od referenčného bodu udáva centrovanú RMSE $ E' $. Pre jednoduchšie odčítavanie hodnôt sa pridávajú aj označené radiálne čiary jednak od bodu $ 0 $, ale aj od referenčného bodu, ktoré sa však v praxi zvyknú vynechávať.
+
+Popísaným spôsobom vytvoríme základný taylorov graf, ktorý však ponúka niekoľko modifikácií \cite{TaylorPrime}, z ktorých niektoré používané spomenieme:
+
+\begin{singlespacing}
+\begin{itemize} 
+	\item Diagram môže byť rozšírený o ďalší kvadrant vľavo, na zobrazenie zápornej kolerácie 
+	\item Štatistiky porovnávaných hodnôt môžu byť normalizované pomocou štatistík referenčných, čím dosiahneme, že na jednom diagrame možno zobraziť rôzne veličiny alebo jednotky.
+	\item Izočiary sa vynechávajú, aby bolo možné lepšie vidieť zobrazené body.
+	\item Pri porovnávaní výsledkov z viacerých verzií predpovedných modelov sa zvykne nakresliť šípka medzi týmito bodmi, aby bolo lepšie vidieť vzťah medzi nimi.
+	\item Miera $ E' $ môže byť nahradená inou. Niektoré príklady mier možno nájsť v Taylorovom článku \cite{Taylor}
+	\item Do grafu je možno pridať ďalšiu informáciu modifikovaním vizuálnych vlastností bodu podobne ako v bodovom diagrame. Jedným z príkladov je zobrazenie percentuálneho biasu pomocou rôznych symbolov.
+\end{itemize}
+\end{singlespacing}
+
+
+
+\subsection{Úloha taylorovho diagramu vo verfikácii}

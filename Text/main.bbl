@@ -1,6 +1,11 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{WCSDG{\etalchar{+}}08}
 
+\bibitem[BL01]{Boer}
+G.~J. Boer and S.~J. Lambert.
+\newblock {Second-order space-time climate difference statistics}.
+\newblock {\em Climate Dynamics}, 17(2):213--218, January 2001.
+
 \bibitem[Bro15]{EVSmanual}
 Dr. James~D. Brown.
 \newblock {\em Ensemble Verification Service (EVS) version 5.4 User's Manual}.
@@ -208,6 +213,18 @@ Exelis Visual~Information Solutions.
 Mary~Eleanor Spear.
 \newblock {\em Charting Statistics}.
 \newblock McGraw-Hill Book Company, Inc., 1952.
+
+\bibitem[Tay01]{Taylor}
+Karl~E. Taylor.
+\newblock {Summarizing multiple aspects of model performance in a single
+  diagram}.
+\newblock {\em Journal of Geophysical Research}, 106(D7):7183--7192, April
+  2001.
+
+\bibitem[Tay05]{TaylorPrime}
+Karl~E. Taylor.
+\newblock {Taylor Diagram Primer}.
+\newblock January 2005.
 
 \bibitem[TM15]{Matlab}
 Inc. The~MathWorks.
