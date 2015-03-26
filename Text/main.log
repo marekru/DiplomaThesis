@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  25 MAR 2015 23:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  26 MAR 2015 09:30
 entering extended mode
 **main.tex
 (S:\School\DiplomaThesis\Text\main.tex
@@ -1118,31 +1118,31 @@ Kapitola 3.
 [12
 
 ]
-Overfull \hbox (5.63728pt too wide) in paragraph at lines 25--29
+Overfull \hbox (5.63728pt too wide) in paragraph at lines 28--32
 \OT1/cmr/m/it/12 MATLAB \OT1/cmr/m/n/12 je in-te-raktvne pro-stre-die s vlast
 nym prog-ra-mo-vacm ja-zy-kom, ktory je vyuzvany
  []
 
 [13]
-Overfull \hbox (10.17029pt too wide) in paragraph at lines 36--37
+Overfull \hbox (10.17029pt too wide) in paragraph at lines 39--40
 \OT1/cmr/m/n/12 uznavanym a casto pouzvanym ja-zy-kom. Ked[]ze je vel[]
 ka po-dob-nost[] v pouzvanych metodach
  []
 
-
-Overfull \hbox (25.41734pt too wide) in paragraph at lines 41--42
+[14]
+Overfull \hbox (25.41734pt too wide) in paragraph at lines 44--45
 []\OT1/cmr/m/n/12 Metody pre ve-ri-fikaciu prav-de-po-dob-nosti zrazok ($\O
 T1/cmtt/m/n/12 http : / / www . cawcr . gov . au / projects /$
  []
 
-[14]
-Overfull \hbox (4.53145pt too wide) in paragraph at lines 45--46
+
+Overfull \hbox (4.53145pt too wide) in paragraph at lines 48--49
 \OT1/cmr/m/n/12 IDL na pouzvanie pozaduje tak-tiez zskanie pla-te-nej li
 -cen-cie, co ob-me-dzuje pocet uzvatel[]ov
  []
 
 [15] [16]
-Overfull \hbox (19.48454pt too wide) in paragraph at lines 87--99
+Overfull \hbox (19.48454pt too wide) in paragraph at lines 90--102
  [][] 
  []
 
@@ -1251,7 +1251,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  9131 strings out of 493921
  127146 string characters out of 3147293
- 216357 words of memory out of 3000000
+ 217357 words of memory out of 3000000
  12194 multiletter control sequences out of 15000+200000
  21559 words of font info for 81 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1276,7 +1276,7 @@ i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (58 pages, 1576871 bytes).
+Output written on main.pdf (58 pages, 1577279 bytes).
 PDF statistics:
  440 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
