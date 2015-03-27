@@ -24,6 +24,11 @@ Barbara Casati.
 \newblock Joint Working Group on Forecast Verification Research (JWGFVR), Jún
   2009.
 
+\bibitem[CCM13]{GenSensScatterplot}
+Yu-Hsuan Chan, Carlos~D. Correa, and Kwan-Liu Ma.
+\newblock The generalized sensitivity scatterplot.
+\newblock {\em IEEE Trans. Vis. Comput. Graph.}, 19(10):1768--1781, 2013.
+
 \bibitem[Cen14]{METuserguide}
 Developmental~Testbed Center.
 \newblock {\em Model Evaluation Tools Version 5.0, User’s Guide 5.0}.
@@ -46,6 +51,11 @@ DTC Developmental Testbed~Center.
 \newblock {Model Evaluation Tools}.
 \newblock \url{http://www.dtcenter.org/met/users/}, Marec 2015.
 \newblock [Prístupné online: 25.3. 2015].
+
+\bibitem[Few08]{SolutionToOverplotting}
+Stephen Few.
+\newblock {Solutions to the Problem of Over-Plotting in Graphs}.
+\newblock {\em Perceptual Edge}, 2008.
 
 \bibitem[Fis10]{FanChart}
 Wolfram Fischer.
@@ -80,6 +90,13 @@ SAS Institute.
 \newblock {Statistical Analysis Software}.
 \newblock \url{http://www.sas.com}, Marec 2015.
 \newblock [Prístupné online: 19.3. 2015].
+
+\bibitem[JHM{\etalchar{+}}13]{EnhanceScatterplot}
+Halldor Janetzko, Ming~C. Hao, Sebastian Mittelst{\"{a}}dt, Umeshwar Dayal, and
+  Daniel~A. Keim.
+\newblock Enhancing scatter plots using ellipsoid pixel placement and shading.
+\newblock In {\em 46th Hawaii International Conference on System Sciences,
+  {HICSS} 2013, Wailea, HI, USA, January 7-10, 2013}, pages 1522--1531, 2013.
 
 \bibitem[Lab14]{VerifPackage}
 NCAR Research~Applications Laboratory.

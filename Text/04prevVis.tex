@@ -3,31 +3,50 @@
 
 \section{Bodový graf}
 \label{subsec:scatterplot}
-Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram} a známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}. Bodový graf je vhodný na štúdium kolerácie dvoch premenných a taktiež je výborný pri odhaľovaní takzvaných \textit{outlier}-v, teda hodnôt, ktoré sa nejakým spôsobom výrazne odlišujú od tých ostatných. Taktiež nám nepriamo podáva správu o distribúcii hodnôt, čo však pri ich veľkom počte môže byť skreslené, keďže sa body začnú postupne prekrývať, a tak nemožno určiť v akej oblasti je viacej, či menej bodov.
+Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram} a známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}. Bodový graf je vhodný na štúdium kolerácie dvoch premenných a taktiež je výborný pri odhaľovaní takzvaných \mbox{\textit{outlier}-ov}, teda hodnôt, ktoré sa nejakým spôsobom výrazne odlišujú od tých ostatných. Taktiež nám nepriamo podáva správu o distribúcii hodnôt, čo však pri ich veľkom počte môže byť skreslené, keďže sa body začnú postupne prekrývať, a tak nemožno určiť v akej oblasti je viacej, či menej bodov. Tento jav sa nazýva \textit{overplotting}.
 
 
 \subsection{Konštrukcia bodového grafu}
-Bodový graf na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať vizualizujeme tak, že spravíme zobrazenie jednej premennej na $ x $-ovú súradnicovú os a zobrazenie druhej premennej na $ y $-ovú os. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
+Skonštruovanie bodového grafu je veľmi jednoduchá a aj preto je často používaným prostriedkom na vizualizáciu. Na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať, vizualizujeme tak, že spravíme zobrazenie jednej premennej na \mbox{$ x $-ovú} súradnicovú os a zobrazenie druhej premennej na \mbox{$ y $-ovú} os. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
 Na obrázku XYZ vidíme príklad výsledného bodového grafu, ktorý vznikne takýmto postupom.
 
-Bodový graf ponúka mnoho spôsobov, ako pridať ďalší rozmer informácie do vizualizácie. Môžeme zvoliť odlišnú súradnicovú sústavu, čím veľmi jednoducho vytvoríme napríklad 3D bodový graf [ TODO ref ]. Ďalšou možnosťou rozšírenia je zmena vykresľovaného symbolu, ktorému môžme nastavovať rôzne parametre, do ktorých možno zakódovať nové informácie. Zvyčajne sú týmito parametrami farba[ TODO ref ], alfa-transparencia[ TODO ref ], veľkosť \cite{Viegas}, tvar [GSS, ESPUEPPAS] a podobne. Tieto modifikácie si v komunite vizuálnej analýzy vyslúžili aj vlastné názvy a teoretické zázemie, avšak v našej práci sa týmto druhom diagramov nebudeme venovať.
+Bodový graf ponúka mnoho spôsobov, ako pridať ďalší rozmer informácie do vizualizácie. Môžeme zvoliť odlišnú súradnicovú sústavu, čím veľmi jednoducho vytvoríme napríklad 3D bodový graf pre trojrozmerné dáta. Ďalšou možnosťou rozšírenia je zmena vykresľovaného symbolu, ktorému môžme nastavovať rôzne parametre, do ktorých možno zakódovať nové informácie. Zvyčajne sú týmito parametrami farba, \mbox{alfa-transparencia} \cite{SolutionToOverplotting}, veľkosť \cite{Viegas}, tvar \cite{GenSensScatterplot, EnhanceScatterplot} a podobne. Tieto modifikácie si v komunite vizuálnej analýzy vyslúžili aj vlastné názvy a teoretické zázemie, avšak v našej práci sa týmto druhom diagramov nebudeme venovať.
 
 \subsection{Kantil-kvantil graf}
-Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil-kvantil graf}, skrátene \textit{Q-Q graf} (Q z anglického \textit{quantil}).
+\label{subsec:qqplot}
+Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil-kvantil graf}, skrátene \textit{\mbox{Q-Q} graf} (Q z anglického \textit{quantil}). Jediným rozdielom medzi bodovým grafom a \mbox{Q-Q} grafom je, že zatiaľ, čo bodový graf vizualizuje surové dáta, \mbox{Q-Q} graf zobrazuje iba kvantily z oboch dátových množín. 
+
+Kvantilmi sú hodnoty, ktoré rozdeľujú usporiadanú dátovú množinu na niekoľko rovnako veľkých častí. Pre jednu dátovú množinu je $ (q - 1) $ $ q $-kvantilov. Najznámejším príkladom je \mbox{2-kvantil}, ktorý sa nazýva medián. Ďalšími bežnejšie používanými sú \mbox{4-kvantily}, \mbox{10-kvantily} a \mbox{100-kvantily}, čo sú vlastne kvartily, decily a percentily. 
+
+To, čo sa zvyčajne robí pri \mbox{Q-Q} grafe je, že sa nevyberá konkrétny typ kvantilu, ale hodnoty sa jednoducho usporiadajú podľa veľkosti a zobrazia. Ak máme množinu $ A $ a jej veľkosť je $ n = \lvert A \rvert $, tak vizualizjeme $ n $ \mbox{$ q $-kvantilov}, kde $ q = n + 1 $.  Tým, že nezobrazujeme na grafe surové dáta, ale kvantily, \mbox{$ k $-ty} bod v grafe nie je zobrazením \mbox{$ k $-teho} páru hodnôt, ale zobrazením \mbox{$ k $-teho} \mbox{$ q $-kvantilu}. 
+
+Na obrázku \ref{fig:scattervsqq} môžme vidieť porovnanie bodového grafu a \mbox{Q-Q} grafu pre rovnakú dátovú množinu.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 5.5in]{scattervsqq}
+	\caption{Porovnanie bodového grafu a Q-Q grafu pre rovnaké dáta. Oba grafy boli vygenerované v programe EVS \cite{EVS}. a) Bodový graf b) Q-Q graf }
+	\label{fig:scattervsqq}
+\end{figure}
 
 \subsection{Úloha bodového grafu vo verifikácii}
+Úloha bodového grafu a \mbox{Q-Q} grafu vo verifikácii je rovnaká, avšak oba nám dávajú trocha iný pohľad na dáta. Vo všeobecnosti nám tieto dva grafy dávajú informáciu o vzťahu medzi dvoma veličinami, ich korelácii a taktiež aj o ich distribúcii. 
+
+Dôležitým faktorom teda zostáva aké premenné umiestnime na \mbox{$ x $-ovú} a aké na \mbox{$ y $-ovú} os. Vo verifikácii predpovedných modelov počasia sú to zvyčajne predpovede na jednej osi a pozorovania na druhej. Taktiež sa zvyknú robiť dvojice (predpoveď, chyba predpovede), (pozorovanie, chyba predpovede) alebo (čas predpovede, chyba predpovede) a im podobné. V našej aplikácii sme testovali poslednú zo spomenutých dvojíc.
+
 
 \section{Histogram}
 
 \section{Krabicový diagram}
 \label{subsec:boxplot}
-Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 \cite{Tukey}, uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{5-number summary}) \cite{Potter}, ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor \cite{Wickham}, ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
+Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 \cite{Tukey}, uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{\mbox{5-number} summary}) \cite{Potter}, ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor \cite{Wickham}, ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
 
 \subsection{Konštrukcia krabicového diagramu}
 
-Na zostavenie krabicového diagramu potrebujeme týchto 5 hodnôt: medián, horný a dolný kvartil, maximum, minimum. (pozri obrázok \ref{fig:boxplot}) Prvé tri hodnoty sú takzvané kvartily (Q1, Q2, Q3), ktoré rozdeľujú súbor dát na 4 rovnako veľké časti a ďalšie dve sú extrémne hodnoty, ktoré ohraničujú celú dátovú množinu. 
+Na zostavenie krabicového diagramu potrebujeme týchto 5 hodnôt: medián, horný a dolný kvartil, maximum, minimum. (pozri obrázok \ref{fig:boxplot}) Prvé tri hodnoty sú takzvané kvartily (Q1, Q2, Q3), ktoré rozdeľujú súbor dát na 4 rovnako veľké časti a ďalšie dve sú extrémne hodnoty, ktoré ohraničujú celú dátovú množinu (pozri podsekciu \ref{subsec:qqplot} pre vysvetlenie pojmu kvantil). 
 
-Zovšeobecnenie kvartilov sú kvantily ktoré rozdeľujú množinu na $n$ rovnakých častí a preto môžme o kvartile hovoriť ako o 4-kvantile. Medián hodnôt je 2-kvantil a teda rozdeľuje množinu na 2 rovnaké časti a je definovaný rovnako ako v časti \ref{subsec:mad}. Ďalej horný (Q1) a dolný (Q3) kvartil získame ako medián hodnôt pod a nad hodnotou Q2, pričom hodnotu Q2 nezahŕňame do výpočtov. 
+Kvartil Q2 je medián hodnôt a je definovaný rovnako ako v časti \ref{subsec:mad}. Ďalej horný (Q1) a dolný (Q3) kvartil získame ako medián hodnôt pod a nad hodnotou Q2, pričom hodnotu Q2 nezahŕňame do výpočtov. 
 
 Na obrázku \ref{fig:boxplot} vidíme, že krabica v grafe určuje pozície horného a dolného kvartilu, zatiaľ čo vnútro krabice znázorňuje takzvané \textit{IQR}. Táto skratka označuje \textit{interquartile range}, čo sa dá preložiť ako \textit{medzikvartilový rozsah}. IQR definujeme ako rozdiel kvartilov Q3 a Q1:
 \[
@@ -35,9 +54,9 @@ IQR = Q3 - Q1
 \]
 IQR nám hovorí o vzdialenosti týchto dvoch kvartilov, preto nám môže byť tento vzorec na pohľad podozrivý, keďže sa javí, že IQR by mohlo nadobúdať aj záporné hodnoty. My však vieme z definície Q3 a Q1, že $ Q3 > Q1 $ a ich rozdiel je teda vždy nezáporný (Hovoríme o rozdiele Q3 od Q1, tak ako je definované IQR).
 
-Malú obmenu pôvodného návrhu krabicového diagramu od Tukeyho, vidíme na obrázku \ref{fig:boxplot} b), kde malé bodky znázorňujú hodnoty nazývané \textit{outlier}, teda hodnoty ležiace ďaleko od hlavného dátového tela, a hviezdička v strede diagramu určuje priemer hodnôt. Môžme si všimnúť, že konce čiar vychádzajúcich z boxu nemôžu byť extrémy celej množiny dát, ale sú iba extrémami vypočítaných z dát bez \textit{outlier}-ov.
+Malú obmenu pôvodného návrhu krabicového diagramu od Tukeyho, vidíme na obrázku \ref{fig:boxplot} b), kde malé bodky znázorňujú hodnoty nazývané \textit{outlier}, teda hodnoty ležiace ďaleko od hlavného dátového tela, a hviezdička v strede diagramu určuje priemer hodnôt. Môžme si všimnúť, že konce čiar vychádzajúcich z boxu nemôžu byť extrémy celej množiny dát, ale sú iba extrémami vypočítaných z dát bez \mbox{\textit{outlier}-ov}.
 
-Otázkou zostáva ako určiť, ktorá hodnota je \textit{outlier} a ktorá nie je. Na zodpovedanie tejto otázky sa využíva už spomínaný rozsah IQR. Pomocou neho sa definujú hranice \textit{inner fences} ($f_{1}, f_{2}$) a \textit{outer fences} ($F_{1}, F_{2}$), za ktorými hovoríme už o \textit{outlier}-och alebo o ďalekých \textit{outlier}-och \cite{Schwertman}. Definované sú nasledovne:
+Otázkou zostáva ako určiť, ktorá hodnota je \textit{outlier} a ktorá nie je. Na zodpovedanie tejto otázky sa využíva už spomínaný rozsah IQR. Pomocou neho sa definujú hranice \textit{inner fences} ($f_{1}, f_{2}$) a \textit{outer fences} ($F_{1}, F_{2}$), za ktorými hovoríme už o \mbox{\textit{outlier}-och} alebo o ďalekých \mbox{\textit{outlier}-och} \cite{Schwertman}. Definované sú nasledovne:
 \\
 \[f_{1} = Q1 - c \times IQR\]	
 \[f_{2} = Q3 + c \times IQR\]
@@ -62,7 +81,7 @@ Popularita krabicového diagramu nevyhnutne viedla k jeho vývoji a modifikáci�
 \begin{figure}
 	\centering
 	\includegraphics[width = 4in]{boxplot2}
-	\caption{ a) Klasický krabicový diagram  b-f) Vizuálne variácie krabicového diagramu b-c) 2 variácie pre kvartilový graf \cite{Tufte83} c) Skrátený krabicový diagram \cite{VisualSummaryPotter} e) Range-bar chart \cite{Spear} f) Farebná variácia \cite{Carr}  }
+	\caption{ a) Klasický krabicový diagram  b-f) Vizuálne variácie krabicového diagramu b-c) 2 variácie pre kvartilový graf \cite{Tufte83} c) Skrátený krabicový diagram \cite{VisualSummaryPotter} e) \mbox{Range-bar} chart \cite{Spear} f) Farebná variácia \cite{Carr}  }
 	\label{fig:boxplotmodif1}
 \end{figure}
 
@@ -72,9 +91,9 @@ Popularita krabicového diagramu nevyhnutne viedla k jeho vývoji a modifikáci�
 
 Na obrázku \ref{fig:boxplotmodif1} b) a c) vidíme dve z viacero riešení navrhnutých v knihe \textit{The Visual Display of Quantitative} \cite{Tufte83}, ktoré autor nazýva \textit{kvartilový graf}. Preceptuálne štúdie \cite{Stock} však ukázali, že tieto variácie sú výrazne menej presné ako originálny návrh.
 
-Návrh d) ukazuje skrátený krabicový diagram \cite{VisualSummaryPotter}, ktorý sa taktiež snažil zredukovať množstvo okupovaného vizuálneho priestoru. Rozdielom je však to, že jeho účelom nie je existovať samostatne, ale ako súčasť \textit{summary plot}-u, ktorý zahŕňa histogram a ďalšie glify znázorňujúce informácie ako priemer, štandardná odchylka alebo koeficient asymetrie.
+Návrh d) ukazuje skrátený krabicový diagram \cite{VisualSummaryPotter}, ktorý sa taktiež snažil zredukovať množstvo okupovaného vizuálneho priestoru. Rozdielom je však to, že jeho účelom nie je existovať samostatne, ale ako súčasť \mbox{\textit{summary plot}-u}, ktorý zahŕňa histogram a ďalšie glify znázorňujúce informácie ako priemer, štandardná odchylka alebo koeficient asymetrie.
 
-Obrázok \ref{fig:boxplotmodif1} e) znázorňuje predchodcu krabicového diagramu \textit{range} graf alebo tiež nazývaný \textit{range-bar} graf, ktorého autorkou je Mary Eleanor Spear \cite{Spear}.
+Obrázok \ref{fig:boxplotmodif1} e) znázorňuje predchodcu krabicového diagramu \textit{range} graf alebo tiež nazývaný \mbox{\textit{range-bar}} graf, ktorého autorkou je Mary Eleanor Spear \cite{Spear}.
 
 Ako posledný príklad vizuálnej modifikácie uvádzame pridanie farieb do krabicového diagramu. Táto farebná variácia uchováva tvar diagramu, avšak časť nad mediánom je zafarbená inou farbou ako hodnoty pod. Autori článku odporúčajú červenú a modrú farbu, tak ako na obrázku \ref{fig:boxplotmodif1} f). Cieľom tohto prístupu bolo chápať krabicový diagram ako jednu percepčnú jednotku a nahradiť 5 symbolov jedným, čím sa mala znížiť námaha pozorovateľa pri analýze a taktiež uľahčiť porovnávanie viacerých diagramov navzájom. 
 
@@ -160,5 +179,9 @@ Popísaným spôsobom vytvoríme základný taylorov diagram, ktorý však ponú
 
 
 
-\subsection{Úloha taylorovho diagramu vo verfikácii}
-Tento typ diagramu bol priamo navrhnutý pre účely verifikácie predpovedných modelov počasia. 
+\subsection{Úloha taylorovho diagramu vo verifikácii}
+Tento typ diagramu bol priamo navrhnutý pre účely verifikácie predpovedných modelov počasia. Hlavným účelom diagramu je porovnávanie výkonu viacerých modelov alebo tiež jedného modelu s rôznymi nastaveniami parametrov. 
+
+Taylorov diagram skrýva dáta pod komplikovaný matematický model, ktorý nám poskytuje 3 vyššie popísané charakteristiky dát na vizualizáciu. Ak sa k tomu pridáva fakt, že diagram umožňuje iba jednu referenčnú dátovú množinu, tak použitie tohto diagramu je značne obmedzené. Využitím spomínaných troch charakteristík taktiež výrazne strácame pohľad na detail dát, ale na druhej strane nám to umožňuje jednoduché porovnávanie pomerne veľkých a komplikovaných množín na malo priestore. 
+
+Ďalšou slabinou je, že charakteristika $ E' $ sa počíta ako centrované RMSE, ktoré je relatívne vzhľadom na stred teda priemernú hodnotu dátovej množiny. Tento fakt implikuje to, že centrované RMSE nemá jednu dôležitú vlasnosť, ktorú naopak klasické RMSE má. Touto vlastnosťou je, že čím je RMSE bližšie k nule, tým podobnejšie sú aj dátové množiny. Keďže štatistická charakteristika $ E' $ nemá túto vlastnosť, tak nám euklidovská vzdialenosť skúmaného bodu od referenčného nedáva dobrú informáciu o podobnosti dvoch množín a môže pôsobiť mylne.

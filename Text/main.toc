@@ -29,41 +29,41 @@
 \contentsline {section}{\numberline {4.1}Bodov\IeC {\'y} graf}{19}
 \contentsline {subsection}{\numberline {4.1.1}Kon\IeC {\v s}trukcia bodov\IeC {\'e}ho grafu}{19}
 \contentsline {subsection}{\numberline {4.1.2}Kantil-kvantil graf}{20}
-\contentsline {subsection}{\numberline {4.1.3}\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{20}
-\contentsline {section}{\numberline {4.2}Histogram}{20}
-\contentsline {section}{\numberline {4.3}Krabicov\IeC {\'y} diagram}{20}
-\contentsline {subsection}{\numberline {4.3.1}Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{21}
-\contentsline {subsection}{\numberline {4.3.2}\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{22}
-\contentsline {paragraph}{}{23}
+\contentsline {subsection}{\numberline {4.1.3}\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{21}
+\contentsline {section}{\numberline {4.2}Histogram}{21}
+\contentsline {section}{\numberline {4.3}Krabicov\IeC {\'y} diagram}{21}
+\contentsline {subsection}{\numberline {4.3.1}Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{22}
+\contentsline {subsection}{\numberline {4.3.2}\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{23}
 \contentsline {paragraph}{}{24}
-\contentsline {subsection}{\numberline {4.3.3}\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{25}
-\contentsline {section}{\numberline {4.4}\IeC {\v C}iarov\IeC {\'y} diagram}{26}
-\contentsline {section}{\numberline {4.5}Taylorov diagram}{26}
-\contentsline {subsection}{\numberline {4.5.1}Kon\IeC {\v s}trukcia taylorovho diagramu}{26}
-\contentsline {subsection}{\numberline {4.5.2}\IeC {\'U}loha taylorovho diagramu vo verfik\IeC {\'a}cii}{28}
-\contentsline {chapter}{\numberline {5}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{29}
-\contentsline {section}{\numberline {5.1}Charakteristika d\IeC {\'a}t}{29}
-\contentsline {section}{\numberline {5.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{29}
-\contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{29}
-\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie \IeC {\v s}tatist\IeC {\'\i }k verifik\IeC {\'a}cie}{29}
-\contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{29}
-\contentsline {subsection}{\numberline {5.5.1}Graf hustoty}{30}
-\contentsline {subsection}{\numberline {5.5.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{32}
-\contentsline {subsection}{\numberline {5.5.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{33}
-\contentsline {paragraph}{}{35}
-\contentsline {subsection}{\numberline {5.5.4}Porovnanie met\IeC {\'o}d}{36}
-\contentsline {section}{\numberline {5.6}N\IeC {\'a}vrh farebnej palety}{36}
-\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{40}
-\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{40}
-\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{40}
-\contentsline {subsection}{\numberline {6.2.1}Java}{40}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{40}
-\contentsline {subsection}{\numberline {6.2.3}d3.js}{40}
-\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{40}
-\contentsline {subsection}{\numberline {6.3.1}CSV}{40}
-\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{40}
-\contentsline {subsection}{\numberline {6.3.3}GRIB}{40}
-\contentsline {subsection}{\numberline {6.3.4}...}{40}
-\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{40}
-\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{40}
-\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky}{41}
+\contentsline {paragraph}{}{25}
+\contentsline {subsection}{\numberline {4.3.3}\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{26}
+\contentsline {section}{\numberline {4.4}\IeC {\v C}iarov\IeC {\'y} diagram}{27}
+\contentsline {section}{\numberline {4.5}Taylorov diagram}{27}
+\contentsline {subsection}{\numberline {4.5.1}Kon\IeC {\v s}trukcia taylorovho diagramu}{27}
+\contentsline {subsection}{\numberline {4.5.2}\IeC {\'U}loha taylorovho diagramu vo verifik\IeC {\'a}cii}{29}
+\contentsline {chapter}{\numberline {5}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{31}
+\contentsline {section}{\numberline {5.1}Charakteristika d\IeC {\'a}t}{31}
+\contentsline {section}{\numberline {5.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{31}
+\contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{31}
+\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie \IeC {\v s}tatist\IeC {\'\i }k verifik\IeC {\'a}cie}{31}
+\contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{31}
+\contentsline {subsection}{\numberline {5.5.1}Graf hustoty}{32}
+\contentsline {subsection}{\numberline {5.5.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{34}
+\contentsline {subsection}{\numberline {5.5.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{35}
+\contentsline {paragraph}{}{37}
+\contentsline {subsection}{\numberline {5.5.4}Porovnanie met\IeC {\'o}d}{38}
+\contentsline {section}{\numberline {5.6}N\IeC {\'a}vrh farebnej palety}{38}
+\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{42}
+\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{42}
+\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{42}
+\contentsline {subsection}{\numberline {6.2.1}Java}{42}
+\contentsline {subsection}{\numberline {6.2.2}JavaScript}{42}
+\contentsline {subsection}{\numberline {6.2.3}d3.js}{42}
+\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{42}
+\contentsline {subsection}{\numberline {6.3.1}CSV}{42}
+\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{42}
+\contentsline {subsection}{\numberline {6.3.3}GRIB}{42}
+\contentsline {subsection}{\numberline {6.3.4}...}{42}
+\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{42}
+\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{42}
+\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky}{43}
