@@ -107,7 +107,7 @@ V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovan
 
 Ďalším použitím je porovnanie distribúcie chýb predpovedí, či už pre rôzne merania, konkrétne predpovedané časy, rôzne predpovedné modely a podobne. Tu považujeme použitie krabicového diagramu za opodstatnené, keďže ide zväčša o porovnávanie väčšieho množstva distribúcií, a tak je jeho jednoduchosť, čitateľnosť, kompaktnosť a iné jeho vlastnosti potrebné.
 
-\section{Time series plot}
+\section{Čiarový diagram}
 
 \section{Taylorov diagram}
 Taylorov diagram bol špeciálne navrhnutý pre verifikáciu modelov počasia, ktorého autorom je Karl. E. Taylor \cite{Taylor}. Podľa slov autora úlohou diagramu je štatistické zhrnutie, ako dobre si dátové vzory zodpovedajú v zmysle troch metrík: koeficient korelácie, strednej kvadratickej chyby a smerodajnej odchýlky. Použitie taylorovho diagramu nie je tak časté ako pri predchádzajúcich vizualizačných technikách, možno aj z dôvodu horšej čitateľnosti grafu a taktiež nemá takú veľkú tradíciu v štatistike, ako predošlé techniky. Podobnú snahu zobraziť tri štatistiky súčasne v jednom grafe mal aj Boer a Lambert vo svojom BLT diagrame \cite{Boer}. Tento typ grafu je veľmi podobný taylorovmu grafu, a keďže jeho použitie je ešte zriedkavejšie, tak sa mu v tejto práci nebudeme venovať.
@@ -130,7 +130,7 @@ Rovnako pre $ \sigma_{f} $ aj $ \sigma_{r} $ je výpočet nasledovný:
 
 Kľúčovým bodom v konštrukcii diagramu je, že s využitím týchto troch respektíve štyroch štatistík môžme skonštruovať nasledovný vzťah:
 \[
-	E'^{2} = \sigma_{f}^{2} + \sigma_{r}^{2} - 2\sigma_{f}\sigma_{r}R
+	E^{\prime2} = \sigma_{f}^{2} + \sigma_{r}^{2} - 2\sigma_{f}\sigma_{r}R
 \]
 , ktorý sa nápadne podobá na kosínusovú vetu:
 \[
@@ -138,19 +138,27 @@ Kľúčovým bodom v konštrukcii diagramu je, že s využitím týchto troch re
 \]
 , kde $ a, b $ a $ c $ sú dĺžky strán trojuholníka a uhol $ \alpha $ je protiľahlý uhol pre stranu $ a $. Geometrický vzťah pre $ R, E', \sigma_{f} $ a $ \sigma_{r} $ je zobrazený na obrázku \ref{fig:gemrelationship}. Ako vidíme na obrázku \ref{fig:taylordiagram}, jedna dátová množina sa pomocou týchto troch spomenutých hodnôt a vyššie uvedeného geometrického vzťahu zobrazí na grafe s polárnymi súradnicami. Azimutálna pozícia bodu nám hovorí o korelačnom koeficiente medzi množinami, preto sa vždy referenčný bod nachádza v najnižšej úrovni grafu, kde je korelácia rovná jednej. Vzdialenosť od počiatočného bodu $ 0 $ nám udáva smerodajnú odchýlku $ \sigma $ a vzdialenosť od referenčného bodu udáva centrovanú RMSE $ E' $. Pre jednoduchšie odčítavanie hodnôt sa pridávajú aj označené radiálne čiary jednak od bodu $ 0 $, ale aj od referenčného bodu, ktoré sa však v praxi zvyknú vynechávať.
 
-Popísaným spôsobom vytvoríme základný taylorov graf, ktorý však ponúka niekoľko modifikácií \cite{TaylorPrime}, z ktorých niektoré používané spomenieme:
+\begin{figure}
+	\centering
+	\includegraphics[width = 3.5in]{taylordiagram}
+	\caption{ Taylorov diagram \cite{Taylor} }
+	\label{fig:taylordiagram}
+\end{figure}
+
+Popísaným spôsobom vytvoríme základný taylorov diagram, ktorý však ponúka niekoľko modifikácií \cite{TaylorPrime}, z ktorých niektoré používané spomenieme:
 
 \begin{singlespacing}
 \begin{itemize} 
 	\item Diagram môže byť rozšírený o ďalší kvadrant vľavo, na zobrazenie zápornej kolerácie 
-	\item Štatistiky porovnávaných hodnôt môžu byť normalizované pomocou štatistík referenčných, čím dosiahneme, že na jednom diagrame možno zobraziť rôzne veličiny alebo jednotky.
+	\item Štatistiky porovnávaných hodnôt môžu byť normalizované pomocou štatistík referenčných, čím dosiahneme, že na jednom diagrame možno zobraziť rôzne jednotky veličín.
 	\item Izočiary sa vynechávajú, aby bolo možné lepšie vidieť zobrazené body.
 	\item Pri porovnávaní výsledkov z viacerých verzií predpovedných modelov sa zvykne nakresliť šípka medzi týmito bodmi, aby bolo lepšie vidieť vzťah medzi nimi.
 	\item Miera $ E' $ môže byť nahradená inou. Niektoré príklady mier možno nájsť v Taylorovom článku \cite{Taylor}
-	\item Do grafu je možno pridať ďalšiu informáciu modifikovaním vizuálnych vlastností bodu podobne ako v bodovom diagrame. Jedným z príkladov je zobrazenie percentuálneho biasu pomocou rôznych symbolov.
+	\item Do grafu je možno pridať ďalšiu informáciu modifikovaním vizuálnych vlastností bodu podobne ako v bodovom diagrame. Jedným z príkladov je zobrazenie percentuálnej priemernej chyby pomocou rôznych symbolov.
 \end{itemize}
 \end{singlespacing}
 
 
 
 \subsection{Úloha taylorovho diagramu vo verfikácii}
+Tento typ diagramu bol priamo navrhnutý pre účely verifikácie predpovedných modelov počasia. 

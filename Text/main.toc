@@ -37,7 +37,7 @@
 \contentsline {paragraph}{}{23}
 \contentsline {paragraph}{}{24}
 \contentsline {subsection}{\numberline {4.3.3}\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{25}
-\contentsline {section}{\numberline {4.4}Time series plot}{26}
+\contentsline {section}{\numberline {4.4}\IeC {\v C}iarov\IeC {\'y} diagram}{26}
 \contentsline {section}{\numberline {4.5}Taylorov diagram}{26}
 \contentsline {subsection}{\numberline {4.5.1}Kon\IeC {\v s}trukcia taylorovho diagramu}{26}
 \contentsline {subsection}{\numberline {4.5.2}\IeC {\'U}loha taylorovho diagramu vo verfik\IeC {\'a}cii}{28}
