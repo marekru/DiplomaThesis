@@ -8,7 +8,7 @@ Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných
 
 \subsection{Konštrukcia bodového grafu}
 Skonštruovanie bodového grafu je veľmi jednoduchá a aj preto je často používaným prostriedkom na vizualizáciu. Na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať, vizualizujeme tak, že spravíme zobrazenie jednej premennej na \mbox{$ x $-ovú} súradnicovú os a zobrazenie druhej premennej na \mbox{$ y $-ovú} os. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
-Na obrázku XYZ vidíme príklad výsledného bodového grafu, ktorý vznikne takýmto postupom.
+Na obrázku \ref{fig:scattervsqq}a) vidíme príklad výsledného bodového grafu, ktorý vznikne takýmto postupom.
 
 Bodový graf ponúka mnoho spôsobov, ako pridať ďalší rozmer informácie do vizualizácie. Môžeme zvoliť odlišnú súradnicovú sústavu, čím veľmi jednoducho vytvoríme napríklad 3D bodový graf pre trojrozmerné dáta. Ďalšou možnosťou rozšírenia je zmena vykresľovaného symbolu, ktorému môžme nastavovať rôzne parametre, do ktorých možno zakódovať nové informácie. Zvyčajne sú týmito parametrami farba, \mbox{alfa-transparencia} \cite{SolutionToOverplotting}, veľkosť \cite{Viegas}, tvar \cite{GenSensScatterplot, EnhanceScatterplot} a podobne. Tieto modifikácie si v komunite vizuálnej analýzy vyslúžili aj vlastné názvy a teoretické zázemie, avšak v našej práci sa týmto druhom diagramov nebudeme venovať.
 
@@ -37,7 +37,7 @@ Dôležitým faktorom teda zostáva aké premenné umiestnime na \mbox{$ x $-ov�
 
 \section{Krabicový diagram}
 \label{subsec:boxplot}
-Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 \cite{Tukey}, uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{\mbox{5-number} summary}) \cite{Potter}, ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor \cite{Wickham}, ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
+Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartil s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 \cite{Tukey}, uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{\mbox{5-number} summary}) \cite{Potter}, ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor \cite{Wickham}, ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
 
 \subsection{Konštrukcia krabicového diagramu}
 
@@ -94,12 +94,15 @@ Obrázok \ref{fig:boxplotmodif1} e) znázorňuje predchodcu krabicového diagram
 
 Ako posledný príklad vizuálnej modifikácie uvádzame pridanie farieb do krabicového diagramu. Táto farebná variácia uchováva tvar diagramu, avšak časť nad mediánom je zafarbená inou farbou ako hodnoty pod. Autori článku odporúčajú červenú a modrú farbu, tak ako na obrázku \ref{fig:boxplotmodif1} f). Cieľom tohto prístupu bolo chápať krabicový diagram ako jednu percepčnú jednotku a nahradiť 5 symbolov jedným, čím sa mala znížiť námaha pozorovateľa pri analýze a taktiež uľahčiť porovnávanie viacerých diagramov navzájom. 
 
-
--
-
+\begin{figure}
+	\centering
+	\includegraphics[width = 6in]{boxplot3}
+	\caption{Krabicové diagramy s pridanou informáciou a) Krabicový diagram s variabilnou šírkou \cite{McGill} b) Vrúbkovaný krabicový diagram \cite{McGill} c) Krabicový diagram s informáciou o šikmosti dát \cite{Chamnein}}
+	\label{fig:boxplotmodif2}
+\end{figure}
 
 \paragraph{}
-{\large \textbf{\textit{K}}}rabicový diagram umožňuje svojim vzhľadom zakódovanie ďalšej informácie do grafu. Na obrázku \ref{fig:boxplotmodif2} vidíme aspoň niektoré najčastejšie úpravy... %TODO finish this sentence
+{\large \textbf{\textit{K}}}rabicový diagram umožňuje svojim vzhľadom zakódovanie ďalšej informácie do grafu. Na obrázku \ref{fig:boxplotmodif2} vidíme aspoň niektoré najčastejšie úpravy krabicového diagramu, ktoré dopĺňajú dodatočnú informáciu zmenou parametrov vizuálnych prvkov krabicového diagramu.
 
 Len rok po oficiálnom publikovaní krabicového diagramu vznikol článok \cite{McGill}, ktorý zhŕňa jeho tri najčastejšie používané modifikácie, z ktorých prvé dve môžme vidieť na obrázkoch \ref{fig:boxplotmodif2}a) a \ref{fig:boxplotmodif2}b) a tretí je ich kombináciou. V prvom prípade sa využíva šírka boxu na zakódovanie veľkosti množiny, ktorú skrýva za sebou diagram. Takýto graf sa nazýva \textit{Krabicový diagram s variabilnou šírkou}.  
 V druhom prípade ide o takzvaný \textit{Vrúbkovaný krabicový diagram}. V tomto grafe sú pridané \textit{vrúbky}, ktoré zhruba naznačujú ako výrazné sú rozdiely v miere spoľahlivosti rôznych dátových množín. 
@@ -121,13 +124,20 @@ V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovan
 Ďalším veľmi bežným spôsobom, ako vizualizovať distribúciu dát je pomocou \textit{histogramu}, ktorého existencia sa datuje do roku 1895, kedy ho uviedol vo svojej práci Karl Pearson \cite{histogram}. Histogram využíva veľmi jednoduchú myšlienku vizualizovať frekvencie hodnôt ako stĺpce rôznej výšky, ktorá sa v priebehu histórie analýzy dát ukázala ako veľmi užitočná.
 
 \subsection{Konštrukcia histogramu}
-Konštrukcia histogramu je pomerne jednoduchá. V prvom rade potrebujeme rozdeliť interval hodnôt na disjunktné podintervaly rovnakej dĺžky. Na vygenerovanie týchto intervalov využíva jeho autor počiatok $ O $, od ktorého začneme generovať intervaly, a veľkosť intervalu $ w $. Prvý interval je $ \langle O, O + w) $ a všetky nasledujúce vzniknú posúvaním intervalu o dĺžku $ w $. Ďalej pre každý takto vzniknutý interval vypočítame koľko hodnôt doň spadá.  Potom už môžme vykresliť jednotlivé stĺpce pre každý interval ako obdĺžniky so šírkou $ w $ a výškou, ktorá sa určí na základe početnosti hodnôt pre daný interval. Na obrázku \ref{fig:binsizehistogram} môžeme vidieť takýmto spôsobom vygenerovaný histogram.
+Konštrukcia histogramu je pomerne jednoduchá. V prvom rade potrebujeme rozdeliť interval hodnôt na disjunktné podintervaly rovnakej dĺžky. Na vygenerovanie týchto intervalov využíva autor diagramu počiatok $ O $ a veľkosť intervalu $ w $. Prvý interval je $ \langle O, O + w) $ a všetky nasledujúce vzniknú posúvaním intervalu o dĺžku $ w $ v kladnom smere. Ďalej pre každý takto vzniknutý interval vypočítame koľko hodnôt doň spadá. Potom už môžme vykresliť jednotlivé stĺpce pre každý interval ako obdĺžniky so šírkou $ w $ a výškou, ktorá sa určí na základe početnosti hodnôt pre daný interval. Na obrázku \ref{fig:histogram} môžeme vidieť takýmto spôsobom vygenerovaný histogram.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 2.5in]{histogram}
+	\caption{ Histogram }
+	\label{fig:histogram}
+\end{figure}
 
 Z vyššie popísaného postupu a rovnako aj z obrázka \ref{fig:binsizehistogram} môžme vidieť, že konštrukcia histogramu závisí od zvoleného počiatku $ O $, no v prvom rade na zvolenej veľkosti intervalu $ w $. Z tohto dôvodu vzniklo mnoho prístupov, ktoré sa snažia optimalizovať $ w $, tak aby sa získal optimálny histogram. Optimálny histogram $ h(x) $ je taký, ktorý minimalizuje integrovanú strednú kvadratickú chybu (\textit{MISE}) vzhľadom na pôvodnú funkciu hustoty $ f(x) $, ktorú vypočítame ako $ MISE = \int (h(x) - f(x))^2 dx $. Jedným z príkladov, ktorý toto využíva je algoritmus na generovanie optimálnej hodnoty $ w $, ktorý navrhol \textit{Shimazaki} a \textit{Shinomoto} \cite{OptBinSize}. Autori algoritmu požívajú dekompozíciu MISE na vytvorenie cenovej funkcie $ C_{n}(w) $ pre dĺžku intervalu $ w $:
 \[
 	C_{n}(w) = \frac{2\bar{k} - v}{(nw)^2}
 \]
-kde $ N $ je počet intervalov šírky $ w $, $ n $ je počet všetkých hodnôt množiny, $ \bar{k}$ je priemerný počet hodnôt v jednom intervale a $ v $ je variancia počtu hodnôt v intervaloch. Priebeh algoritmu je potom už len taký, že generuje postupne rôzne $ w $, kým nenájde také s najmenšou cenou $ C_{n}(w) $.
+kde $ N $ je počet intervalov šírky $ w $, $ n $ je počet všetkých hodnôt množiny, $ \bar{k}$ je priemerný počet hodnôt v jednom intervale a $ v $ je variancia počtu hodnôt v intervaloch. Priebeh algoritmu je potom už len taký, že generuje postupne rôzne $ w $, kým nenájde také s najmenšou cenou $ C_{n}(w) $. 
 
 \begin{figure}
 	\centering

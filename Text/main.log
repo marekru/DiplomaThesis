@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  28 MAR 2015 17:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  28 MAR 2015 23:18
 entering extended mode
 **main.tex
 (S:\School\DiplomaThesis\Text\main.tex
@@ -1053,11 +1053,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
  [5]
 (S:\School\DiplomaThesis\Text\main.lof)
 \tf@lof=\write4
- (S:\School\DiplomaThesis\Text\main.lot)
-\tf@lot=\write5
-(S:\School\DiplomaThesis\Text\skratky.tex [6
+ [6
 
-] [7]
+]
+(S:\School\DiplomaThesis\Text\main.lot)
+\tf@lot=\write5
+
+(S:\School\DiplomaThesis\Text\skratky.tex [7]
 Underfull \hbox (badness 10000) in paragraph at lines 12--15
 
  []
@@ -1184,77 +1186,72 @@ File: boxplot2.pdf Graphic file (type pdf)
 Package pdftex.def Info: boxplot2.pdf used on input line 80.
 (pdftex.def)             Requested size: 289.07999pt x 206.49605pt.
  [23 <S:/School/DiplomaThesis/Text/boxplot.pdf>] [24 <S:/School/DiplomaThesis/T
-ext/boxplot2.pdf>]
+ext/boxplot2.pdf>] <boxplot3.pdf, id=272, 481.8pt x 200.75pt>
+File: boxplot3.pdf Graphic file (type pdf)
+ <use boxplot3.pdf>
+Package pdftex.def Info: boxplot3.pdf used on input line 99.
+(pdftex.def)             Requested size: 433.62pt x 180.67944pt.
 
-LaTeX Warning: Reference `fig:boxplotmodif2' on page 25 undefined on input line
- 102.
-
-
-LaTeX Warning: Reference `fig:boxplotmodif2' on page 25 undefined on input line
- 104.
-
-
-LaTeX Warning: Reference `fig:boxplotmodif2' on page 25 undefined on input line
- 104.
-
-
-LaTeX Warning: Reference `fig:boxplotmodif2' on page 25 undefined on input line
- 107.
-
-
-Overfull \hbox (2.49905pt too wide) in paragraph at lines 107--108
+Overfull \hbox (2.49905pt too wide) in paragraph at lines 110--111
 []\OT1/cmr/m/n/12 V nie-ktorych prpadoch kra-bi-covy dia-gram zakryva skut
 ocny tvar dat, teda jeho sikmost[]
  []
 
-[25] [26] <binsizehistogram.pdf, id=278, 220.825pt x 281.05pt>
+[25 <S:/School/DiplomaThesis/Text/boxplot3.pdf>] [26]
+<histogram.pdf, id=310, 371.3875pt x 341.275pt>
+File: histogram.pdf Graphic file (type pdf)
+ <use histogram.pdf>
+Package pdftex.def Info: histogram.pdf used on input line 131.
+(pdftex.def)             Requested size: 180.67499pt x 166.02849pt.
+ [27 <S:/School/DiplomaThesis/Text/histogram.pdf>]
+<binsizehistogram.pdf, id=345, 220.825pt x 281.05pt>
 File: binsizehistogram.pdf Graphic file (type pdf)
 
 <use binsizehistogram.pdf>
-Package pdftex.def Info: binsizehistogram.pdf used on input line 134.
+Package pdftex.def Info: binsizehistogram.pdf used on input line 144.
 (pdftex.def)             Requested size: 289.07999pt x 367.93802pt.
- [27] [28 <S:/School/DiplomaThesis/Text/binsizehistogram.pdf>] <linegraph.pdf, 
-id=314, 702.625pt x 552.0625pt>
+ [28] [29 <S:/School/DiplomaThesis/Text/binsizehistogram.pdf>] <linegraph.pdf, 
+id=381, 702.625pt x 552.0625pt>
 File: linegraph.pdf Graphic file (type pdf)
  <use linegraph.pdf>
-Package pdftex.def Info: linegraph.pdf used on input line 157.
+Package pdftex.def Info: linegraph.pdf used on input line 167.
 (pdftex.def)             Requested size: 216.81pt x 170.34576pt.
 
-[29] [30 <S:/School/DiplomaThesis/Text/linegraph.pdf>]
-<taylortriangle.pdf, id=344, 250.9375pt x 170.6375pt>
+[30 <S:/School/DiplomaThesis/Text/linegraph.pdf>] [31]
+<taylortriangle.pdf, id=411, 250.9375pt x 170.6375pt>
 File: taylortriangle.pdf Graphic file (type pdf)
  <use taylortriangle.pdf>
-Package pdftex.def Info: taylortriangle.pdf used on input line 183.
+Package pdftex.def Info: taylortriangle.pdf used on input line 193.
 (pdftex.def)             Requested size: 202.35622pt x 137.60893pt.
 
-[31 <S:/School/DiplomaThesis/Text/taylortriangle.pdf>]
-Overfull \hbox (8.97058pt too wide) in paragraph at lines 195--197
+Overfull \hbox (8.97058pt too wide) in paragraph at lines 205--207
 \OT1/cmr/m/n/12 nachadza v najnizsej urovni grafu, kde je ko-relacia rovn
 a jed-nej. Vzdia-le-nost[] od pociatocneho
  []
 
-<taylordiagram.pdf, id=383, 451.6376pt x 451.08942pt>
+<taylordiagram.pdf, id=412, 451.6376pt x 451.08942pt>
 File: taylordiagram.pdf Graphic file (type pdf)
  <use taylordiagram.pdf>
-Package pdftex.def Info: taylordiagram.pdf used on input line 200.
+Package pdftex.def Info: taylordiagram.pdf used on input line 210.
 (pdftex.def)             Requested size: 252.94499pt x 252.64276pt.
 
-[32 <S:/School/DiplomaThesis/Text/taylordiagram.pdf>])
-(S:\School\DiplomaThesis\Text\05design.tex [33]
+[32 <S:/School/DiplomaThesis/Text/taylortriangle.pdf>] [33 <S:/School/DiplomaTh
+esis/Text/taylordiagram.pdf>]) (S:\School\DiplomaThesis\Text\05design.tex
+[34]
 Kapitola 5.
-[34
+[35
 
-] [35]
+] [36]
 
-LaTeX Warning: Reference `fig:XY' on page 36 undefined on input line 48.
+LaTeX Warning: Reference `fig:XY' on page 37 undefined on input line 48.
 
-[36]
+[37]
 LaTeX Font Info:    Try loading font information for U+eus on input line 62.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\ueus.fd"
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [37]
+) [38]
 
-LaTeX Warning: Reference `fig:pruh' on page 38 undefined on input line 76.
+LaTeX Warning: Reference `fig:pruh' on page 39 undefined on input line 76.
 
 
 Overfull \hbox (10.94714pt too wide) in paragraph at lines 88--89
@@ -1262,13 +1259,13 @@ Overfull \hbox (10.94714pt too wide) in paragraph at lines 88--89
 ia-gram po-tre-buje na svoju konstrukciu
  []
 
-[38]
+[39]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 95.
 
-[39] [40] <functionalboxplot.pdf, id=430, 552.2123pt x 282.09639pt>
+[40] [41] <functionalboxplot.pdf, id=497, 552.2123pt x 282.09639pt>
 File: functionalboxplot.pdf Graphic file (type pdf)
 
 <use functionalboxplot.pdf>
@@ -1284,31 +1281,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--1
 
  []
 
-[41] [42 <S:/School/DiplomaThesis/Text/functionalboxplot.pdf>] [43]
+[42] [43 <S:/School/DiplomaThesis/Text/functionalboxplot.pdf>] [44]
 Kapitola 6.
-) (S:\School\DiplomaThesis\Text\07results.tex [44
+) (S:\School\DiplomaThesis\Text\07results.tex [45
 
 ]
 Overfull \vbox (30.46065pt too high) has occurred while \output is active []
 
 
-[45]
+[46]
 Kapitola 7.
-) (S:\School\DiplomaThesis\Text\main.bbl [46
+) (S:\School\DiplomaThesis\Text\main.bbl [47
 
-] [47
+] [48
 
-] [48] [49] [50] [51])
-[52] (S:\School\DiplomaThesis\Text\main.aux)
+] [49] [50] [51] [52])
+[53] (S:\School\DiplomaThesis\Text\main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9166 strings out of 493921
- 127818 string characters out of 3147293
- 217494 words of memory out of 3000000
- 12225 multiletter control sequences out of 15000+200000
+ 9177 strings out of 493921
+ 127996 string characters out of 3147293
+ 217516 words of memory out of 3000000
+ 12234 multiletter control sequences out of 15000+200000
  21559 words of font info for 81 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,19n,47p,1022b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1332,9 +1329,9 @@ i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (65 pages, 2065809 bytes).
+Output written on main.pdf (66 pages, 2568006 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
+ 636 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
