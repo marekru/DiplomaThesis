@@ -73,6 +73,13 @@ The~R Foundation.
 \newblock \url{http://www.r-project.org/}, Marec 2015.
 \newblock [Prístupné online: 19.3. 2015].
 
+\bibitem[Fri09]{HistoryOfInfoVis}
+Michael Friendly.
+\newblock Milestones in the history of thematic cartography, statistical
+  graphics, and data visualization.
+\newblock 2009.
+\newblock Na webe: \url{http://datavis.ca/milestones/}.
+
 \bibitem[Gol]{Golding}
 Professor~Brian Golding.
 \newblock Weather forecasting part 1.
@@ -179,6 +186,13 @@ Apache OpenOffice.
 \newblock \url{https://www.openoffice.org/product/calc.html}, 2015.
 \newblock [Prístupné online: 18.3.2015].
 
+\bibitem[{Pea}95]{histogram}
+K.~{Pearson}.
+\newblock {Contributions to the Mathematical Theory of Evolution. II. Skew
+  Variation in Homogeneous Material}.
+\newblock {\em Royal Society of London Philosophical Transactions Series A},
+  186:343--414, 1895.
+
 \bibitem[PKR07]{VisualSummaryPotter}
 Kristin Potter, Joe Kniss, and Richard Riesenfeld.
 \newblock Visual summary statistics.
@@ -230,6 +244,11 @@ Exelis Visual~Information Solutions.
 Mary~Eleanor Spear.
 \newblock {\em Charting Statistics}.
 \newblock McGraw-Hill Book Company, Inc., 1952.
+
+\bibitem[SS07]{OptBinSize}
+Hideaki Shimazaki and Shigeru Shinomoto.
+\newblock A method for selecting the bin size of a time histogram.
+\newblock {\em Neural Comput.}, 19(6):1503--1527, June 2007.
 
 \bibitem[Tay01]{Taylor}
 Karl~E. Taylor.

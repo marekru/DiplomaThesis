@@ -35,9 +35,6 @@ Na obrázku \ref{fig:scattervsqq} môžme vidieť porovnanie bodového grafu a \
 
 Dôležitým faktorom teda zostáva aké premenné umiestnime na \mbox{$ x $-ovú} a aké na \mbox{$ y $-ovú} os. Vo verifikácii predpovedných modelov počasia sú to zvyčajne predpovede na jednej osi a pozorovania na druhej. Taktiež sa zvyknú robiť dvojice (predpoveď, chyba predpovede), (pozorovanie, chyba predpovede) alebo (čas predpovede, chyba predpovede) a im podobné. V našej aplikácii sme testovali poslednú zo spomenutých dvojíc.
 
-
-\section{Histogram}
-
 \section{Krabicový diagram}
 \label{subsec:boxplot}
 Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartál s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 \cite{Tukey}, uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{\mbox{5-number} summary}) \cite{Potter}, ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor \cite{Wickham}, ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
@@ -98,12 +95,7 @@ Obrázok \ref{fig:boxplotmodif1} e) znázorňuje predchodcu krabicového diagram
 Ako posledný príklad vizuálnej modifikácie uvádzame pridanie farieb do krabicového diagramu. Táto farebná variácia uchováva tvar diagramu, avšak časť nad mediánom je zafarbená inou farbou ako hodnoty pod. Autori článku odporúčajú červenú a modrú farbu, tak ako na obrázku \ref{fig:boxplotmodif1} f). Cieľom tohto prístupu bolo chápať krabicový diagram ako jednu percepčnú jednotku a nahradiť 5 symbolov jedným, čím sa mala znížiť námaha pozorovateľa pri analýze a taktiež uľahčiť porovnávanie viacerých diagramov navzájom. 
 
 
-\begin{figure}
-	\centering
-	\includegraphics[width = 6in]{boxplot3}
-	\caption{Krabicové diagramy s pridanou informáciou a) Krabicový diagram s variabilnou šírkou \cite{McGill} b) Vrúbkovaný krabicový diagram \cite{McGill} c) Krabicový diagram s informáciou o šikmosti dát \cite{Chamnein}}
-	\label{fig:boxplotmodif2}
-\end{figure}
+-
 
 
 \paragraph{}
@@ -114,7 +106,6 @@ V druhom prípade ide o takzvaný \textit{Vrúbkovaný krabicový diagram}. V to
 
 V niektorých prípadoch krabicový diagram zakrýva skutočný tvar dát, teda jeho šikmosť alebo modalitu, keďže jeho vzhľad nabáda k tomu, aby si užívateľ myslel, že sú dát zacentrované na stred a unimodálne. V práci s názvom \textit{Can the Box Plot be Improved?} \cite{Chamnein} autor uvádza príklad kedy skutočne rôznorodé dáta generujú rovnaký krabicový diagram. Tento problém rieši elegantným a čistým spôsobom pridaním hrubej čiary na základe koeficientu asymetrickosti $ \gamma $. Na obrázku \ref{fig:boxplotmodif2}c) môžme vidieť zľava asymetrické dáta, na stred zarovnané dáta a bimodálne dáta.
 
-%TODO toho pottera mozem nahradit tymi, ktory su origos autori
 Krabicový diagram umožňuje mnoho ďalších rozšírení napríklad pridaním informácie o hustote dát (histogramový krabicový diagram, vázový diagram \cite{HistVasePlot} , huslový diagram \cite{ViolinPlot}), rozšírením pre viacrozmerné dáta (vrecový graf \cite{Bagplot}, 2D krabicový diagram \cite{Boxplot2D} ) alebo zobrazením hodnôt v inej súradnicovej sústave (napríklad polárnej - vejárový graf \cite{FanChart}). Opis týchto techník je však nad rámec tejto práce, preto ho tu ani nebudeme uvádzať.
 
 \subsection{Úloha krabicového diagramu vo verifikácii}
@@ -126,10 +117,50 @@ V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovan
 
 Ďalším použitím je porovnanie distribúcie chýb predpovedí, či už pre rôzne merania, konkrétne predpovedané časy, rôzne predpovedné modely a podobne. Tu považujeme použitie krabicového diagramu za opodstatnené, keďže ide zväčša o porovnávanie väčšieho množstva distribúcií, a tak je jeho jednoduchosť, čitateľnosť, kompaktnosť a iné jeho vlastnosti potrebné.
 
+\section{Histogram}
+Ďalším veľmi bežným spôsobom, ako vizualizovať distribúciu dát je pomocou \textit{histogramu}, ktorého existencia sa datuje do roku 1895, kedy ho uviedol vo svojej práci Karl Pearson \cite{histogram}. Histogram využíva veľmi jednoduchú myšlienku vizualizovať frekvencie hodnôt ako stĺpce rôznej výšky, ktorá sa v priebehu histórie analýzy dát ukázala ako veľmi užitočná.
+
+\subsection{Konštrukcia histogramu}
+Konštrukcia histogramu je pomerne jednoduchá. V prvom rade potrebujeme rozdeliť interval hodnôt na disjunktné podintervaly rovnakej dĺžky. Na vygenerovanie týchto intervalov využíva jeho autor počiatok $ O $, od ktorého začneme generovať intervaly, a veľkosť intervalu $ w $. Prvý interval je $ \langle O, O + w) $ a všetky nasledujúce vzniknú posúvaním intervalu o dĺžku $ w $. Ďalej pre každý takto vzniknutý interval vypočítame koľko hodnôt doň spadá.  Potom už môžme vykresliť jednotlivé stĺpce pre každý interval ako obdĺžniky so šírkou $ w $ a výškou, ktorá sa určí na základe početnosti hodnôt pre daný interval. Na obrázku \ref{fig:binsizehistogram} môžeme vidieť takýmto spôsobom vygenerovaný histogram.
+
+Z vyššie popísaného postupu a rovnako aj z obrázka \ref{fig:binsizehistogram} môžme vidieť, že konštrukcia histogramu závisí od zvoleného počiatku $ O $, no v prvom rade na zvolenej veľkosti intervalu $ w $. Z tohto dôvodu vzniklo mnoho prístupov, ktoré sa snažia optimalizovať $ w $, tak aby sa získal optimálny histogram. Optimálny histogram $ h(x) $ je taký, ktorý minimalizuje integrovanú strednú kvadratickú chybu (\textit{MISE}) vzhľadom na pôvodnú funkciu hustoty $ f(x) $, ktorú vypočítame ako $ MISE = \int (h(x) - f(x))^2 dx $. Jedným z príkladov, ktorý toto využíva je algoritmus na generovanie optimálnej hodnoty $ w $, ktorý navrhol \textit{Shimazaki} a \textit{Shinomoto} \cite{OptBinSize}. Autori algoritmu požívajú dekompozíciu MISE na vytvorenie cenovej funkcie $ C_{n}(w) $ pre dĺžku intervalu $ w $:
+\[
+	C_{n}(w) = \frac{2\bar{k} - v}{(nw)^2}
+\]
+kde $ N $ je počet intervalov šírky $ w $, $ n $ je počet všetkých hodnôt množiny, $ \bar{k}$ je priemerný počet hodnôt v jednom intervale a $ v $ je variancia počtu hodnôt v intervaloch. Priebeh algoritmu je potom už len taký, že generuje postupne rôzne $ w $, kým nenájde také s najmenšou cenou $ C_{n}(w) $.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 4in]{binsizehistogram}
+	\caption{ Porovnanie rôznych dĺžok intervalov. Obrázok je upravený z pôvodného článku \cite{OptBinSize} }
+	\label{fig:binsizehistogram}
+\end{figure}
+
+ 
+\subsection{Úloha histogramu vo verifikácii}
+Ako sme už spomenuli, primárna úloha histogramu je detailná vizualizácia distribúcie dát. Vzhľadom k vysokej úrovni detailu, nie je jednoduché porovnávanie mnoho histogramov súčasne, tak ako to bolo u krabicového diagramu. Z tohto dôvodu sa zvyčajne v praxi porovnáva navzájom len niekoľko rôznych histogramov. Histogramy vo verifikácii slúžia na porovnanie distribúcie predpovedí a pozorovaní. Porovnávanie stĺpcov sa robí buď v dvoch rôznych diagramoch umiestnených vedľa seba alebo v jednom diagrame, kde sa prislúchajúce stĺpce umiestnia pri sebe a farebne označia, aby ich bolo možné ľahšie rozlíšiť.
+
 \section{Čiarový diagram}
+\textit{Čiarový diagram} je najjednoduchší spôsob ako vizualizovať jednorozmerné dáta. Využíva sa najmä na vizualizáciu spojitej premennej, keďže čiara narozdiel od bodov podporuje vizuálny dojem spojitosti. Pôvod čiarového diagramu sa datuje do prapočiatkov vizualizácie informácií. Jeho autorom je zakladateľ grafických metód v štatistike William Playfair, ktorý objavil 4 typy diagramov medzi, ktorými bol aj čiarový diagram v roku 1786 \cite{HistoryOfInfoVis}.
+
+\subsection{Konštrukcia čiarového diagramu}
+Pri konštrukcii čiarového diagramu sa hodnoty z množiny zobrazia v karteziánskej sústave ako body a jednotlivé dvojice susedných bodov sa následne pospájajú čiarou. Na obrázku \ref{fig:linegraph} môžme vidieť príklad čiarového grafu vytvoreného týmto postupom.
+
+Čiarový graf poskytuje rôznorodé úpravy, ktoré pridávajú ďalšiu informáciu do grafu alebo zlepšujú niektoré vizuálne vlastnosti. Napríklad je možné upravovať šírku, tvar alebo farbu čiary, pridávať ďalšie čiary do grafu, zvýrazniť jednotlivé body pre dané hodnoty, použiť iný typ interpolácie medzi bodmi (zvyčajne sa používa lineárna interpolácia) a podobne.
+
+\subsection{Úloha čiarového diagramu vo verifikácii}
+Vo verifikácii je účelom čiarového diagramu vizualizácia časových radov. Na \mbox{$ x $-ovej} osi zvykne byť časový interval s konkrétnymi dátumami predpovedí alebo hodiny predpovede. Rozdiel medzi nimi je ten, že konkrétny dátum je v histórii iba raz, zatiaľ čo model predpovedá pravidelne, takže predpovedné hodiny môžu byť rovnaké pre rôzne dátumy. Na \mbox{$ y $-ovej} osi teda bývajú buď jednotlivé hodnoty chýb alebo pre viacero hodnôt vypočítané štatistiky ako boli spomenuté v časti \ref{sec:errormeasurement}.
+ 
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 3in]{linegraph}
+	\caption{Príklad čiarového grafu vygenerovaného v programe Adobe Illustrator}
+	\label{fig:linegraph}
+\end{figure}
 
 \section{Taylorov diagram}
-Taylorov diagram bol špeciálne navrhnutý pre verifikáciu modelov počasia, ktorého autorom je Karl. E. Taylor \cite{Taylor}. Podľa slov autora úlohou diagramu je štatistické zhrnutie, ako dobre si dátové vzory zodpovedajú v zmysle troch metrík: koeficient korelácie, strednej kvadratickej chyby a smerodajnej odchýlky. Použitie taylorovho diagramu nie je tak časté ako pri predchádzajúcich vizualizačných technikách, možno aj z dôvodu horšej čitateľnosti grafu a taktiež nemá takú veľkú tradíciu v štatistike, ako predošlé techniky. Podobnú snahu zobraziť tri štatistiky súčasne v jednom grafe mal aj Boer a Lambert vo svojom BLT diagrame \cite{Boer}. Tento typ grafu je veľmi podobný taylorovmu grafu, a keďže jeho použitie je ešte zriedkavejšie, tak sa mu v tejto práci nebudeme venovať.
+\textit{Taylorov diagram} bol špeciálne navrhnutý pre verifikáciu modelov počasia, ktorého autorom je Karl. E. Taylor \cite{Taylor}. Podľa slov autora úlohou diagramu je štatistické zhrnutie, ako dobre si dátové vzory zodpovedajú v zmysle troch metrík: koeficient korelácie, strednej kvadratickej chyby a smerodajnej odchýlky. Použitie taylorovho diagramu nie je tak časté ako pri predchádzajúcich vizualizačných technikách, možno aj z dôvodu horšej čitateľnosti grafu a taktiež nemá takú veľkú tradíciu v štatistike, ako predošlé techniky. Podobnú snahu zobraziť tri štatistiky súčasne v jednom grafe mal aj Boer a Lambert vo svojom BLT diagrame \cite{Boer}. Tento typ grafu je veľmi podobný taylorovmu grafu, a keďže jeho použitie je ešte zriedkavejšie, tak sa mu v tejto práci nebudeme venovať.
   
 \subsection{Konštrukcia taylorovho diagramu}
 Taylorov graf porovnáva jednu alebo viacero dátových množín ($ f $) s jednou referenčnou množinou $ r $. Označme si hodnoty v porovnávanej množine $ f_{n} $ a s nimi spárované referenčné hodnoty $ r_{n} $, ktoré sú definované na $ N $ diskrétnych bodoch (napríklad v čase alebo priestore). Ako sme už spomenuli, taylorov graf vizualizuje 3 štatistiky súčasne, na čo využíva ich vzájomný geometrický vzťah. Týmito štatistikami sú: koeficient korelácie $ R $, centrovaná stredná kvadratická chyba $ E' $ a smerodajné odchýlky $ \sigma_{f} $ a $ \sigma_{r} $ pre $ f, r $.  Vzorce na výpočet sú nasledovné:
@@ -146,6 +177,13 @@ Rovnako pre $ \sigma_{f} $ aj $ \sigma_{r} $ je výpočet nasledovný:
 \[
 \sigma_{x} = \sqrt{\frac{1}{N} \sum_{n=1}^{N}[(x_{n} - \bar{x})]^2 }
 \]
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 2.8in]{taylortriangle}
+	\caption{ Geometrický vzťah pre popisné štatistiky $ R, E', \sigma_{r}, \sigma_{f} $ }
+	\label{fig:gemrelationship}
+\end{figure}
 
 Kľúčovým bodom v konštrukcii diagramu je, že s využitím týchto troch respektíve štyroch štatistík môžme skonštruovať nasledovný vzťah:
 \[
