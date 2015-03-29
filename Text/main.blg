@@ -1,10 +1,11 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: main.aux
 The style file: alpha.bst
 Database file #1: verification.bib
 Database file #2: prevSoft.bib
 Database file #3: prevVis.bib
 Warning--string name "sepember" is undefined
---line 280 of file prevVis.bib
+--line 559 of file prevVis.bib
 Database file #4: design.bib
 Database file #5: implementation.bib
 Database file #6: results.bib
@@ -16,4 +17,45 @@ Warning--empty journal in HistoryOfInfoVis
 Warning--can't use both author and editor fields in VerifSoft
 Warning--empty publisher in Potter
 Warning--empty journal in TaylorPrime
+You've used 58 entries,
+            2543 wiz_defined-function locations,
+            953 strings with 13244 characters,
+and the built_in function-call counts, 20178 in all, are:
+= -- 1989
+> -- 858
+< -- 43
++ -- 279
+- -- 271
+* -- 1380
+:= -- 3322
+add.period$ -- 189
+call.type$ -- 58
+change.case$ -- 325
+chr.to.int$ -- 58
+cite$ -- 63
+duplicate$ -- 815
+empty$ -- 1544
+format.name$ -- 359
+if$ -- 4087
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 45
+newline$ -- 308
+num.names$ -- 176
+pop$ -- 395
+preamble$ -- 1
+purify$ -- 397
+quote$ -- 0
+skip$ -- 658
+stack$ -- 0
+substring$ -- 966
+swap$ -- 93
+text.length$ -- 43
+text.prefix$ -- 34
+top$ -- 0
+type$ -- 424
+warning$ -- 5
+while$ -- 181
+width$ -- 61
+write$ -- 750
 (There was 1 error message)
