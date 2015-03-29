@@ -7,7 +7,7 @@ Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných
 
 
 \subsection{Konštrukcia bodového grafu}
-Skonštruovanie bodového grafu je veľmi jednoduchá a aj preto je často používaným prostriedkom na vizualizáciu. Na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať, vizualizujeme tak, že spravíme zobrazenie jednej premennej na \mbox{$ x $-ovú} súradnicovú os a zobrazenie druhej premennej na \mbox{$ y $-ovú} os. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
+Skonštruovanie bodového grafu je veľmi jednoduché a aj preto je často používaným prostriedkom na vizualizáciu. Na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať, vizualizujeme tak, že spravíme zobrazenie jednej premennej na \mbox{$ x $-ovú} súradnicovú os a zobrazenie druhej premennej na \mbox{$ y $-ovú} os. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
 Na obrázku \ref{fig:scattervsqq}a) vidíme príklad výsledného bodového grafu, ktorý vznikne takýmto postupom.
 
 Bodový graf ponúka mnoho spôsobov, ako pridať ďalší rozmer informácie do vizualizácie. Môžeme zvoliť odlišnú súradnicovú sústavu, čím veľmi jednoducho vytvoríme napríklad 3D bodový graf pre trojrozmerné dáta. Ďalšou možnosťou rozšírenia je zmena vykresľovaného symbolu, ktorému môžme nastavovať rôzne parametre, do ktorých možno zakódovať nové informácie. Zvyčajne sú týmito parametrami farba, \mbox{alfa-transparencia} \cite{SolutionToOverplotting}, veľkosť \cite{Viegas}, tvar \cite{GenSensScatterplot, EnhanceScatterplot} a podobne. Tieto modifikácie si v komunite vizuálnej analýzy vyslúžili aj vlastné názvy a teoretické zázemie, avšak v našej práci sa týmto druhom diagramov nebudeme venovať.
@@ -18,7 +18,7 @@ Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil
 
 Kvantilmi sú hodnoty, ktoré rozdeľujú usporiadanú dátovú množinu na niekoľko rovnako veľkých častí. Pre jednu dátovú množinu je $ (q - 1) $ $ q $-kvantilov. Najznámejším príkladom je \mbox{2-kvantil}, ktorý sa nazýva medián. Ďalšími bežnejšie používanými sú \mbox{4-kvantily}, \mbox{10-kvantily} a \mbox{100-kvantily}, čo sú vlastne kvartily, decily a percentily. 
 
-To, čo sa zvyčajne robí pri \mbox{Q-Q} grafe je, že sa nevyberá konkrétny typ kvantilu, ale hodnoty sa jednoducho usporiadajú podľa veľkosti a zobrazia. Ak máme množinu $ A $ a jej veľkosť je $ n = \lvert A \rvert $, tak vizualizjeme $ n $ \mbox{$ q $-kvantilov}, kde $ q = n + 1 $.  Tým, že nezobrazujeme na grafe surové dáta, ale kvantily, \mbox{$ k $-ty} bod v grafe nie je zobrazením \mbox{$ k $-teho} páru hodnôt, ale zobrazením \mbox{$ k $-teho} \mbox{$ q $-kvantilu}. 
+To, čo sa zvyčajne robí pri \mbox{Q-Q} grafe je, že sa nevyberá konkrétny typ kvantilu, ale hodnoty sa jednoducho usporiadajú podľa veľkosti a zobrazia. Ak máme množinu $ A $ a jej veľkosť je $ n = \lvert A \rvert $, tak vizualizjeme $ n $ \mbox{$ q $-kvantilov}, kde $ q = n + 1 $.  Tým, že nezobrazujeme na grafe surové dáta, ale kvantily, \mbox{$ k $-ty} bod v grafe nie je zobrazením \mbox{$ k $-teho} páru hodnôt, ako to bolo v klasickom bodovom grafe, ale zobrazením \mbox{$ k $-teho} \mbox{$ q $-kvantilu}. 
 
 Na obrázku \ref{fig:scattervsqq} môžme vidieť porovnanie bodového grafu a \mbox{Q-Q} grafu pre rovnakú dátovú množinu.
 
@@ -133,11 +133,13 @@ Konštrukcia histogramu je pomerne jednoduchá. V prvom rade potrebujeme rozdeli
 	\label{fig:histogram}
 \end{figure}
 
-Z vyššie popísaného postupu a rovnako aj z obrázka \ref{fig:binsizehistogram} môžme vidieť, že konštrukcia histogramu závisí od zvoleného počiatku $ O $, no v prvom rade na zvolenej veľkosti intervalu $ w $. Z tohto dôvodu vzniklo mnoho prístupov, ktoré sa snažia optimalizovať $ w $, tak aby sa získal optimálny histogram. Optimálny histogram $ h(x) $ je taký, ktorý minimalizuje integrovanú strednú kvadratickú chybu (\textit{MISE}) vzhľadom na pôvodnú funkciu hustoty $ f(x) $, ktorú vypočítame ako $ MISE = \int (h(x) - f(x))^2 dx $. Jedným z príkladov, ktorý toto využíva je algoritmus na generovanie optimálnej hodnoty $ w $, ktorý navrhol \textit{Shimazaki} a \textit{Shinomoto} \cite{OptBinSize}. Autori algoritmu požívajú dekompozíciu MISE na vytvorenie cenovej funkcie $ C_{n}(w) $ pre dĺžku intervalu $ w $:
+Z vyššie popísaného postupu a rovnako aj z obrázka \ref{fig:binsizehistogram} môžme vidieť, že konštrukcia histogramu závisí od zvoleného počiatku $ O $, no v prvom rade na zvolenej veľkosti intervalu $ w $. Z tohto dôvodu vzniklo mnoho prístupov, ktoré sa snažia optimalizovať $ w $, tak aby sa získal optimálny histogram. Optimálny histogram $ h(x) $ je taký, ktorý minimalizuje integrovanú strednú kvadratickú chybu (\textit{MISE}) vzhľadom na pôvodnú funkciu hustoty $ f(x) $. Túto chybu vypočítame takto: $ MISE = \int (h(x) - f(x))^2 dx $. 
+
+Jedným z príkladov, ktorý toto využíva je algoritmus na generovanie optimálnej hodnoty $ w $, ktorý navrhol \textit{Shimazaki} a \textit{Shinomoto} \cite{OptBinSize}. Autori algoritmu požívajú dekompozíciu MISE na vytvorenie cenovej funkcie $ C_{n}(w) $ pre dĺžku intervalu $ w $:
 \[
 	C_{n}(w) = \frac{2\bar{k} - v}{(nw)^2}
 \]
-kde $ N $ je počet intervalov šírky $ w $, $ n $ je počet všetkých hodnôt množiny, $ \bar{k}$ je priemerný počet hodnôt v jednom intervale a $ v $ je variancia počtu hodnôt v intervaloch. Priebeh algoritmu je potom už len taký, že generuje postupne rôzne $ w $, kým nenájde také s najmenšou cenou $ C_{n}(w) $. 
+kde $ n $ je počet všetkých hodnôt množiny, $ \bar{k}$ je priemerný počet hodnôt v jednom intervale a $ v $ je variancia počtu hodnôt v intervaloch. Priebeh algoritmu je potom už len taký, že generuje postupne rôzne $ w $, kým nenájde také s najmenšou cenou $ C_{n}(w) $. 
 
 \begin{figure}
 	\centering
@@ -148,7 +150,7 @@ kde $ N $ je počet intervalov šírky $ w $, $ n $ je počet všetkých hodnôt
 
  
 \subsection{Úloha histogramu vo verifikácii}
-Ako sme už spomenuli, primárna úloha histogramu je detailná vizualizácia distribúcie dát. Vzhľadom k vysokej úrovni detailu, nie je jednoduché porovnávanie mnoho histogramov súčasne, tak ako to bolo u krabicového diagramu. Z tohto dôvodu sa zvyčajne v praxi porovnáva navzájom len niekoľko rôznych histogramov. Histogramy vo verifikácii slúžia na porovnanie distribúcie predpovedí a pozorovaní. Porovnávanie stĺpcov sa robí buď v dvoch rôznych diagramoch umiestnených vedľa seba alebo v jednom diagrame, kde sa prislúchajúce stĺpce umiestnia pri sebe a farebne označia, aby ich bolo možné ľahšie rozlíšiť.
+Ako sme už spomenuli, primárna úloha histogramu je detailná vizualizácia distribúcie dát. Vzhľadom k vysokej úrovni detailu, nie je jednoduché porovnávanie mnoho histogramov súčasne, tak ako to bolo u krabicového diagramu. Z tohto dôvodu sa zvyčajne v praxi porovnáva navzájom len niekoľko rôznych histogramov. Vo verifikácii histogramy slúžia na porovnanie distribúcie predpovedí a pozorovaní. Porovnávanie stĺpcov histogramov sa robí buď v dvoch rôznych diagramoch umiestnených vedľa seba alebo v jednom diagrame, kde sa k sebe prislúchajúce stĺpce umiestnia pri sebe a rozdielne zafarbia, aby ich bolo možné ľahšie rozlíšiť.
 
 \section{Čiarový diagram}
 \textit{Čiarový diagram} je najjednoduchší spôsob ako vizualizovať jednorozmerné dáta. Využíva sa najmä na vizualizáciu spojitej premennej, keďže čiara narozdiel od bodov podporuje vizuálny dojem spojitosti. Pôvod čiarového diagramu sa datuje do prapočiatkov vizualizácie informácií. Jeho autorom je zakladateľ grafických metód v štatistike William Playfair, ktorý objavil 4 typy diagramov medzi, ktorými bol aj čiarový diagram v roku 1786 \cite{HistoryOfInfoVis}.
@@ -164,7 +166,7 @@ Vo verifikácii je účelom čiarového diagramu vizualizácia časových radov.
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 3in]{linegraph}
+	\includegraphics[width = 3in, height=1.5in]{linegraph}
 	\caption{Príklad čiarového grafu vygenerovaného v programe Adobe Illustrator}
 	\label{fig:linegraph}
 \end{figure}

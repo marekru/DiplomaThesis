@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  28 MAR 2015 23:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  29 MAR 2015 11:55
 entering extended mode
 **main.tex
 (S:\School\DiplomaThesis\Text\main.tex
@@ -1208,23 +1208,23 @@ Package pdftex.def Info: histogram.pdf used on input line 131.
 File: binsizehistogram.pdf Graphic file (type pdf)
 
 <use binsizehistogram.pdf>
-Package pdftex.def Info: binsizehistogram.pdf used on input line 144.
+Package pdftex.def Info: binsizehistogram.pdf used on input line 146.
 (pdftex.def)             Requested size: 289.07999pt x 367.93802pt.
  [28] [29 <S:/School/DiplomaThesis/Text/binsizehistogram.pdf>] <linegraph.pdf, 
 id=381, 702.625pt x 552.0625pt>
 File: linegraph.pdf Graphic file (type pdf)
  <use linegraph.pdf>
-Package pdftex.def Info: linegraph.pdf used on input line 167.
-(pdftex.def)             Requested size: 216.81pt x 170.34576pt.
+Package pdftex.def Info: linegraph.pdf used on input line 169.
+(pdftex.def)             Requested size: 216.8037pt x 108.40567pt.
 
 [30 <S:/School/DiplomaThesis/Text/linegraph.pdf>] [31]
 <taylortriangle.pdf, id=411, 250.9375pt x 170.6375pt>
 File: taylortriangle.pdf Graphic file (type pdf)
  <use taylortriangle.pdf>
-Package pdftex.def Info: taylortriangle.pdf used on input line 193.
+Package pdftex.def Info: taylortriangle.pdf used on input line 195.
 (pdftex.def)             Requested size: 202.35622pt x 137.60893pt.
 
-Overfull \hbox (8.97058pt too wide) in paragraph at lines 205--207
+Overfull \hbox (8.97058pt too wide) in paragraph at lines 207--209
 \OT1/cmr/m/n/12 nachadza v najnizsej urovni grafu, kde je ko-relacia rovn
 a jed-nej. Vzdia-le-nost[] od pociatocneho
  []
@@ -1232,7 +1232,7 @@ a jed-nej. Vzdia-le-nost[] od pociatocneho
 <taylordiagram.pdf, id=412, 451.6376pt x 451.08942pt>
 File: taylordiagram.pdf Graphic file (type pdf)
  <use taylordiagram.pdf>
-Package pdftex.def Info: taylordiagram.pdf used on input line 210.
+Package pdftex.def Info: taylordiagram.pdf used on input line 212.
 (pdftex.def)             Requested size: 252.94499pt x 252.64276pt.
 
 [32 <S:/School/DiplomaThesis/Text/taylortriangle.pdf>] [33 <S:/School/DiplomaTh
@@ -1329,7 +1329,7 @@ i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (66 pages, 2568006 bytes).
+Output written on main.pdf (66 pages, 2568015 bytes).
 PDF statistics:
  636 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
