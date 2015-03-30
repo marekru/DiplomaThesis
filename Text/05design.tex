@@ -27,8 +27,6 @@ V prvom rade nám do verifikácie vstupujú surové dáta, ktorými sú pozorova
 ------------------\\
 
 
-\section{Návrh rozloženia prvkov vizualizácie}
-
 
 \section{Návrh vizualizácie štatistík verifikácie} 
 
@@ -181,12 +179,47 @@ V našej práci sme do diagramu pridali ešte jednu krivku pre ľubovoľnú šta
 
 %TODO obrazok pasmo
 
+\subsection{Distribucia za cely rok} %TODO lepsie pomenovat - tuto bude navrh pre distribuciu chyb pomocou standrard deviation a urobi sa kruzok danej velkosti
+
+
 \subsection{Porovnanie metód}
 
 Tu bude pekný obrázok a obkeci. \\
 Graf hustoty je presnejsi, ale menej citatelny. \\
 Pruhovy kvantilovy diagram nahradzuje krabicovy diagram. \\
 Funkcionalny krabicovy riesi distribuciu funkcii.
+
+
+\section{Návrh rozloženia prvkov vizualizácie}
+Výsledná obrazovka systému sa nebude skladať z jedného typu vizualizácie, ale z viacerých grafov a iných častí, ktoré spolu užívateľovi vytvoria dostatočne dobrú predstavu o dátach. Tieto časti budeme nazývať prvky alebo komponenty vizualizácie. Jednotlivým prvkom sme dali nasledovné pomenovania: \textit{Meta informácie}, \textit{Prehľad}, \textit{Zjednodušený prehľad}, \textit{Celkový priebeh}, \textit{Detail štatistík}, \textit{Detail chýb} a \textit{Distribúcia chýb}. Pre lepšiu orientáciu v kapitole sme pre jednotlivé prvky priradili aj obrázkové ikony, ktoré sú na obrázku \ref{fig:XYZ}. \\
+ 
+%TODO možno itemize a viacej textu k jednotlivým prvkom 
+ 
+\textit{Meta informácie} je tabuľka obsahujúca informácie o stanici (Názov, geografická poloha, nadmorská výška), názov modelu, interval verifikácie, spôsob interpolácie a podobne.  
+
+\textit{Prehľad} je komponent vizualizácie, ktorý by mal poskytovať celistvý pohľad na všetky mesačné štatistiky. Jeho úlohou nie je detailné zobrazenie chýb, ale odhalenie vzorov, trendov a výkyvov vo fungovaní modelu počas skúmaného intervalu.
+
+\textit{Zjednodušený prehľad} je rovnaký ako prehľad avšak so zredukovanou plochou, ktorú zaberá, zjednodušenou farebnou škálou a bez popisiek.
+
+\textit{Celkový priebeh} nám dáva pohľad na chyby počas celého intervalu nie z pohľadu 48 predpovedných hodín, ale z pohľadu jednotlivých dní.
+
+\textit{Detail štatistík} je prvok slúžiaci na detailnejšie skúmanie štatistík počas jedného mesiaca. V grafe sa nachádzajú všetky dostupné štatistiky pre daný mesiac.
+
+\textit{Detail chýb} pre daný mesiac, nám dáva pohľad na chyby predpovede, z ktorých sa počítali štatistiky.
+
+\textit{Distribúcia chýb} sa taktiež zobrazuje pre konkrétny mesiac a týmto komponentom je graf, v ktorom je zobrazená distribúcia chýb v danom mesiaci.
+
+\subsection{Viacúrovňový návrh}
+Pri tomto navrhu sme sa rozhodli rozdelit prvky do viacero urovni:
+1. Uroven rokov
+2. Uroven mesiacov
+3. Ureoven mesiaca
+4. Uroven chyb
+
+\subsection{Plochý návrh}
+Pri tomto navrhu sme sa rozhodli zobrazit vsetky prvky sucasne na jednej urovni.
+
+
 
 \section{Návrh farebnej palety}
 - rainbow a preco zle \\

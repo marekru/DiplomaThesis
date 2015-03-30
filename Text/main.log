@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  29 MAR 2015 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  30 MAR 2015 22:51
 entering extended mode
 **main.tex
 (main.tex
@@ -1214,18 +1214,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--28
 
 ] [36] [37]
 
-LaTeX Warning: Reference `fig:XY' on page 38 undefined on input line 71.
+LaTeX Warning: Reference `fig:XY' on page 38 undefined on input line 70.
 
 [38]
-LaTeX Font Info:    Try loading font information for U+eus on input line 85.
+LaTeX Font Info:    Try loading font information for U+eus on input line 84.
  (C:\miktex\tex\latex\amsfonts\ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 
-LaTeX Warning: Reference `fig:pruh' on page 39 undefined on input line 99.
+LaTeX Warning: Reference `fig:pruh' on page 39 undefined on input line 98.
 
 [39]
-Overfull \hbox (10.94714pt too wide) in paragraph at lines 111--112
+Overfull \hbox (10.94714pt too wide) in paragraph at lines 110--111
 []\OT1/cmr/m/n/12 Ako sme spo-me-nuli v casti 4.2[], kla-sicky kra-bi-covy d
 ia-gram po-tre-buje na svoju konstrukciu
  []
@@ -1233,48 +1233,56 @@ ia-gram po-tre-buje na svoju konstrukciu
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 118.
+(amsmath)                 on input line 117.
 
 [40] [41] [42] <functionalboxplot.pdf, id=501, 552.2123pt x 282.09639pt>
 File: functionalboxplot.pdf Graphic file (type pdf)
 
 <use functionalboxplot.pdf>
-Package pdftex.def Info: functionalboxplot.pdf used on input line 175.
+Package pdftex.def Info: functionalboxplot.pdf used on input line 174.
 (pdftex.def)             Requested size: 542.025pt x 276.90022pt.
 
-Overfull \hbox (21.78867pt too wide) in paragraph at lines 174--176
+Overfull \hbox (21.78867pt too wide) in paragraph at lines 173--175
  []|  [] 
  []
 
-[43 <./functionalboxplot.pdf>]) (06implementation.tex
-Underfull \hbox (badness 10000) in paragraph at lines 191--1
+
+LaTeX Warning: Reference `fig:XYZ' on page 43 undefined on input line 194.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
-[44]
+[43 <./functionalboxplot.pdf>] [44]) (06implementation.tex
+Underfull \hbox (badness 10000) in paragraph at lines 223--1
+
+ []
+
+[45]
 Kapitola 6.
-) (07results.tex [45
+) (07results.tex [46
 
 ]
 Overfull \vbox (30.46065pt too high) has occurred while \output is active []
 
 
-[46]
+[47]
 Kapitola 7.
-) (main.bbl [47
+) (main.bbl [48
 
-] [48
+] [49
 
-] [49] [50] [51] [52]) [53] (main.aux)
+] [50] [51] [52] [53]) [54] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9318 strings out of 493698
- 126019 string characters out of 3151686
- 225911 words of memory out of 3000000
- 12406 multiletter control sequences out of 15000+200000
+ 9319 strings out of 493698
+ 126028 string characters out of 3151686
+ 226911 words of memory out of 3000000
+ 12407 multiletter control sequences out of 15000+200000
  21559 words of font info for 81 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,19n,47p,1022b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1293,9 +1301,9 @@ s/type1/public/amsfonts/cm/cmsy10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm
 s/type1/public/amsfonts/cm/cmti12.pfb><C:/miktex/fonts/type1/public/amsfonts/cm
 /cmtt12.pfb><C:/miktex/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/miktex/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (66 pages, 2558833 bytes).
+Output written on main.pdf (67 pages, 2561855 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
+ 642 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
