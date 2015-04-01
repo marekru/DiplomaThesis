@@ -29,6 +29,17 @@ V prvom rade nám do verifikácie vstupujú surové dáta, ktorými sú pozorova
 
 
 \section{Návrh vizualizácie štatistík verifikácie} 
+Ako sme uviedli v sekcii \ref{fig:linegraph}, bežne používaným spôsobom vizualizácie časových radov je čiarový diagram. Z našej skúsenosti vieme, že táto technika nie je vhodná pre porovnávanie mnohých chronologicky usporiadaných radov súčasne. Problémom je, že ak umiestnime viacero radov do jedného grafu, tak strácame informáciu o chronologickom poradí. Ak však umiestnime rady do grafov jednotlivo, tak pre väčšie množstvo dát nebudeme mať dostatočne veľký priestor.
+
+Zvolili sme preto pomerne jednoduché a účinné riešenie, zobraziť štatistiky na iný vizuálny parameter, konkrétne na farbu. Jednotlivé hodnoty sa teda v grafe zobrazia ako za tesne sebou umiestnené farebné obdĺžniky \footnote{Experimentovali sme taktiež s inými tvarmi (kruhy a obdĺžniky so zaoblenými hranami), ale aj s rôznymi veľkostami medzier medzi tvarmi. Použité nastavenie sa však ukázalo ako najvhodnejšie pri porovnávaní hodnôt vo vertikálnom aj horizontálnom smere.}, ktoré vytvoria jeden celistvý pás. Umiestnením takýto pásov pod seba vytvoríme farebnú mapu štatistík. 
+
+V našej aplikácii sa tento spôsob vizualizácie použil v dvoch prípadoch. Prvým prípadom bolo zobrazenie mesačných štatistík, pre 48 hodinové predpovede. Teda sme mali 12 mesiacov v roku a pre každý mesiac 48 hodnôt, čo sa nám zobrazilo ako farebná mapa $ 12 \times 48 $. Druhým prípadom bolo zobrazenie chýb pre konkrétne predpovede, ktorých mohlo byť variabilný počet podľa nastavení systému. Zvyčajne však išlo približne o 30 predpovedí pre každý mesiac.
+
+
+
+
+%TODO (Experimentovali sme aj s inými tvarmi, ako sú)
+
 
 \section{Návrh vizualizácie distribúcie chýb}
 Pri verifikácii predpovede spojitej premennej sme použili štatistické metódy spomenuté v sekcii \ref{sec:errormeasurement}, ktorých výsledok sme následne vizualizovali. Pôvodné dáta však zostali skryté za použitým matematickým modelom, a tak sme stratili informáciu o distribúcii chyby. Pri verifikácii sa štandardne používajú dve metódy na priamu, či nepriamu vizualizáciu a analýzu distribúcie, ktoré sme opísali v sekcii \ref{sec:prevvis}. Týmito metódami sú bodový graf (pozri podsekciu \ref{subsec:scatterplot}) a krabicový diagram (pozri podsekciu \ref{subsec:boxplot}).
@@ -190,24 +201,35 @@ Pruhovy kvantilovy diagram nahradzuje krabicovy diagram. \\
 Funkcionalny krabicovy riesi distribuciu funkcii.
 
 
+\section{Návrh farebnej palety}
+- rainbow a preco zle \\
+- monochrome cez 3 farby \\
+- monochrome 2 farby ostro rozdelene \\
+- ekvalizacia histogramom / boxplotom \\
+- navrh farby pre density, purhovy, functional boxplot \\
+
 \section{Návrh rozloženia prvkov vizualizácie}
-Výsledná obrazovka systému sa nebude skladať z jedného typu vizualizácie, ale z viacerých grafov a iných častí, ktoré spolu užívateľovi vytvoria dostatočne dobrú predstavu o dátach. Tieto časti budeme nazývať prvky alebo komponenty vizualizácie. Jednotlivým prvkom sme dali nasledovné pomenovania: \textit{Meta informácie}, \textit{Prehľad}, \textit{Zjednodušený prehľad}, \textit{Celkový priebeh}, \textit{Detail štatistík}, \textit{Detail chýb} a \textit{Distribúcia chýb}. Pre lepšiu orientáciu v kapitole sme pre jednotlivé prvky priradili aj obrázkové ikony, ktoré sú na obrázku \ref{fig:designicons}. \\
+Výsledná obrazovka systému sa nebude skladať iba z jedného typu vizualizácie, ale z viacerých grafov a iných častí, ktoré spolu užívateľovi vytvoria dostatočne dobrú predstavu o dátach. Tieto časti budeme nazývať prvky alebo komponenty vizualizácie. Jednotlivým prvkom sme dali nasledovné pomenovania: 
+
+\begin{itemize}
+	\item\textit{Meta informácie} je tabuľka obsahujúca informácie o stanici (Názov, geografická poloha, nadmorská výška), názov modelu, interval verifikácie, spôsob interpolácie a podobne.  
+		
+	\item\textit{Prehľad} je komponent vizualizácie, ktorý by mal poskytovať celistvý pohľad na všetky mesačné štatistiky. Jeho úlohou nie je detailné zobrazenie chýb, ale odhalenie vzorov, trendov a výkyvov vo fungovaní modelu počas skúmaného intervalu.
+	
+	\item\textit{Zjednodušený prehľad} je vo svojej podstate rovnaký ako \textit{Prehľad}. Rozdielom je však menšia plocha, ktorú zaberá, zjednodušená farebná škála a chýbajúce popisky.
+	
+	\item\textit{Celkový priebeh} zobrazuje priebeh chýb počas celého intervalu. Nie však z pohľadu 48 predpovedných hodín (ako \textit{Prehľad}), ale z pohľadu jednotlivých dní.
+	
+	\item\textit{Detail štatistík} je prvok slúžiaci na detailnejšie skúmanie štatistík počas jedného mesiaca. V grafe sa nachádzajú všetky dostupné štatistiky pre daný mesiac.
+	
+	\item\textit{Detail chýb} pre daný mesiac, nám dáva pohľad na chyby predpovede, z ktorých sa počítali štatistiky.
+	
+	\item\textit{Distribúcia chýb} sa taktiež zobrazuje pre konkrétny mesiac a týmto komponentom je graf, v ktorom je zobrazená distribúcia chýb v danom mesiaci.
+\end{itemize}
+
+ Pre lepšiu orientáciu v kapitole sme pre jednotlivé prvky priradili aj obrázkové ikony. Jednotlivé priradenia sú vyobrazené na obrázku \ref{fig:designicons}. 
  
-%TODO možno itemize a viacej textu k jednotlivým prvkom 
- 
-\textit{Meta informácie} je tabuľka obsahujúca informácie o stanici (Názov, geografická poloha, nadmorská výška), názov modelu, interval verifikácie, spôsob interpolácie a podobne.  
-
-\textit{Prehľad} je komponent vizualizácie, ktorý by mal poskytovať celistvý pohľad na všetky mesačné štatistiky. Jeho úlohou nie je detailné zobrazenie chýb, ale odhalenie vzorov, trendov a výkyvov vo fungovaní modelu počas skúmaného intervalu.
-
-\textit{Zjednodušený prehľad} je rovnaký ako prehľad avšak so zredukovanou plochou, ktorú zaberá, zjednodušenou farebnou škálou a bez popisiek.
-
-\textit{Celkový priebeh} nám dáva pohľad na chyby počas celého intervalu nie z pohľadu 48 predpovedných hodín, ale z pohľadu jednotlivých dní.
-
-\textit{Detail štatistík} je prvok slúžiaci na detailnejšie skúmanie štatistík počas jedného mesiaca. V grafe sa nachádzajú všetky dostupné štatistiky pre daný mesiac.
-
-\textit{Detail chýb} pre daný mesiac, nám dáva pohľad na chyby predpovede, z ktorých sa počítali štatistiky.
-
-\textit{Distribúcia chýb} sa taktiež zobrazuje pre konkrétny mesiac a týmto komponentom je graf, v ktorom je zobrazená distribúcia chýb v danom mesiaci.
+ Pri návrhu rozloženie prvkov vizualizácie na obrazovke sme sa rozhodovali medzi dvoma smermi uvažovania, ktoré opíšeme v tejto sekcii. 
 
 \begin{figure}
 	\centering
@@ -217,21 +239,22 @@ Výsledná obrazovka systému sa nebude skladať z jedného typu vizualizácie, 
 \end{figure}
 
 
-\subsection{Viacúrovňový návrh}
-Pri tomto navrhu sme sa rozhodli rozdelit prvky do viacero urovni:
-1. Uroven rokov
-2. Uroven mesiacov
-3. Ureoven mesiaca
-4. Uroven chyb
+\subsection{Viacúrovňový návrh rozloženia prvkov}
+Jeden zo spôsobov uvažovania, ako rozložiť prvky vizualizácie, bolo zobraziť ich v jednotlivých úrovniach detailu: 
+\begin{easylist}
+	# \textit{Úroveň rokov}
+	# \textit{Úroveň mesiacov}
+	# \textit{Úroveň štatistík}
+	# \textit{Úroveň chýb} 
+\end{easylist}
+Každá úroveň sa skladá z jedného alebo viacerých prvkov rovnakého typu. Napríklad \textit{Úroveň rokov} obsahuje iba prvky \textit{Zjednodušený prehľad}, ktorými sa zobrazujú celé roky. Obmedzením, ktoré kladieme na tento návrh, je zobrazenie maximálne dvoch úrovní súčasne. Touto požiadavkou dosiahneme jednak to, že prvky nebudú zbytočne presahovať mimo obrazovku a taktiež sa zachová do istej miery \textit{detail a kontext}. 
 
-\subsection{Plochý návrh}
-Pri tomto navrhu sme sa rozhodli zobrazit vsetky prvky sucasne na jednej urovni.
+Medzi jednotlivými úrovňami je možný pohyb pomocou klikaním myši na jednotlivé prvky. Napríklad úrovni rokov kliknutím na jeden rok (prvok \textit{Zjednodušený prehľad}) sa nám zobrazí ďalšia úroveň ako prvok \textit{Prehľad}. Ďalším kliknutím na jeden mesiac v danom prvku sa pre daný mesiac zobrazí úroveň štatistík, ako prvok \textit{Detail štatistík}. Ďalej po kliknutí na jednu zo štatistík sa zobrazí prvok \textit{Distribúcia chýb}, v ktorom máme detailne zobrazené chyby, z ktorých sa nám daná štatistika počítala.
 
+Na obrázku \ref{fig:XYZ} máme pomocou ikon z obrázka \ref{fig:designicons} schematicky popísané jednotivé úrovne a pohyb medzi nimi. Môžme si všimnúť, že v schéme nie je vidno prvok \textit{Detail chýb}. Dôvodom je, že sa nám kvôli jeho veľkosti nepodarilo nájsť umiestnenie tohto prvku jednak medzi úrovňami a rovnako aj v rámci úrovne.
 
+\subsection{Plochý návrh rozloženia prvkov}
+Pre užívateľa nie je príjemné, keď sa na obrazovke prvky zväčšujú, zmenšujú, posúvajú, objavujú alebo miznú, pretože ... %TODO stráca prehľad alebo čo :D
+Preto sme navrhli iný spôsob rozloženia, ktorý tento problém rieši tak, že zobrazí všetky prvky súčasne na jednej úrovni, a teda pojem \textit{úroveň} už nie je potrebný. Spôsob, akým sme umiestnili jednotlivé prvky je schematicky znázornený na obrázku \ref{fig:XYZ}. Ak potrebujeme vidieť detailnejšie informácie o výkone modelu v mesiaci, tak kliknutím na konkrétny mesiac v prvku \textit{Prehľad}, sa zobrazí \textit{Detail štatistík}, \textit{Distribúcia chýb}, \textit{Detail chýb} pre daný mesiac.
 
-\section{Návrh farebnej palety}
-- rainbow a preco zle \\
-- monochrome cez 3 farby \\
-- monochrome 2 farby ostro rozdelene \\
-- ekvalizacia histogramom / boxplotom \\
-- navrh farby pre density, purhovy, functional boxplot \\
+Nevýhodou tohto návrhu je, že nemožno zobraziť viacero prvkov jedného typu súčasne. Z tohto dôvodu nie je možné porovnávať viacero rokov súčasne a preto nie je potrebný komponent \textit{Zjednodušený prehľad}. Zvyšné potrebné porovnávania pre mesiace a distribúciu zaobstará v zníženom, ale dostatočnom detaile, prvok \textit{Prehľad}. 
