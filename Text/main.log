@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  2 APR 2015 10:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  2 APR 2015 14:34
 entering extended mode
 **main.tex
 (S:\School\DiplomaThesis\Text\main.tex
@@ -1333,17 +1333,21 @@ Package pdftex.def Info: designicons.pdf used on input line 240.
 (pdftex.def)             Requested size: 325.215pt x 225.50934pt.
 
 [46 <S:/School/DiplomaThesis/Text/designicons.pdf>]
+<multilevellayout.pdf, id=589, 1023.825pt x 983.675pt>
+File: multilevellayout.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:XYZ' on page 47 undefined on input line 258.
-
-<flatlayout.pdf, id=589, 732.7375pt x 742.775pt>
+<use multilevellayout.pdf>
+Package pdftex.def Info: multilevellayout.pdf used on input line 262.
+(pdftex.def)             Requested size: 252.94499pt x 243.02129pt.
+ [47 <S:/School/DiplomaThesis/Text/multilevellayout.pdf>] <flatlayout.pdf, id=6
+39, 732.7375pt x 742.775pt>
 File: flatlayout.pdf Graphic file (type pdf)
  <use flatlayout.pdf>
-Package pdftex.def Info: flatlayout.pdf used on input line 268.
+Package pdftex.def Info: flatlayout.pdf used on input line 276.
 (pdftex.def)             Requested size: 216.81pt x 219.77408pt.
 )
-(S:\School\DiplomaThesis\Text\06implementation.tex [47] [48 <S:/School/DiplomaT
-hesis/Text/flatlayout.pdf>]
+(S:\School\DiplomaThesis\Text\06implementation.tex [48 <S:/School/DiplomaThesis
+/Text/flatlayout.pdf>]
 Kapitola 6.
 ) (S:\School\DiplomaThesis\Text\07results.tex [49
 
@@ -1364,10 +1368,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9561 strings out of 493921
- 131948 string characters out of 3147293
- 224322 words of memory out of 3000000
- 12611 multiletter control sequences out of 15000+200000
+ 9567 strings out of 493921
+ 132089 string characters out of 3147293
+ 224333 words of memory out of 3000000
+ 12616 multiletter control sequences out of 15000+200000
  21919 words of font info for 82 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,19n,47p,1022b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1391,9 +1395,9 @@ i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (70 pages, 2967376 bytes).
+Output written on main.pdf (70 pages, 3215736 bytes).
 PDF statistics:
- 721 PDF objects out of 1000 (max. 8388607)
+ 768 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
