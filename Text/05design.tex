@@ -33,14 +33,41 @@ V prvom rade nám do verifikácie vstupujú surové dáta, ktorými sú pozorova
 
 
 \section{Návrh vizualizácie štatistík verifikácie} 
-Ako sme uviedli v sekcii \ref{fig:linegraph}, bežne používaným spôsobom vizualizácie časových radov je čiarový diagram. Z našej skúsenosti vieme, že táto technika nie je vhodná pre porovnávanie mnohých chronologicky usporiadaných radov súčasne. Problémom je, že ak umiestnime viacero radov do jedného grafu, tak strácame informáciu o chronologickom poradí. Ak však umiestnime rady do grafov jednotlivo, tak pre väčšie množstvo dát nebudeme mať dostatočne veľký priestor.
+Štatistiky verifikácie sú dáta v časových radoch. V sekcii \ref{sec:linegraph} sme uviedli, že bežne používaným a veľmi účinným spôsobom vizualizácie časových radov je čiarový diagram. V našej práci sme sa odrazili od tohto faktu a navrhli sme dva pohľady na dáta. Jednak je to prehľad jedného druhu štatistík pre danú premennú počas skúmaného intervalu a druhým pohľadom je detail jedného časového podintervalu s rôznymi štatistikami alebo premennými.
 
-Zvolili sme preto pomerne jednoduché a účinné riešenie, zobraziť štatistiky na iný vizuálny parameter, konkrétne na farbu. Jednotlivé hodnoty sa teda v grafe zobrazia ako za tesne sebou umiestnené farebné obdĺžniky \footnote{Experimentovali sme taktiež s inými tvarmi (kruhy a obdĺžniky so zaoblenými hranami), ale aj s rôznymi veľkostami medzier medzi tvarmi. Použité nastavenie sa však ukázalo ako najvhodnejšie pri porovnávaní hodnôt vo vertikálnom aj horizontálnom smere.}, ktoré vytvoria jeden celistvý pás (pozri porovnanie s čiarovým diagramom na obrázku \ref{fig:XYZ}a)). Umiestnením takýto pásov pod seba vytvoríme farebnú mapu štatistík. Výslednú vizualizáciu možno vidieť na obrázku \ref{fig:XYZ}b). 
+\subsection{Prehľad štatistík}
+Ako sme spomenuli vyššie, na vizualizáciu časových radov sa bežne používa čiarový diagram. Z našej skúsenosti vieme, že táto technika nie je vhodná pre porovnávanie mnohých chronologicky usporiadaných radov súčasne. Problémom je, že ak umiestnime viacero radov do jedného grafu, tak strácame informáciu o chronologickom poradí. Ak však umiestnime rady do grafov jednotlivo, tak pre väčšie množstvo dát nebudeme mať dostatočne veľký priestor.
 
-V našej aplikácii sa tento spôsob vizualizácie použil v dvoch prípadoch. Prvým prípadom bolo zobrazenie mesačných štatistík, pre 48 hodinové predpovede. Teda sme mali 12 mesiacov v roku a pre každý mesiac 48 hodnôt, čo sa nám zobrazilo ako farebná mapa $ 12 \times 48 $. Druhým prípadom bolo zobrazenie chýb pre konkrétne predpovede, ktorých mohlo byť variabilný počet podľa nastavení systému. Zvyčajne však išlo približne o 30 predpovedí pre každý mesiac.
+Zvolili sme preto pomerne jednoduché a účinné riešenie, zobraziť štatistiky na iný vizuálny parameter, konkrétne na farbu. Jednotlivé hodnoty sa teda v grafe zobrazia ako za tesne sebou umiestnené farebné obdĺžniky \footnote{Experimentovali sme taktiež s inými tvarmi (kruhy a obdĺžniky so zaoblenými hranami), ale aj s rôznymi veľkostami medzier medzi tvarmi. Použité nastavenie sa však ukázalo ako najvhodnejšie pri porovnávaní hodnôt vo vertikálnom aj horizontálnom smere.}, ktoré vytvoria jeden celistvý pás (pozri porovnanie s čiarovým diagramom na obrázku \ref{fig:colormap}a. Umiestnením takýto pásov pod seba vytvoríme farebnú mapu štatistík. Výslednú vizualizáciu možno vidieť na obrázku \ref{fig:colormap}b. 
 
-%TODO krasny obrazok 1. linegraph, 2. pas 3. vela pasov za sebov
+V našej aplikácii sa tento spôsob vizualizácie použil v dvoch prípadoch. Prvým prípadom bolo zobrazenie mesačných štatistík, pre 48 hodinové predpovede. Teda sme mali 12 mesiacov v roku a pre každý mesiac 48 hodnôt, čo sa nám zobrazilo ako farebná mapa $ 12 \times 48 $ (pozri obrázok \ref{fig:colormap}b). Druhým prípadom bolo zobrazenie chýb pre konkrétne predpovede, ktorých mohlo byť variabilný počet podľa nastavení systému. Zvyčajne však išlo približne o 30 predpovedí pre každý mesiac.
 
+\begin{figure}
+	\centering
+	\hspace*{-0.45in}
+	\includegraphics[width = 7.0in, height = 2.2in]{colormap}
+	\caption{a) Konštrukcia jedného pásu zobrazením hodnôt grafu na farebnú škálu b) Výsledná vizualizácia, ako farebná mapa }
+	\label{fig:colormap}
+\end{figure}
+
+\subsection{Detail štatistík}
+Napriek tomu, že zobrazením hodnôt na farbu nestrácame žiadnu informáciu, je dokázané, že človek nedokáže tak dobre porovnávať farby, ako napríklad vzdialenosti. Preto predošle spomenutá technika je síce vhodná na preskúmanie celého intervalu ako celku, avšak nie na detailné porovnávanie hodnôt v čase. Z tohto dôvodu sme sa rozhodli použiť taktiež spomínaný čiarový diagram. 
+
+Tento typ diagramu poskytuje dostatočne veľký vizuálny priestor na to, aby sme doň mohli pridať ďalšie dáta. Rozhodli sme sa preto umožniť užívateľovi vizualizovať buď rôzne druhy štatistík súčasne pre danú predpoveď a veličinu (napr RMSE, MAE, MFE), alebo tiež rôzne veličiny (napr. tlak, teplotu, zrážky) pre túto predpoveď. V prvom prípade nám postačí jednotná škála, keďže sa hodnoty zväčša nachádzajú v podobnom rozmedzí. V druhom prípade je potrebných viacero škál, keďže napríklad chyby teploty sa pohybujú v rozmedzí 5 stupňov, tak chyby tlaku sa pohybujú v rozmedzí stoviek. Ak by sme tieto dve veličiny vizualizovali spolu, tak krivka teploty by bola sploštená natoľko, že by nebolo možné z nej odčítať hodnoty.
+
+Vytvorenie mnoho-čiarového diagramu s jednotnou škálou je jednoduché, keďže sa na dizajne grafu nič nemení, len sa pridá ďalšia krivka. Pri viacerých rôznych škálach sa musia zobraziť aj tieto škály. Zvyčajne sa umiestňujú striedavo vľavo a vpravo, postupne za sebou smerom od stredu grafu. Problém však spočíva v tom, že pri väčšom počte nemôžme určiť, ktorá škála patrí ku ktorej krivke a s postupujúcou vzdialenosťou škály od grafu sa znižuje schopnosť užívateľa odčítavať hodnoty zo škály. V našej práci sme navrhli jednoduché spôsob, akým sme sa pokúsili vyriešiť oba problémy súčasne.
+
+Naše riešenie spočíva v tom, že každá škála sa zobrazí ako obdĺžnik vyplnený farbou krivky, ktorá prislúcha k danej škále. Taktiež čiaročky indikujúce hodnoty v danom bode sa zobrazia pravidelne a v rovnakej vzdialenosti pre každú škálu.
+
+Na obrázku \ref{fig:multiline} môžme vidieť porovnanie bežne používaného spôsobu zobrazenia škál a nášho spôsobu. Náš spôsob jednoznačne priraďuje, pomocou farby, krivky ku škálam a jednotné a pravidelné rozmiestnenie indikátorov  hodnôt nám rieši problém pri odčítavaní hodnôt, keďže nie je potrebné sa dívať na vzdialené škály.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 4.5in]{multilinegraph}
+	\caption{a) povodne b) nase }
+	\label{fig:multiline}
+\end{figure}
 
 \section{Návrh vizualizácie distribúcie chýb}
 Pri verifikácii predpovede spojitej premennej sme použili štatistické metódy spomenuté v sekcii \ref{sec:errormeasurement}, ktorých výsledok sme následne vizualizovali. Pôvodné dáta však zostali skryté za použitým matematickým modelom, a tak sme stratili informáciu o distribúcii chyby. Pri verifikácii sa štandardne používajú dve metódy na priamu, či nepriamu vizualizáciu a analýzu distribúcie, ktoré sme opísali v sekcii \ref{sec:prevvis}. Týmito metódami sú bodový graf (pozri podsekciu \ref{subsec:scatterplot}) a krabicový diagram (pozri podsekciu \ref{subsec:boxplot}).

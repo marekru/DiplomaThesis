@@ -49,28 +49,30 @@
 \contentsline {section}{\numberline {5.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{35}
 \contentsline {subsection}{\numberline {5.1.1}Charakteristika d\IeC {\'a}t}{35}
 \contentsline {section}{\numberline {5.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie \IeC {\v s}tatist\IeC {\'\i }k verifik\IeC {\'a}cie}{36}
-\contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{37}
-\contentsline {subsection}{\numberline {5.3.1}Graf hustoty}{37}
-\contentsline {subsection}{\numberline {5.3.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{39}
-\contentsline {subsection}{\numberline {5.3.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{40}
-\contentsline {paragraph}{}{43}
-\contentsline {subsection}{\numberline {5.3.4}Distribucia za cely rok}{44}
-\contentsline {subsection}{\numberline {5.3.5}Porovnanie met\IeC {\'o}d}{44}
-\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh farebnej palety}{45}
-\contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{45}
-\contentsline {subsection}{\numberline {5.5.1}Viac\IeC {\'u}rov\IeC {\v n}ov\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{46}
-\contentsline {subsection}{\numberline {5.5.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{48}
-\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{50}
-\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{50}
-\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{50}
-\contentsline {subsection}{\numberline {6.2.1}Java}{50}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{50}
-\contentsline {subsection}{\numberline {6.2.3}d3.js}{50}
-\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{50}
-\contentsline {subsection}{\numberline {6.3.1}CSV}{50}
-\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{50}
-\contentsline {subsection}{\numberline {6.3.3}GRIB}{50}
-\contentsline {subsection}{\numberline {6.3.4}...}{50}
-\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{50}
-\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{50}
-\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky}{51}
+\contentsline {subsection}{\numberline {5.2.1}Preh\IeC {\v l}ad \IeC {\v s}tatist\IeC {\'\i }k}{36}
+\contentsline {subsection}{\numberline {5.2.2}Detail \IeC {\v s}tatist\IeC {\'\i }k}{37}
+\contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{38}
+\contentsline {subsection}{\numberline {5.3.1}Graf hustoty}{39}
+\contentsline {subsection}{\numberline {5.3.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{41}
+\contentsline {subsection}{\numberline {5.3.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{42}
+\contentsline {paragraph}{}{44}
+\contentsline {subsection}{\numberline {5.3.4}Distribucia za cely rok}{45}
+\contentsline {subsection}{\numberline {5.3.5}Porovnanie met\IeC {\'o}d}{45}
+\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh farebnej palety}{47}
+\contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{47}
+\contentsline {subsection}{\numberline {5.5.1}Viac\IeC {\'u}rov\IeC {\v n}ov\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{48}
+\contentsline {subsection}{\numberline {5.5.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{50}
+\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{52}
+\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{52}
+\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{52}
+\contentsline {subsection}{\numberline {6.2.1}Java}{52}
+\contentsline {subsection}{\numberline {6.2.2}JavaScript}{52}
+\contentsline {subsection}{\numberline {6.2.3}d3.js}{52}
+\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{52}
+\contentsline {subsection}{\numberline {6.3.1}CSV}{52}
+\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{52}
+\contentsline {subsection}{\numberline {6.3.3}GRIB}{52}
+\contentsline {subsection}{\numberline {6.3.4}...}{52}
+\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{52}
+\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{52}
+\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky}{53}
