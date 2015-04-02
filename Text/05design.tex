@@ -35,14 +35,11 @@ V prvom rade nám do verifikácie vstupujú surové dáta, ktorými sú pozorova
 \section{Návrh vizualizácie štatistík verifikácie} 
 Ako sme uviedli v sekcii \ref{fig:linegraph}, bežne používaným spôsobom vizualizácie časových radov je čiarový diagram. Z našej skúsenosti vieme, že táto technika nie je vhodná pre porovnávanie mnohých chronologicky usporiadaných radov súčasne. Problémom je, že ak umiestnime viacero radov do jedného grafu, tak strácame informáciu o chronologickom poradí. Ak však umiestnime rady do grafov jednotlivo, tak pre väčšie množstvo dát nebudeme mať dostatočne veľký priestor.
 
-Zvolili sme preto pomerne jednoduché a účinné riešenie, zobraziť štatistiky na iný vizuálny parameter, konkrétne na farbu. Jednotlivé hodnoty sa teda v grafe zobrazia ako za tesne sebou umiestnené farebné obdĺžniky \footnote{Experimentovali sme taktiež s inými tvarmi (kruhy a obdĺžniky so zaoblenými hranami), ale aj s rôznymi veľkostami medzier medzi tvarmi. Použité nastavenie sa však ukázalo ako najvhodnejšie pri porovnávaní hodnôt vo vertikálnom aj horizontálnom smere.}, ktoré vytvoria jeden celistvý pás. Umiestnením takýto pásov pod seba vytvoríme farebnú mapu štatistík. 
+Zvolili sme preto pomerne jednoduché a účinné riešenie, zobraziť štatistiky na iný vizuálny parameter, konkrétne na farbu. Jednotlivé hodnoty sa teda v grafe zobrazia ako za tesne sebou umiestnené farebné obdĺžniky \footnote{Experimentovali sme taktiež s inými tvarmi (kruhy a obdĺžniky so zaoblenými hranami), ale aj s rôznymi veľkostami medzier medzi tvarmi. Použité nastavenie sa však ukázalo ako najvhodnejšie pri porovnávaní hodnôt vo vertikálnom aj horizontálnom smere.}, ktoré vytvoria jeden celistvý pás (pozri porovnanie s čiarovým diagramom na obrázku \ref{fig:XYZ}a)). Umiestnením takýto pásov pod seba vytvoríme farebnú mapu štatistík. Výslednú vizualizáciu možno vidieť na obrázku \ref{fig:XYZ}b). 
 
 V našej aplikácii sa tento spôsob vizualizácie použil v dvoch prípadoch. Prvým prípadom bolo zobrazenie mesačných štatistík, pre 48 hodinové predpovede. Teda sme mali 12 mesiacov v roku a pre každý mesiac 48 hodnôt, čo sa nám zobrazilo ako farebná mapa $ 12 \times 48 $. Druhým prípadom bolo zobrazenie chýb pre konkrétne predpovede, ktorých mohlo byť variabilný počet podľa nastavení systému. Zvyčajne však išlo približne o 30 predpovedí pre každý mesiac.
 
-
-
-
-%TODO (Experimentovali sme aj s inými tvarmi, ako sú)
+%TODO krasny obrazok 1. linegraph, 2. pas 3. vela pasov za sebov
 
 
 \section{Návrh vizualizácie distribúcie chýb}
@@ -262,6 +259,13 @@ Na obrázku \ref{fig:XYZ} máme pomocou ikon z obrázka \ref{fig:designicons} sc
 
 \subsection{Plochý návrh rozloženia prvkov}
 Pre užívateľa nie je príjemné, keď sa na obrazovke prvky zväčšujú, zmenšujú, posúvajú, objavujú alebo miznú, pretože ... %TODO stráca prehľad alebo čo :D
-Preto sme navrhli iný spôsob rozloženia, ktorý tento problém rieši tak, že zobrazí všetky prvky súčasne na jednej úrovni, a teda pojem \textit{úroveň} už nie je potrebný. Spôsob, akým sme umiestnili jednotlivé prvky je schematicky znázornený na obrázku \ref{fig:XYZ}. Ak potrebujeme vidieť detailnejšie informácie o výkone modelu v mesiaci, tak kliknutím na konkrétny mesiac v prvku \textit{Prehľad}, sa zobrazí \textit{Detail štatistík}, \textit{Distribúcia chýb}, \textit{Detail chýb} pre daný mesiac.
+Preto sme navrhli iný spôsob rozloženia, ktorý tento problém rieši tak, že zobrazí všetky prvky súčasne na jednej úrovni, a teda pojem \textit{úroveň} už nie je potrebný. Spôsob, akým sme umiestnili jednotlivé prvky je schematicky znázornený na obrázku \ref{fig:flatlayout}. Ak potrebujeme vidieť detailnejšie informácie o výkone modelu v mesiaci, tak kliknutím na konkrétny mesiac v prvku \textit{Prehľad}, sa zobrazí \textit{Detail štatistík}, \textit{Distribúcia chýb}, \textit{Detail chýb} pre daný mesiac.
 
 Nevýhodou tohto návrhu je, že nemožno zobraziť viacero prvkov jedného typu súčasne. Z tohto dôvodu nie je možné porovnávať viacero rokov súčasne a preto nie je potrebný komponent \textit{Zjednodušený prehľad}. Zvyšné potrebné porovnávania pre mesiace a distribúciu zaobstará v zníženom, ale dostatočnom detaile, prvok \textit{Prehľad}. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 3.0in]{flatlayout}
+	\caption{Schematické zobrazenie plochého návrhu rozloženia prvkov vizualizácie}
+	\label{fig:flatlayout}
+\end{figure}
