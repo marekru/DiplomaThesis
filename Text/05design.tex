@@ -59,7 +59,7 @@ Vytvorenie mnoho-čiarového diagramu s jednotnou škálou je jednoduché, keď�
 
 Naše riešenie spočíva v tom, že každá škála sa zobrazí ako obdĺžnik vyplnený farbou krivky, ktorá prislúcha k danej škále. Taktiež čiaročky indikujúce hodnoty v danom bode sa zobrazia pravidelne a v rovnakej vzdialenosti pre každú škálu.
 
-Na obrázku \ref{fig:multilinegraph} môžme vidieť porovnanie bežne používaného spôsobu zobrazenia škál a nášho spôsobu. Náš spôsob jednoznačne priraďuje, pomocou farby, krivky ku škálam a jednotné a pravidelné rozmiestnenie indikátorov  hodnôt nám rieši problém pri odčítavaní hodnôt, keďže nie je potrebné sa dívať na vzdialené škály.
+Na obrázku \ref{fig:multilinegraph} môžme vidieť porovnanie bežne používaného spôsobu zobrazenia škál a nášho spôsobu. Náš spôsob jednoznačne priraďuje, pomocou farby, krivky ku škálam a jednotné, pravidelné rozmiestnenie indikátorov hodnôt nám rieši problém pri odčítavaní hodnôt, keďže nie je potrebné sa dívať na vzdialené škály.
 
 
 \begin{figure}
@@ -110,12 +110,11 @@ Takýmto spôsobom sme si pre každú hodinu predpovede určili samostatnú funk
 
 Opäť sme teda zvolili štandardné riešenie, ako ušetriť vzácny priestor a to tak, že hodnoty, ktoré by boli zobrazené na $ y $-ovú os zobrazíme na zvolenú farebnú škálu. Vďaka tomu by teoreticky mohol mať graf hustoty pre jeden čas predpovede šírku 1 pixel bez straty akejkoľvek informácie.
 
-Vieme, že pre ľudí nie je také jednoduché pozorovať malé rozdiely medzi dvoma farbami. Testovaním sme zistili, že pri takejto vizualizácii, že tento fakt spôsobuje problémy aj pri našej vizualizácii, kedy sa pre pozorovateľa strácajú výkyvy hodnôt
-% TODO najst dobre riesenie na toto a potom to dopisat
-% riesenie su 2 - bud palettu ako navrhoval novotny, alebo pozuit ten typ grafu, co sa tak preryva do seba
-% Two-tone pseudo coloring: compact visualization for one-dimensional data
-% Horizon Graph
+Vieme, že pre ľudí nie je také jednoduché pozorovať malé rozdiely medzi dvoma farbami. Testovaním sme zistili, že tento fakt spôsobuje problémy aj pri našej vizualizácii, kedy sa pre pozorovateľa strácajú jemné výkyvy hodnôt. Riešením by bolo nepoužiť spojité, ale diskrétne farbenie, ktoré je rozdeľuje interval hodnôt na podintervaly, ku ktorým priradí konkrétnu farbu (pozri obr. \ref{fig:XYZ}). Výhodu je, že takéto farbenie má výraznejšie farebné rozdiely. Týmto spôsobom by sme však stratili priveľa informácie a nebolo by potrebné použiť na odhad hustoty KDE, ale postačoval by aj histogram. 
 
+Riešenie tohto problému sme našli v práci od Takafumi Saita z roku 2005 \cite{Saito}. V tomto článku autor so svojimi kolegami navrhuje nový spôsob pseudo farbenia, ktoré nazýva \textit{two-tone pseudo coloring} alebo inak po slovensky \textit{dvojtónové pseudo farbenie}. Navrhnutá metóda priraďuje každej hodnote intervalu dve výrazne rôzne farby resp. farebné časti. Toto sa uskutočňuje podobne ako pri spojitom farbení, avšak sa neinterpolujú farby, ale pomer veľkostí dvoch zafarbených častí. Na obrázku \ref{fig:XYZ} možno vidieť porovnanie troch spomenutých techník farbenia.
+
+Ďalší problém - nevidno hranice!. %TODO
 
 \subsection{Pruhový kvantilový diagram} 
 Z časti \ref{subsec:scatterplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram [ref] zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
@@ -217,7 +216,7 @@ V našej práci sme do diagramu pridali ešte jednu krivku pre ľubovoľnú šta
 	\caption{Obrázky z článku \textit{Functional Boxplots}  \cite{FunctionalBoxplot}  a) Funkcie meraní teploty hladiny mora b) Funkčný krabicový diagram c) Rozšírený Funkčný krabicový diagram o centrálne regióny $ C_{0.25} $ a $ C_{0.75} $ }
 	\label{fig:functionalboxplot}
 \end{figure}
-
+%TODO tento obrazok skresat zhora a tak
 
 %TODO obrazok pasmo
 
