@@ -7,8 +7,6 @@ Wolfgang Aigner vo svojej knihe \textit{Visualization of Time-Oriented Data} tvr
 \end{easylist}
 \noindent Táto kapitola by mala odpovedať na všetky tieto tri položené otázky. 
 
-\section{Špecifikácia požiadaviek na vizualizáciu}
-
 \subsection{Charakteristika dát}
 V prvom rade nám do verifikácie vstupujú surové dáta, ktorými sú pozorovania a predpovede.\\
 - Surove data\\
@@ -32,6 +30,7 @@ V prvom rade nám do verifikácie vstupujú surové dáta, ktorými sú pozorova
 --- Determinancy (Determinovanost): determinovane \\ 
 ------------------\\
 
+\section{Špecifikácia požiadaviek na vizualizáciu}
 
 
 \section{Návrh vizualizácie štatistík verifikácie} 
@@ -244,8 +243,7 @@ Funkcionalny krabicovy riesi distribuciu funkcii.
 
 
 \section{Návrh farebnej palety}
-Farba je pravdepodobne najviac podceňovaný a nesprávne používaný vizuálny parameter vo vizualizácii dát. V tejto časti opisujeme návrh farebnej palety pre jednotlivé vyššie spomenuté vizualizačné techniky.
-
+Farba je pravdepodobne najviac podceňovaný a nesprávne používaný vizuálny parameter vo vizualizácii dát. V tejto časti opisujeme návrh farebnej palety pre vyššie spomenuté vizualizačné techniky.
 % Asi len pre farebnú mapu sa rozpíšem a pre ostatné, to iba rýchlo zhrnem
 
 \subsection{Farebná mapa}
@@ -254,22 +252,20 @@ Návrhu farebnej palety pre farebnú mapu sme venovali zvýšenú pozornosť, ke
 V prvom momente sme siahli po veľmi prvoplánovom riešení a použili sme takzvanú \textit{dúhovú farebnú škálu}, ktorú možno vidieť v sekcii \ref{sec:colormap} na obrázku \ref{fig:colormap}. Výskum ukázal a mnohý vedci sa na tom zhodujú, že tento typ farebnej palety je len zriedkakedy najlepšia voľba pri vizualizácii. Dúhové farebné palety majú niekoľko slabých stránok, ktoré zhŕňa Theresa-Marie Rhyne vo svojom článku \cite{Rhyne}.
 %TODO sem napisem par slabych stranok
 
-Z tohto dôvodu sme sa rozhodli použiť prechod medzi troma farbami: červenou, bielou a modrou. Červená znázorňuje kladné maximum, biela hodnoty blízko nuly a modrá záporné maximum. Výber týchto troch farieb bol jednoduchý ... 
+Z tohto dôvodu sme sa rozhodli použiť farebnú paletu zloženú z troch farieb: červenou, bielou a modrou. Červená znázorňuje kladné maximum, biela hodnoty blízko nuly a modrá záporné maximum. Výber týchto troch farieb bol jednoduchý, pretože červená farba zvyčajne indikuje kladné hodnoty a naopak modrá záporné. Smerom k nule sa potom už iba zvyšuje \textit{lightness} zložka z HSL farebného modelu, až kým nedosiahneme bielu. Konkrétne farby sme vybrali z internetovej galérie farebných paliet, ktorú zverejnil \textit{NCAR} (\url{http://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml}).
 
-%TODO napapisat z akej stranky to je vlastne tie fraby
+Tento typ palety už lepšie zodpovedal našim požiadavkám. Testovaním sme však zistili, že nie je jednoduché ihneď rozoznať záporné oproti kladným hodnotám blízko nuly a naopak. Vyriešili sme to nepoužitím bielej farby pre nulové hodnoty a nahradili sme ju dvoma farbami. Jednak svetlo modrou pre hodnoty blížiace sa k nule z dola a svetlo červenou pre hodnoty blížiace sa k nule zhora. Vďaka tomu na farebnej škále a rovnako aj vo vizualizácii vznikol ostrý predel medzi kladnými a zápornými hodnotami.
 
-- monochrome cez 3 farby \\
-- monochrome 2 farby ostro rozdelene \\
-- ekvalizacia histogramom / boxplotom \\
-\subsection{Mnoho-čiarový diagram}
+Na obrázku \ref{fig:XYZ} je porovnanie týchto troch farebných paliet.
+
+% TODO na obrazku 3 pasy a 3 skaly
+
+- ekvalizacia histogramom / boxplotom ??? \\
+
+\subsection{Ďalšie diagramy}
 - pri stats to je jedno \\
 - pri progress sme zvyraznili klzavy priemer 
-
-\subsection{Graf hustoty}
  - monochrome 
-\subsection{Pruhový diagram}
-
-\subsection{Funkčný krabicový diagram}
 
 \section{Návrh rozloženia prvkov vizualizácie}
 Výsledná obrazovka systému sa nebude skladať iba z jedného typu vizualizácie, ale z viacerých grafov a iných častí, ktoré spolu užívateľovi vytvoria dostatočne dobrú predstavu o dátach. Tieto časti budeme nazývať prvky alebo komponenty vizualizácie. Jednotlivým prvkom sme dali nasledovné pomenovania: 
