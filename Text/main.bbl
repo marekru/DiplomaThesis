@@ -228,6 +228,15 @@ Ying Sun and Marc~G. Genton.
 \newblock {\em Journal of Computational and Graphical Statistics},
   20(2):316--334, Jún 2011.
 
+\bibitem[SMY{\etalchar{+}}05]{Saito}
+Takafumi Saito, Hiroko~Nakamura Miyamura, Mitsuyoshi Yamamoto, Hiroki Saito,
+  Yuka Hoshiya, and Takumi Kaseda.
+\newblock Two-tone pseudo coloring: Compact visualization for one-dimensional
+  data.
+\newblock In {\em Proceedings of the Proceedings of the 2005 IEEE Symposium on
+  Information Visualization}, INFOVIS '05, pages 23--, Washington, DC, USA,
+  2005. IEEE Computer Society.
+
 \bibitem[SOA04]{Schwertman}
 Neil~C. Schwertman, Margaret~Ann Owens, and Robiah Adnan.
 \newblock A simple more general boxplot method for identifying outliers.

@@ -17,45 +17,45 @@ Warning--empty journal in HistoryOfInfoVis
 Warning--can't use both author and editor fields in VerifSoft
 Warning--empty publisher in Potter
 Warning--empty journal in TaylorPrime
-You've used 58 entries,
+You've used 59 entries,
             2543 wiz_defined-function locations,
-            953 strings with 13244 characters,
-and the built_in function-call counts, 20178 in all, are:
-= -- 1989
-> -- 858
-< -- 43
-+ -- 279
-- -- 271
-* -- 1380
-:= -- 3322
-add.period$ -- 189
-call.type$ -- 58
-change.case$ -- 325
-chr.to.int$ -- 58
-cite$ -- 63
-duplicate$ -- 815
-empty$ -- 1544
-format.name$ -- 359
-if$ -- 4087
+            962 strings with 13592 characters,
+and the built_in function-call counts, 20802 in all, are:
+= -- 2053
+> -- 898
+< -- 44
++ -- 294
+- -- 286
+* -- 1429
+:= -- 3423
+add.period$ -- 193
+call.type$ -- 59
+change.case$ -- 335
+chr.to.int$ -- 59
+cite$ -- 64
+duplicate$ -- 839
+empty$ -- 1581
+format.name$ -- 374
+if$ -- 4219
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 45
-newline$ -- 308
-num.names$ -- 176
-pop$ -- 395
+missing$ -- 46
+newline$ -- 313
+num.names$ -- 179
+pop$ -- 404
 preamble$ -- 1
-purify$ -- 397
+purify$ -- 408
 quote$ -- 0
-skip$ -- 658
+skip$ -- 678
 stack$ -- 0
-substring$ -- 966
-swap$ -- 93
-text.length$ -- 43
+substring$ -- 991
+swap$ -- 101
+text.length$ -- 44
 text.prefix$ -- 34
 top$ -- 0
-type$ -- 424
+type$ -- 432
 warning$ -- 5
-while$ -- 181
-width$ -- 61
-write$ -- 750
+while$ -- 187
+width$ -- 62
+write$ -- 766
 (There was 1 error message)

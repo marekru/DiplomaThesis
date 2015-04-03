@@ -1,8 +1,8 @@
 \Chapter{Predchádzajúce riešenia 2}{Techniky vizualizácie vo verifikácii}
-\label{sec:prevvis}
+\label{chap:prevvis}
 
 \section{Bodový graf}
-\label{subsec:scatterplot}
+\label{sec:scatterplot}
 Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram} a známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}. Bodový graf je vhodný na štúdium kolerácie dvoch premenných a taktiež je výborný pri odhaľovaní takzvaných \mbox{\textit{outlier}-ov}, teda hodnôt, ktoré sa nejakým spôsobom výrazne odlišujú od tých ostatných. Taktiež nám nepriamo podáva správu o distribúcii hodnôt, čo však pri ich veľkom počte môže byť skreslené, keďže sa body začnú postupne prekrývať, a tak nemožno určiť v akej oblasti je viacej, či menej bodov. Tento jav sa nazýva \textit{overplotting}.
 
 
@@ -36,7 +36,7 @@ Na obrázku \ref{fig:scattervsqq} môžme vidieť porovnanie bodového grafu a \
 Dôležitým faktorom teda zostáva aké premenné umiestnime na \mbox{$ x $-ovú} a aké na \mbox{$ y $-ovú} os. Vo verifikácii predpovedných modelov počasia sú to zvyčajne predpovede na jednej osi a pozorovania na druhej. Taktiež sa zvyknú robiť dvojice (predpoveď, chyba predpovede), (pozorovanie, chyba predpovede) alebo (čas predpovede, chyba predpovede) a im podobné. V našej aplikácii sme testovali poslednú zo spomenutých dvojíc.
 
 \section{Krabicový diagram}
-\label{subsec:boxplot}
+\label{sec:boxplot}
 Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartil s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 \cite{Tukey}, uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{\mbox{5-number} summary}) \cite{Potter}, ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor \cite{Wickham}, ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
 
 \subsection{Konštrukcia krabicového diagramu}
@@ -121,6 +121,7 @@ V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovan
 Ďalším použitím je porovnanie distribúcie chýb predpovedí, či už pre rôzne merania, konkrétne predpovedané časy, rôzne predpovedné modely a podobne. Tu považujeme použitie krabicového diagramu za opodstatnené, keďže ide zväčša o porovnávanie väčšieho množstva distribúcií, a tak je jeho jednoduchosť, čitateľnosť, kompaktnosť a iné jeho vlastnosti potrebné.
 
 \section{Histogram}
+\label{sec:histogram}
 Ďalším veľmi bežným spôsobom, ako vizualizovať distribúciu dát je pomocou \textit{histogramu}, ktorého existencia sa datuje do roku 1895, kedy ho uviedol vo svojej práci Karl Pearson \cite{histogram}. Histogram využíva veľmi jednoduchú myšlienku vizualizovať frekvencie hodnôt ako stĺpce rôznej výšky, ktorá sa v priebehu histórie analýzy dát ukázala ako veľmi užitočná.
 
 \subsection{Konštrukcia histogramu}
