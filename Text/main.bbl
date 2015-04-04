@@ -1,6 +1,11 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{WCSDG{\etalchar{+}}08}
 
+\bibitem[AMST11]{TimeOrientedData}
+Wolfgang Aigner, Silvia Miksch, Heidrun Schuman, and C.~Tominski.
+\newblock {\em Visualization of Time-Oriented Data}.
+\newblock Human-Computer Interaction. Springer Verlag, 1st edition, 2011.
+
 \bibitem[BL01]{Boer}
 G.~J. Boer and S.~J. Lambert.
 \newblock {Second-order space-time climate difference statistics}.
@@ -11,6 +16,13 @@ Dr. James~D. Brown.
 \newblock {\em Ensemble Verification Service (EVS) version 5.4 User's Manual}.
 \newblock National Weather Service’s Office of Hydrologic Development (OHD),
   Marec 2015.
+
+\bibitem[BSM04]{Bade}
+Ragnar Bade, Stefan Schlechtweg, and Silvia Miksch.
+\newblock Connecting time-oriented data and information to a coherent
+  interactive visualization.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '04, pages 105--112, New York, NY, USA, 2004. ACM.
 
 \bibitem[Car94]{Carr}
 Daniel~B. Carr.

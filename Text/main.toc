@@ -46,35 +46,35 @@
 \contentsline {subsection}{\numberline {4.5.1}Kon\IeC {\v s}trukcia taylorovho diagramu}{31}
 \contentsline {subsection}{\numberline {4.5.2}\IeC {\'U}loha taylorovho diagramu vo verifik\IeC {\'a}cii}{34}
 \contentsline {chapter}{\numberline {5}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{35}
-\contentsline {subsection}{\numberline {5.0.3}Charakteristika d\IeC {\'a}t}{35}
-\contentsline {section}{\numberline {5.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{36}
-\contentsline {section}{\numberline {5.2}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie \IeC {\v s}tatist\IeC {\'\i }k verifik\IeC {\'a}cie}{36}
-\contentsline {subsection}{\numberline {5.2.1}Preh\IeC {\v l}ad \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Farebn\IeC {\'a} mapa})}}{36}
-\contentsline {subsection}{\numberline {5.2.2}Detail \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram})}}{37}
-\contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{38}
-\contentsline {subsection}{\numberline {5.3.1}Graf hustoty}{39}
-\contentsline {subsection}{\numberline {5.3.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{41}
-\contentsline {subsection}{\numberline {5.3.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{43}
-\contentsline {paragraph}{}{45}
-\contentsline {subsection}{\numberline {5.3.4}Distribucia za cely rok}{46}
-\contentsline {subsection}{\numberline {5.3.5}Porovnanie met\IeC {\'o}d}{46}
-\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh farebnej palety}{47}
-\contentsline {subsection}{\numberline {5.4.1}Farebn\IeC {\'a} mapa}{47}
-\contentsline {subsection}{\numberline {5.4.2}\IeC {\v D}al\IeC {\v s}ie diagramy}{48}
-\contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{48}
-\contentsline {subsection}{\numberline {5.5.1}Viac\IeC {\'u}rov\IeC {\v n}ov\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{50}
-\contentsline {subsection}{\numberline {5.5.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{50}
-\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{54}
-\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{54}
-\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{54}
-\contentsline {subsection}{\numberline {6.2.1}Java}{54}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{54}
-\contentsline {subsection}{\numberline {6.2.3}d3.js}{54}
-\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{54}
-\contentsline {subsection}{\numberline {6.3.1}CSV}{54}
-\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{54}
-\contentsline {subsection}{\numberline {6.3.3}GRIB}{54}
-\contentsline {subsection}{\numberline {6.3.4}...}{54}
-\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{54}
-\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{54}
-\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky}{55}
+\contentsline {section}{\numberline {5.1}Charakteristika d\IeC {\'a}t}{35}
+\contentsline {section}{\numberline {5.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{37}
+\contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie \IeC {\v s}tatist\IeC {\'\i }k verifik\IeC {\'a}cie}{37}
+\contentsline {subsection}{\numberline {5.3.1}Preh\IeC {\v l}ad \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Farebn\IeC {\'a} mapa})}}{38}
+\contentsline {subsection}{\numberline {5.3.2}Detail \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram})}}{38}
+\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{40}
+\contentsline {subsection}{\numberline {5.4.1}Graf hustoty}{40}
+\contentsline {subsection}{\numberline {5.4.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{43}
+\contentsline {subsection}{\numberline {5.4.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{44}
+\contentsline {paragraph}{}{47}
+\contentsline {subsection}{\numberline {5.4.4}Mapa distrib\IeC {\'u}ci\IeC {\'\i }}{48}
+\contentsline {subsection}{\numberline {5.4.5}Porovnanie met\IeC {\'o}d}{49}
+\contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh farebnej palety}{49}
+\contentsline {subsection}{\numberline {5.5.1}Farebn\IeC {\'a} mapa}{49}
+\contentsline {subsection}{\numberline {5.5.2}\IeC {\v D}al\IeC {\v s}ie diagramy}{50}
+\contentsline {section}{\numberline {5.6}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{51}
+\contentsline {subsection}{\numberline {5.6.1}Viac\IeC {\'u}rov\IeC {\v n}ov\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{52}
+\contentsline {subsection}{\numberline {5.6.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{53}
+\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{56}
+\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{56}
+\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{56}
+\contentsline {subsection}{\numberline {6.2.1}Java}{56}
+\contentsline {subsection}{\numberline {6.2.2}JavaScript}{56}
+\contentsline {subsection}{\numberline {6.2.3}d3.js}{56}
+\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{56}
+\contentsline {subsection}{\numberline {6.3.1}CSV}{56}
+\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{56}
+\contentsline {subsection}{\numberline {6.3.3}GRIB}{56}
+\contentsline {subsection}{\numberline {6.3.4}...}{56}
+\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{56}
+\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{56}
+\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky}{57}

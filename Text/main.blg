@@ -1,61 +1,20 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.4)
-The top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: alpha.bst
 Database file #1: verification.bib
 Database file #2: prevSoft.bib
 Database file #3: prevVis.bib
 Warning--string name "sepember" is undefined
---line 559 of file prevVis.bib
+--line 280 of file prevVis.bib
 Database file #4: design.bib
 Database file #5: implementation.bib
 Database file #6: results.bib
 A bad cross reference---entry "EnhanceScatterplot"
 refers to entry "DBLP:conf/hicss/2013", which doesn't exist
+Warning--I didn't find a database entry for "Rhyne"
 Warning--I didn't find a database entry for "DBLP:conf/hicss/2013"
 Warning--empty publisher in IntroToVerif
 Warning--empty journal in HistoryOfInfoVis
 Warning--can't use both author and editor fields in VerifSoft
 Warning--empty publisher in Potter
 Warning--empty journal in TaylorPrime
-You've used 59 entries,
-            2543 wiz_defined-function locations,
-            962 strings with 13592 characters,
-and the built_in function-call counts, 20802 in all, are:
-= -- 2053
-> -- 898
-< -- 44
-+ -- 294
-- -- 286
-* -- 1429
-:= -- 3423
-add.period$ -- 193
-call.type$ -- 59
-change.case$ -- 335
-chr.to.int$ -- 59
-cite$ -- 64
-duplicate$ -- 839
-empty$ -- 1581
-format.name$ -- 374
-if$ -- 4219
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 46
-newline$ -- 313
-num.names$ -- 179
-pop$ -- 404
-preamble$ -- 1
-purify$ -- 408
-quote$ -- 0
-skip$ -- 678
-stack$ -- 0
-substring$ -- 991
-swap$ -- 101
-text.length$ -- 44
-text.prefix$ -- 34
-top$ -- 0
-type$ -- 432
-warning$ -- 5
-while$ -- 187
-width$ -- 62
-write$ -- 766
 (There was 1 error message)
