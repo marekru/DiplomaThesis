@@ -8,7 +8,7 @@ Wolfgang Aigner vo svojej knihe \textit{Visualization of Time-Oriented Data} \ci
 \noindent Táto kapitola by mala odpovedať na všetky tieto tri položené otázky. 
 
 \section{Charakteristika dát}
-V prvom rade nám do verifikácie vstupujú surové dáta, ktorými sú pozorovania a predpovede. Pri porovnávaní týchto dvoch dátových množín sme sa rozhodli, že ich zredukujeme na jednu množinu reprezentujúcu objektívne porovnanie predpovedí a pozorovaní so zachovaním nie všetkej, ale iba dôležitej informácie. Touto dátovou množinou je teda množina chýb predpovedí, ktorú vytvoríme tak, ako je opísané v podsekcii \ref{subsec:pairing} a sekcii \ref{sec:errormeasurement}.
+V prvom rade nám do verifikácie vstupujú surové dáta, ktorými sú pozorovania a predpovede. Pri porovnávaní týchto dvoch dátových množín sme sa rozhodli, že ich zredukujeme na jednu množinu reprezentujúcu objektívne porovnanie predpovedí a pozorovaní so zachovaním nie všetkej, ale iba dôležitej- informácie. Touto dátovou množinou je teda množina chýb predpovedí, ktorú vytvoríme tak, ako je opísané v podsekcii \ref{subsec:pairing} a sekcii \ref{sec:errormeasurement}.
 
 Výsledkom tohto procesu je tabuľka chýb, kde je pre každý dátum predpovede $ n $ hodín predpovedaných hodnôt, v našom prípade 48, keďže išlo o dvojdňové predpovede. Tieto dáta v systéme ďalej spracúvame. V prvom rade ich rozdelíme na časové podintervaly na základe konfigurácie, defaultne na mesiace. Následne sa pre každý podinterval a každú hodinu predpovede vypočítajú štatistiky opísané v sekcii \ref{sec:errormeasurement}. Takýmto predspracovaním sme získali dva druhy dát v podobnom ale trocha rozdielnom formáte. Ako sme spomenuli, hodnoty chýb sú v tabuľke pre každý dátum predpovede, hodnoty štatistík sú však pre časový interval predpovedí, nie len jeden konkrétny dátum.
 
@@ -25,18 +25,69 @@ Pri čase skúmame tieto charakteristiky\footnote{V zátvorke za charakteristiko
 	\item \textit{Determinovanosť} (\textbf{determinovaný}/nedeterminovaný): Naše dáta neposkytujú žiadnu časovú nejednoznačnosť, preto sa zjavne jedná o determinovaný čas.
 \end{itemize}
 
-Autor v knihe ďalej spomína opisné charakteristiky pre časovo orientované dáta, ktoré sú tieto štyri: \textit{škála}, \textit{referenčný rámec}, \textit{druh dát}, \textit{počet premenných}. V stručnosti to zhrnieme tak, že naše dáta sú kvantitatívneho charakteru, abstraktné, určujúce stavy a nie udalosti s mnohými premennými.
+Autor v knihe ďalej spomína opisné charakteristiky pre časovo orientované dáta, ktoré sú tieto štyri: \textit{škála}, \textit{referenčný rámec}, \textit{druh dát}, \textit{počet premenných}. V stručnosti to zhrnieme tak, že naše dáta sú kvantitatívneho charakteru, abstraktné, určujúce stavy a nie udalosti s mnohými premennými. Všetky tieto charakteristiky priamo vplývajú na návrh vizualizácie. 
 
 \section{Špecifikácia požiadaviek na vizualizáciu}
-V tejto sekcii sa snažíme stručne zhrnúť základné požiadavky užívateľov na vizualizáciu vyššie spomenutých dát.
+V tejto sekcii sa snažíme stručne zhrnúť základné požiadavky užívateľov na vizualizáciu vyššie spomenutých dát. Medzi základné požiadavky
 
 %TODO, co bude tuto, tak to ja neviem moc
 - \textit{focus+context} \\
 - vyuzitie tohto, co meteorologovia uz poznaju \\
-- hladanie, porovnanie, vztahy \\
-- pattern definition, search, comparison. \\
-- tasky su zadane ako mnozina otazok \\
 
+Konkrétnejšie požiadavky na vizualizáciu sa najlepšie špecifikujú pomocou úloh, ktoré budú užívatelia vykonávať.
+\subsection{Užívateľské úlohy}
+V tejto časti pomocou taxonómie úloh vizualizácie navrhnutej súrodencami Andirenko \cite{keylist}, zhrnieme základné uvažované úlohy, ktoré budú užívatelia vykonávať. Jednotlivé úlohy sa definujú pomocou ukážkových otázok, ktoré sa budú klásť na vizualizáciu.
+\subsubsection{Elementárne úlohy}
+Tieto úlohy sú mierené na individuálne dátové elementy, teda napríklad konkrétne hodnoty.
+\begin{itemize}[noitemsep]
+	\item \textit{Vyhľadávanie}
+	\begin{itemize}
+		\item Aké veľké je RMSE a MFE pre piatu hodinu predpovede?
+		\item Aká jed distribúcia chýb pre túto hodinu?	 
+	\end{itemize}
+	\item \textit{Inverzné vyhľadávanie} 
+	\begin{itemize}
+		\item Ktorá predpovedaná hodina mala pre január najväčšiu priemernú chybu? 
+	\end{itemize}
+	\item \textit{Porovnávanie}
+	\begin{itemize}
+			\item TODO
+	\end{itemize}
+	\item \textit{Inverzné porovnávanie}
+	\begin{itemize}
+			\item TODO
+	\end{itemize}
+	\item \textit{Hľadanie vzťahov}
+	\begin{itemize}
+			\item TODO
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Synoptické úlohy}
+Narozdiel od elementárnych úloh, synoptické alebo skôr prehľadové úlohy zahŕňajú celkový pohľad na dáta, teda nie na konkrétne hodnoty, ale na množiny hodnôt.
+\begin{itemize}[noitemsep]
+	\item \textit{Vyhľadávanie (Definovanie vzorov)}
+	\begin{itemize}
+			\item Existujú nejaké výkyvy v chybách z ktorých sa počítali štatistiky?
+	\end{itemize}
+	\item \textit{Inverzné vyhľadávanie (Vyhľadávanie vzorov)}
+	\begin{itemize}
+			\item Kedy sú predpovede najpresnejšie?
+			\item Kedy sú predpovede najslabšie?
+	\end{itemize}
+	\item \textit{Porovnávanie vzorov}
+	\begin{itemize}
+			\item TODO
+	\end{itemize}
+	\item \textit{Inverzné porovnávanie vzorov}
+	\begin{itemize}
+			\item TODO
+	\end{itemize}
+	\item \textit{Hľadanie vzťahov}
+	\begin{itemize}
+			\item TODO
+	\end{itemize}
+\end{itemize}
 
 \section{Návrh vizualizácie štatistík verifikácie} 
 Štatistiky verifikácie sú dáta v časových radoch. V sekcii \ref{sec:linegraph} sme uviedli, že bežne používaným a veľmi účinným spôsobom vizualizácie časových radov je čiarový diagram. V našej práci sme sa odrazili od tohto faktu a navrhli sme dva pohľady na dáta. Jednak je to prehľad jedného druhu štatistík pre danú premennú počas skúmaného intervalu a druhým pohľadom je detail jedného časového podintervalu s rôznymi štatistikami alebo premennými.
