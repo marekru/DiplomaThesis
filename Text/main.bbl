@@ -1,10 +1,27 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{WCSDG{\etalchar{+}}08}
 
+\bibitem[AA05]{Andrienko}
+Natalia Andrienko and Gennady Andrienko.
+\newblock {\em Exploratory Analysis of Spatial and Temporal Data: A Systematic
+  Approach}.
+\newblock Springer-Verlag New York, Inc., Secaucus, NJ, USA, 2005.
+
 \bibitem[AMST11]{TimeOrientedData}
 Wolfgang Aigner, Silvia Miksch, Heidrun Schuman, and C.~Tominski.
 \newblock {\em Visualization of Time-Oriented Data}.
 \newblock Human-Computer Interaction. Springer Verlag, 1st edition, 2011.
+
+\bibitem[BA97]{BowmanAzzalani}
+Adrian~W. Bowman and Adelchi Azzalini.
+\newblock {\em {Applied Smoothing Techniques for Data Analysis: The Kernel
+  Approach with S-Plus Illustrations (Oxford Statistical Science Series)}}.
+\newblock Oxford University Press, USA, November 1997.
+
+\bibitem[BI07]{RainbowHarmful}
+David Borland and Russell M.~Taylor II.
+\newblock Rainbow color map (still) considered harmful.
+\newblock {\em IEEE Computer Graphics and Applications}, 27(2):14--17, 2007.
 
 \bibitem[BL01]{Boer}
 G.~J. Boer and S.~J. Lambert.
@@ -157,6 +174,13 @@ Microsoft.
 \newblock \url{https://products.office.com/en-us/excel}, 2015.
 \newblock [Prístupné online: 18.3.2015].
 
+\bibitem[MS93]{Minnotte}
+Michael~C. Minnotte and David~W. Scott.
+\newblock The mode tree: A tool for visualization of nonparametric density
+  features.
+\newblock {\em Journal of Computational and Graphical Statistics}, 2:51--68,
+  1993.
+
 \bibitem[MTL78]{McGill}
 Robert McGill, John~W. Tukey, and Wayne~A. Larsen.
 \newblock Variations of box plots.
@@ -223,6 +247,10 @@ Kristin Potter.
   Visualization of Large and Unstructured Data Sets}, volume S-4 of {\em
   GI-Edition Lecture Notes in Informatics (LNI)}, pages 97--106. 2006.
 
+\bibitem[Rol11]{RoleOfDesign}
+{On the role of design in information visualization}.
+\newblock {\em Information Visualization}, 10(4):356--371, October 2011.
+
 \bibitem[RRT99]{Bagplot}
 Peter~J. Rousseeuw, Ida Ruts, and John~W. Tukey.
 \newblock The bagplot: A bivariate boxplot.
@@ -233,6 +261,14 @@ William Stock and John Behrens.
 \newblock {Box, Line, and Midgap Plots: Effects of Display Characteristics on
   the Accuracy and Bias of Estimates of Whisker Length}.
 \newblock {\em Journal of Educational Statistics}, 16(1):1--20, 1991.
+
+\bibitem[Sco92]{Scott}
+David~W. Scott.
+\newblock {\em Multivariate density estimation : theory, practice, and
+  visualization}.
+\newblock Wiley series in probability and mathematical statistics : Applied
+  probability and statistics section. Wiley-Interscience, New York, Chichester,
+  Brisbane, 1992.
 
 \bibitem[SG11]{FunctionalBoxplot}
 Ying Sun and Marc~G. Genton.
@@ -304,6 +340,11 @@ Edward~R. Tufte.
 John~W. Tukey.
 \newblock {\em Exploratory Data Analysis}.
 \newblock Addison-Wesley, 1977.
+
+\bibitem[Tur93]{Turlach}
+Berwin~A. Turlach.
+\newblock Bandwidth selection in kernel density estimation: A review.
+\newblock In {\em CORE and Institut de Statistique}, 1993.
 
 \bibitem[UCA15]{NCL}
 UCAR.

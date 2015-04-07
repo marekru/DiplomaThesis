@@ -33,65 +33,78 @@ V tejto sekcii sa snažíme stručne zhrnúť hlavné požiadavky na vizualizác
 \subsection{Tri základné požiadavky}
 Dobrý dizajn vizualizácie sa, tak ako v iných odvetviach, snaží dosiahnuť fungujúcu rovnováhu medzi troma zložkami: \textit{utilitas}, \textit{firmitas}, \textit{venustas} \cite{XYZ}, čo sa z latinčiny dá voľne preložiť ako \textit{užitočnosť}, \textit{robustnosť}, \textit{atraktivita}. Keďže sa v našom prípade jedná o odbornú vizualizáciu, tak sa budeme hlavne sústrediť na prvé dve požiadavky \textit{užitočnosť}, \textit{robustnosť}.
 	
-\textit{Užitočnosť}
+\paragraph{\textit{Užitočnosť}} zahŕňa funkcionalitu, funkčnosť, použiteľnosť a podobné pojmy. Vo vizualizácii sú tieto aspekty zhrnuté dvoma mierami - \textit{efektnosť} (presnosť a úplnosť informácie, ktorú chcel užívateľ získať) a \textit{efektivita} (množstvo zdrojov - zvyčajne času - potrebných na získanie žiadanej informácie). Našou úlohou pri návrhu optimálnej vizualizácie je teda pokúsiť sa, aby bola v čo najväčšej miere efektná a efektívna. 
 
-
-%TODO, co bude tuto, tak to ja neviem moc
+Toto sa pokúsime dosiahnuť rôznymi prostriedkami. 
 - \textit{focus+context} \\
 - vyuzitie tohto, co meteorologovia uz poznaju \\
 
 
+\paragraph{\textit{Robustnosť}} je pojem hovoriaci o odolnosti vizualizácie voči chybným, veľkým, rôznorodým dátam. To znamená, že ako dobre a akým spôsobom sa vysporadúva s týmito problémami. Taktiež hovorí o správnosti vizualizácie, teda či berie do úvahy ľudský percepčný systém a nejakým spôsobom nedodáva klamlivú informáciu. Hovoríme o javoch, ktoré poznáme zvyčajne z optických ilúzií. Príkladom môže byť vnímanie perspektívy, kontextuálne vnímanie farieb, vnímanie hodnôt na základe plochy a nie dĺžky a iné podobné javy, na ktoré je nutné dávať pozor.
+
+
+\paragraph{\textit{Atraktivita}} alebo tiež estetika - krása daného riešenia. Tento pojem nie je limitovaný vizuálnou stránkou vizualizácie, ale taktiež nejasným aspektom, akými sú originalita, inovácia a novosť. Článok od Moera a Purchaseho \cite{RoleOfDesign} tvrdí, že tento aspekt je priveľmi podceňovaný, no i my sa radíme medzi- tých, ktorí nekladú naň taký dôraz, ako na predošlé dva.
+
+
 \subsection{Užívateľské úlohy}
-Konkrétnejšie požiadavky na vizualizáciu sa najlepšie špecifikujú pomocou užívateľských úloh. V tejto časti pomocou \textit{taxonómie úloh vizualizácie} navrhnutej súrodencami Andirenko \cite{XZY}, zhrnieme základné uvažované úlohy, ktoré budú užívatelia vykonávať. Jednotlivé úlohy sa definujú pomocou ukážkových otázok, ktoré sa budú klásť na vizualizáciu.
+Konkrétnejšie požiadavky na vizualizáciu sa najlepšie špecifikujú pomocou užívateľských úloh. V tejto časti pomocou \textit{taxonómie úloh vizualizácie} navrhnutej súrodencami Andirenko \cite{Andrienko}, zhrnieme základné uvažované úlohy, ktoré budú užívatelia vykonávať. Jednotlivé úlohy sa definujú pomocou ukážkových otázok, ktoré sa budú klásť na vizualizáciu.
 \subsubsection{Elementárne úlohy}
 Tieto úlohy sú mierené na individuálne dátové elementy, teda napríklad konkrétne hodnoty.
-\begin{itemize} %[noitemsep]
+\begin{itemize}[noitemsep]
 	\item \textit{Vyhľadávanie}
 	\begin{itemize}
 		\item Aké veľké je RMSE a MFE pre piatu hodinu predpovede?
-		\item Aká jed distribúcia chýb pre túto hodinu?	 
+		\item Aká je distribúcia chýb pre túto hodinu?	 
 	\end{itemize}
 	\item \textit{Inverzné vyhľadávanie} 
 	\begin{itemize}
 		\item Ktorá predpovedaná hodina mala pre január najväčšiu priemernú chybu? 
+		\item Ktoré predpovede sa výrazne líšia od ostatných? 
+		\item Ktoré dni v roku bola priemerná chyba najnižšia?
+		\item Ku ktorej predpovedi patrí outlier.
 	\end{itemize}
 	\item \textit{Porovnávanie}
 	\begin{itemize}
-			\item TODO
+		\item Je chyba nižšia v prvých alebo neskorších hodinách?
+		\item Aký je rozptyl chýb na začiatku a na konci predpovede?
 	\end{itemize}
 	\item \textit{Inverzné porovnávanie}
 	\begin{itemize}
-			\item TODO
+		\item Je chyba pre daný mesiac najnižšia okolo desiatej hodiny?
 	\end{itemize}
 	\item \textit{Hľadanie vzťahov}
 	\begin{itemize}
-			\item TODO
+		\item Aký vplyv má outlier na priemernú chybu predpovede?
 	\end{itemize}
 \end{itemize}
 
 \subsubsection{Synoptické úlohy}
 Narozdiel od elementárnych úloh, synoptické alebo skôr prehľadové úlohy zahŕňajú celkový pohľad na dáta, teda nie na konkrétne hodnoty, ale na množiny hodnôt.
-\begin{itemize} %[noitemsep]
+\begin{itemize}[noitemsep]
 	\item \textit{Vyhľadávanie (Definovanie vzorov)}
 	\begin{itemize}
-			\item Existujú nejaké výkyvy v chybách z ktorých sa počítali štatistiky?
+		\item Existujú nejaké výkyvy v chybách z ktorých sa počítali štatistiky?
+		\item Aké sú trendy v magnitúde chýb počas roka?
+		\item Nadhodnocuje, či podhodnocuje model predpovede?
 	\end{itemize}
 	\item \textit{Inverzné vyhľadávanie (Vyhľadávanie vzorov)}
 	\begin{itemize}
-			\item Kedy sú predpovede najpresnejšie?
-			\item Kedy sú predpovede najslabšie?
+		\item Ktorú predpovednú hodinu sú predpovede najpresnejšie?
+		\item Ktoré ročné obdobie sú predpovede najslabšie?
 	\end{itemize}
 	\item \textit{Porovnávanie vzorov}
 	\begin{itemize}
-			\item TODO
+		\item Porovnaj správanie modelu pre rôzne stanice.	
+		\item Porovnaj správanie modelu pre rôzne mesiace.	
 	\end{itemize}
 	\item \textit{Inverzné porovnávanie vzorov}
 	\begin{itemize}
-			\item TODO
+		\item Je správanie modelu rozdielne v prvý deň predpovede ako v druhý?
 	\end{itemize}
 	\item \textit{Hľadanie vzťahov}
 	\begin{itemize}
-			\item TODO
+		\item Aký vplyv majú horúcejšie dni na úspech predpovede?
+		\item Aký vplyv má rozptyl chýb na úspešnosť predpovede?
 	\end{itemize}
 \end{itemize}
 
@@ -130,7 +143,7 @@ Na obrázku \ref{fig:multilinegraph} môžme vidieť porovnanie bežne používa
 	\centering
 	\includegraphics[width = 5in]{multilinegraph}
 	\caption{a) Bežné zobrazenie viacerých škál b) Nami navrhnuté zobrazenie viacerých škál }
-	\label{fig:multilinegraph} %TODO namiesto nul tam dat cisla
+	\label{fig:multilinegraph} 
 \end{figure}
 
 \section{Návrh vizualizácie distribúcie chýb}
@@ -153,11 +166,11 @@ Nech máme $ n $ hodnôt $ x_{i}, 1 \leq i \leq n $, z ktorých chceme určiť o
 kde $ h $ je šírka jadra a $ K(x) $ je funkcia jadra (skrátene iba jadro), ktorá by mala spĺňať nasledovné vlastnosti:
 \[  K(x) \geq 0 \]
 \[  \int K(x) dx = 1 \]
-tieto vlastnosti hovoria, že $ K(x) $ je na celom definičnom obore nezáporná a jej integrál je rovný 1, teda sa jedná o normalizovanú funkciu. Bolo preštudovaných mnoho jadier, ako napríklad uniformné, tri-angulárne, Epanechnikovo [29], kvadratické, Gaussové, kosínusové a veľa ďalších. Najbežnejšie a zrejme aj najpraktickejšie [18] je Gaussovo (normálne) jadro, ktoré sme použili aj my:
+tieto vlastnosti hovoria, že $ K(x) $ je na celom definičnom obore nezáporná a jej integrál je rovný 1, teda sa jedná o normalizovanú funkciu. Bolo preštudovaných mnoho jadier, ako napríklad uniformné, tri-angulárne, Epanechnikovo \cite{Turlach}, kvadratické, Gaussové, kosínusové a veľa ďalších. Najbežnejšie a zrejme aj najpraktickejšie \cite{Minnotte} je Gaussovo (normálne) jadro, ktoré sme použili aj my:
 \[
 	K(x) = \dfrac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^2}
 \]
-Voľba jadra však nemá na výsledok až taký vplyv, ako voľba šírky jadra $ h $. My sme použili výpočet šírky jadra na základe dátovej množiny, ktorý aproximuje optimálnu šírku jadra [Scott 1992; Bowman and Azzalini 1997] \footnote{Optimálna šírka jadra je taká, ktorá minimalizuje \textit{strednú integrovanú kvadratickú chybu}.}. Všeobecne pre $ d $ dimenzionálne dáta je vzorec nasledovný:
+Voľba jadra však nemá na výsledok až taký vplyv, ako voľba šírky jadra $ h $. My sme použili výpočet šírky jadra na základe dátovej množiny, ktorý aproximuje optimálnu šírku jadra \cite{Scott, BowmanAzzalani} \footnote{Optimálna šírka jadra je taká, ktorá minimalizuje \textit{strednú integrovanú kvadratickú chybu}.}. Všeobecne pre $ d $ dimenzionálne dáta je vzorec nasledovný:
 \[
 	h = \sigma \Big(\frac{4}{(d + 2)n}\Big)^{\frac{1}{d+4}}
 \]
@@ -289,7 +302,6 @@ V našej práci sme do diagramu pridali ešte jednu krivku pre ľubovoľnú šta
 	\caption{Obrázky z článku \textit{Functional Boxplots}  \cite{FunctionalBoxplot}  a) Funkcie meraní teploty hladiny mora b) Funkčný krabicový diagram c) Rozšírený Funkčný krabicový diagram o centrálne regióny $ C_{0.25} $ a $ C_{0.75} $ }
 	\label{fig:functionalboxplot}
 \end{figure}
-%TODO tento obrazok skresat zhora a tak
 
 %TODO obrazok pasmo
 
@@ -325,16 +337,15 @@ alebo to sem vobec nedam!
 
 \section{Návrh farebnej palety}
 Farba je pravdepodobne najviac podceňovaný a nesprávne používaný vizuálny parameter vo vizualizácii dát. V tejto časti opisujeme návrh farebnej palety pre vyššie spomenuté vizualizačné techniky.
-% Asi len pre farebnú mapu sa rozpíšem a pre ostatné, to iba rýchlo zhrnem
 
 \subsection{Farebná mapa}
 Návrhu farebnej palety pre farebnú mapu sme venovali zvýšenú pozornosť, keďže farba hrá pri tomto type vizualizácie najpodstatnejšiu úlohu.
 
-V prvom momente sme siahli po veľmi prvoplánovom riešení a použili sme takzvanú \textit{dúhovú farebnú škálu}, ktorú možno vidieť v sekcii \ref{sec:colormap} na obrázku \ref{fig:colormap}. Výskum ukázal a mnohý vedci sa na tom zhodujú, že tento typ farebnej palety je len zriedkakedy najlepšia voľba pri vizualizácii. Dúhové farebné palety majú niekoľko slabých stránok, ktoré zhŕňa Theresa-Marie Rhyne vo svojom článku \cite{Rhyne}.
+V prvom momente sme siahli po veľmi prvoplánovom riešení a použili sme takzvanú \textit{dúhovú farebnú škálu}, ktorú možno vidieť v sekcii \ref{sec:colormap} na obrázku \ref{fig:colormap}. Výskum ukázal a mnohý vedci sa na tom zhodujú, že tento typ farebnej palety je len zriedkakedy najlepšia voľba pri vizualizácii. Dúhové farebné palety majú niekoľko slabých stránok, ktoré zhŕňa David Borland a Russell M. Taylor II vo svojom článku \cite{RainbowHarmful}.
 
 Prvou slabinou je, že farby v dúhovej palete, narozdiel od monochromatickej, nemajú jasný kľúč podľa ktorého by sme ich perceptuálne zoradili. Preto základné vzťahy \textit{menší ako}, \textit{väčší ako} nie sú ihneď evidentné. Ľudský vizuálny systém vníma vysoké priestorové frekvencie prostredníctvom zmien v jase. Z tohto vyplýva ďalší problém, pretože dúhová paleta zakrýva detail tým, že zmeny medzi hodnotami zobrazuje ako zmenu vo farebnom odtieni a nie ako zmenu v jase. Poslednou, v článku spomenutou, slabinou je, že farby v dúhovej palete sa spájajú do pásem, čím pridáva do obrazu artefakty, ktoré sa nevyskytovali v pôvodných dátach. 
 
-Týchto niekoľko závažných dôvodov nás presvedčilo zvoliť inú farebnú paletu. Konkrétne sme sa rozhodli použiť farebnú paletu zloženú z troch farieb: červená, biela a modrá. Červená znázorňuje kladné maximum, biela hodnoty blízko nuly a modrá záporné maximum. Výber týchto troch farieb bol jednoduchý, pretože červená farba zvyčajne indikuje kladné hodnoty a naopak modrá záporné. Smerom k nule sa potom už iba zvyšuje jasová zložka farby, až kým nedosiahneme bielu. Konkrétne farby sme vybrali z internetovej galérie farebných paliet, ktorú zverejnil \textit{NCAR} (\url{http://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml}).
+Týchto niekoľko závažných dôvodov nás presvedčilo zvoliť inú farebnú paletu. Konkrétne sme sa rozhodli použiť divergentnú farebnú paletu zloženú z troch farieb: červená, biela a modrá. Červená znázorňuje kladné maximum, biela hodnoty blízko nuly a modrá záporné maximum. Výber týchto troch farieb bol jednoduchý, pretože červená farba zvyčajne indikuje kladné hodnoty a naopak modrá záporné. Smerom k nule sa potom už iba zvyšuje jasová zložka farby, až kým nedosiahneme bielu. Konkrétne farby sme vybrali z internetovej galérie farebných paliet, ktorú zverejnil \textit{NCAR} (\url{http://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml}).
 
 Tento typ palety už lepšie zodpovedal našim požiadavkám. Testovaním sme však zistili, že nie je jednoduché ihneď rozoznať záporné oproti kladným hodnotám, ktoré sú blízko nuly a naopak. Vyriešili sme to nahradením bielej farby dvoma rôznymi farbami. Jednak svetlo modrou pre hodnoty blížiace sa k nule z dola a svetlo červenou pre hodnoty blížiace sa k nule zhora. Vďaka tomu na farebnej škále a rovnako aj vo vizualizácii vznikol ostrý predel medzi kladnými a zápornými hodnotami. Na obrázku \ref{fig:colorpalettes} môžme vidieť porovnanie týchto troch farebných paliet.
 
@@ -349,9 +360,24 @@ Tento typ palety už lepšie zodpovedal našim požiadavkám. Testovaním sme v�
 - ekvalizacia histogramom / boxplotom ??? \\
 
 \subsection{Ďalšie diagramy}
-- pri stats to je jedno \\
-- pri progress sme zvyraznili klzavy priemer 
- - monochrome 
+Podobné uvažovanie ako pre farebnú mapu sme aplikovali aj pre ďalšie diagramy. Vzhľadom na to, že vo zvyšných diagramoch nehrajú farby takú výraznú úlohu, v tejto kapitole stručne zhrnieme dôvody, ktoré nás viedli k výberu farieb pre jednotlivé diagramy.
+
+\subsubsection{Mnoho-čiarový diagram} 
+Tento typ diagramu sme použili v dvoch prípadoch. Pre hodnoty štatistík na jeden mesiac a pre priebeh chýb počas roka.
+
+V prvom prípade na farbe takmer vôbec nezáleží, jedine pri použití rôznych škál, kedy sme volili tmavšie odtiene, aby bolo vidieť biele indikátory hodnôt zobrazené na škálach.
+
+V druhom prípade sme sa snažili zvýrazniť kĺzavý priemer červenou farbou, zatiaľ čo surové dáta sme nechali pomocou tmavo šedej ustúpiť do pozadia.
+
+\subsubsection{Graf hustoty} 
+Tento diagram zobrazuje výlučne kladné hodnoty, preto sme zvolili jednoduchú monochromatickú škálu. V tomto prípade nám poslúžil internetový nástroj \textit{Color Brewer} (\url{http://colorbrewer2.org/}), kde sme zvolili škálu v modrých odtieňoch.
+
+\subsubsection{Pruhový diagram} 
+Taktiež v tomto prípade sme zvolili monochromatickú škálu. Farby sa smerom k stredu diagramu postupne stmavujú. Pruh pre medián sme však zvýraznili žltou, ktorá vystúpila na tmavou pozadí do popredia.
+
+\subsubsection{Funkčný krabicový diagram} 
+Pri návrhu farebnej palety pre tento diagram sme vychádzali z farieb dizajnu systému, teda z modrej a bielej. Centrálne pásmo $ C_{0.5} $ má tmavomodrú farbu s bielim zobrazeným priemerom a neviem akým mediánom. %TODO neviem akym prepisaz
+Otlieri sme zámerne zvýraznili červenou farbou.
 
 \section{Návrh rozloženia prvkov vizualizácie}
 Výsledná obrazovka systému sa nebude skladať iba z jedného typu vizualizácie, ale z viacerých grafov a iných častí, ktoré spolu užívateľovi vytvoria dostatočne dobrú predstavu o dátach. Tieto časti budeme nazývať prvky alebo komponenty vizualizácie. Jednotlivým prvkom sme dali nasledovné pomenovania: 
