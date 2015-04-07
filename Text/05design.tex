@@ -157,7 +157,7 @@ Jedným z viacerých spôsobov, ako pomerne presne určiť distribúciu chýb je
 
 Prvý pohľad na dáta by nám vravel, že ide o dvojrozmerné dáta a teda je potrebné použiť odhad hustoty dvoch premenných. Takýto postup by samozrejme bol možný, ale doviedol by nás k chybnej vizualizácii a tak aj k mylnej predstave o dátach. Dôvodom je to, že máme záujem o analýzu distribúcie chýb pre každú hodinu predpovede zvlášť, čo znamená, že chcem zistiť distribúciu iba v jednom smere.
 
-Pre vytvorenie grafu hustoty, v prvom rade je potrebné vybrať správny spôsob odhadu hustoty. Jedným z bežne používaným štandardným spôsobom je odhad hustoty pomocou jadra, po anglicky známy ako \textit{kernel density estimation} (KDE) [ref Rosenblatt 56, parzen 62].
+Pre vytvorenie grafu hustoty, v prvom rade je potrebné vybrať správny spôsob odhadu hustoty. Jedným z bežne používaným štandardným spôsobom je odhad hustoty pomocou jadra, po anglicky známy ako \textit{kernel density estimation} (KDE) \cite{Rosenblatt, Parzen}
 
 Nech máme $ n $ hodnôt $ x_{i}, 1 \leq i \leq n $, z ktorých chceme určiť odhad hustoty, potom estimátor hustoty $ \hat{f}_h(x) $, ktorý aproximuje \textit{funkciu hustoty pravdepodobnosti} (PDF) $ f $, sa vypočíta takto:
 \[
@@ -183,11 +183,11 @@ Aby sme zjednodušili výpočet, tak sme si konštanty vypočítali predom a zao
 	h = 1.06 \times \sigma \times n^{-\frac{1}{5}}
 \]
 
-Takýmto spôsobom sme si pre každú hodinu predpovede určili samostatnú funkciu $ \hat{f}_{h}(x) $, ktorú môžme vizualizovať. Zvyčajne sa funkcie hustoty vizualizujú ako bežné funkcie, teda pomocou čiarového diagramu, tak ako na obrázku \ref{fig:XY}. V našom prípade by bol tento prístup nepraktický, keďže máme veľké množstvo funkcií, tak jednak by bola takáto vizualizácia nepraktická pri porovnávaní distribúcií a taktiež na to nemáme potrebný vizuálny priestor.
+Takýmto spôsobom sme si pre každú hodinu predpovede určili samostatnú funkciu $ \hat{f}_{h}(x) $, ktorú môžme vizualizovať. Zvyčajne sa funkcie hustoty vizualizujú ako bežné funkcie, teda pomocou čiarového diagramu, tak ako na obrázku \ref{fig:linegraph}. V našom prípade by bol tento prístup nepraktický, keďže máme veľké množstvo funkcií, tak jednak by bola takáto vizualizácia nepraktická pri porovnávaní distribúcií a taktiež na to nemáme potrebný vizuálny priestor.
 
 Opäť sme teda zvolili štandardné riešenie, ako ušetriť vzácny priestor a to tak, že hodnoty, ktoré by boli zobrazené na $ y $-ovú os zobrazíme na zvolenú farebnú škálu. Vďaka tomu by teoreticky mohol mať graf hustoty pre jeden čas predpovede šírku 1 pixel bez straty akejkoľvek informácie.
 
-Vieme, že pre ľudí nie je také jednoduché pozorovať malé rozdiely medzi dvoma farbami. Testovaním sme zistili, že tento fakt spôsobuje problémy aj pri našej vizualizácii, kedy sa pre pozorovateľa strácajú jemné výkyvy hodnôt. Riešením by bolo nepoužiť spojité, ale diskrétne farbenie, ktoré je rozdeľuje interval hodnôt na podintervaly, ku ktorým priradí konkrétnu farbu (pozri obr. \ref{fig:XYZ}). Výhodu je, že takéto farbenie má výraznejšie farebné rozdiely. Týmto spôsobom by sme však stratili priveľa informácie a nebolo by potrebné použiť na odhad hustoty KDE, ale postačoval by aj histogram. 
+Vieme, že pre ľudí nie je také jednoduché pozorovať malé rozdiely medzi dvoma farbami. Testovaním sme zistili, že tento fakt spôsobuje problémy aj pri našej vizualizácii, kedy sa pre pozorovateľa strácajú jemné výkyvy hodnôt. Riešením by bolo nepoužiť spojité, ale diskrétne farbenie, ktoré je rozdeľuje interval hodnôt na podintervaly, ku ktorým priradí konkrétnu farbu (pozri obr. \ref{fig:twotone}). Výhodu je, že takéto farbenie má výraznejšie farebné rozdiely. Týmto spôsobom by sme však stratili priveľa informácie a nebolo by potrebné použiť na odhad hustoty KDE, ale postačoval by aj histogram. 
 
 Riešenie tohto problému sme našli v práci od Takafumi Saita z roku 2005 \cite{Saito}. V tomto článku autor so svojimi kolegami navrhuje nový spôsob pseudo farbenia, ktoré nazýva \textit{two-tone pseudo coloring} alebo inak po slovensky \textit{dvojtónové pseudo farbenie}. Navrhnutá metóda priraďuje každej hodnote intervalu dve výrazne rôzne farby resp. farebné časti. Toto sa uskutočňuje podobne ako pri spojitom farbení, avšak sa neinterpolujú farby, ale pomer veľkostí dvoch zafarbených častí. Na obrázku \ref{fig:twotone} možno vidieť porovnanie troch spomenutých techník farbenia.
 
@@ -200,7 +200,7 @@ Riešenie tohto problému sme našli v práci od Takafumi Saita z roku 2005 \cit
 
 %TODO Ďalší problém - nevidno hranice!. 
 
-Na obrázku \ref{fig:XYZ} vodno porovnanie vizualizácií s použitím spojitého a dvojtónového farbenia.
+Na obrázku \ref{fig:XYZ} vidno porovnanie vizualizácií s použitím spojitého a dvojtónového farbenia.
 
 \subsection{Pruhový kvantilový diagram} 
 Z časti \ref{subsec:scatterplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram [ref] zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
@@ -284,7 +284,7 @@ Nech sú naše funkcie predpovedí $ x_{1},.., x_{n} $ usporiadané zostupne pod
 \[
 	C_{0.5} = B(x_{1}, x_{2}, .., x_{\lceil n / 2 \rceil} )
 \] 
-Vidíme, že Centrálny región $ C_{0.5} $ zaobaľuje 50\% najhlbších kriviek, a teda sa jedná o akúsi analógiu pre medzikvartálový rozsah (IQR) v klasickom krabicovom diagrame (pozri sekciu \ref{subsec:boxplot}), ktorý ohraničoval 50\% centrálnych dát. Zobrazením hraničných bodov tohto regiónu získame obálku myšlienkovo totožnú boxu v krabicovom diagrame (pozri obrázok \ref{fig:functionalboxplot}b) ). Táto myšlienka sa dá použiť ďalej a môžme, tak ako na obrázku \ref{fig:functionalboxplot}c) , zobraziť taktiež 25\%-ný a 75\%-ný centrálny región $ C_{0.25} $, $ C_{0.75} $, avšak kvôli nižšej čitateľnosti grafu sme túto alternatívu nepoužili.
+Vidíme, že Centrálny región $ C_{0.5} $ zaobaľuje 50\% najhlbších kriviek, a teda sa jedná o akúsi analógiu pre medzikvartilový rozsah (IQR) v klasickom krabicovom diagrame (pozri sekciu \ref{subsec:boxplot}), ktorý ohraničoval 50\% centrálnych dát. Zobrazením hraničných bodov tohto regiónu získame obálku myšlienkovo totožnú boxu v krabicovom diagrame (pozri obrázok \ref{fig:functionalboxplot}b) ). Táto myšlienka sa dá použiť ďalej a môžme, tak ako na obrázku \ref{fig:functionalboxplot}c) , zobraziť taktiež 25\%-ný a 75\%-ný centrálny región $ C_{0.25} $, $ C_{0.75} $, avšak kvôli nižšej čitateľnosti grafu sme túto alternatívu nepoužili.
 
 V prípade, že nepotrebujeme identifikovať \textit{outlier}-ov, tak extremálne hodnoty je už veľmi jednoduché získať, pretože ich tvorí pásmo zložené zo všetkých kriviek $ B(x_{1}, .., x_{n}) $. V opačnom prípade musíme najprv identifikovať \textit{outlier}-ov, ktorých potom vylúčime z výpočtov. Opäť sa využíva myšlienka z klasického krabicového diagramu, kedy sa \textit{outlier} určil pomocou hodnoty $ c \times IQR $, kde $ c $ bolo zvyčajne 1.5. Hranice sa teda získajú naškálovaním centrálneho regiónu so škálovacím faktorom 1.5 a všetky krivky, ktoré sa v tomto regióne nenachádzajú, budú považované za \textit{outlier}-ov. Test na \textit{outlier}-a vyzerá teda takto:
 \[	y_{i}(t) = 1.5 \times x_{i}(t) \]
@@ -437,6 +437,8 @@ Pre užívateľa nie je príjemné, keď sa na obrazovke prvky zväčšujú, zme
 Preto sme navrhli iný spôsob rozloženia, ktorý tento problém rieši tak, že zobrazí všetky prvky súčasne na jednej úrovni, a teda pojem \textit{úroveň} už nie je potrebný. Spôsob, akým sme umiestnili jednotlivé prvky je schematicky znázornený na obrázku \ref{fig:flatlayout}. Ak potrebujeme vidieť detailnejšie informácie o výkone modelu v mesiaci, tak kliknutím na konkrétny mesiac v prvku \textit{Prehľad}, sa zobrazí \textit{Detail štatistík}, \textit{Distribúcia chýb}, \textit{Detail chýb} pre daný mesiac.
 
 Nevýhodou tohto návrhu je, že nemožno zobraziť viacero prvkov jedného typu súčasne. Z tohto dôvodu nie je možné porovnávať viacero rokov súčasne a preto nie je potrebný komponent \textit{Zjednodušený prehľad}. Zvyšné potrebné porovnávania pre mesiace a distribúciu zaobstará v zníženom, ale dostatočnom detaile, prvok \textit{Prehľad}. 
+
+%TODO o tom ako a preco som to tak rozmiestnil
 
 \begin{figure}
 	\centering

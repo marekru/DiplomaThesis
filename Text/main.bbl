@@ -222,6 +222,12 @@ Apache OpenOffice.
 \newblock \url{https://www.openoffice.org/product/calc.html}, 2015.
 \newblock [Prístupné online: 18.3.2015].
 
+\bibitem[Par62]{Parzen}
+Emanuel Parzen.
+\newblock On estimation of a probability density function and mode.
+\newblock {\em The Annals of Mathematical Statistics}, 33(3):pp. 1065--1076,
+  1962.
+
 \bibitem[{Pea}95]{histogram}
 K.~{Pearson}.
 \newblock {Contributions to the Mathematical Theory of Evolution. II. Skew
@@ -250,6 +256,12 @@ Kristin Potter.
 \bibitem[Rol11]{RoleOfDesign}
 {On the role of design in information visualization}.
 \newblock {\em Information Visualization}, 10(4):356--371, October 2011.
+
+\bibitem[Ros56]{Rosenblatt}
+Murray Rosenblatt.
+\newblock {Remarks on Some Nonparametric Estimates of a Density Function}.
+\newblock {\em The Annals of Mathematical Statistics}, 27(3):832--837,
+  September 1956.
 
 \bibitem[RRT99]{Bagplot}
 Peter~J. Rousseeuw, Ida Ruts, and John~W. Tukey.
