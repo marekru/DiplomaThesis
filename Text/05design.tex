@@ -31,14 +31,13 @@ Autor v knihe ďalej spomína opisné charakteristiky pre časovo orientované d
 V tejto sekcii sa snažíme stručne zhrnúť hlavné požiadavky na vizualizáciu vyššie spomenutých dát. V prvom rade, by sme chceli zachovať základné požiadavky kladené na dobrý návrh vizualizácie vo všeobecnosti a neskôr skonkretizovať naše požiadavky pomocou \textit{užívateľských úloh}.
 
 \subsection{Tri základné požiadavky}
-Dobrý dizajn vizualizácie sa, tak ako v iných odvetviach, snaží dosiahnuť fungujúcu rovnováhu medzi troma zložkami: \textit{utilitas}, \textit{firmitas}, \textit{venustas} \cite{XYZ}, čo sa z latinčiny dá voľne preložiť ako \textit{užitočnosť}, \textit{robustnosť}, \textit{atraktivita}. Keďže sa v našom prípade jedná o odbornú vizualizáciu, tak sa budeme hlavne sústrediť na prvé dve požiadavky \textit{užitočnosť}, \textit{robustnosť}.
+Dobrý dizajn vizualizácie sa, tak ako v iných odvetviach, snaží dosiahnuť fungujúcu rovnováhu medzi troma zložkami: \textit{utilitas}, \textit{firmitas}, \textit{venustas} \cite{RoleOfDesign}, čo sa z latinčiny dá voľne preložiť ako \textit{užitočnosť}, \textit{robustnosť}, \textit{atraktivita}. Keďže sa v našom prípade jedná o odbornú vizualizáciu, tak sa budeme hlavne sústrediť na prvé dve požiadavky \textit{užitočnosť}, \textit{robustnosť}.
 	
 \paragraph{\textit{Užitočnosť}} zahŕňa funkcionalitu, funkčnosť, použiteľnosť a podobné pojmy. Vo vizualizácii sú tieto aspekty zhrnuté dvoma mierami - \textit{efektnosť} (presnosť a úplnosť informácie, ktorú chcel užívateľ získať) a \textit{efektivita} (množstvo zdrojov - zvyčajne času - potrebných na získanie žiadanej informácie). Našou úlohou pri návrhu optimálnej vizualizácie je teda pokúsiť sa, aby bola v čo najväčšej miere efektná a efektívna. 
 
-Toto sa pokúsime dosiahnuť rôznymi prostriedkami. 
-- \textit{focus+context} \\
-- vyuzitie tohto, co meteorologovia uz poznaju \\
-
+%TODO Toto sa pokúsime dosiahnuť rôznymi prostriedkami. ???
+%- \textit{focus+context} \\
+%- vyuzitie tohto, co meteorologovia uz poznaju \\
 
 \paragraph{\textit{Robustnosť}} je pojem hovoriaci o odolnosti vizualizácie voči chybným, veľkým, rôznorodým dátam. To znamená, že ako dobre a akým spôsobom sa vysporadúva s týmito problémami. Taktiež hovorí o správnosti vizualizácie, teda či berie do úvahy ľudský percepčný systém a nejakým spôsobom nedodáva klamlivú informáciu. Hovoríme o javoch, ktoré poznáme zvyčajne z optických ilúzií. Príkladom môže byť vnímanie perspektívy, kontextuálne vnímanie farieb, vnímanie hodnôt na základe plochy a nie dĺžky a iné podobné javy, na ktoré je nutné dávať pozor.
 
@@ -198,7 +197,6 @@ Riešenie tohto problému sme našli v práci od Takafumi Saita z roku 2005 \cit
 	\label{fig:twotone} 
 \end{figure}
 
-%TODO Ďalší problém - nevidno hranice!. 
 
 Na obrázku \ref{fig:XYZ} vidno porovnanie vizualizácií s použitím spojitého a dvojtónového farbenia.
 
@@ -234,11 +232,11 @@ Pre pochopenie dát je dôležité, aby sme sa vedeli pozrieť na hodnoty v ich 
 
 Takýmto spôsobom sme sa dostali do novej situácie, kedy nechceme vizualizovať distribúciu jednotlivých chýb, ale celých predpovedí, ktoré chápeme ako funkcie. Na riešenie tohto problému existuje niekoľko spôsobov, z ktorých sme si zvolili \textit{funkčný krabicový diagram} \cite{FunctionalBoxplot}, keďže myšlienkovo vychádza z klasického krabicového diagramu, ktorý je jednak na túto situáciu vhodný ale je tiež medzi užívateľmi dobre známy a zaužívaný.
 
-Ako sme spomenuli v časti \ref{subsec:boxplot}, klasický krabicový diagram potrebuje na svoju konštrukciu 5 hodnôt: 3 kvartily a 2 extrémy. Aby sme tieto hodnoty našli pre funkcie, musíme ich vedieť porovnať a povedať, ktorá je \textquotedblleft väčšia\textquotedblright alebo \textquotedblleft menšia\textquotedblright. Autori funkčného krabicového diagramu riešia problém s využitím takzvanej pásmovej hĺbky (\textit{band depth}) \cite{BandDepth}. Grafom $ G $ funkcie $ x $ je množina bodov $ G = \{ (t,x(t)) : t \in I \} $. Pásmo $ \mathcal{B} $ (\textit{band}) v $ \mathbb{R}^{2}  $ ohraničené krivkami $ x_{i_{1}}, x_{i_{2}}, .. , x_{i_{k}} $, kde $ k \geq 2 $ je definované takto:
+Ako sme spomenuli v časti \ref{sec:boxplot}, klasický krabicový diagram potrebuje na svoju konštrukciu 5 hodnôt: 3 kvartily a 2 extrémy. Aby sme tieto hodnoty našli pre funkcie, musíme ich vedieť porovnať a povedať, ktorá je \textquotedblleft väčšia\textquotedblright alebo \textquotedblleft menšia\textquotedblright. Autori funkčného krabicového diagramu riešia problém s využitím takzvanej pásmovej hĺbky (\textit{band depth}) \cite{BandDepth}. Grafom $ G $ funkcie $ x $ je množina bodov $ G = \{ (t,x(t)) : t \in I \} $. Pásmo $ \mathcal{B} $ (\textit{band}) v $ \mathbb{R}^{2}  $ ohraničené krivkami $ x_{i_{1}}, x_{i_{2}}, .. , x_{i_{k}} $, kde $ k \geq 2 $ je definované takto:
 \[
 	\mathcal{B}(x_{i_{1}}, x_{i_{2}}, .. , x_{i_{k}}) = \{ (t,y) : t \in I, \min_{r=1..k}x_{i_{r}}(t) \leq y \leq \min_{r=1..k}x_{i_{r}}(t) \}
 \]
-Pásmo $ \mathcal{B} $ je teda množina všetkých bodov existujúcich medzi extrémami všetkých kriviek, ktoré doň vstupujú ako parameter. 
+Pásmo $ \mathcal{B} $ (pozri obrázok \ref{fig:band}) je teda množina všetkých bodov existujúcich medzi extrémami všetkých kriviek, ktoré doň vstupujú ako parameter. 
 Pomocou týchto dvoch funkcií môžme definovať pomocnú funkciu $ BD_{n}^{(j)}(x) $ pre krivku $ x $, ktorá vyzerá takto:
 \[
 	BD^{(j)}_{n}(x) = {n \choose j}^{-1} \sum_{1 \leq i_{1} < i_{2} < ... < i_{j} \leq n} \mathcal{I}\{ G(x) \subset \mathcal{B}(x_{i_{1}}, ... ,x_{i_{j}}) \}, j \geq 2
@@ -271,13 +269,20 @@ Nová pomocná funkcia $ MBD $ je definovaná nasledovne:
 \[
 	MBD^{(j)}_{n}(x) = {n \choose j}^{-1} \sum_{1 \leq i_{1} < i_{2} < ... < i_{j} \leq n} \lambda_{r}\{ A(x, \mathcal{B}(x_{i_{1}}, ... ,x_{i_{j}})) \}, j \geq 2
 \]
-Ak platí, že $ G(x) \subset \mathcal{B}(x_{i_{1}}, ... ,x_{i_{j}}) $, tak funkcia $ MBD $ sa degeneruje na $ BD $ \cite{FunctionalBoxplot}.
+Ak platí, že $ G(x) \subset \mathcal{B}(x_{i_{1}}, ... ,x_{i_{j}}) $, tak funkcia $ MBD $ sa degeneruje na $ BD $ \cite{FunctionalBoxplot}. Na obrázku \ref{fig:band} môžme vidieť krivku $ x_{4} $, ktorá by bola v prípade $ BD $ započítaná s hodnotou 0, zatiaľ čo flexibilnejšia metóda $ MBD $, by ju započítala ako 0.4.
 
 V našej aplikácii sme sa rozhodli, že budeme pásmo definovať pomocou iba dvoch kriviek, čo nám vzorec výrazne zjednodušilo. Taktiež to implikovalo fakt, že pri výpočte $ MBD $ nie je potrebné $ {n \choose j}^{-1} $, keďže berieme pásma zložené vždy z rovnakého počtu kriviek. Pre naše účely sme si taktiež zjednodušili funkciu $ \lambda_{r} $ na $ \lambda $, keďže nepotrebujeme vlastnosť tejto funkcie, ktorá dosahovala to, že $ MBD $ pre špeciálny prípad degeneruje na $ BD $. Po týchto úpravách výsledný vzorec pre naše $ \mathcal{BD}' $ vyzerá nasledovne:
 \[
 	\mathcal{BD}'_{n}(x) = \sum_{1 \leq i_{1} < i_{2} \leq n} \lambda\{ A(x, \mathcal{B}(x_{i_{1}},x_{i_{2}})) \}
 \]
 Teraz, keď sme úspešne definovali mieru, podľa ktorej môžme usporiadať funkcie resp. ich krivky, je veľmi ľahké skonštruovať funkčný krabicový diagram.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 3in]{band}
+	\caption{ Na obrázku je znázornený príklad pásma $ \mathcal{B}(x_{1}, x_{3}) $ zloženého z 2 funkcií $ x_{1}, x_{3} $. Taktiež môžme vidieť funkciu $ x_{2} $, ktorej graf leží v pásme, zatiaľ čo $ x_{4} $ podľa $ BD $ neleží vôbec a podľa $ MBD $ len čiastočne. }
+	\label{fig:band}
+\end{figure}
 
 \paragraph{}
 Nech sú naše funkcie predpovedí $ x_{1},.., x_{n} $ usporiadané zostupne podľa $ \mathcal{BD}' $. Potom krivka pre funkciu $ x_{1} $ má najvyššiu pásmovú hĺbku a predstavuje strednú hodnotu pre množinu funkcií, teda niečo podobné ako medián hodnôt pri krabicovom diagrame. Pri konštrukcii funkcionálneho diagramu nám taktiež pomôže koncept centrálneho regiónu \cite{Liu}. Centrálny región $ C $ pre 50\% kriviek je pásmo vytvorené z 50\% najhlbších kriviek, teda:
@@ -303,8 +308,6 @@ V našej práci sme do diagramu pridali ešte jednu krivku pre ľubovoľnú šta
 	\label{fig:functionalboxplot}
 \end{figure}
 
-%TODO obrazok pasmo
-
 \subsection{Mapa distribúcií} 
 Návrh tejto metódy spočíva v tom, že vizualizácia prehľadu štatistík pomocou farebnej mapy ponecháva ešte dostatok nevyužitého vizuálneho priestoru. Obsah obdĺžnikov, ktoré tvoria túto mapu, sa dá zaplniť ďalším vizuálnym elementom, ktorým je možné dodať informáciu o distribúcii.
 
@@ -322,7 +325,6 @@ Jednotlivé hodnoti sa zobrazia vo vizualizácii ako kruhy rôznej veľkosti v z
 kde $ k $ je koeficient škálovania. Nemusíme sa báť záporných hodnôt pod odmocninou, keďže $ \sigma $ nemôže nadobúdať záporné hodnoty a $ k > 0 $.
 
 Takýmto spôsobom dodáme užívateľovi rýchly prehľad o tom, ako môže štatistikám z chýb dôverovať, aké sú trendy alebo vzory v disperzii a podobne. Tento typ vizualizácie sa dá kombinovať s farebnou mapou, ale môže existovať aj samostatne podľa preferencií užívateľa. Na obrázku \ref{fig:XYZ} je znázornený príklad výslednej vizualizácie.
-
 
 \subsection{Porovnanie metód}
 
@@ -357,7 +359,7 @@ Tento typ palety už lepšie zodpovedal našim požiadavkám. Testovaním sme v�
 	\label{fig:colorpalettes}
 \end{figure}
 
-- ekvalizacia histogramom / boxplotom ??? \\
+%TODO ?- ekvalizacia histogramom / boxplotom ???  skor buduce prace
 
 \subsection{Ďalšie diagramy}
 Podobné uvažovanie ako pre farebnú mapu sme aplikovali aj pre ďalšie diagramy. Vzhľadom na to, že vo zvyšných diagramoch nehrajú farby takú výraznú úlohu, v tejto kapitole stručne zhrnieme dôvody, ktoré nás viedli k výberu farieb pre jednotlivé diagramy.
@@ -433,12 +435,12 @@ Na obrázku \ref{fig:multilevellayout} máme pomocou ikon z obrázka \ref{fig:de
 
 
 \subsection{Plochý návrh rozloženia prvkov}
-Pre užívateľa nie je príjemné, keď sa na obrazovke prvky zväčšujú, zmenšujú, posúvajú, objavujú alebo miznú, pretože ... %TODO stráca prehľad alebo čo :D
+Pre užívateľa nie je príjemné, keď sa na obrazovke prvky zväčšujú, zmenšujú, posúvajú, objavujú alebo miznú, pretože pri každej modifikácii obrazovky sa užívateľ musí zoznamovať s obrazovkou znova.
 Preto sme navrhli iný spôsob rozloženia, ktorý tento problém rieši tak, že zobrazí všetky prvky súčasne na jednej úrovni, a teda pojem \textit{úroveň} už nie je potrebný. Spôsob, akým sme umiestnili jednotlivé prvky je schematicky znázornený na obrázku \ref{fig:flatlayout}. Ak potrebujeme vidieť detailnejšie informácie o výkone modelu v mesiaci, tak kliknutím na konkrétny mesiac v prvku \textit{Prehľad}, sa zobrazí \textit{Detail štatistík}, \textit{Distribúcia chýb}, \textit{Detail chýb} pre daný mesiac.
 
 Nevýhodou tohto návrhu je, že nemožno zobraziť viacero prvkov jedného typu súčasne. Z tohto dôvodu nie je možné porovnávať viacero rokov súčasne a preto nie je potrebný komponent \textit{Zjednodušený prehľad}. Zvyšné potrebné porovnávania pre mesiace a distribúciu zaobstará v zníženom, ale dostatočnom detaile, prvok \textit{Prehľad}. 
 
-%TODO o tom ako a preco som to tak rozmiestnil
+Pri návrhu rozmiestnenia prvkov vizualizácie sme chápali komponent \textit{Prehľad} ako hlavnú časť obrazovky vizualizácie, preto sme sa snažili ostatné prvky rozmiestniť odvíjajúc sa od jeho polohy. V prvom rade sme 2 komponenty s rovnakou škálou ako \textit{Prehľad} (\textit{Detail štatistík}, \textit{Distribúcia chýb}) umiestnili pod neho, tak aby jednotlivé škály boli na seba zarovnané. Smerom nadol teda stúpa úroveň detailu skúmaných dát. Rovnako sme uvažovali aj pri umiestňovaní prvku \textit{Celkový priebeh} do hornej časti obrazovky, keďže ho chápeme ako prvok s najnižším detailom. Tento prvok sme sa taktiež snažili rozšíriť čo najviac, keďže škála na \mbox{$ x $-ovej} osi má zvyčajne až 365 hodnôt. Na záver sme umiestnili \textit{Detail chýb} v pravej časti popri ostatným prvkom kvôli jeho predĺženom tvare vo vertikálnom smere.
 
 \begin{figure}
 	\centering

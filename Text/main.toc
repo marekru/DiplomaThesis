@@ -58,23 +58,23 @@
 \contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie \IeC {\v s}tatist\IeC {\'\i }k verifik\IeC {\'a}cie}{40}
 \contentsline {subsection}{\numberline {5.3.1}Preh\IeC {\v l}ad \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Farebn\IeC {\'a} mapa})}}{40}
 \contentsline {subsection}{\numberline {5.3.2}Detail \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram})}}{41}
-\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{43}
+\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{42}
 \contentsline {subsection}{\numberline {5.4.1}Graf hustoty}{43}
-\contentsline {subsection}{\numberline {5.4.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{46}
+\contentsline {subsection}{\numberline {5.4.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{45}
 \contentsline {subsection}{\numberline {5.4.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{47}
 \contentsline {paragraph}{}{49}
-\contentsline {subsection}{\numberline {5.4.4}Mapa distrib\IeC {\'u}ci\IeC {\'\i }}{51}
-\contentsline {subsection}{\numberline {5.4.5}Porovnanie met\IeC {\'o}d}{51}
+\contentsline {subsection}{\numberline {5.4.4}Mapa distrib\IeC {\'u}ci\IeC {\'\i }}{50}
+\contentsline {subsection}{\numberline {5.4.5}Porovnanie met\IeC {\'o}d}{52}
 \contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh farebnej palety}{52}
 \contentsline {subsection}{\numberline {5.5.1}Farebn\IeC {\'a} mapa}{52}
 \contentsline {subsection}{\numberline {5.5.2}\IeC {\v D}al\IeC {\v s}ie diagramy}{53}
-\contentsline {subsubsection}{Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram}{53}
+\contentsline {subsubsection}{Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram}{54}
 \contentsline {subsubsection}{Graf hustoty}{54}
 \contentsline {subsubsection}{Pruhov\IeC {\'y} diagram}{54}
 \contentsline {subsubsection}{Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{54}
 \contentsline {section}{\numberline {5.6}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{54}
 \contentsline {subsection}{\numberline {5.6.1}Viac\IeC {\'u}rov\IeC {\v n}ov\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{55}
-\contentsline {subsection}{\numberline {5.6.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{56}
+\contentsline {subsection}{\numberline {5.6.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{57}
 \contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{60}
 \contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{60}
 \contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{60}

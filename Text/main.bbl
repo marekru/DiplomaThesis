@@ -174,6 +174,11 @@ Microsoft.
 \newblock \url{https://products.office.com/en-us/excel}, 2015.
 \newblock [Prístupné online: 18.3.2015].
 
+\bibitem[MP11]{RoleOfDesign}
+Andrew~Vande Moere and Helen Purchase.
+\newblock {On the role of design in information visualization}.
+\newblock {\em Information Visualization}, 10(4):356--371, Október 2011.
+
 \bibitem[MS93]{Minnotte}
 Michael~C. Minnotte and David~W. Scott.
 \newblock The mode tree: A tool for visualization of nonparametric density
@@ -252,10 +257,6 @@ Kristin Potter.
 \newblock In Hans Hagen, Andreas Kerren, and Peter Dannenmann, editors, {\em
   Visualization of Large and Unstructured Data Sets}, volume S-4 of {\em
   GI-Edition Lecture Notes in Informatics (LNI)}, pages 97--106. 2006.
-
-\bibitem[Rol11]{RoleOfDesign}
-{On the role of design in information visualization}.
-\newblock {\em Information Visualization}, 10(4):356--371, October 2011.
 
 \bibitem[Ros56]{Rosenblatt}
 Murray Rosenblatt.
