@@ -79,8 +79,8 @@
 \contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{59}
 \contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{60}
 \contentsline {subsection}{\numberline {6.2.1}Java}{61}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{62}
-\contentsline {subsection}{\numberline {6.2.3}d3.js}{62}
+\contentsline {subsection}{\numberline {6.2.2}JavaScript}{61}
+\contentsline {subsubsection}{D3.js}{62}
 \contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{62}
 \contentsline {subsection}{\numberline {6.3.1}CSV}{62}
 \contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{62}
