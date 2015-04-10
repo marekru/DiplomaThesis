@@ -1,11 +1,43 @@
 \chapter{Návrh systému a Implementácia}
+Pri návrhu a implementácii našej aplikácie sme brali do úvahy výhody a obmedzenia systému \textit{IMS4} (\textit{Integrated Monitoring System}), ktorý je vyvíjaný spoločnosťou \textit{MicroStep-MIS s.r.o.}. Dôvodom je, že náš verifikačný systém bol navrhovaný ako prídavný modul pre IMS4.
+
+V tejto kapitole stručne zhrnieme návrh systému a opíšeme kľúčové časti implementácie.
+
 
 \section{Návrh systému}
+Našu aplikáciu sme sa snažili navrhnúť jednak ako samostatný produkt schopný extrakcie a spracovania meteorologických dát a výpočtu verifikačných štatistík, ale taktiež aj ako súčasť systému IMS4. Toto sme dosiahli tak, že sme rozdelili systém na 2 balíky: \textit{verifikačný} a \textit{vizualizačný}. Na obrázku \ref{fig:system} môžme vidieť schematický návrh systému.
 
+\textit{Verifikačný balík} tvorí jadro celého systému a zohráva viacero úloh. V prvom rade je jeho úlohou extrakcia dát z rôznych dátových zdrojov do tabuliek predpovedí a pozorovaní. Tieto tabuľky sa následne predspracúvajú (párovanie, konverzia fyzikálnych jednotiek, filtrovanie, identifikácia chýbajúcich dát...) a posúvajú sa do časti na výpočet štatistík. Na základe konfigurácie sa spočítajú rôzne štatistiky, ktorých výsledok je výstup z tohoto balíka.
+
+\textit{Vizualizačný balík} chápeme ako vymeniteľnú časť systému. Vďaka tomuto môže byť vizualizácia v podobe interaktívnej obrazovky, ktorá je súčasťou systému IMS4, ale taktiež generovaná automaticky do statických obrázkov na disku.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 4.5in]{system}
+	\caption{Schematický popis systému.}
+	\label{fig:system} 
+\end{figure}
+
+Ak by sme mali systém opísať v pojmoch vizualizácie informácií, tak tieto dva balíky rozdeľujú vizualizačnú \textit{pipeline} na dve časti (Pozri obrázok \ref{fig:pipeline}). Verifikačný balík sa stará o analýzu dát pomocou predspracovania a matematického modelu verifikačných štatistík a taktiež sa stará o filtrovanie dát. Zvyčajne filtrovanie prebieha na základe interakcie užívateľa. V našom prípade sme však uvažovali aj o možnosti, že vizualizácia nebude interaktívna, preto sme filtrovanie umiestnili do verifikačného balíka a vykonáva sa na základe konfigurácie systému. 
+
+Filtrované dáta putujú do vizualizačného balíka. V ňom sa vykonáva zobrazenie hodnôt na vizuálne parametre jednotlivých prvkov vizualizácie, tak ako sme to opísali v kapitole \ref{chap:design} \textit{Návrh vizualizácie}. Takéto dáta sa následne vykreslia do obrázka alebo na obrazovku, čím sa ukončí vizualizačná pipeline.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 6in]{pipeline}
+	\caption{Rozdelenie prvkov vizualizačnej pipeline do verifikačného a vizualizačného balíka. Obrázok pipeline pochádza zo stránky \protect\url{http://www.infovis-wiki.net}.}
+	\label{fig:pipeline} 
+\end{figure}
 
 \section{Použité technológie}
+V tejto časti rozoberáme technológie použité pre implementácii systému a uvádzame dôvody ich použitia.
 
 \subsection{Java}
+Primárnu časť systému - \textit{verifikačný balík} sme implementovali v jazyku \textit{Java}, konkrétne vo verzii 1.5. Toto je prvé obmedzenie, ktoré na nás kladie systém IMS4, keďže použitie vyššej verzie (momentálne je dostupná už verzia 1.8) by spôsoboval problém s kompatibilitou.
+
+Java ako programovací jazyk je veľmi rozšírený a obľúbený, vďaka čomu je dostupných pomerne veľké množstvo knižníc, nevynímajúc originálne knižnice zahrnuté v systéme IMS4. Tieto knižnice sme využili pri implementácii aj my. V prvom rade môžme spomenúť ... %TODO
+
 
 \subsection{JavaScript}
 
