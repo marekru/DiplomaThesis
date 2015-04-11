@@ -13,7 +13,7 @@ Našu aplikáciu sme sa snažili navrhnúť jednak ako samostatný produkt schop
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 4.5in]{system}
+	\includegraphics[width = 5in]{system}
 	\caption{Schematický popis systému.}
 	\label{fig:system} 
 \end{figure}
@@ -22,13 +22,37 @@ Ak by sme mali systém opísať v pojmoch vizualizácie informácií, tak tieto 
 
 Filtrované dáta putujú do vizualizačného balíka. V ňom sa vykonáva zobrazenie hodnôt na vizuálne parametre jednotlivých prvkov vizualizácie, tak ako sme to opísali v kapitole \ref{chap:design} \textit{Návrh vizualizácie}. Takéto dáta sa následne vykreslia do obrázka alebo na obrazovku, čím sa ukončí vizualizačná pipeline.
 
-
 \begin{figure}
 	\centering
 	\includegraphics[width = 6in]{pipeline}
 	\caption{Rozdelenie prvkov vizualizačnej pipeline do verifikačného a vizualizačného balíka. Obrázok pipeline pochádza zo stránky \protect\url{http://www.infovis-wiki.net}.}
 	\label{fig:pipeline} 
 \end{figure}
+
+\section{Verifikačný balík}
+Ako sme už spomenuli v predchádzajúcej sekcii, tento balík sa skladá z dvoch logických častí \textit{Spracovanie dát} a \textit{Výpočet štatistík}. V tejto sekcii sa pokúsime zhrnúť kľúčové prvky návrhu a implementácie týchto dvoch častí.
+\subsection{Spracovanie dát}
+Úlohou tejto časti je získanie potrebných dát z určených dátových zdrojov a ich predspracovanie tak, aby mohli vstúpiť do ďalšej časti - \textit{výpočtu štatistík}.
+
+Pri návrhu tried na získavanie predpovedí a pozorovaní sme sa snažili, aby bolo užívateľovi umožnené získavať dáta z viacerých typov zdrojov: Gribovské súbory, CSV súbory, webové zdroje, databáza a podobne. Aby sme pre každý typ zdroju nevytvárali samostatnú vetvu udalostí, navrhli sme abstraktnú triedu \textit{DataExtractor}, ktorá obsahuje abstraktné metódy \textit{extract()} a \textit{addSoruces()} a taktiež slúži na inštancovanie všetkých jej potomkov (pozri UML diagram na obrázku \ref{fig:dataextractor}). Jednotlivý potomkovia následne musia implementovať vyššie spomenuté metódy, ktoré sú špecifické pre každý typ zdroju.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 5.5in]{dataextractor}
+	\caption{Triedny UML diagram pre triedy typu DataExtractor.}
+	\label{fig:dataextractor} 
+\end{figure}
+
+- parovanie \\
+- filtrovanie datumov \\
+- koverzia fyzikálnych jednotiek \\
+- vypocet chyb 
+
+\subsection{Výpočet štatistík}
+
+
+\section{Vizualizačný balík}
+
 
 \section{Použité technológie}
 V tejto časti rozoberáme technológie použité pre implementácii systému a uvádzame dôvody ich použitia.
@@ -39,23 +63,11 @@ Primárnu časť systému - \textit{verifikačný balík} sme implementovali v j
 Java ako programovací jazyk je veľmi rozšírený a obľúbený, vďaka čomu je dostupných pomerne veľké množstvo knižníc, nevynímajúc originálne knižnice zahrnuté v systéme IMS4. Tieto knižnice sme využili pri implementácii aj my. Môžme spomenúť 3 knižnice, z ktorých sú dve interné a jedna pôvodne externá s pridanou funkcionalitou. Prvé dve spomenuté sú \textit{Log} - používaná na logovanie a \textit{X2O}, ktorá sa používa na mapovanie javovských objektov na XML štruktúru a späť pomocou \textit{Java Reflection API}. My sme X2O použili pri ukladaní a načítavaní konfiguračných súborov. Posledná knižnica je NetCDF a pochádza od americkej organizácie \textit{Unidata}, ktorú zastrešuje \textit{UCAR}. Jedná sa o opensource produkt na čítanie dát zo súborov vo formáte GRIB. My využívame upravenú verziu NetCDF grib-6.0 obzvlášť kvôli Jave 1.5, aj keď sú dostupné novšie verzie \footnote{Najnovšia je NetCDF-Java-4.5, ktorá zoskupuje všetky ďalšie podobné produkty od Unidata.}.
 
 \subsection{JavaScript}
-Systém IMS4 využíva webové stránky na vytváranie GUI. Z tohto dôvodu sme sa rozhodli, že vizualizáciu budeme produkovať priamo v prehliadači pomocou \textit{JavaScriptu}. Podovbe ako Java, aj JavaScript je veľmi populárny a preto vzniklo veľké množstvo rôznych knižníc, medzi ktorými sú aj mnohé vizualizačné.
+Systém IMS4 využíva webové stránky na vytváranie GUI. Z tohto dôvodu sme sa rozhodli, že vizualizáciu budeme produkovať priamo v prehliadači pomocou \textit{JavaScriptu}. Podobne ako Java, aj JavaScript je veľmi populárny a preto vzniklo veľké množstvo rôznych knižníc, medzi ktorými sú aj mnohé určené na vizualizáciu. Medzi najznámejšie z nich patria napríklad: \textit{JavaScript InfoVis Toolkit}, \textit{Highcharts}, \textit{jQuery Visualize}, \textit{JS Charts}, \textit{jqPlot}, \textit{jpGraph}, \textit{Raphaël}, \textit{Dygraphs},\textit{ Processing.js}, \textit{Axiis}, \textit{D3} a mnohé ďalšie. Pre naše účely sme z veľkého množstva knižníc vybrali práve D3, ako najvhodnejší nástroj na náš účel.
 
-\subsubsection{D3.js}
-D3 (\textit{Data Driven Documents}) sme zvolili ...
+\subsubsection{D3}
+D3 (\textit{Data-Driven Documents}) \cite{XYZ}  je opensource knižnica napísaná v JavaScripte. Na vizualizáciu využíva HTML a SVG elementy a ich vizuálne vlastnosti, ktoré mení pomocou ich atribútov a CSS štýlov. 
 
+Dôvodom, prečo sme si vybrali práve D3 z veľkého množstva vizualizačných knižníc je, že väčšina z nich bola zameraná na konkrétny druh vizualizácie (napr. \textit{force-directed layout}) alebo na niekoľko najpoužívanejších druhov diagramov (bodový, stĺpcový, čiarový, histogram,...). D3 sa však nezameriava na konkrétny druh vizualizácie, ale ponúka spôsob, ako zobrazovať hodnoty na vizuálne parametre elementov, čím umožňuje ohromnú variabilitu a je vhodná na vytváranie nových alebo menej používaných typov vizualizácií. Väčšina vizualizácií, ktoré sme v našej práci sme navrhli, nie sú podporované vyššie spomenutými knižnicami a preto sme potrebovali nástroj umožňujúci dobre parametrizovateľnú vizualizáciu.
 
-\section{Extrakcia a spracovanie dát}
-
-\subsection{CSV}
-
-\subsection{Webové zdroje}
-
-\subsection{GRIB}
-
-\subsection{...}
-
-\section{Konfigurácia systému}
-
-
-\section{Obrazovka vizualizácie}
+Toto je taktiež dôvod, prečo vzniklo veľké množstvo knižníc, ukážkových príkladov a návodov ktoré využívajú práve D3. Aby sme spomenuli aspoň niektoré z knižníc používajúcich D3, tak sú to napríklad \textit{Raw}, \textit{Cubism}, \textit{Ember Charts}, \textit{NVD3}, \textit{C3}, \textit{MetricsGraphics}, \textit{Graffeine}, \textit{Mermaid}, \textit{Epoch}, \textit{Insights}, \textit{Dashku}, \textit{RickShaw} a mnohé ďalšie. 

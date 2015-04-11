@@ -77,17 +77,14 @@
 \contentsline {subsection}{\numberline {5.6.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{57}
 \contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{59}
 \contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{59}
-\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{60}
-\contentsline {subsection}{\numberline {6.2.1}Java}{61}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{61}
-\contentsline {subsubsection}{D3.js}{62}
-\contentsline {section}{\numberline {6.3}Extrakcia a spracovanie d\IeC {\'a}t}{62}
-\contentsline {subsection}{\numberline {6.3.1}CSV}{62}
-\contentsline {subsection}{\numberline {6.3.2}Webov\IeC {\'e} zdroje}{62}
-\contentsline {subsection}{\numberline {6.3.3}GRIB}{62}
-\contentsline {subsection}{\numberline {6.3.4}...}{62}
-\contentsline {section}{\numberline {6.4}Konfigur\IeC {\'a}cia syst\IeC {\'e}mu}{62}
-\contentsline {section}{\numberline {6.5}Obrazovka vizualiz\IeC {\'a}cie}{62}
-\contentsline {chapter}{\numberline {7}Z\IeC {\'a}ver}{63}
-\contentsline {section}{\numberline {7.1}Pr\IeC {\'\i }nos}{63}
-\contentsline {section}{\numberline {7.2}V\IeC {\'y}sledky}{63}
+\contentsline {section}{\numberline {6.2}Verifika\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{60}
+\contentsline {subsection}{\numberline {6.2.1}Spracovanie d\IeC {\'a}t}{61}
+\contentsline {subsection}{\numberline {6.2.2}V\IeC {\'y}po\IeC {\v c}et \IeC {\v s}tatist\IeC {\'\i }k}{62}
+\contentsline {section}{\numberline {6.3}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{62}
+\contentsline {section}{\numberline {6.4}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{62}
+\contentsline {subsection}{\numberline {6.4.1}Java}{62}
+\contentsline {subsection}{\numberline {6.4.2}JavaScript}{63}
+\contentsline {subsubsection}{D3}{63}
+\contentsline {chapter}{\numberline {7}Z\IeC {\'a}ver}{64}
+\contentsline {section}{\numberline {7.1}Pr\IeC {\'\i }nos}{64}
+\contentsline {section}{\numberline {7.2}V\IeC {\'y}sledky}{64}
