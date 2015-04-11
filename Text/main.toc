@@ -80,11 +80,11 @@
 \contentsline {section}{\numberline {6.2}Verifika\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{60}
 \contentsline {subsection}{\numberline {6.2.1}Spracovanie d\IeC {\'a}t}{61}
 \contentsline {subsection}{\numberline {6.2.2}V\IeC {\'y}po\IeC {\v c}et \IeC {\v s}tatist\IeC {\'\i }k}{62}
-\contentsline {section}{\numberline {6.3}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{62}
-\contentsline {section}{\numberline {6.4}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{62}
-\contentsline {subsection}{\numberline {6.4.1}Java}{62}
-\contentsline {subsection}{\numberline {6.4.2}JavaScript}{63}
-\contentsline {subsubsection}{D3}{63}
-\contentsline {chapter}{\numberline {7}Z\IeC {\'a}ver}{64}
-\contentsline {section}{\numberline {7.1}Pr\IeC {\'\i }nos}{64}
-\contentsline {section}{\numberline {7.2}V\IeC {\'y}sledky}{64}
+\contentsline {section}{\numberline {6.3}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{63}
+\contentsline {section}{\numberline {6.4}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{63}
+\contentsline {subsection}{\numberline {6.4.1}Java}{63}
+\contentsline {subsection}{\numberline {6.4.2}JavaScript}{64}
+\contentsline {subsubsection}{D3}{64}
+\contentsline {chapter}{\numberline {7}Z\IeC {\'a}ver}{65}
+\contentsline {section}{\numberline {7.1}Pr\IeC {\'\i }nos}{65}
+\contentsline {section}{\numberline {7.2}V\IeC {\'y}sledky}{65}
