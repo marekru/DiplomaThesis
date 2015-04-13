@@ -28,7 +28,28 @@
 \usepackage[sharp,50]{easylist}
 \usepackage{enumitem}
 \usepackage{courier}
+\usepackage{xcolor}
+\usepackage{inconsolata}
+\usepackage{caption}
 
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\renewcommand{\lstlistingname}{Výpis}
+
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue},
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
 
 \definecolor{gray}{rgb}{0.4,0.4,0.4}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.6}
