@@ -1,7 +1,8 @@
 \chapter{Návrh systému a Implementácia}
 Pri návrhu a implementácii našej aplikácie sme brali do úvahy výhody a obmedzenia systému \textit{IMS4} (\textit{Integrated Monitoring System}), ktorý je vyvíjaný spoločnosťou \textit{MicroStep-MIS s.r.o.}. Dôvodom je, že náš verifikačný systém bol navrhovaný ako prídavný modul pre IMS4.
 
-V tejto kapitole stručne zhrnieme návrh systému a opíšeme kľúčové časti implementácie.
+V tejto kapitole stručne zhrnieme návrh systému a opíšeme kľúčové časti implementácie. 
+Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet
 
 
 \section{Návrh systému}
@@ -77,7 +78,7 @@ V tejto časti verifikačného balíka sa vykonáva výpočet štatistík, z kto
 
 Pri implementácii sme využili nami navrhnutý všeobecný spôsob výpočtu kumulovanej chyby (pozri podsekciu \ref{subsec:cumulativeerror}). Pripomenieme, že sme v našom využili vzorci dve funkcie $ \Phi $ a $ \varepsilon $, ktoré obe boli ľubovoľnými funkciami z $\mathbb{R}$ do $\mathbb{R}$. Na obrázku \ref{fig:stats} je triedny diagram tried slúžiacich na výpočet spojitých štatistík verifikácie. V Diagrame môžme vidieť abstraktnú triedu \textit{ContinuousStatistics}, ktorá reprezentuje ľubovoľnú štatistickú metódu na výpočet kumulovanej chyby opísanú v sekcii \ref{sec:errormeasurement}. Táto trieda obsahuje metódu \texttt{calculateStatistics()}, ktorá vypočítava ľubovoľnú kumulovanú chybu s použitím dvoch abstraktných metód: \texttt{processError()} a \texttt{processSum()}. Tieto dve metódy predstavujú funkcie $ \Phi $ a $ \varepsilon $. Ako vidíme na obrázku všetky štatistické sú implementované ako potomkovia triedy \textit{ContinuousStatistics} a implementujú tieto vyššie spomenuté metódy. 
 
-%TODO\pagebreak
+\pagebreak %TODO
              
 
 \begin{figure}
@@ -102,3 +103,18 @@ var groups = group.selectAll(".group")
 		    .classed("group", true);	
 \end{lstlisting}
 
+Jednotlivé prvky vizualizácie sme navrhli ako takzvané \textit{moduly}, ktoré obsahujú v sebe dáta, nastavenia zobrazenia a ďalšie vnorené moduly, ako svojich potomkov. Každý modul je funkcia, ktorá ma na vstupe \textit{selection}, teda DOM element vybraný pomocou knižnice D3. Tento typ funkcie je \textit{callback} funkcia, ktorú jednotlivé vybrané elementy knižnice D3 volajú pomocou metódy \texttt{call()}. 
+
+Tento návrh nám vytvára akúsi stromovú štruktúru modulov (pozri obrázok \ref{fig:tree}), ktorá umožňuje jednoduché vystavovanie celého rozloženia prvkov, kombinovanie jednotlivých častí vizualizácie a znovupoužitie niektorých častí vizualizácie. 
+
+Príkladom znovupoužitia môže byť graf pre distribúciu chýb, ktorý sa skladá z horizontálnej a vertikálnej osi a samotnej vizualizácie, ktorá môže byť rôzna (pozri sekciu \ref{sec:distribdesign}). Pre rôzne typy vizualizácií teda nemusíme kopírovať rovnaký kus kódu na generovanie osí viackrát, ale iba recyklujeme opakujúcu sa časť.   
+
+Každý typ grafu sme taktiež rozobrali na základné časti, z ktorých sa skladá. Napríklad mnoho-čiarový diagram sa skladá z osí, z mriežky alebo mriežok a mnohých čiar. Tým, že každý element chápeme ako samostatný modul, získavame dobrú variabilitu vizualizácie. Vďaka tomuto teda jednak môžme jednoducho riadiť počet čiar alebo mriežok, ale taktiež môžme čiarový diagram kombinovať so stĺpcovým, s bodovým alebo ľubovoľným iným.
+
+\begin{figure}
+	\centering
+	\hspace*{-0.2in}
+	\includegraphics[width = 6in]{tree}
+	\caption{Príklad štruktúry modulov pre vytvorenie mnoho-čiarového diagramu.}
+	\label{fig:tree} 
+\end{figure}

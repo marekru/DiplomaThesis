@@ -30,5 +30,6 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Schematick\IeC {\'y} popis syst\IeC {\'e}mu.\relax }}{60}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Rozdelenie prvkov vizualiza\IeC {\v c}nej pipeline do verifika\IeC {\v c}n\IeC {\'e}ho a vizualiza\IeC {\v c}n\IeC {\'e}ho bal\IeC {\'\i }ka. Obr\IeC {\'a}zok pipeline poch\IeC {\'a}dza zo str\IeC {\'a}nky \url {http://www.infovis-wiki.net}.\relax }}{61}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Triedny UML diagram pre triedy typu DataExtractor.\relax }}{64}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Triedny UML diagram pre triedy typu ContinuousStatistics.\relax }}{64}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Triedny UML diagram pre triedy typu ContinuousStatistics.\relax }}{65}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Pr\IeC {\'\i }klad \IeC {\v s}trukt\IeC {\'u}ry modulov pre vytvorenie mnoho-\IeC {\v c}iarov\IeC {\'e}ho diagramu.\relax }}{66}
 \addvspace {10\p@ }

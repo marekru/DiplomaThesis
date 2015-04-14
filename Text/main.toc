@@ -77,14 +77,14 @@
 \contentsline {subsection}{\numberline {5.6.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{57}
 \contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{59}
 \contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{59}
-\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{60}
+\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{61}
 \contentsline {subsection}{\numberline {6.2.1}Java}{61}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{61}
+\contentsline {subsection}{\numberline {6.2.2}JavaScript}{62}
 \contentsline {subsubsection}{D3}{62}
-\contentsline {section}{\numberline {6.3}Verifika\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{62}
+\contentsline {section}{\numberline {6.3}Verifika\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{63}
 \contentsline {subsection}{\numberline {6.3.1}Spracovanie d\IeC {\'a}t}{63}
-\contentsline {subsection}{\numberline {6.3.2}V\IeC {\'y}po\IeC {\v c}et \IeC {\v s}tatist\IeC {\'\i }k}{63}
-\contentsline {section}{\numberline {6.4}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{64}
-\contentsline {chapter}{\numberline {7}Z\IeC {\'a}ver}{66}
-\contentsline {section}{\numberline {7.1}Pr\IeC {\'\i }nos}{66}
-\contentsline {section}{\numberline {7.2}V\IeC {\'y}sledky}{66}
+\contentsline {subsection}{\numberline {6.3.2}V\IeC {\'y}po\IeC {\v c}et \IeC {\v s}tatist\IeC {\'\i }k}{64}
+\contentsline {section}{\numberline {6.4}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{65}
+\contentsline {chapter}{\numberline {7}Z\IeC {\'a}ver}{67}
+\contentsline {section}{\numberline {7.1}Pr\IeC {\'\i }nos}{67}
+\contentsline {section}{\numberline {7.2}V\IeC {\'y}sledky}{67}
