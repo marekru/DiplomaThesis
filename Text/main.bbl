@@ -28,6 +28,12 @@ G.~J. Boer and S.~J. Lambert.
 \newblock {Second-order space-time climate difference statistics}.
 \newblock {\em Climate Dynamics}, 17(2):213--218, January 2001.
 
+\bibitem[Bos13]{D3}
+Mike Bostock.
+\newblock {Data-Driven Documents library}.
+\newblock \url{http://d3js.org/}, 2013.
+\newblock [Prístupné online: 14.4.2015].
+
 \bibitem[Bro15]{EVSmanual}
 Dr. James~D. Brown.
 \newblock {\em Ensemble Verification Service (EVS) version 5.4 User's Manual}.
@@ -359,11 +365,17 @@ Berwin~A. Turlach.
 \newblock Bandwidth selection in kernel density estimation: A review.
 \newblock In {\em CORE and Institut de Statistique}, 1993.
 
-\bibitem[UCA15]{NCL}
+\bibitem[UCA15a]{NCL}
 UCAR.
 \newblock {NCAR Command Language}.
 \newblock \url{http://www.ncl.ucar.edu/}, Marec 2015.
 \newblock [Prístupné online: 19.3. 2015].
+
+\bibitem[UCA15b]{Unidata}
+UCAR/Unidata.
+\newblock {NetCDF}.
+\newblock \url{http://www.unidata.ucar.edu/downloads/netcdf/}, 2015.
+\newblock [Prístupné online: 18.3.2015].
 
 \bibitem[Vas98]{WeatherStation}
 Tim Vasquez.

@@ -2,7 +2,6 @@
 Pri návrhu a implementácii našej aplikácie sme brali do úvahy výhody a obmedzenia systému \textit{IMS4} (\textit{Integrated Monitoring System}), ktorý je vyvíjaný spoločnosťou \textit{MicroStep-MIS s.r.o.}. Dôvodom je, že náš verifikačný systém bol navrhovaný ako prídavný modul pre IMS4.
 
 V tejto kapitole stručne zhrnieme návrh systému a opíšeme kľúčové časti implementácie. 
-Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet
 
 
 \section{Návrh systému}
@@ -37,13 +36,13 @@ Výber implementačných nástrojov bol podmienený obmedzeniami systému IMS4. 
 \subsection{Java}
 Primárnu časť systému - \textit{verifikačný balík} sme implementovali v jazyku \textit{Java}, konkrétne vo verzii 1.5. Toto je prvé obmedzenie, ktoré na nás kladie systém IMS4, keďže použitie vyššej verzie (momentálne je dostupná už verzia 1.8) by spôsoboval problém s kompatibilitou.
 
-Java ako programovací jazyk je veľmi rozšírený a obľúbený, vďaka čomu je dostupných pomerne veľké množstvo knižníc, nevynímajúc originálne knižnice zahrnuté v systéme IMS4. Tieto knižnice sme využili pri implementácii aj my. Môžme spomenúť 3 knižnice, z ktorých sú dve interné a jedna pôvodne externá s pridanou funkcionalitou. Prvé dve spomenuté sú \textit{Log} - používaná na logovanie a \textit{X2O}, ktorá sa používa na mapovanie javovských objektov na XML štruktúru a späť pomocou \textit{Java Reflection API}. My sme X2O použili pri ukladaní a načítavaní konfiguračných súborov. Posledná knižnica je NetCDF-grib \cite{XYZ} a pochádza od americkej organizácie \textit{Unidata}, ktorú zastrešuje \textit{UCAR}. Jedná sa o opensource produkt na čítanie dát zo súborov vo formáte GRIB. My využívame upravenú verziu NetCDF-grib-6.0 obzvlášť kvôli Jave 1.5, aj keď sú dostupné novšie verzie \footnote{Najnovšia je NetCDF-Java-4.5, ktorá zoskupuje všetky ďalšie podobné produkty od Unidata.}.
+Java ako programovací jazyk je veľmi rozšírený a obľúbený, vďaka čomu je dostupných pomerne veľké množstvo knižníc, nevynímajúc originálne knižnice zahrnuté v systéme IMS4. Tieto knižnice sme využili pri implementácii aj my. Môžme spomenúť 3 knižnice, z ktorých sú dve interné a jedna pôvodne externá s pridanou funkcionalitou. Prvé dve spomenuté sú \textit{Log} - používaná na logovanie a \textit{X2O}, ktorá sa používa na mapovanie javovských objektov na XML štruktúru a späť pomocou \textit{Java Reflection API}. My sme X2O použili pri ukladaní a načítavaní konfiguračných súborov. Posledná knižnica je NetCDF-grib \cite{Unidata} a pochádza od americkej organizácie \textit{Unidata}, ktorú zastrešuje \textit{UCAR}. Jedná sa o opensource produkt na čítanie dát zo súborov vo formáte GRIB. My využívame upravenú verziu NetCDF-grib-6.0 obzvlášť kvôli Jave 1.5, aj keď sú dostupné novšie verzie\footnote{Najnovšia je NetCDF-Java-4.5, ktorá zoskupuje všetky ďalšie podobné produkty od Unidata.}.
 
 \subsection{JavaScript}
 Systém IMS4 využíva webové stránky na vytváranie GUI. Z tohto dôvodu sme sa rozhodli, že vizualizáciu budeme produkovať priamo v prehliadači pomocou \textit{JavaScriptu}. Podobne ako Java, aj JavaScript je veľmi populárny a preto vzniklo veľké množstvo rôznych knižníc, medzi ktorými sú aj mnohé určené na vizualizáciu. Medzi najznámejšie z nich patria napríklad: \textit{JavaScript InfoVis Toolkit}, \textit{Highcharts}, \textit{jQuery Visualize}, \textit{JS Charts}, \textit{jqPlot}, \textit{jpGraph}, \textit{Raphaël}, \textit{Dygraphs},\textit{ Processing.js}, \textit{Axiis}, \textit{D3} a mnohé ďalšie. Pre naše účely sme z veľkého množstva knižníc vybrali práve D3, ako najvhodnejší nástroj na náš účel.
 
 \subsubsection{D3}
-D3 (\textit{Data-Driven Documents}) \cite{XYZ} je opensource knižnica napísaná v JavaScripte. Na vizualizáciu využíva HTML a SVG elementy a ich vizuálne vlastnosti, ktoré mení pomocou ich atribútov a CSS štýlov. 
+D3 (\textit{Data-Driven Documents}) \cite{D3} je opensource knižnica napísaná v JavaScripte. Na vizualizáciu využíva HTML a SVG elementy a ich vizuálne vlastnosti, ktoré mení pomocou ich atribútov a CSS štýlov. 
 
 Dôvodom, prečo sme si vybrali práve D3 z veľkého množstva vizualizačných knižníc je, že väčšina z nich bola zameraná na konkrétny druh vizualizácie (napr. \textit{force-directed layout}) alebo na niekoľko najpoužívanejších druhov diagramov (bodový, stĺpcový, čiarový, histogram,...). D3 sa však nezameriava na konkrétny druh vizualizácie, ale ponúka spôsob, ako zobrazovať hodnoty na vizuálne parametre elementov, čím umožňuje ohromnú variabilitu a je vhodná na vytváranie nových alebo menej používaných typov vizualizácií. Väčšina vizualizácií, ktoré sme v našej práci sme navrhli, nie sú podporované vyššie spomenutými knižnicami a preto sme potrebovali nástroj umožňujúci dobre parametrizovateľnú vizualizáciu.
 
@@ -78,9 +77,8 @@ V tejto časti verifikačného balíka sa vykonáva výpočet štatistík, z kto
 
 Pri implementácii sme využili nami navrhnutý všeobecný spôsob výpočtu kumulovanej chyby (pozri podsekciu \ref{subsec:cumulativeerror}). Pripomenieme, že sme v našom využili vzorci dve funkcie $ \Phi $ a $ \varepsilon $, ktoré obe boli ľubovoľnými funkciami z $\mathbb{R}$ do $\mathbb{R}$. Na obrázku \ref{fig:stats} je triedny diagram tried slúžiacich na výpočet spojitých štatistík verifikácie. V Diagrame môžme vidieť abstraktnú triedu \textit{ContinuousStatistics}, ktorá reprezentuje ľubovoľnú štatistickú metódu na výpočet kumulovanej chyby opísanú v sekcii \ref{sec:errormeasurement}. Táto trieda obsahuje metódu \texttt{calculateStatistics()}, ktorá vypočítava ľubovoľnú kumulovanú chybu s použitím dvoch abstraktných metód: \texttt{processError()} a \texttt{processSum()}. Tieto dve metódy predstavujú funkcie $ \Phi $ a $ \varepsilon $. Ako vidíme na obrázku všetky štatistické sú implementované ako potomkovia triedy \textit{ContinuousStatistics} a implementujú tieto vyššie spomenuté metódy. 
 
-\pagebreak %TODO
+%TODO \pagebreak 
              
-
 \begin{figure}
 	\centering
 	\includegraphics[width = 5in]{stats}
@@ -109,7 +107,7 @@ Tento návrh nám vytvára akúsi stromovú štruktúru modulov (pozri obrázok 
 
 Príkladom znovupoužitia môže byť graf pre distribúciu chýb, ktorý sa skladá z horizontálnej a vertikálnej osi a samotnej vizualizácie, ktorá môže byť rôzna (pozri sekciu \ref{sec:distribdesign}). Pre rôzne typy vizualizácií teda nemusíme kopírovať rovnaký kus kódu na generovanie osí viackrát, ale iba recyklujeme opakujúcu sa časť.   
 
-Každý typ grafu sme taktiež rozobrali na základné časti, z ktorých sa skladá. Napríklad mnoho-čiarový diagram sa skladá z osí, z mriežky alebo mriežok a mnohých čiar. Tým, že každý element chápeme ako samostatný modul, získavame dobrú variabilitu vizualizácie. Vďaka tomuto teda jednak môžme jednoducho riadiť počet čiar alebo mriežok, ale taktiež môžme čiarový diagram kombinovať so stĺpcovým, s bodovým alebo ľubovoľným iným.
+Každý typ grafu sme taktiež rozobrali na základné časti, z ktorých sa skladá. Napríklad mnoho-čiarový diagram sa skladá z osí, horizontálnej a vertikálnej mriežky a mnohých čiar. Vďaka tomuto jednak môžme jednoducho riadiť počet čiar alebo mriežok, ale taktiež môžme čiarový diagram kombinovať so stĺpcovým, s bodovým alebo ľubovoľným iným. Zjednodušene povedané, tým, že každý element chápeme ako samostatný modul, získavame dobrú variabilitu vizualizácie.
 
 \begin{figure}
 	\centering
