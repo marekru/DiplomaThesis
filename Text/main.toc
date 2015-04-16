@@ -7,12 +7,13 @@
 \contentsline {subsection}{\numberline {2.2.1}Predpovedan\IeC {\'e} d\IeC {\'a}ta}{5}
 \contentsline {subsection}{\numberline {2.2.2}Pozorovan\IeC {\'e} d\IeC {\'a}ta}{6}
 \contentsline {subsection}{\numberline {2.2.3}P\IeC {\'a}rovanie d\IeC {\'a}t}{6}
-\contentsline {section}{\numberline {2.3}Meranie chyby predpovede}{8}
-\contentsline {subsection}{\numberline {2.3.1}Stredn\IeC {\'a} chyba predpovede}{8}
-\contentsline {subsection}{\numberline {2.3.2}Stredn\IeC {\'a} absol\IeC {\'u}tna chyba}{9}
-\contentsline {subsection}{\numberline {2.3.3}Stredn\IeC {\'a} kvadratick\IeC {\'a} chyba}{9}
-\contentsline {subsection}{\numberline {2.3.4}V\IeC {\v s}eobecn\IeC {\'a} kumulovan\IeC {\'a} chyba}{9}
-\contentsline {subsection}{\numberline {2.3.5}Medi\IeC {\'a}n absol\IeC {\'u}tnych ch\IeC {\'y}b}{11}
+\contentsline {section}{\numberline {2.3}Met\IeC {\'o}dy verifik\IeC {\'a}cie}{8}
+\contentsline {section}{\numberline {2.4}Meranie chyby predpovede}{8}
+\contentsline {subsection}{\numberline {2.4.1}Stredn\IeC {\'a} chyba predpovede}{8}
+\contentsline {subsection}{\numberline {2.4.2}Stredn\IeC {\'a} absol\IeC {\'u}tna chyba}{9}
+\contentsline {subsection}{\numberline {2.4.3}Stredn\IeC {\'a} kvadratick\IeC {\'a} chyba}{9}
+\contentsline {subsection}{\numberline {2.4.4}V\IeC {\v s}eobecn\IeC {\'a} kumulovan\IeC {\'a} chyba}{10}
+\contentsline {subsection}{\numberline {2.4.5}Medi\IeC {\'a}n absol\IeC {\'u}tnych ch\IeC {\'y}b}{11}
 \contentsline {chapter}{\numberline {3}Predch\IeC {\'a}dzaj\IeC {\'u}ce rie\IeC {\v s}enia 1\hfil \hbox {}\linebreak {\itshape Verifika\IeC {\v c}n\IeC {\'y} softv\IeC {\'e}r}}{12}
 \contentsline {section}{\numberline {3.1}\IeC {\v S}tatistick\IeC {\'y} softv\IeC {\'e}r}{12}
 \contentsline {subsection}{\numberline {3.1.1}Tabu\IeC {\v l}kov\IeC {\'y} softv\IeC {\'e}r}{13}
@@ -89,6 +90,8 @@
 \contentsline {section}{\numberline {7.1}Testovanie}{67}
 \contentsline {section}{\numberline {7.2}Demon\IeC {\v s}tr\IeC {\'a}cia}{67}
 \contentsline {section}{\numberline {7.3}Z\IeC {\'a}ver}{67}
-\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{69}
-\contentsline {section}{\numberline {A.1}GUI}{69}
-\contentsline {section}{\numberline {A.2}CD}{70}
+\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{68}
+\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{68}
+\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{71}
+\contentsline {section}{\numberline {A.1}GUI}{71}
+\contentsline {section}{\numberline {A.2}CD}{72}
