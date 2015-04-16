@@ -89,6 +89,6 @@
 \contentsline {section}{\numberline {7.1}Testovanie}{67}
 \contentsline {section}{\numberline {7.2}Demon\IeC {\v s}tr\IeC {\'a}cia}{67}
 \contentsline {section}{\numberline {7.3}Z\IeC {\'a}ver}{67}
-\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{68}
-\contentsline {section}{\numberline {A.1}GUI}{68}
-\contentsline {section}{\numberline {A.2}CD}{69}
+\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{69}
+\contentsline {section}{\numberline {A.1}GUI}{69}
+\contentsline {section}{\numberline {A.2}CD}{70}

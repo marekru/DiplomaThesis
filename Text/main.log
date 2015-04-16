@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  15 APR 2015 10:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  16 APR 2015 08:53
 entering extended mode
 **main.tex
 (S:\School\DiplomaThesis\Text\main.tex
@@ -1561,9 +1561,9 @@ Overfull \hbox (1.8112pt too wide) in paragraph at lines 8--9
 i sme sp^osob vseobecneho vypoctu
  []
 
-) (S:\School\DiplomaThesis\Text\attachments.tex [67
+[67
 
-]
+]) (S:\School\DiplomaThesis\Text\attachments.tex [68]
 Dodatok A.
 File: system.pdf Graphic file (type pdf)
 <use system.pdf>
@@ -1574,12 +1574,12 @@ Overfull \hbox (194.63104pt too wide) in paragraph at lines 7--8
 [] 
  []
 
-) (S:\School\DiplomaThesis\Text\main.bbl [68
+) (S:\School\DiplomaThesis\Text\main.bbl [69
 
-] [69] [70
+] [70] [71
 
-] [71] [72] [73] [74]
-[75] [76]) [77] (S:\School\DiplomaThesis\Text\main.aux)
+] [72] [73] [74] [75]
+[76] [77]) [78] (S:\School\DiplomaThesis\Text\main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1613,9 +1613,9 @@ cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (92 pages, 4012293 bytes).
+Output written on main.pdf (93 pages, 4013328 bytes).
 PDF statistics:
- 1237 PDF objects out of 1440 (max. 8388607)
+ 1240 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
