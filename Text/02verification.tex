@@ -60,17 +60,17 @@ Aby sme zhrnuli charakteristiku týchto dát, jedná sa o niekoľko meraných ve
 
 \subsection{Párovanie dát}
 \label{subsec:pairing}
-%TODO novy pristup
 Z predpovedného modelu a rovnako aj z merania získame veľké množstvo hodnôt. Aby sme mohli korektne porovnať predpovede s pozorovaniami, je nevyhnutné nájsť správne párovanie týchto hodnôt, teda zistiť, ktorú hodnotu porovnať s ktorou, aby sme získali zmysluplný výsledok.
 
-Vždy sa snažíme nájsť správnu predpoveď pre pozrovanie a nie naopak.
+Vždy sa snažíme nájsť správne pozorovanie predpoveď a nie naopak.
 % Vzhľadom na charakter dát sa 
-Dôvodom je, že chceme skúmať vzťah predpovede s realitou a preto v párovaní musí byť zahrnutých čo najviac \textbf{meraných} hodnôt, ak nie všetky.
+% chceme skúmať vzťah predpovede s realitou a preto v párovaní musí byť zahrnutých čo najviac \textbf{meraných} hodnôt, ak nie všetky.
+Dôvodom je, že pre jedno pozorovanie existuje viacero predpovedí a taktiež usporadúvame hodnoty podľa predpovedných hodín a nie chronologicky podľa časovej známky.
 
-Každá pozorovaná hodnota, ktorú chceme spárovať má štyri kľúče podľa ktorých hľadáme pár: \textit{meraná veličina} (napríklad teplota), \textit{čas merania}, \textit{výšková hladina} a \textit{geografická poloha}.
+Každá hodnota, ktorú chceme spárovať má štyri kľúče podľa ktorých hľadáme pár: \textit{veličina} (napríklad teplota), \textit{časová známka}(UTC), \textit{výšková hladina} a \textit{geografická poloha}.
 Nájsť všetky hodnoty podľa kľúča meranej veličiny v Gribe je ľahké, keďže sa jedná o kategorickú premennú, teda môže nadobúdať iba určitý konečný počet hodnôt. Toto sa však nedá povedať o čase, hladine a polohe, ktoré sú spojitými premennými.
  
-Pre čas pozorovania, čas predpovede a výškovú hladinu existujú štandardy, ktoré určujú v akých časoch resp hladinách sa robia merania a predpovede, čo nám uľahčuje prácu. Ak sa napriek tomu čas alebo hladina v Gribe nevyskytuje, tak pár vyhadzujeme z párovania. 
+Pre čas pozorovania, čas predpovede a výškovú hladinu existujú štandardy, ktoré určujú v akých časoch resp hladinách sa robia merania a predpovede, čo nám uľahčuje prácu. Ak sa napriek tomu daná časová známka nevyskytuje medzi pozorovaniami (napríklad v tom čase vypadlo spojenie alebo sa pokazil prístroj), daný pár sa z párovania vyhadzuje.
 
 V prípade polohy zo samozrejmých dôvodov neexistuje žiaden štandard a hustota mriežky v Gribe nemôže byť nikdy tak veľká, aby poloha našej stanice vždy dopadla na presný bod mriežky. Z tohoto dôvodu získavame hodnoty z mriežky z okolitých bodov a to dvoma metódami \textit{Point-to-Grid} a \textit{Grid-to-Point} \cite{IntroToVerif}, ktoré sú znázornené na obrázku \ref{fig:pointmethods}. Jedná sa vlastne o dve interpolačné metódy. Point-to-Grid predstavuje metódu \textit{najbližší sused} (\textit{Nearest Neighbour}) a Grid-to-Point \textit{bilineárnu interpolačnú metódu}. 
 
@@ -91,12 +91,21 @@ Výber správnej metódy môže značne ovplyvniť výsledok. Dôvodom je, že m
 \section{Metódy verifikácie}
 Metódy verifikácie sa delia podľa typu predpovede na 3 druhy \cite{RecommendOnVerif}: 
 \begin{easylist}[itemize]
-	# Verifikácia predpovede spojitých premenných
 	# Verifikácia kategorickej predpovede
 	## Dichotomické (áno/nie) predpovede
 	## Mnoho-kategorické predpovede
 	# Verifikácia pravdepodobnostných predpovedí
+	# Verifikácia predpovede spojitých premenných \\	
 \end{easylist}
+
+\noindent Kategorické predpovede nám rozdeľujú udalosti, v prípade \textit{binárnej predpovede} do dvoch a, v prípade \textit{mnoho-kategorickej predpovede}, do viacero kategórií. 
+Binárne predpovede alebo inak áno/nie predpovede nám hovoria, či sa daná udalosť udiala alebo nie. Slúžia teda ako upozornenie na javy ako hmla, búrka, blesky, silný vietor a podobne. Na ich verifikáciu slúžia $ 2\times2 $ kontingenčné tabuľky, z ktorých možno počítať rôzne štatistiky. Mnoho-kategorické predpovede nám rozdeľujú udalosti do viacerých kategórií (zvyčajne 3-4), napríklad v prípade dažďa na: \textit{dážď}/\textit{sneženie}/\textit{mrznúci dážď}. 
+
+Pravdepodobnostné predpovede nám dávajú pravdepodobnosť výskytu nejakej udalosti hodnotami v intervale $ \langle0, 1\rangle $. Týmto nám umožňujú ľahkú konverziu medzi pravdepodobnostnými a kategorickými predpoveďami s použitím \textit{tresholdu}.
+
+V našej práci riešime verifikáciu spojitých premenných, ktorá zvyčajne poskytuje štatistiky určujúce ako veľmi sa daná predpoveď líši od pozorovania. Tieto štatistiky opisujeme v ďalšej sekcii tejto kapitoly.
+
+\pagebreak
 
 \section{Meranie chyby predpovede}
 \label{sec:errormeasurement}
@@ -110,7 +119,7 @@ Kde $ y_i $ je predpoveď a $ \hat{y}_i $ je pozorovanie.
 Takýmto spôsobom z $ n $ párov získame $ n $ chýb, ktoré agregujeme pomocou rôznych štatistických metód, ktoré sú bežne používané pri verifikácií predpovedí, ako sa spomína v \cite{RecommendOnVerif}, \cite{IntroToVerif} a \cite{ContinuousVerif}. Výsledkom agregácie je numerická hodnota, ktorá sa nazýva \textit{skóre} predpovede. 
 
 \subsection{Stredná chyba predpovede}
-Budeme ju označovať ako \textit{MFE} z anglického \textit{Mean Forecast Error}, ale v literatúre je možné ju nájsť ako \textit{ME} \cite{RecommendOnVerif}, teda \textit{stredná chyba} alebo ako \textit{Linear Bias} \cite{ContinuousVerif}, \cite{IntroToVerif}. Vzorec pre výpočet MFE vyzerá nasledovne:
+Budeme ju označovať ako \textit{MFE} z anglického \textit{Mean Forecast Error}, ale v literatúre je možné ju nájsť ako \textit{ME} \cite{RecommendOnVerif}, teda \textit{stredná chyba} alebo ako \textit{Linear Bias} \cite{ContinuousVerif, IntroToVerif}. Vzorec pre výpočet MFE vyzerá nasledovne:
 \[
 	MFE = \frac{1}{n}\sum\limits_{i=0}^{n}  e_i  
 \]
