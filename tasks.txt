@@ -35,26 +35,25 @@ H¾adanie vzahov
 Testing tasks:
 
 Vyh¾adávanie
-	---
+	Zisti hodnotu RMSE a MFE pre piatu hodinu predpovede v Júny!
 Inverzné vyh¾adávanie
-	Nájdi outlierov (hodnoty aj predpovede)
+	Pre Máj nájdi hodnoty predpovedí, ktoré sa vırazne líšia od ostatnıch hodnôt (tzv. outlierov)! 
+	Pre ??? nájdi predpoveï, ktorá sa vırazne líši od ostatnıch (tzv. outlier)! 
+	Nájdi aká predpovedaná hodina mala pre Január najväèšiu priemernú chybu! 
+	Nájdi ktoré obdobie (napr. mesiac) v roku bola priemerná chyba najnišia!
 Porovnávanie
-	----
+	Porovnaj rozptyl chıb na zaèiatku a konci predpovede pre December!
 Inverzné porovnávanie
-	----
-H¾adanie vzahov
-	----
+	Zisti, èi je priemerná chyba najnišia v blízkom okolí desiatej hodiny?
 
 Synoptické:
 	
 Vyh¾adávanie (Definovanie vzorov)
-	----
+	Nájdi trend vo ve¾kosti chıb poèas roka! Definuj ich!(napr. )
+	Zisti, èi model skôr nadhodnucoje alebo podhodnocuje predpovede!
 Inverzné vyh¾adávanie (Vyh¾adávanie vzorov)
-	----
-Porovnávanie vzorov
-	----
-Inverzné porovnávanie vzorov
-	----
+	Zisti, ktorú predpovednú hodinu zvyknú by predpovede najviac a najmenej presné!
+	Zisti, aké roèné odobie sú predpovede najviac a najmenej presné!
 H¾adanie vzahov
 	Existuje vzah medzi vek¾kosou chıb a rozptylom?
 

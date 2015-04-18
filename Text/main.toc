@@ -90,10 +90,12 @@
 \contentsline {section}{\numberline {6.4}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{65}
 \contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky a Z\IeC {\'a}ver}{68}
 \contentsline {section}{\numberline {7.1}Testovanie}{68}
-\contentsline {section}{\numberline {7.2}Demon\IeC {\v s}tr\IeC {\'a}cia}{68}
-\contentsline {section}{\numberline {7.3}Z\IeC {\'a}ver}{68}
+\contentsline {subsection}{\numberline {7.1.1}Testovacia proced\IeC {\'u}ra}{68}
+\contentsline {subsection}{\numberline {7.1.2}V\IeC {\'y}sledky testovania}{68}
+\contentsline {section}{\numberline {7.2}Z\IeC {\'a}ver}{68}
 \contentsline {subsubsection}{Pr\IeC {\'\i }nos}{69}
-\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{69}
+\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{70}
 \contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{72}
 \contentsline {section}{\numberline {A.1}GUI}{72}
-\contentsline {section}{\numberline {A.2}CD}{73}
+\contentsline {section}{\numberline {A.2}Testovac\IeC {\'\i } formul\IeC {\'a}r}{73}
+\contentsline {section}{\numberline {A.3}CD}{74}
