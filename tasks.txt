@@ -1,0 +1,60 @@
+Vyh¾adávanie
+	Aké ve¾ké je RMSE a MFE pre piatu hodinu predpovede?
+	Aká je distribúcia chıb pre túto hodinu?	 
+Inverzné vyh¾adávanie
+	Ktorá predpovedaná hodina mala pre január najväèšiu priemernú chybu? 
+	Ktoré predpovede sa vırazne líšia od ostatnıch? 
+	Ktoré dni v roku bola priemerná chyba najnišia?
+	Ku ktorej predpovedi patrí outlier?
+Porovnávanie
+	Je chyba nišia v prvıch alebo neskorších hodinách?
+	Akı je rozptyl chıb na zaèiatku a na konci predpovede?
+Inverzné porovnávanie
+	Je chyba pre danı mesiac najnišia okolo desiatej hodiny?
+H¾adanie vzahov
+	Akı vplyv má outlier na priemernú chybu predpovede?
+
+----------------------------------------------------------------------
+	
+Vyh¾adávanie (Definovanie vzorov)
+	Existujú nejaké vıkyvy v chybách z ktorıch sa poèítali štatistiky?
+	Aké sú trendy v magnitúde chıb poèas roka?
+	Nadhodnocuje, èi podhodnocuje model predpovede?
+Inverzné vyh¾adávanie (Vyh¾adávanie vzorov)
+	Ktorú predpovednú hodinu sú predpovede najpresnejšie?
+	Ktoré roèné obdobie sú predpovede najslabšie?
+Porovnávanie vzorov
+	Porovnaj správanie modelu pre rôzne mesiace.	
+Inverzné porovnávanie vzorov
+	Je správanie modelu rozdielne v prvı deò predpovede ako v druhı?
+H¾adanie vzahov
+	Akı vplyv majú horúcejšie dni na úspech predpovede?
+	Akı vplyv má rozptyl chıb na úspešnos predpovede?
+	
+-----------------------------------------------------------------------
+Testing tasks:
+
+Vyh¾adávanie
+	---
+Inverzné vyh¾adávanie
+	Nájdi outlierov (hodnoty aj predpovede)
+Porovnávanie
+	----
+Inverzné porovnávanie
+	----
+H¾adanie vzahov
+	----
+
+Synoptické:
+	
+Vyh¾adávanie (Definovanie vzorov)
+	----
+Inverzné vyh¾adávanie (Vyh¾adávanie vzorov)
+	----
+Porovnávanie vzorov
+	----
+Inverzné porovnávanie vzorov
+	----
+H¾adanie vzahov
+	Existuje vzah medzi vek¾kosou chıb a rozptylom?
+
