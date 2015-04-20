@@ -1,101 +1,99 @@
 \select@language {slovak}
-\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{2}
-\contentsline {section}{\numberline {1.1}Motiv\IeC {\'a}cia}{2}
-\contentsline {section}{\numberline {1.2}Cie\IeC {\v l}}{2}
-\contentsline {chapter}{\numberline {2}Verifik\IeC {\'a}cia predpovedn\IeC {\'y}ch modelov po\IeC {\v c}asia}{3}
-\contentsline {section}{\numberline {2.1}Predpovedn\IeC {\'y} model po\IeC {\v c}asia}{3}
-\contentsline {subsection}{\numberline {2.1.1}WRF model}{5}
-\contentsline {section}{\numberline {2.2}D\IeC {\'a}ta}{5}
-\contentsline {subsection}{\numberline {2.2.1}Predpovedan\IeC {\'e} d\IeC {\'a}ta}{6}
-\contentsline {subsection}{\numberline {2.2.2}Pozorovan\IeC {\'e} d\IeC {\'a}ta}{7}
-\contentsline {subsection}{\numberline {2.2.3}P\IeC {\'a}rovanie d\IeC {\'a}t}{7}
-\contentsline {section}{\numberline {2.3}Met\IeC {\'o}dy verifik\IeC {\'a}cie}{9}
-\contentsline {section}{\numberline {2.4}Meranie chyby predpovede}{10}
-\contentsline {subsection}{\numberline {2.4.1}Stredn\IeC {\'a} chyba predpovede}{10}
-\contentsline {subsection}{\numberline {2.4.2}Stredn\IeC {\'a} absol\IeC {\'u}tna chyba}{11}
-\contentsline {subsection}{\numberline {2.4.3}Stredn\IeC {\'a} kvadratick\IeC {\'a} chyba}{11}
-\contentsline {subsection}{\numberline {2.4.4}V\IeC {\v s}eobecn\IeC {\'a} kumulovan\IeC {\'a} chyba}{11}
-\contentsline {subsection}{\numberline {2.4.5}Medi\IeC {\'a}n absol\IeC {\'u}tnych ch\IeC {\'y}b}{13}
-\contentsline {chapter}{\numberline {3}Predch\IeC {\'a}dzaj\IeC {\'u}ce rie\IeC {\v s}enia 1\hfil \hbox {}\linebreak {\itshape Verifika\IeC {\v c}n\IeC {\'y} softv\IeC {\'e}r}}{14}
-\contentsline {section}{\numberline {3.1}\IeC {\v S}tatistick\IeC {\'y} softv\IeC {\'e}r}{14}
-\contentsline {subsection}{\numberline {3.1.1}Tabu\IeC {\v l}kov\IeC {\'y} softv\IeC {\'e}r}{15}
-\contentsline {subsection}{\numberline {3.1.2}MATLAB}{15}
-\contentsline {subsection}{\numberline {3.1.3}R}{16}
-\contentsline {subsection}{\numberline {3.1.4}SAS}{16}
-\contentsline {subsection}{\numberline {3.1.5}IDL}{16}
-\contentsline {section}{\numberline {3.2}\IeC {\v S}pecializovan\IeC {\'y} softv\IeC {\'e}r}{17}
-\contentsline {subsection}{\numberline {3.2.1}NCL}{17}
-\contentsline {subsection}{\numberline {3.2.2}MET}{18}
-\contentsline {subsection}{\numberline {3.2.3}EVS}{19}
-\contentsline {section}{\numberline {3.3}Zhrnutie}{19}
-\contentsline {chapter}{\numberline {4}Predch\IeC {\'a}dzaj\IeC {\'u}ce rie\IeC {\v s}enia 2\hfil \hbox {}\linebreak {\itshape Techniky vizualiz\IeC {\'a}cie vo verifik\IeC {\'a}cii}}{21}
-\contentsline {section}{\numberline {4.1}Bodov\IeC {\'y} graf}{21}
-\contentsline {subsection}{\numberline {4.1.1}Kon\IeC {\v s}trukcia bodov\IeC {\'e}ho grafu}{21}
-\contentsline {subsection}{\numberline {4.1.2}Kantil-kvantil graf}{22}
-\contentsline {subsection}{\numberline {4.1.3}\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{23}
-\contentsline {section}{\numberline {4.2}Krabicov\IeC {\'y} diagram}{23}
-\contentsline {subsection}{\numberline {4.2.1}Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{24}
-\contentsline {subsection}{\numberline {4.2.2}\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{25}
+\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{1}
+\contentsline {chapter}{\numberline {2}Verifik\IeC {\'a}cia predpovedn\IeC {\'y}ch modelov po\IeC {\v c}asia}{2}
+\contentsline {section}{\numberline {2.1}Predpovedn\IeC {\'y} model po\IeC {\v c}asia}{2}
+\contentsline {subsection}{\numberline {2.1.1}WRF model}{4}
+\contentsline {section}{\numberline {2.2}D\IeC {\'a}ta}{4}
+\contentsline {subsection}{\numberline {2.2.1}Predpovedan\IeC {\'e} d\IeC {\'a}ta}{5}
+\contentsline {subsection}{\numberline {2.2.2}Pozorovan\IeC {\'e} d\IeC {\'a}ta}{6}
+\contentsline {subsection}{\numberline {2.2.3}P\IeC {\'a}rovanie d\IeC {\'a}t}{6}
+\contentsline {section}{\numberline {2.3}Met\IeC {\'o}dy verifik\IeC {\'a}cie}{8}
+\contentsline {section}{\numberline {2.4}Meranie chyby predpovede}{9}
+\contentsline {subsection}{\numberline {2.4.1}Stredn\IeC {\'a} chyba predpovede}{9}
+\contentsline {subsection}{\numberline {2.4.2}Stredn\IeC {\'a} absol\IeC {\'u}tna chyba}{10}
+\contentsline {subsection}{\numberline {2.4.3}Stredn\IeC {\'a} kvadratick\IeC {\'a} chyba}{10}
+\contentsline {subsection}{\numberline {2.4.4}V\IeC {\v s}eobecn\IeC {\'a} kumulovan\IeC {\'a} chyba}{10}
+\contentsline {subsection}{\numberline {2.4.5}Medi\IeC {\'a}n absol\IeC {\'u}tnych ch\IeC {\'y}b}{12}
+\contentsline {chapter}{\numberline {3}Predch\IeC {\'a}dzaj\IeC {\'u}ce rie\IeC {\v s}enia 1\hfil \hbox {}\linebreak {\itshape Verifika\IeC {\v c}n\IeC {\'y} softv\IeC {\'e}r}}{13}
+\contentsline {section}{\numberline {3.1}\IeC {\v S}tatistick\IeC {\'y} softv\IeC {\'e}r}{13}
+\contentsline {subsection}{\numberline {3.1.1}Tabu\IeC {\v l}kov\IeC {\'y} softv\IeC {\'e}r}{14}
+\contentsline {subsection}{\numberline {3.1.2}MATLAB}{14}
+\contentsline {subsection}{\numberline {3.1.3}R}{15}
+\contentsline {subsection}{\numberline {3.1.4}SAS}{15}
+\contentsline {subsection}{\numberline {3.1.5}IDL}{15}
+\contentsline {section}{\numberline {3.2}\IeC {\v S}pecializovan\IeC {\'y} softv\IeC {\'e}r}{16}
+\contentsline {subsection}{\numberline {3.2.1}NCL}{16}
+\contentsline {subsection}{\numberline {3.2.2}MET}{17}
+\contentsline {subsection}{\numberline {3.2.3}EVS}{18}
+\contentsline {section}{\numberline {3.3}Zhrnutie}{18}
+\contentsline {chapter}{\numberline {4}Predch\IeC {\'a}dzaj\IeC {\'u}ce rie\IeC {\v s}enia 2\hfil \hbox {}\linebreak {\itshape Techniky vizualiz\IeC {\'a}cie vo verifik\IeC {\'a}cii}}{20}
+\contentsline {section}{\numberline {4.1}Bodov\IeC {\'y} graf}{20}
+\contentsline {subsection}{\numberline {4.1.1}Kon\IeC {\v s}trukcia bodov\IeC {\'e}ho grafu}{20}
+\contentsline {subsection}{\numberline {4.1.2}Kantil-kvantil graf}{21}
+\contentsline {subsection}{\numberline {4.1.3}\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{22}
+\contentsline {section}{\numberline {4.2}Krabicov\IeC {\'y} diagram}{22}
+\contentsline {subsection}{\numberline {4.2.1}Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{23}
+\contentsline {subsection}{\numberline {4.2.2}\IeC {\v D}al\IeC {\v s}ie vari\IeC {\'a}cie krabicov\IeC {\'e}ho diagramu}{24}
+\contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{26}
-\contentsline {paragraph}{}{27}
-\contentsline {subsection}{\numberline {4.2.3}\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{28}
-\contentsline {section}{\numberline {4.3}Histogram}{29}
-\contentsline {subsection}{\numberline {4.3.1}Kon\IeC {\v s}trukcia histogramu}{29}
-\contentsline {subsection}{\numberline {4.3.2}\IeC {\'U}loha histogramu vo verifik\IeC {\'a}cii}{30}
-\contentsline {section}{\numberline {4.4}\IeC {\v C}iarov\IeC {\'y} diagram}{30}
-\contentsline {subsection}{\numberline {4.4.1}Kon\IeC {\v s}trukcia \IeC {\v c}iarov\IeC {\'e}ho diagramu}{32}
-\contentsline {subsection}{\numberline {4.4.2}\IeC {\'U}loha \IeC {\v c}iarov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{32}
-\contentsline {section}{\numberline {4.5}Taylorov diagram}{33}
-\contentsline {subsection}{\numberline {4.5.1}Kon\IeC {\v s}trukcia taylorovho diagramu}{33}
-\contentsline {subsection}{\numberline {4.5.2}\IeC {\'U}loha taylorovho diagramu vo verifik\IeC {\'a}cii}{36}
-\contentsline {chapter}{\numberline {5}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{37}
-\contentsline {section}{\numberline {5.1}Charakteristika d\IeC {\'a}t}{37}
-\contentsline {section}{\numberline {5.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{39}
-\contentsline {subsection}{\numberline {5.2.1}Tri z\IeC {\'a}kladn\IeC {\'e} po\IeC {\v z}iadavky}{39}
-\contentsline {paragraph}{\textit {U\IeC {\v z}ito\IeC {\v c}nos\IeC {\v t}}}{39}
-\contentsline {paragraph}{\textit {Robustnos\IeC {\v t}}}{40}
-\contentsline {paragraph}{\textit {Atraktivita}}{40}
-\contentsline {subsection}{\numberline {5.2.2}U\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} \IeC {\'u}lohy}{40}
-\contentsline {subsubsection}{Element\IeC {\'a}rne \IeC {\'u}lohy}{40}
-\contentsline {subsubsection}{Synoptick\IeC {\'e} \IeC {\'u}lohy}{41}
-\contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie \IeC {\v s}tatist\IeC {\'\i }k verifik\IeC {\'a}cie}{42}
-\contentsline {subsection}{\numberline {5.3.1}Preh\IeC {\v l}ad \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Farebn\IeC {\'a} mapa})}}{42}
-\contentsline {subsection}{\numberline {5.3.2}Detail \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram})}}{43}
-\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{44}
-\contentsline {subsection}{\numberline {5.4.1}Graf hustoty}{45}
-\contentsline {subsection}{\numberline {5.4.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{47}
-\contentsline {subsection}{\numberline {5.4.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{49}
-\contentsline {paragraph}{}{51}
-\contentsline {subsection}{\numberline {5.4.4}Mapa distrib\IeC {\'u}ci\IeC {\'\i }}{52}
-\contentsline {subsection}{\numberline {5.4.5}Porovnanie met\IeC {\'o}d}{54}
-\contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh farebnej palety}{54}
-\contentsline {subsection}{\numberline {5.5.1}Farebn\IeC {\'a} mapa}{54}
-\contentsline {subsection}{\numberline {5.5.2}\IeC {\v D}al\IeC {\v s}ie diagramy}{55}
-\contentsline {subsubsection}{Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram}{56}
-\contentsline {subsubsection}{Graf hustoty}{56}
-\contentsline {subsubsection}{Pruhov\IeC {\'y} diagram}{56}
-\contentsline {subsubsection}{Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{56}
-\contentsline {section}{\numberline {5.6}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{56}
-\contentsline {subsection}{\numberline {5.6.1}Viac\IeC {\'u}rov\IeC {\v n}ov\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{57}
-\contentsline {subsection}{\numberline {5.6.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{59}
-\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{61}
-\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{61}
-\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{62}
-\contentsline {subsection}{\numberline {6.2.1}Java}{63}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{63}
-\contentsline {subsubsection}{D3}{64}
-\contentsline {section}{\numberline {6.3}Verifika\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{64}
-\contentsline {subsection}{\numberline {6.3.1}Spracovanie d\IeC {\'a}t}{65}
-\contentsline {subsection}{\numberline {6.3.2}V\IeC {\'y}po\IeC {\v c}et \IeC {\v s}tatist\IeC {\'\i }k}{65}
-\contentsline {section}{\numberline {6.4}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{66}
-\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky a Z\IeC {\'a}ver}{69}
-\contentsline {section}{\numberline {7.1}Testovanie}{69}
-\contentsline {subsection}{\numberline {7.1.1}Testovacia proced\IeC {\'u}ra}{69}
-\contentsline {subsection}{\numberline {7.1.2}V\IeC {\'y}sledky testovania}{69}
-\contentsline {section}{\numberline {7.2}Z\IeC {\'a}ver}{69}
-\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{70}
-\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{71}
-\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{73}
-\contentsline {section}{\numberline {A.1}GUI}{73}
-\contentsline {section}{\numberline {A.2}Testovac\IeC {\'\i } formul\IeC {\'a}r}{74}
-\contentsline {section}{\numberline {A.3}CD}{75}
+\contentsline {subsection}{\numberline {4.2.3}\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{27}
+\contentsline {section}{\numberline {4.3}Histogram}{28}
+\contentsline {subsection}{\numberline {4.3.1}Kon\IeC {\v s}trukcia histogramu}{28}
+\contentsline {subsection}{\numberline {4.3.2}\IeC {\'U}loha histogramu vo verifik\IeC {\'a}cii}{29}
+\contentsline {section}{\numberline {4.4}\IeC {\v C}iarov\IeC {\'y} diagram}{29}
+\contentsline {subsection}{\numberline {4.4.1}Kon\IeC {\v s}trukcia \IeC {\v c}iarov\IeC {\'e}ho diagramu}{31}
+\contentsline {subsection}{\numberline {4.4.2}\IeC {\'U}loha \IeC {\v c}iarov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{31}
+\contentsline {section}{\numberline {4.5}Taylorov diagram}{32}
+\contentsline {subsection}{\numberline {4.5.1}Kon\IeC {\v s}trukcia taylorovho diagramu}{32}
+\contentsline {subsection}{\numberline {4.5.2}\IeC {\'U}loha taylorovho diagramu vo verifik\IeC {\'a}cii}{35}
+\contentsline {chapter}{\numberline {5}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{36}
+\contentsline {section}{\numberline {5.1}Charakteristika d\IeC {\'a}t}{36}
+\contentsline {section}{\numberline {5.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{38}
+\contentsline {subsection}{\numberline {5.2.1}Tri z\IeC {\'a}kladn\IeC {\'e} po\IeC {\v z}iadavky}{38}
+\contentsline {paragraph}{\textit {U\IeC {\v z}ito\IeC {\v c}nos\IeC {\v t}}}{38}
+\contentsline {paragraph}{\textit {Robustnos\IeC {\v t}}}{39}
+\contentsline {paragraph}{\textit {Atraktivita}}{39}
+\contentsline {subsection}{\numberline {5.2.2}U\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} \IeC {\'u}lohy}{39}
+\contentsline {subsubsection}{Element\IeC {\'a}rne \IeC {\'u}lohy}{39}
+\contentsline {subsubsection}{Synoptick\IeC {\'e} \IeC {\'u}lohy}{40}
+\contentsline {section}{\numberline {5.3}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie \IeC {\v s}tatist\IeC {\'\i }k verifik\IeC {\'a}cie}{41}
+\contentsline {subsection}{\numberline {5.3.1}Preh\IeC {\v l}ad \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Farebn\IeC {\'a} mapa})}}{41}
+\contentsline {subsection}{\numberline {5.3.2}Detail \IeC {\v s}tatist\IeC {\'\i }k {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (\textit {Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram})}}{42}
+\contentsline {section}{\numberline {5.4}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie distrib\IeC {\'u}cie ch\IeC {\'y}b}{43}
+\contentsline {subsection}{\numberline {5.4.1}Graf hustoty}{44}
+\contentsline {subsection}{\numberline {5.4.2}Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram}{46}
+\contentsline {subsection}{\numberline {5.4.3}Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{48}
+\contentsline {paragraph}{}{50}
+\contentsline {subsection}{\numberline {5.4.4}Mapa distrib\IeC {\'u}ci\IeC {\'\i }}{51}
+\contentsline {subsection}{\numberline {5.4.5}Porovnanie met\IeC {\'o}d}{53}
+\contentsline {section}{\numberline {5.5}N\IeC {\'a}vrh farebnej palety}{53}
+\contentsline {subsection}{\numberline {5.5.1}Farebn\IeC {\'a} mapa}{53}
+\contentsline {subsection}{\numberline {5.5.2}\IeC {\v D}al\IeC {\v s}ie diagramy}{54}
+\contentsline {subsubsection}{Mnoho-\IeC {\v c}iarov\IeC {\'y} diagram}{55}
+\contentsline {subsubsection}{Graf hustoty}{55}
+\contentsline {subsubsection}{Pruhov\IeC {\'y} diagram}{55}
+\contentsline {subsubsection}{Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram}{55}
+\contentsline {section}{\numberline {5.6}N\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov vizualiz\IeC {\'a}cie}{55}
+\contentsline {subsection}{\numberline {5.6.1}Viac\IeC {\'u}rov\IeC {\v n}ov\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{56}
+\contentsline {subsection}{\numberline {5.6.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{58}
+\contentsline {chapter}{\numberline {6}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{60}
+\contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{60}
+\contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{61}
+\contentsline {subsection}{\numberline {6.2.1}Java}{62}
+\contentsline {subsection}{\numberline {6.2.2}JavaScript}{62}
+\contentsline {subsubsection}{D3}{63}
+\contentsline {section}{\numberline {6.3}Verifika\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{63}
+\contentsline {subsection}{\numberline {6.3.1}Spracovanie d\IeC {\'a}t}{64}
+\contentsline {subsection}{\numberline {6.3.2}V\IeC {\'y}po\IeC {\v c}et \IeC {\v s}tatist\IeC {\'\i }k}{64}
+\contentsline {section}{\numberline {6.4}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{65}
+\contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky a Z\IeC {\'a}ver}{68}
+\contentsline {section}{\numberline {7.1}Testovanie}{68}
+\contentsline {subsection}{\numberline {7.1.1}Testovacia proced\IeC {\'u}ra}{68}
+\contentsline {subsection}{\numberline {7.1.2}V\IeC {\'y}sledky testovania}{68}
+\contentsline {section}{\numberline {7.2}Z\IeC {\'a}ver}{68}
+\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{69}
+\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{70}
+\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{72}
+\contentsline {section}{\numberline {A.1}GUI}{72}
+\contentsline {section}{\numberline {A.2}Testovac\IeC {\'\i } formul\IeC {\'a}r}{73}
+\contentsline {section}{\numberline {A.3}CD}{74}
