@@ -41,7 +41,7 @@ Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box p
 
 \subsection{Konštrukcia krabicového diagramu}
 
-Na zostavenie krabicového diagramu potrebujeme týchto 5 hodnôt: medián, horný a dolný kvartil, maximum, minimum. (pozri obrázok \ref{fig:boxplot}) Prvé tri hodnoty sú takzvané kvartily (Q1, Q2, Q3), ktoré rozdeľujú súbor dát na 4 rovnako veľké časti a ďalšie dve sú extrémne hodnoty, ktoré ohraničujú celú dátovú množinu (pozri podsekciu \ref{subsec:qqplot} pre vysvetlenie pojmu kvantil). 
+Na zostavenie krabicového diagramu potrebujeme týchto 5 hodnôt: medián, horný a dolný kvartil, maximum, minimum (pozri obrázok \ref{fig:boxplot}). Prvé tri hodnoty sú takzvané kvartily (Q1, Q2, Q3), ktoré rozdeľujú súbor dát na 4 rovnako veľké časti a ďalšie dve sú extrémne hodnoty, ktoré ohraničujú celú dátovú množinu (pozri podsekciu \ref{subsec:qqplot} pre vysvetlenie pojmu kvantil). 
 
 Kvartil Q2 je medián hodnôt a je definovaný rovnako ako v časti \ref{subsec:mad}. Ďalej horný (Q1) a dolný (Q3) kvartil získame ako medián hodnôt pod a nad hodnotou Q2, pričom hodnotu Q2 nezahŕňame do výpočtov. 
 
@@ -78,7 +78,7 @@ Popularita krabicového diagramu nevyhnutne viedla k jeho vývoji a modifikáci�
 \begin{figure}
 	\centering
 	\includegraphics[width = 4in]{boxplot2}
-	\caption{ a) Klasický krabicový diagram  b-f) Vizuálne variácie krabicového diagramu b-c) 2 variácie pre kvartilový graf \cite{Tufte83} c) Skrátený krabicový diagram \cite{VisualSummaryPotter} e) \mbox{Range-bar} chart \cite{Spear} f) Farebná variácia \cite{Carr}  }
+	\caption{ a) Klasický krabicový diagram  b-f) Vizuálne variácie krabicového diagramu \mbox{b-c) 2 variácie pre kvartilový graf \cite{Tufte83}} \mbox{c) Skrátený krabicový diagram \cite{VisualSummaryPotter}} \mbox{e) \mbox{Range-bar} chart \cite{Spear}} \mbox{f) Farebná variácia \cite{Carr}}  }
 	\label{fig:boxplotmodif1}
 \end{figure}
 
@@ -114,11 +114,11 @@ Krabicový diagram umožňuje mnoho ďalších rozšírení napríklad pridaním
 \subsection{Úloha krabicového diagramu vo verifikácii}
 
 Ako sme spomenuli v úvode tejto sekcie, vo všeobecnosti je úlohou krabicového diagramu zobraziť distribúciu dát v kompaktnom tvare a teda slúži na rýchle porovnanie distribúcií viacerých skupín dát.
-Pri verifikácii spojitej predpovede sa používa na viacero účelov a my tu spomenieme len niekoľko z nich. 
+Pri verifikácii predpovede spojitých premenných sa používa na viacero účelov a my tu spomenieme len niekoľko z nich. 
 
 V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovaní za istý časový interval. V takomto prípade máme vedľa seba iba dva krabicové diagramy, ktoré navzájom porovnávame. Použitie krabicového diagramu v takomto prípade, kedy jeden graf pozostáva iba z niekoľkých (2 až 4) krabicových diagramov považujeme za zbytočné. Pri takomto počte nie je potreba na redukciu vizuálnych prvkov a existujú lepšie techniky na vizualizáciu distribúcie, ktoré sprostredkúvajú viacej informácie a teda môže byť analýza efektívnejšia. 
 
-Ďalším použitím je porovnanie distribúcie chýb predpovedí, či už pre rôzne merania, konkrétne predpovedané časy, rôzne predpovedné modely a podobne. Tu považujeme použitie krabicového diagramu za opodstatnené, keďže ide zväčša o porovnávanie väčšieho množstva distribúcií, a tak je jeho jednoduchosť, čitateľnosť, kompaktnosť a iné jeho vlastnosti potrebné.
+Ďalším použitím je porovnanie distribúcie chýb predpovedí, či už pre rôzne merania, konkrétne predpovedané časy, rôzne predpovedné modely a podobne. Tu považujeme použitie krabicového diagramu za opodstatnené, keďže ide zväčša o porovnávanie väčšieho množstva distribúcií, a tak je potrebná jeho jednoduchosť, čitateľnosť, kompaktnosť a iné jeho vlastnosti.
 
 \section{Histogram}
 \label{sec:histogram}
