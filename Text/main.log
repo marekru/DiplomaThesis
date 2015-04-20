@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  20 APR 2015 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  20 APR 2015 14:55
 entering extended mode
 **main.tex
 (main.tex
@@ -1561,11 +1561,11 @@ i sme sp^osob vseobecneho vypoctu
 
 ] [69]) (attachments.tex [70]
 Dodatok A.
-<gui.png, id=1145, 1206.5075pt x 872.25874pt>
+<gui.png, id=1145, 1274.7625pt x 893.3375pt>
 File: gui.png Graphic file (type png)
  <use gui.png>
 Package pdftex.def Info: gui.png used on input line 6.
-(pdftex.def)             Requested size: 542.025pt x 391.86064pt.
+(pdftex.def)             Requested size: 542.025pt x 379.8338pt.
 
 Overfull \hbox (14.56123pt too wide) in paragraph at lines 5--8
 |  []
@@ -1579,7 +1579,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--8
 [71
 
 ]
-Overfull \vbox (16.68787pt too high) has occurred while \output is active []
+Overfull \vbox (4.66103pt too high) has occurred while \output is active []
 
 
 [72 <./gui.png (PNG copy)>] <testform.pdf, id=1152, 597.23125pt x 845.1575pt>
@@ -1634,7 +1634,7 @@ iktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/miktex/fonts/type1/public/am
 sfonts/cm/cmti10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/m
 iktex/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/miktex/fonts/type1/publi
 c/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (97 pages, 4217990 bytes).
+Output written on main.pdf (97 pages, 4231433 bytes).
 PDF statistics:
  1274 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
