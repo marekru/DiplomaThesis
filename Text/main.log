@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  20 APR 2015 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  21 APR 2015 15:04
 entering extended mode
 **main.tex
 (main.tex
@@ -1129,11 +1129,11 @@ Overfull \hbox (37.8359pt too wide) in paragraph at lines 12--12
 [7
 
 ]
-LaTeX Font Info:    Try loading font information for U+eus on input line 23.
+LaTeX Font Info:    Try loading font information for U+eus on input line 24.
  (C:\miktex\tex\latex\amsfonts\ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 32.
 
 (C:\miktex\tex\latex\inconsolata\ot1zi4.fd
 File: ot1zi4.fd 2014/06/22 OT1/zi4 (Inconsolata)
@@ -1404,107 +1404,113 @@ File: twotone.png Graphic file (type png)
 Package pdftex.def Info: twotone.png used on input line 199.
 (pdftex.def)             Requested size: 252.94499pt x 137.86755pt.
 
+<densitycompare.png, id=651, 775.09575pt x 150.5625pt>
+File: densitycompare.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:XYZ' on page 46 undefined on input line 205.
+<use densitycompare.png>
+Package pdftex.def Info: densitycompare.png used on input line 210.
+(pdftex.def)             Requested size: 542.025pt x 105.29193pt.
+
+Overfull \hbox (29.01501pt too wide) in paragraph at lines 209--211
+ []|  [] 
+ []
+
+[46 <./twotone.png>] [47 <./densitycompare.png>]
+
+LaTeX Warning: Reference `fig:pruh' on page 48 undefined on input line 235.
 
 
-LaTeX Warning: Reference `subsec:scatterplot' on page 46 undefined on input lin
-e 208.
-
-[46 <./twotone.png>]
-
-LaTeX Warning: Reference `fig:pruh' on page 47 undefined on input line 227.
-
-[47]
-Overfull \hbox (10.94714pt too wide) in paragraph at lines 239--240
+Overfull \hbox (10.94714pt too wide) in paragraph at lines 247--248
 []\OT1/cmr/m/n/12 Ako sme spo-me-nuli v casti 4.2[], kla-sicky kra-bi-covy d
 ia-gram po-tre-buje na svoju konstrukciu
  []
 
 
-Overfull \hbox (1.77074pt too wide) in paragraph at lines 242--245
-\OT1/cmr/m/n/12 Pasmo $\U/eus/m/n/12 B$ \OT1/cmr/m/n/12 (po-zri obrazok 5.4[]
+Overfull \hbox (1.77074pt too wide) in paragraph at lines 250--253
+\OT1/cmr/m/n/12 Pasmo $\U/eus/m/n/12 B$ \OT1/cmr/m/n/12 (po-zri obrazok 5.5[]
 ) je teda mnozina vsetkych bo-dov exis-tujucich me-dzi extremami
  []
 
+[48]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 246.
+(amsmath)                 on input line 254.
 
-[48] [49] <band.pdf, id=664, 226.1323pt x 197.28076pt>
+[49] <band.pdf, id=667, 226.1323pt x 197.28076pt>
 File: band.pdf Graphic file (type pdf)
  <use band.pdf>
-Package pdftex.def Info: band.pdf used on input line 286.
+Package pdftex.def Info: band.pdf used on input line 294.
 (pdftex.def)             Requested size: 216.81pt x 189.15257pt.
  [50 <./band.pdf>]
 
-LaTeX Warning: Reference `subsec:boxplot' on page 51 undefined on input line 29
-6.
+LaTeX Warning: Reference `subsec:boxplot' on page 51 undefined on input line 30
+4.
 
-<functionalboxplot.pdf, id=685, 552.21106pt x 189.81013pt>
+<functionalboxplot.pdf, id=688, 552.21106pt x 189.81013pt>
 File: functionalboxplot.pdf Graphic file (type pdf)
 
 <use functionalboxplot.pdf>
-Package pdftex.def Info: functionalboxplot.pdf used on input line 310.
+Package pdftex.def Info: functionalboxplot.pdf used on input line 318.
 (pdftex.def)             Requested size: 542.025pt x 186.31386pt.
 
-Overfull \hbox (21.78867pt too wide) in paragraph at lines 309--311
+Overfull \hbox (21.78867pt too wide) in paragraph at lines 317--319
  []|  [] 
  []
 
-[51]
+[51] [52 <./functionalboxplot.pdf>]
 
-LaTeX Warning: Reference `fig:XYZ' on page 52 undefined on input line 331.
+LaTeX Warning: Reference `fig:XYZ' on page 53 undefined on input line 339.
 
-[52 <./functionalboxplot.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 335--339
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--347
 
  []
 
 [53]
-Overfull \hbox (5.1701pt too wide) in paragraph at lines 354--355
+Overfull \hbox (5.1701pt too wide) in paragraph at lines 362--363
 []\OT1/cmr/m/n/12 Tychto nie-kol[]ko zavaznych d^ovodov nas pre-svedcilo 
 zvo-lit[] inu fa-rebnu pa-letu. Konkretne
  []
 
-<colorpalettes.pdf, id=734, 476.57773pt x 85.95735pt>
+<colorpalettes.pdf, id=737, 476.57773pt x 85.95735pt>
 File: colorpalettes.pdf Graphic file (type pdf)
  <use colorpalettes.pdf>
-Package pdftex.def Info: colorpalettes.pdf used on input line 361.
+Package pdftex.def Info: colorpalettes.pdf used on input line 369.
 (pdftex.def)             Requested size: 361.34999pt x 65.1761pt.
 
-Overfull \hbox (1.9367pt too wide) in paragraph at lines 369--370
+Overfull \hbox (1.9367pt too wide) in paragraph at lines 377--378
 \OT1/cmr/m/n/12 Podobne uvazovanie ako pre fa-rebnu mapu sme ap-li-ko-vali a
 j pre d[]alsie dia-gramy. Vzhl[]adom
  []
 
 [54 <./colorpalettes.pdf>] [55]
-<designicons.pdf, id=764, 1154.3125pt x 800.42336pt>
+<designicons.pdf, id=767, 1154.3125pt x 800.42336pt>
 File: designicons.pdf Graphic file (type pdf)
  <use designicons.pdf>
-Package pdftex.def Info: designicons.pdf used on input line 413.
+Package pdftex.def Info: designicons.pdf used on input line 421.
 (pdftex.def)             Requested size: 325.215pt x 225.50934pt.
 
-[56] <multilevellayout.pdf, id=768, 1023.825pt x 983.675pt>
+[56] [57 <./designicons.pdf>]
+<multilevellayout.pdf, id=816, 1023.825pt x 983.675pt>
 File: multilevellayout.pdf Graphic file (type pdf)
 
 <use multilevellayout.pdf>
-Package pdftex.def Info: multilevellayout.pdf used on input line 436.
+Package pdftex.def Info: multilevellayout.pdf used on input line 444.
 (pdftex.def)             Requested size: 252.94499pt x 243.02129pt.
- [57 <./designicons.pdf>]
-Overfull \hbox (1.95625pt too wide) in paragraph at lines 448--449
+ [58 <./multilevellayout.pdf>]
+Overfull \hbox (1.95625pt too wide) in paragraph at lines 456--457
 \OT1/cmr/m/n/12 hlavnu cast[] ob-ra-zovky vi-zu-alizacie, preto sme sa snaz
 ili os-tatne prvky roz-miest-nit[] odvjajuc
  []
 
-[58 <./multilevellayout.pdf>] <flatlayout.pdf, id=864, 732.7375pt x 742.775pt>
+<flatlayout.pdf, id=867, 732.7375pt x 742.775pt>
 File: flatlayout.pdf Graphic file (type pdf)
-
-<use flatlayout.pdf>
-Package pdftex.def Info: flatlayout.pdf used on input line 452.
+ <use flatlayout.pdf>
+Package pdftex.def Info: flatlayout.pdf used on input line 460.
 (pdftex.def)             Requested size: 216.81pt x 219.77408pt.
-) (06implementation.tex [59 <./flatlayout.pdf>]
+)
+(06implementation.tex [59 <./flatlayout.pdf>]
 Kapitola 6.
 
 Overfull \hbox (1.20515pt too wide) in paragraph at lines 4--5
@@ -1512,7 +1518,7 @@ Overfull \hbox (1.20515pt too wide) in paragraph at lines 4--5
 seme kl[]ucove casti im-ple-mentacie. 
  []
 
-<system.pdf, id=896, 652.4375pt x 381.425pt>
+<system.pdf, id=899, 652.4375pt x 381.425pt>
 File: system.pdf Graphic file (type pdf)
  <use system.pdf>
 Package pdftex.def Info: system.pdf used on input line 17.
@@ -1520,7 +1526,7 @@ Package pdftex.def Info: system.pdf used on input line 17.
  [60
 
 ]
-<pipeline.png, id=900, 524.71031pt x 163.3603pt>
+<pipeline.png, id=903, 524.71031pt x 163.3603pt>
 File: pipeline.png Graphic file (type png)
  <use pipeline.png>
 Package pdftex.def Info: pipeline.png used on input line 28.
@@ -1537,18 +1543,18 @@ Overfull \hbox (10.44656pt too wide) in paragraph at lines 56--57
  sme sa snazili, aby bolo uzvatel[]ovi
  []
 
-<dataextractor.pdf, id=943, 371.3875pt x 138.5175pt>
+<dataextractor.pdf, id=946, 371.3875pt x 138.5175pt>
 File: dataextractor.pdf Graphic file (type pdf)
  <use dataextractor.pdf>
 Package pdftex.def Info: dataextractor.pdf used on input line 70.
 (pdftex.def)             Requested size: 397.48499pt x 148.25452pt.
 
-[64] <stats.pdf, id=948, 376.65909pt x 138.55391pt>
+[64] <stats.pdf, id=951, 376.65909pt x 138.55391pt>
 File: stats.pdf Graphic file (type pdf)
  <use stats.pdf>
 Package pdftex.def Info: stats.pdf used on input line 84.
 (pdftex.def)             Requested size: 361.34999pt x 132.92143pt.
- [65 <./dataextractor.pdf> <./stats.pdf>] <tree.pdf, id=1120, 732.97086pt x 226
+ [65 <./dataextractor.pdf> <./stats.pdf>] <tree.pdf, id=1123, 732.97086pt x 226
 .57588pt>
 File: tree.pdf Graphic file (type pdf)
 
@@ -1570,7 +1576,7 @@ i sme sp^osob vseobecneho vypoctu
 
 ] [69]) (attachments.tex [70]
 Dodatok A.
-<gui.png, id=1145, 1274.7625pt x 893.3375pt>
+<gui.png, id=1148, 1274.7625pt x 893.3375pt>
 File: gui.png Graphic file (type png)
  <use gui.png>
 Package pdftex.def Info: gui.png used on input line 6.
@@ -1591,7 +1597,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--8
 Overfull \vbox (4.66103pt too high) has occurred while \output is active []
 
 
-[72 <./gui.png (PNG copy)>] <testform.pdf, id=1152, 597.23125pt x 845.1575pt>
+[72 <./gui.png (PNG copy)>] <testform.pdf, id=1155, 597.23125pt x 845.1575pt>
 File: testform.pdf Graphic file (type pdf)
 
 <use testform.pdf>
@@ -1620,10 +1626,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11976 strings out of 493698
- 157600 string characters out of 3151686
- 259289 words of memory out of 3000000
- 15006 multiletter control sequences out of 15000+200000
+ 11981 strings out of 493698
+ 157709 string characters out of 3151686
+ 259301 words of memory out of 3000000
+ 15010 multiletter control sequences out of 15000+200000
  24063 words of font info for 91 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,19n,47p,1136b,1204s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1643,9 +1649,9 @@ iktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/miktex/fonts/type1/public/am
 sfonts/cm/cmti10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/m
 iktex/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/miktex/fonts/type1/publi
 c/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (97 pages, 4232035 bytes).
+Output written on main.pdf (97 pages, 4311110 bytes).
 PDF statistics:
- 1274 PDF objects out of 1440 (max. 8388607)
+ 1277 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

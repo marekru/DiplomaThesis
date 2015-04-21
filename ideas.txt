@@ -2,3 +2,24 @@ boxplot, violinpplot, fanchart - co to je?
 https://www.stat.auckland.ac.nz/~ihaka/120/lectures.html
 http://courses.iicm.tugraz.at/ivis/
 http://comminfo.rutgers.edu/~aspoerri/Teaching/InfoVisOnline/Lectures/Lectures.htm
+
+TODO:
+
+skratky:
+OHD,
+HTML,
+CSS
+
+Obrazky:
+rozhodnut sa ci ich oznacovat 5.1a alebo 5.1a) - radsej bez zatvorky koli zatvorkam :)
+Obr 4.5 prerobit (histogram)
+Obr 4.6 je hlupo umiestneny
+Obr pre 5.4.2 -> pruhovy diagram dako vyrobit
+
+citacia
+5.3.1 - odcitovat clanok, kde sa vizualizuje mnoho ciarovych diagramov.
+
+Ine:
+5.4 - zvazili silne slabe stranky? Je to pravda?
+5.4.1 - chcem nasobenie robit ako X alebo ako . ?
+5.4.2 - prepisat zaciatok podla hentoho zdroja
