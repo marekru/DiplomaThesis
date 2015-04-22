@@ -12,8 +12,6 @@ CSS
 
 Obrazky:
 rozhodnut sa ci ich oznacovat 5.1a alebo 5.1a) - radsej bez zatvorky koli zatvorkam :)
-Obr 4.5 prerobit (histogram)
-Obr 4.6 je hlupo umiestneny
 Obr pre 5.4.2 -> pruhovy diagram dako vyrobit
 Obr pre 5.4.4 -> mapa distrib
 

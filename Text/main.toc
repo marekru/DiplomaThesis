@@ -39,13 +39,13 @@
 \contentsline {subsection}{\numberline {4.2.3}\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{27}
 \contentsline {section}{\numberline {4.3}Histogram}{28}
 \contentsline {subsection}{\numberline {4.3.1}Kon\IeC {\v s}trukcia histogramu}{28}
-\contentsline {subsection}{\numberline {4.3.2}\IeC {\'U}loha histogramu vo verifik\IeC {\'a}cii}{29}
-\contentsline {section}{\numberline {4.4}\IeC {\v C}iarov\IeC {\'y} diagram}{29}
-\contentsline {subsection}{\numberline {4.4.1}Kon\IeC {\v s}trukcia \IeC {\v c}iarov\IeC {\'e}ho diagramu}{31}
+\contentsline {subsection}{\numberline {4.3.2}\IeC {\'U}loha histogramu vo verifik\IeC {\'a}cii}{30}
+\contentsline {section}{\numberline {4.4}\IeC {\v C}iarov\IeC {\'y} diagram}{30}
+\contentsline {subsection}{\numberline {4.4.1}Kon\IeC {\v s}trukcia \IeC {\v c}iarov\IeC {\'e}ho diagramu}{30}
 \contentsline {subsection}{\numberline {4.4.2}\IeC {\'U}loha \IeC {\v c}iarov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{31}
-\contentsline {section}{\numberline {4.5}Taylorov diagram}{32}
+\contentsline {section}{\numberline {4.5}Taylorov diagram}{31}
 \contentsline {subsection}{\numberline {4.5.1}Kon\IeC {\v s}trukcia taylorovho diagramu}{32}
-\contentsline {subsection}{\numberline {4.5.2}\IeC {\'U}loha taylorovho diagramu vo verifik\IeC {\'a}cii}{35}
+\contentsline {subsection}{\numberline {4.5.2}\IeC {\'U}loha taylorovho diagramu vo verifik\IeC {\'a}cii}{34}
 \contentsline {chapter}{\numberline {5}N\IeC {\'a}vrh vizualiz\IeC {\'a}cie}{36}
 \contentsline {section}{\numberline {5.1}Charakteristika d\IeC {\'a}t}{36}
 \contentsline {section}{\numberline {5.2}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek na vizualiz\IeC {\'a}ciu}{38}
