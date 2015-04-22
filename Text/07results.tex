@@ -26,7 +26,6 @@ Pri testovaní sme jednak vyhodnocovali správnosť odpovedí ale aj rýchlosť 
 5              &                          &                            &                                    \\ \hline
 6              &                          &                            &                                    \\ \hline
 7              &                          &                            &                                    \\ \hline
-8              &                          &                            &                                    \\ \hline
 \textbf{Suma}  &                          &                            &                                    \\ \hline
 \end{tabular}
 \end{table}
@@ -38,7 +37,7 @@ v práci sme uviedli problém verifikácie predpovedných modelov počasia so za
 
 Taktiež sme preskúmali doterajšie riešenia jednak z pohľadu verifikačného softvéru, ale aj z pohľadu vizualizačných techník vo verifikácii. Uviedli sme slabé a silné stránky jednotlivých softvérových riešení a zhrnuli sme ich v prehľadnej tabuľke. Taktiež sme opísali a analyzovali vizualizácie používané vo verifikácii a načrtli ich zameranie a spôsob použitia.
 
-Ďalej sme charakterizovali vstupné dáta a špecifikovali požiadavky používateľov, na základe ktorých sme navrhli rôzne spôsoby vizualizácie, ktoré sme implementovali ako doplnok JavaScriptovej knižnice D3. V závere práce sme následne vykonali porovnávacie testovanie našej vizualizácie s pôvodným spôsobom používaným meteorológmi.
+Ďalej sme charakterizovali vstupné dáta a špecifikovali požiadavky používateľov, na základe ktorých sme navrhli rôzne spôsoby vizualizácie, ktoré sme implementovali ako doplnok JavaScriptovej knižnice D3. V závere práce sme následne vykonali testovanie našej vizualizácie na základe čoho sme zhodnotili jej úspešnosť.
 
 Výsledkom práce je teda verifikačný nástroj schopný spracovávať dáta z rôznych zdrojov, ponúkajúc funkcionalitu pre verifikáciu predpovedí spojitej premennej s použitím špeciálne navrhnutej vizualizácie pre tieto účely. 
 
@@ -51,7 +50,7 @@ Za hlavný prínos tejto práce považujeme práve návrh špecializovanej vizua
 Na výskum a vývoj neustále existuje priestor a v našej práci ho vidíme určite mnoho obzvlášť v štyroch oblastiach:
 \begin{enumerate}
 	\item \textit{Získavanie dát} - V práci sme implementovali 3 typy zdrojov: Grib, CSV a Web. Avšak existuje mnoho ďalších zdrojov dát, z kade možno získať pozorovania, rovnako ako aj predpovede. Príkladom je napríklad \textit{databáza}, \textit{XML}, alebo \textit{XLS} súbory, takzvané \textit{bloky} systému IMS4, kde sú aj merania a mnohé iné ďalšie zdroje. 
-	\item \textit{Konfigurácia systému a vizualizácie} - Konfigurovanie systému v momentálnom stave nie je veľmi user-friendly úloha. V budúcej práci očakávame návrh riešenia, ktoré skryje pred užívateľom trocha neprehľadné nastavenia systému.
+	\item \textit{Konfigurácia systému a vizualizácie} - Konfigurovanie systému v momentálnom stave nie je veľmi user-friendly úloha. V budúcej práci očakávame návrh riešenia, ktoré skryje pred užívateľom pomerne neprehľadné nastavenia systému.
 	\item \textit{Interaktívna manipulácia s dátami} - Momentálne riešenie neponúka veľmi dôležitú súčasť moderných vizualizačných nástrojov a tým je manipulácia s dátami priamo na obrazovke. Príkladmi operácií môže byť filtrovanie dát na základe rôznych kľúčov alebo selekcia vybranej vzorky dát pomocou \textit{brushingu} a podobne.
 	\item \textit{Porovnávanie modelov a staníc} - Pri návrhu vizualizácie sme nezvažovali možnosť porovnávania výkonu viacerých predpovedných modelov alebo porovnávanie predpovedí pre rôzne stanice súčasne. Riešenie takéhoto problému by pravdepodobne vyžadovalo zásadný re-dizajn vizualizácie.
 \end{enumerate}

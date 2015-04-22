@@ -80,12 +80,12 @@
 \contentsline {section}{\numberline {6.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{60}
 \contentsline {section}{\numberline {6.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{61}
 \contentsline {subsection}{\numberline {6.2.1}Java}{62}
-\contentsline {subsection}{\numberline {6.2.2}JavaScript}{62}
+\contentsline {subsection}{\numberline {6.2.2}JavaScript}{63}
 \contentsline {subsubsection}{D3}{63}
-\contentsline {section}{\numberline {6.3}Verifika\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{63}
+\contentsline {section}{\numberline {6.3}Verifika\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{64}
 \contentsline {subsection}{\numberline {6.3.1}Spracovanie d\IeC {\'a}t}{64}
-\contentsline {subsection}{\numberline {6.3.2}V\IeC {\'y}po\IeC {\v c}et \IeC {\v s}tatist\IeC {\'\i }k}{64}
-\contentsline {section}{\numberline {6.4}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{65}
+\contentsline {subsection}{\numberline {6.3.2}V\IeC {\'y}po\IeC {\v c}et \IeC {\v s}tatist\IeC {\'\i }k}{65}
+\contentsline {section}{\numberline {6.4}Vizualiza\IeC {\v c}n\IeC {\'y} bal\IeC {\'\i }k}{66}
 \contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky a Z\IeC {\'a}ver}{68}
 \contentsline {section}{\numberline {7.1}Testovanie}{68}
 \contentsline {subsection}{\numberline {7.1.1}Testovacia proced\IeC {\'u}ra}{68}

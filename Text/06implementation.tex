@@ -1,8 +1,7 @@
 \chapter{Návrh systému a Implementácia}
+V tejto kapitole sa venujeme stručnému opisu návrhu systému a jeho jednotlivých častí a taktiež opisujeme kľúčové prvky implementácie.
+
 Pri návrhu a implementácii našej aplikácie sme brali do úvahy výhody a obmedzenia systému \textit{IMS4} (\textit{Integrated Monitoring System}), ktorý je vyvíjaný spoločnosťou \textit{MicroStep-MIS s.r.o.}. Dôvodom je, že náš verifikačný systém bol navrhovaný ako prídavný modul pre IMS4.
-
-V tejto kapitole stručne zhrnieme návrh systému a opíšeme kľúčové časti implementácie. 
-
 
 \section{Návrh systému}
 \label{sec:sysdesign}
@@ -30,13 +29,14 @@ Filtrované dáta putujú do vizualizačného balíka. V ňom sa vykonáva zobra
 	\label{fig:pipeline} 
 \end{figure}
 
+
 \section{Použité technológie}
 Výber implementačných nástrojov bol podmienený obmedzeniami systému IMS4. Z tohto dôvodu sa návrh jednotlivých častí odvíja čiastočne aj od použitej technológie. Aj preto uvádzame v našej práci sekciu \textit{Použité technológie} skôr, ako samotný návrh jednotlivých balíkov.
 
 \subsection{Java}
 Primárnu časť systému - \textit{verifikačný balík} sme implementovali v jazyku \textit{Java}, konkrétne vo verzii 1.5. Toto je prvé obmedzenie, ktoré na nás kladie systém IMS4, keďže použitie vyššej verzie (momentálne je dostupná už verzia 1.8) by spôsoboval problém s kompatibilitou.
 
-Java ako programovací jazyk je veľmi rozšírený a obľúbený, vďaka čomu je dostupných pomerne veľké množstvo knižníc, nevynímajúc originálne knižnice zahrnuté v systéme IMS4. Tieto knižnice sme využili pri implementácii aj my. Môžme spomenúť 3 knižnice, z ktorých sú dve interné a jedna pôvodne externá s pridanou funkcionalitou. Prvé dve spomenuté sú \textit{Log} - používaná na logovanie a \textit{X2O}, ktorá sa používa na mapovanie javovských objektov na XML štruktúru a späť pomocou \textit{Java Reflection API}. My sme X2O použili pri ukladaní a načítavaní konfiguračných súborov. Posledná knižnica je NetCDF-grib \cite{Unidata} a pochádza od americkej organizácie \textit{Unidata}, ktorú zastrešuje \textit{UCAR}. Jedná sa o opensource produkt na čítanie dát zo súborov vo formáte GRIB. My využívame upravenú verziu NetCDF-grib-6.0 obzvlášť kvôli Jave 1.5, aj keď sú dostupné novšie verzie\footnote{Najnovšia je NetCDF-Java-4.5, ktorá zoskupuje všetky ďalšie podobné produkty od Unidata.}.
+Java ako programovací jazyk je veľmi rozšírený a obľúbený, vďaka čomu je dostupné pomerne veľké množstvo knižníc, nevynímajúc originálne knižnice zahrnuté v systéme IMS4. Tieto knižnice sme využili pri implementácii aj my. Môžme spomenúť 3 knižnice, z ktorých sú dve interné a jedna pôvodne externá s pridanou funkcionalitou. Prvé dve spomenuté sú \textit{Log} - používaná na logovanie a \textit{X2O}, ktorá sa používa na mapovanie javovských objektov na XML štruktúru a späť pomocou \textit{Java Reflection API}. My sme X2O použili pri ukladaní a načítavaní konfiguračných súborov. Posledná knižnica je NetCDF-grib \cite{Unidata} a pochádza od americkej organizácie \textit{Unidata}, ktorú zastrešuje \textit{UCAR}. Jedná sa o opensource produkt na čítanie dát zo súborov vo formáte GRIB. My využívame upravenú verziu NetCDF-grib-6.0 obzvlášť kvôli Jave 1.5, aj keď sú dostupné novšie verzie\footnote{Najnovšia je NetCDF-Java-4.5, ktorá zoskupuje všetky ďalšie podobné produkty od Unidata.}.
 
 \subsection{JavaScript}
 Systém IMS4 využíva webové stránky na vytváranie GUI. Z tohto dôvodu sme sa rozhodli, že vizualizáciu budeme produkovať priamo v prehliadači pomocou \textit{JavaScriptu}. Podobne ako Java, aj JavaScript je veľmi populárny a preto vzniklo veľké množstvo rôznych knižníc, medzi ktorými sú aj mnohé určené na vizualizáciu. Medzi najznámejšie z nich patria napríklad: \textit{JavaScript InfoVis Toolkit}, \textit{Highcharts}, \textit{jQuery Visualize}, \textit{JS Charts}, \textit{jqPlot}, \textit{jpGraph}, \textit{Raphaël}, \textit{Dygraphs},\textit{ Processing.js}, \textit{Axiis}, \textit{D3} a mnohé ďalšie. Pre naše účely sme z veľkého množstva knižníc vybrali práve D3, ako najvhodnejší nástroj na náš účel.
@@ -44,16 +44,16 @@ Systém IMS4 využíva webové stránky na vytváranie GUI. Z tohto dôvodu sme 
 \subsubsection{D3}
 D3 (\textit{Data-Driven Documents}) \cite{D3} je opensource knižnica napísaná v JavaScripte. Na vizualizáciu využíva HTML a SVG elementy a ich vizuálne vlastnosti, ktoré mení pomocou ich atribútov a CSS štýlov. 
 
-Dôvodom, prečo sme si vybrali práve D3 z veľkého množstva vizualizačných knižníc je, že väčšina z nich bola zameraná na konkrétny druh vizualizácie (napr. \textit{force-directed layout}) alebo na niekoľko najpoužívanejších druhov diagramov (bodový, stĺpcový, čiarový, histogram,...). D3 sa však nezameriava na konkrétny druh vizualizácie, ale ponúka spôsob, ako zobrazovať hodnoty na vizuálne parametre elementov, čím umožňuje ohromnú variabilitu a je vhodná na vytváranie nových alebo menej používaných typov vizualizácií. Väčšina vizualizácií, ktoré sme v našej práci sme navrhli, nie sú podporované vyššie spomenutými knižnicami a preto sme potrebovali nástroj umožňujúci dobre parametrizovateľnú vizualizáciu.
+Dôvodom, prečo sme si vybrali práve D3 z veľkého množstva vizualizačných knižníc je, že väčšina z nich bola zameraná na konkrétny druh vizualizácie (napr. \textit{force-directed layout}) alebo na niekoľko najpoužívanejších druhov diagramov (bodový, stĺpcový, čiarový, histogram,...). D3 sa však nezameriava na konkrétny druh vizualizácie, ale ponúka spôsob, ako zobrazovať hodnoty na vizuálne parametre elementov, čím umožňuje ohromnú variabilitu a je vhodná na vytváranie nových alebo menej používaných typov vizualizácií. Väčšina vizualizácií, ktoré sme v našej práci navrhli, nie sú podporované vyššie spomenutými knižnicami a preto sme potrebovali nástroj umožňujúci dobre parametrizovateľnú vizualizáciu.
 
-Toto je taktiež dôvod, prečo vzniklo veľké množstvo knižníc, ukážkových príkladov a návodov ktoré využívajú práve D3. Aby sme spomenuli aspoň niektoré z knižníc používajúcich D3, tak sú to napríklad \textit{Raw}, \textit{Cubism}, \textit{Ember Charts}, \textit{NVD3}, \textit{C3}, \textit{MetricsGraphics}, \textit{Graffeine}, \textit{Mermaid}, \textit{Epoch}, \textit{Insights}, \textit{Dashku}, \textit{RickShaw} a mnohé ďalšie. 
+Toto je taktiež dôvod, prečo vzniklo veľké množstvo knižníc, ukážkových príkladov a návodov ktoré využívajú práve knižnicu D3. Aby sme spomenuli aspoň niektoré z knižníc používajúcich D3, tak sú to napríklad \textit{Raw}, \textit{Cubism}, \textit{Ember Charts}, \textit{NVD3}, \textit{C3}, \textit{MetricsGraphics}, \textit{Graffeine}, \textit{Mermaid}, \textit{Epoch}, \textit{Insights}, \textit{Dashku}, \textit{RickShaw} a mnohé ďalšie. 
 
 \section{Verifikačný balík}
-Ako sme už spomenuli v sekcii \ref{sec:sysdesign} , tento balík sa skladá z dvoch logických častí \textit{Spracovanie dát} a \textit{Výpočet štatistík}. V tejto sekcii sa pokúsime zhrnúť kľúčové prvky návrhu a implementácie týchto dvoch častí.
+Ako sme už spomenuli v sekcii \ref{sec:sysdesign} , tento balík sa skladá z dvoch logických častí: \textit{Spracovanie dát} a \textit{Výpočet štatistík}. V tejto sekcii sa pokúsime zhrnúť kľúčové prvky návrhu a implementácie týchto dvoch častí.
 \subsection{Spracovanie dát}
-Úlohou tejto časti je získanie potrebných dát z určených dátových zdrojov a ich predspracovanie tak, aby mohli vstúpiť do ďalšej časti - \textit{Výpoečt štatistík}.
+Úlohou tejto časti je získanie potrebných dát z určených dátových zdrojov a ich predspracovanie tak, aby mohli vstúpiť do ďalšej časti - \textit{Výpočet štatistík}.
 
-Pri návrhu tried na získavanie predpovedí a pozorovaní sme sa snažili, aby bolo užívateľovi umožnené získavať dáta z viacerých typov zdrojov: Gribovské súbory, CSV súbory, webové zdroje, databáza a podobne. Aby sme pre každý typ zdroju nevytvárali samostatnú vetvu udalostí, navrhli sme abstraktnú triedu \textit{DataExtractor}, ktorá obsahuje abstraktné metódy \texttt{extract()} a \texttt{addSoruces()} a taktiež slúži na inštancovanie všetkých jej potomkov (pozri UML diagram na obrázku \ref{fig:dataextractor}). Jednotlivý potomkovia následne musia implementovať vyššie spomenuté metódy, ktoré sú špecifické pre každý typ zdroju.
+Pri návrhu tried na získavanie predpovedí a pozorovaní sme sa snažili, aby bolo užívateľovi umožnené získavať dáta z viacerých typov zdrojov: Gribovské súbory, CSV súbory, webové zdroje, databáza a podobne. Aby sme pre každý typ zdroju nevytvárali samostatnú vetvu udalostí, navrhli sme abstraktnú triedu \textit{DataExtractor}, ktorá obsahuje abstraktné metódy \texttt{extract()} a \texttt{addSoruces()} a taktiež slúži na inštancovanie všetkých jej potomkov (pozri UML diagram na obrázku \ref{fig:dataextractor}). Jednotlivý potomkovia následne musia implementovať vyššie spomenuté metódy, ktoré sú špecifické pre každý typ zdroju. Napríklad pre webové zdroje metóda \texttt{addSoruces()} očakáva url adresu, zatiaľ čo pre dátové súbory očakáva cestu.
 
 Z extrakcie dát získame tabuľky hodnôt s pozorovaniami a predpoveďami pre konkrétne časy. Tieto dáta sa následné predspracúvajú v štyroch krokoch:
 
@@ -67,7 +67,7 @@ Z extrakcie dát získame tabuľky hodnôt s pozorovaniami a predpoveďami pre k
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 5.5in]{dataextractor}
+	\includegraphics[width = 6in]{dataextractor}
 	\caption{Triedny UML diagram pre triedy typu DataExtractor.}
 	\label{fig:dataextractor} 
 \end{figure}
@@ -75,9 +75,9 @@ Z extrakcie dát získame tabuľky hodnôt s pozorovaniami a predpoveďami pre k
 \subsection{Výpočet štatistík}
 V tejto časti verifikačného balíka sa vykonáva výpočet štatistík, z ktorých sme väčšinu opísali v sekcii \ref{sec:errormeasurement}. 
 
-Pri implementácii sme využili nami navrhnutý všeobecný spôsob výpočtu kumulovanej chyby (pozri podsekciu \ref{subsec:cumulativeerror}). Pripomenieme, že sme v našom využili vzorci dve funkcie $ \Phi $ a $ \varepsilon $, ktoré obe boli ľubovoľnými funkciami z $\mathbb{R}$ do $\mathbb{R}$. Na obrázku \ref{fig:stats} je triedny diagram tried slúžiacich na výpočet spojitých štatistík verifikácie. V Diagrame môžme vidieť abstraktnú triedu \textit{ContinuousStatistics}, ktorá reprezentuje ľubovoľnú štatistickú metódu na výpočet kumulovanej chyby opísanú v sekcii \ref{sec:errormeasurement}. Táto trieda obsahuje metódu \texttt{calculateStatistics()}, ktorá vypočítava ľubovoľnú kumulovanú chybu s použitím dvoch abstraktných metód: \texttt{processError()} a \texttt{processSum()}. Tieto dve metódy predstavujú funkcie $ \Phi $ a $ \varepsilon $. Ako vidíme na obrázku všetky štatistické sú implementované ako potomkovia triedy \textit{ContinuousStatistics} a implementujú tieto vyššie spomenuté metódy. 
+Pri implementácii sme využili nami navrhnutý všeobecný spôsob výpočtu kumulovanej chyby (pozri podsekciu \ref{subsec:cumulativeerror}). Pripomenieme, že sme v našom vzorci využili  dve funkcie $ \Phi $ a $ \varepsilon $, ktoré obe boli ľubovoľnými funkciami z $\mathbb{R}$ do $\mathbb{R}$. Na obrázku \ref{fig:stats} je triedny diagram tried slúžiacich na výpočet spojitých štatistík verifikácie. V diagrame môžme vidieť abstraktnú triedu \textit{ContinuousStatistics}, ktorá reprezentuje ľubovoľnú štatistickú metódu na výpočet kumulovanej chyby opísanú v sekcii \ref{sec:errormeasurement}. Táto trieda obsahuje metódu \texttt{calculateStatistics()}, ktorá vypočítava ľubovoľnú kumulovanú chybu s použitím dvoch abstraktných metód: \texttt{processError()} a \texttt{processSum()}. Tieto dve metódy predstavujú funkcie $ \Phi $ a $ \varepsilon $. Ako vidíme na obrázku všetky štatistiky sú implementované ako potomkovia triedy \textit{ContinuousStatistics} a implementujú tieto vyššie spomenuté metódy. 
 
-%TODO \pagebreak 
+ \pagebreak 
              
 \begin{figure}
 	\centering
@@ -87,10 +87,10 @@ Pri implementácii sme využili nami navrhnutý všeobecný spôsob výpočtu ku
 \end{figure}
 
 \section{Vizualizačný balík}
-Úlohou vizualizačného balíka je spracovávať výsledky verifikácie a vytvoriť z týchto dát obrazovku vizualizácie navrhnutú v predošlej kapitole. 
+Úlohou vizualizačného balíka je spracovávanie výsledkov verifikácie a vygenerovanie z týchto dát obrazovku vizualizácie navrhnutú v predošlej kapitole. 
 
-Pri návrhu a implementácii tohto balíka sme sa snažili využiť niektoré vlastnosti, ktoré nám ponúkajú použité technológie. Veľkú časť tohto balíka sme navrhli ako súčasť knižnice D3 s vyžitím návrhových vzorov charakteristických pre túto knižnicu. Jednak išlo o takzvaný \textit{chaining pattern}, ktorý slúži pri vytváraní objektu, kedy sa dovoľuje volanie jeho metód, ktorými sa nastavujú jeho vlastnosti, neustále za sebou. Príklad pre lepšie pochopenie je na výpise \ref{list:chaining}.
-Ďalším vzorom je \textit{callback pattern}, kedy používame funkciu ako parameter. 
+Pri návrhu a implementácii tohto balíka sme sa snažili využiť niektoré vlastnosti, ktoré nám ponúkajú použité technológie. Veľkú časť tohto balíka sme navrhli ako súčasť knižnice D3 s vyžitím návrhových vzorov charakteristických pre túto knižnicu. Jednak išlo o takzvaný \textit{chaining pattern}, ktorý slúži pri vytváraní objektu. Tento pattern dovoľuje volanie metód objektu, ktorými sa nastavujú jeho vlastnosti, zreťazených za sebou. Príklad pre lepšie pochopenie je ukázaný na výpise \ref{list:chaining}.
+Ďalším vzorom je \textit{callback pattern}, kedy sa používa funkcia ako parameter. 
 
 
 \begin{lstlisting}[frame=solid, backgroundcolor=\color{bg}, basicstyle=\footnotesize\ttfamily, language=JavaScript, numbers=left, numberstyle=\tiny\color{black}, caption=Ukážka aplikácie návrhového vzoru \textit{chainning}., captionpos=b, label=list:chaining]
@@ -105,9 +105,9 @@ Jednotlivé prvky vizualizácie sme navrhli ako takzvané \textit{moduly}, ktor�
 
 Tento návrh nám vytvára akúsi stromovú štruktúru modulov (pozri obrázok \ref{fig:tree}), ktorá umožňuje jednoduché vystavovanie celého rozloženia prvkov, kombinovanie jednotlivých častí vizualizácie a znovupoužitie niektorých častí vizualizácie. 
 
-Príkladom znovupoužitia môže byť graf pre distribúciu chýb, ktorý sa skladá z horizontálnej a vertikálnej osi a samotnej vizualizácie, ktorá môže byť rôzna (pozri sekciu \ref{sec:distribdesign}). Pre rôzne typy vizualizácií teda nemusíme kopírovať rovnaký kus kódu na generovanie osí viackrát, ale iba recyklujeme opakujúcu sa časť.   
+Príkladom znovupoužitia môže byť graf pre distribúciu chýb, ktorý sa skladá z horizontálnej a vertikálnej osi a samotnej vizualizácie, ktorá môže byť rôzna (pozri sekciu \ref{sec:distribdesign}). Pre rôzne typy vizualizácií teda nemusíme kopírovať rovnaký kus kódu na generovanie osí viackrát, ale iba recyklujeme opakujúcu sa časť grafu.   
 
-Každý typ grafu sme taktiež rozobrali na základné časti, z ktorých sa skladá. Napríklad mnoho-čiarový diagram sa skladá z osí, horizontálnej a vertikálnej mriežky a mnohých čiar. Vďaka tomuto jednak môžme jednoducho riadiť počet čiar alebo mriežok, ale taktiež môžme čiarový diagram kombinovať so stĺpcovým, s bodovým alebo ľubovoľným iným. Zjednodušene povedané, tým, že každý element chápeme ako samostatný modul, získavame dobrú variabilitu vizualizácie.
+Každý typ grafu sme taktiež rozobrali na základné časti, z ktorých sa skladá. Napríklad mnoho-čiarový diagram sa skladá z osí, horizontálnej a vertikálnej mriežky a mnohých čiar. Vďaka tomuto jednak môžme jednoducho riadiť počet čiar alebo mriežok, ale taktiež môžme čiarový diagram kombinovať so stĺpcovým, s bodovým alebo ľubovoľným iným diagramom. Zjednodušene povedané, tým, že každý element chápeme ako samostatný modul, získavame dobrú variabilitu vizualizácie.
 
 \begin{figure}
 	\centering

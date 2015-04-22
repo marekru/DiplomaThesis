@@ -253,7 +253,7 @@ Pomocou týchto dvoch funkcií môžme definovať pomocnú funkciu $ BD_{n}^{(j)
 \[
 	BD^{(j)}_{n}(x) = {n \choose j}^{-1} \sum_{1 \leq i_{1} < i_{2} < ... < i_{j} \leq n} \mathcal{I}\{ G(x) \subset \mathcal{B}(x_{i_{1}}, ... ,x_{i_{j}}) \}, j \geq 2
 \]
-kde $ j $ je počet kriviek definujúce pásmo $ \mathcal{B} $, $ n $ je celkový počet kriviek a $ \mathcal{I} $ je takáto funkcia:
+kde $ j $ je počet kriviek definujúcich pásmo $ \mathcal{B} $, $ n $ je celkový počet kriviek a $ \mathcal{I} $ je takáto funkcia:
 \[
 	\mathcal{I}(x) = \left\{
 	\begin{array}{ll}
@@ -273,7 +273,7 @@ Autor článku definujúci pojem pásmová hĺbka navrhol taktiež flexibilnejš
 \[
 	A(x, B) = \{ t \in I : (t, x(t)) \in G(x) \wedge (t, x(t)) \in B \}
 \]
-V spomínanom článku autori využívajú alternatívnu definíciu funkcie $ A $, do ktorej vstupuje $ j + 1 $ kriviek. Jej význam zostáva rovnaký ako pri našej definícii, avšak náš prístup považujeme za jednoduchší a zrozumiteľnejší. S využitím \textit{Lebesguevoej miery} $ \lambda $ autori ďalej definujú funkciu $ \lambda_{r} $, ktorá nám dáva "pomer času, ktorý krivka strávi v pásme":
+V spomínanom článku autori využívajú alternatívnu definíciu funkcie $ A $, do ktorej vstupuje $ j + 1 $ kriviek. Jej význam zostáva rovnaký ako pri našej definícii, avšak náš prístup považujeme za jednoduchší a zrozumiteľnejší. S využitím \textit{Lebesguevoej miery} $ \lambda $ autori ďalej definujú funkciu $ \lambda_{r} $, ktorá nám dáva "\textit{pomer času, ktorý krivka strávi v pásme}":
 \[
 	\lambda_{r}(A) = \dfrac{\lambda(A)}{\lambda(I)} 
 \]
@@ -297,16 +297,16 @@ Teraz, keď sme úspešne definovali mieru, podľa ktorej môžme usporiadať fu
 \end{figure}
 
 \paragraph{}
-Nech sú naše funkcie predpovedí $ x_{1},.., x_{n} $ usporiadané zostupne podľa $ \mathcal{BD}' $. Potom krivka pre funkciu $ x_{1} $ má najvyššiu pásmovú hĺbku a predstavuje strednú hodnotu pre množinu funkcií, teda niečo podobné ako medián hodnôt pri krabicovom diagrame. Pri konštrukcii funkcionálneho diagramu nám taktiež pomôže koncept centrálneho regiónu \cite{Liu}. Centrálny región $ C $ pre 50\% kriviek je pásmo vytvorené z 50\% najhlbších kriviek, teda:
+Nech sú naše funkcie predpovedí $ x_{1},.., x_{n} $ usporiadané zostupne podľa $ \mathcal{BD}' $. Potom krivka pre funkciu $ x_{1} $ má najvyššiu pásmovú hĺbku a predstavuje strednú hodnotu pre množinu funkcií, teda niečo podobné ako medián hodnôt pri krabicovom diagrame. Pri konštrukcii funkčného krabicového diagramu nám taktiež pomôže koncept centrálneho regiónu \cite{Liu}. Centrálny región $ C $ pre 50\% kriviek je pásmo vytvorené z 50\% najhlbších kriviek, teda:
 \[
 	C_{0.5} = B(x_{1}, x_{2}, .., x_{\lceil n / 2 \rceil} )
 \] 
-Vidíme, že Centrálny región $ C_{0.5} $ zaobaľuje 50\% najhlbších kriviek, a teda sa jedná o akúsi analógiu pre medzikvartilový rozsah (IQR) v klasickom krabicovom diagrame (pozri sekciu \ref{subsec:boxplot}), ktorý ohraničoval 50\% centrálnych dát. Zobrazením hraničných bodov tohto regiónu získame obálku myšlienkovo totožnú boxu v krabicovom diagrame (pozri obrázok \ref{fig:functionalboxplot}b) ). Táto myšlienka sa dá použiť ďalej a môžme, tak ako na obrázku \ref{fig:functionalboxplot}c) , zobraziť taktiež 25\%-ný a 75\%-ný centrálny región $ C_{0.25} $, $ C_{0.75} $, avšak kvôli nižšej čitateľnosti grafu sme túto alternatívu nepoužili.
+Vidíme, že Centrálny región $ C_{0.5} $ zaobaľuje 50\% najhlbších kriviek, a teda sa jedná o akúsi analógiu pre medzikvartilový rozsah (IQR) v klasickom krabicovom diagrame (pozri sekciu \ref{sec:boxplot}), ktorý ohraničoval 50\% centrálnych dát. Zobrazením hraničných bodov tohto regiónu získame obálku myšlienkovo totožnú boxu v krabicovom diagrame (pozri obrázok \ref{fig:functionalboxplot}b). Táto myšlienka sa dá použiť ďalej a môžme, tak ako na obrázku \ref{fig:functionalboxplot}c, zobraziť taktiež 25\%-ný a 75\%-ný centrálny región $ C_{0.25} $, $ C_{0.75} $, avšak kvôli nižšej čitateľnosti grafu sme túto alternatívu nepoužili.
 
 V prípade, že nepotrebujeme identifikovať \textit{outlier}-ov, tak extremálne hodnoty je už veľmi jednoduché získať, pretože ich tvorí pásmo zložené zo všetkých kriviek $ B(x_{1}, .., x_{n}) $. V opačnom prípade musíme najprv identifikovať \textit{outlier}-ov, ktorých potom vylúčime z výpočtov. Opäť sa využíva myšlienka z klasického krabicového diagramu, kedy sa \textit{outlier} určil pomocou hodnoty $ c \times IQR $, kde $ c $ bolo zvyčajne 1.5. Hranice sa teda získajú naškálovaním centrálneho regiónu so škálovacím faktorom 1.5 a všetky krivky, ktoré sa v tomto regióne nenachádzajú, budú považované za \textit{outlier}-ov. Test na \textit{outlier}-a vyzerá teda takto:
 \[	y_{i}(t) = 1.5 \times x_{i}(t) \]
 \[	isOutlier(x) = [ G(x) \nsubseteq B(y_{1},..,y_{\lceil n / 2 \rceil}) ] \]
-Na obrázku \ref{fig:functionalboxplot}b) môžme vidieť červené prerušované čiary, ktorými sú \textit{outlier}-i znázornené.
+Na obrázku \ref{fig:functionalboxplot}b môžme vidieť červené prerušované čiary, ktorými sú \textit{outlier}-i znázornené.
 
 V našej práci sme do diagramu pridali ešte jednu krivku pre ľubovoľnú štatistiku vypočítanú z chýb ako napríklad MFE, MAE alebo RMSE (pozri sekciu \ref{sec:errormeasurement}). Takto môžme spraviť porovnanie distribúcie chýb s vypočítanou štatistikou.
 %TODO to je troška klamstvo ne?
@@ -390,8 +390,7 @@ Tento diagram zobrazuje výlučne kladné hodnoty, preto sme zvolili jednoduchú
 Taktiež v tomto prípade sme zvolili monochromatickú škálu. Farby sa smerom k stredu diagramu postupne stmavujú. Pruh pre medián sme však zvýraznili žltou, ktorá vystúpila na tmavou pozadí do popredia.
 
 \subsubsection{Funkčný krabicový diagram} 
-Pri návrhu farebnej palety pre tento diagram sme vychádzali z farieb dizajnu systému, teda z modrej a bielej. Centrálne pásmo $ C_{0.5} $ má tmavomodrú farbu s bielim zobrazeným priemerom a neviem akým mediánom. %TODO neviem akym prepisaz
-Otlieri sme zámerne zvýraznili červenou farbou.
+Pri návrhu farebnej palety pre tento diagram sme vychádzali z farieb dizajnu systému, teda z modrej a bielej. Centrálne pásmo $ C_{0.5} $ má tmavomodrú farbu, priemer je biely a medián tmavo šedý. Outliere sme zámerne zvýraznili červenou farbou.
 
 \section{Návrh rozloženia prvkov vizualizácie}
 Výsledná obrazovka systému sa nebude skladať iba z jedného typu vizualizácie, ale z viacerých grafov a iných častí, ktoré spolu užívateľovi vytvoria dostatočne dobrú predstavu o dátach. Tieto časti budeme nazývať prvky alebo komponenty vizualizácie. Jednotlivým prvkom sme dali nasledovné pomenovania: 
@@ -412,9 +411,9 @@ Výsledná obrazovka systému sa nebude skladať iba z jedného typu vizualizác
 	\item\textit{Distribúcia chýb} sa taktiež zobrazuje pre konkrétny mesiac a týmto komponentom je graf, v ktorom je zobrazená distribúcia chýb v danom mesiaci.
 \end{itemize}
 
- Pre lepšiu orientáciu v kapitole sme pre jednotlivé prvky priradili aj obrázkové ikony. Jednotlivé priradenia sú vyobrazené na obrázku \ref{fig:designicons}. 
+\noindent Pre lepšiu orientáciu v kapitole sme pre jednotlivé prvky priradili aj obrázkové ikony (pozri obrázok \ref{fig:designicons}). 
  
- Pri návrhu rozloženie prvkov vizualizácie na obrazovke sme sa rozhodovali medzi dvoma smermi uvažovania, ktoré opíšeme v tejto sekcii. 
+Pri návrhu rozloženie prvkov vizualizácie na obrazovke sme sa rozhodovali medzi dvoma smermi uvažovania, ktoré opíšeme v tejto sekcii. 
 
 \begin{figure}
 	\centering
@@ -433,9 +432,10 @@ Jeden zo spôsobov uvažovania, ako rozložiť prvky vizualizácie, bolo zobrazi
 	# \textit{Úroveň štatistík}
 	# \textit{Úroveň chýb} 
 \end{easylist}
-Každá úroveň sa skladá z jedného alebo viacerých prvkov rovnakého typu. Napríklad \textit{Úroveň rokov} obsahuje iba prvky \textit{Zjednodušený prehľad}, ktorými sa zobrazujú celé roky. Obmedzením, ktoré kladieme na tento návrh, je zobrazenie maximálne dvoch úrovní súčasne. Touto požiadavkou dosiahneme jednak to, že prvky nebudú zbytočne presahovať mimo obrazovku a taktiež sa zachová do istej miery \textit{detail a kontext}. 
 
-Medzi jednotlivými úrovňami je možný pohyb pomocou klikaním myši na jednotlivé prvky. Napríklad úrovni rokov kliknutím na jeden rok (prvok \textit{Zjednodušený prehľad}) sa nám zobrazí ďalšia úroveň ako prvok \textit{Prehľad}. Ďalším kliknutím na jeden mesiac v danom prvku sa pre daný mesiac zobrazí úroveň štatistík, ako prvok \textit{Detail štatistík}. Ďalej po kliknutí na jednu zo štatistík sa zobrazí prvok \textit{Distribúcia chýb}, v ktorom máme detailne zobrazené chyby, z ktorých sa nám daná štatistika počítala.
+\noindent Každá úroveň sa skladá z jedného alebo viacerých prvkov rovnakého typu. Napríklad \textit{Úroveň rokov} obsahuje iba prvky \textit{Zjednodušený prehľad}, ktorými sa zobrazujú celé roky. Obmedzením, ktoré kladieme na tento návrh, je zobrazenie maximálne dvoch úrovní súčasne. Touto požiadavkou dosiahneme jednak to, že prvky nebudú zbytočne presahovať mimo obrazovku a taktiež sa zachová do istej miery \textit{detail a kontext}. 
+
+Medzi jednotlivými úrovňami je možný pohyb pomocou klikaním myši na jednotlivé prvky. Napríklad v úrovni rokov kliknutím na jeden rok (prvok \textit{Zjednodušený prehľad}) sa nám zobrazí ďalšia úroveň ako prvok \textit{Prehľad}. Ďalším kliknutím na jeden mesiac v danom prvku sa pre daný mesiac zobrazí úroveň štatistík, ako prvok \textit{Detail štatistík}. Ďalej po kliknutí na jednu zo štatistík sa zobrazí prvok \textit{Distribúcia chýb}, v ktorom máme detailne zobrazené chyby, z ktorých sa nám daná štatistika počítala.
 
 Na obrázku \ref{fig:multilevellayout} máme pomocou ikon z obrázka \ref{fig:designicons} schematicky popísané jednotivé úrovne a pohyb medzi nimi. Môžme si všimnúť, že v schéme nie je vidno prvok \textit{Detail chýb}. Dôvodom je, že sa nám kvôli jeho veľkosti nepodarilo nájsť umiestnenie tohto prvku jednak medzi úrovňami a rovnako aj v rámci úrovne.
 
@@ -453,7 +453,7 @@ Preto sme navrhli iný spôsob rozloženia, ktorý tento problém rieši tak, ž
 
 Nevýhodou tohto návrhu je, že nemožno zobraziť viacero prvkov jedného typu súčasne. Z tohto dôvodu nie je možné porovnávať viacero rokov súčasne a preto nie je potrebný komponent \textit{Zjednodušený prehľad}. Zvyšné potrebné porovnávania pre mesiace a distribúciu zaobstará v zníženom, ale dostatočnom detaile, prvok \textit{Prehľad}. 
 
-Pri návrhu rozmiestnenia prvkov vizualizácie sme chápali komponent \textit{Prehľad} ako hlavnú časť obrazovky vizualizácie, preto sme sa snažili ostatné prvky rozmiestniť odvíjajúc sa od jeho polohy. V prvom rade sme 2 komponenty s rovnakou škálou ako \textit{Prehľad} (\textit{Detail štatistík}, \textit{Distribúcia chýb}) umiestnili pod neho, tak aby jednotlivé škály boli na seba zarovnané. Smerom nadol teda stúpa úroveň detailu skúmaných dát. Rovnako sme uvažovali aj pri umiestňovaní prvku \textit{Celkový priebeh} do hornej časti obrazovky, keďže ho chápeme ako prvok s najnižším detailom. Tento prvok sme sa taktiež snažili rozšíriť čo najviac, keďže škála na \mbox{$ x $-ovej} osi má zvyčajne až 365 hodnôt. Na záver sme umiestnili \textit{Detail chýb} v pravej časti popri ostatným prvkom kvôli jeho predĺženom tvare vo vertikálnom smere.
+Pri návrhu rozmiestnenia prvkov vizualizácie sme chápali komponent \textit{Prehľad} ako hlavnú časť obrazovky vizualizácie, preto sme sa snažili ostatné prvky rozmiestniť odvíjajúc sa od jeho polohy. V prvom rade sme 2 komponenty s rovnakou škálou ako \textit{Prehľad} (\textit{Detail štatistík}, \textit{Distribúcia chýb}) umiestnili pod neho, tak aby jednotlivé škály boli na seba zarovnané. Smerom nadol teda stúpa úroveň detailu skúmaných dát. Rovnako sme uvažovali aj pri umiestňovaní prvku \textit{Celkový priebeh} do hornej časti obrazovky, keďže ho chápeme ako prvok s najnižším detailom. Tento prvok sme sa taktiež snažili rozšíriť čo najviac, keďže škála na \mbox{$ x $-ovej} osi má zvyčajne až 365 hodnôt. Na záver sme umiestnili \textit{Detail chýb} v pravej časti popri ostatným prvkom, kvôli jeho vertikálne predĺženom tvare.
 
 \begin{figure}
 	\centering
