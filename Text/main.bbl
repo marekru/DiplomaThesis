@@ -87,6 +87,13 @@ DTC Developmental Testbed~Center.
 \newblock \url{http://www.dtcenter.org/met/users/}, Marec 2015.
 \newblock [Prístupné online: 25.3. 2015].
 
+\bibitem[EY12]{Patterns}
+Niklas Elmqvist and Ji~Soo Yi.
+\newblock Patterns for visualization evaluation.
+\newblock In {\em Proceedings of the 2012 BELIV Workshop: Beyond Time and
+  Errors - Novel Evaluation Methods for Visualization}, BELIV '12, pages
+  12:1--12:8, New York, NY, USA, 2012. ACM.
+
 \bibitem[Few08]{SolutionToOverplotting}
 Stephen Few.
 \newblock {Solutions to the Problem of Over-Plotting in Graphs}.
@@ -139,6 +146,12 @@ Halldor Janetzko, Ming~C. Hao, Sebastian Mittelst{\"{a}}dt, Umeshwar Dayal, and
 \newblock Enhancing scatter plots using ellipsoid pixel placement and shading.
 \newblock In {\em 46th Hawaii International Conference on System Sciences,
   {HICSS} 2013, Wailea, HI, USA, January 7-10, 2013}, pages 1522--1531, 2013.
+
+\bibitem[JME10]{MultipleTimeSeries}
+Waqas Javed, Bryan McDonnel, and Niklas Elmqvist.
+\newblock Graphical perception of multiple time series.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  16(6):927--934, November 2010.
 
 \bibitem[Lab14]{VerifPackage}
 NCAR Research~Applications Laboratory.
@@ -382,12 +395,24 @@ Tim Vasquez.
 \newblock {\em Observer Handbook}.
 \newblock International Weather Watchers, 1995, 1998.
 
+\bibitem[VKMK11]{WebBasedUserTest}
+Bahtijar Vogel, Arianit Kurti, Marcelo Milrad, and Andreas Kerren.
+\newblock An interactive web-based visualization tool in action: User testing
+  and usability aspects.
+\newblock In {\em CIT}, pages 403--408. IEEE Computer Society, 2011.
+
 \bibitem[VWvH{\etalchar{+}}07]{Viegas}
 Fernanda~B. Viegas, Martin Wattenberg, Frank van Ham, Jesse Kriss, and Matt
   McKeon.
 \newblock Manyeyes: A site for visualization at internet scale.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   13(6):1121--1128, November 2007.
+
+\bibitem[WBWK00]{Baldonado}
+Michelle~Q. Wang~Baldonado, Allison Woodruff, and Allan Kuchinsky.
+\newblock Guidelines for using multiple views in information visualization.
+\newblock In {\em Proceedings of the Working Conference on Advanced Visual
+  Interfaces}, AVI '00, pages 110--119, New York, NY, USA, 2000. ACM.
 
 \bibitem[WCSDG{\etalchar{+}}08]{WRF}
 Joseph B.~Klemp William C.~Skamarock, Jimy Dudhia, David~O. Gill, Dale~M.

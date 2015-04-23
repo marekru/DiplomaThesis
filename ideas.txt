@@ -12,16 +12,5 @@ CSS
 
 Obrazky:
 rozhodnut sa ci ich oznacovat 5.1a alebo 5.1a) - radsej bez zatvorky koli zatvorkam :)
-Obr pre 5.4.2 -> pruhovy diagram dako vyrobit
-Obr pre 5.4.4 -> mapa distrib
-
-citacia
-5.3.1 - odcitovat clanok, kde sa vizualizuje mnoho ciarovych diagramov.
-5.6.2 - z toho clanku o exploratory vis zistit tie veci o plochom onom
 
 
-Ine:
-5.4 - zvazili silne slabe stranky? Je to pravda?
-5.4.1 - chcem nasobenie robit ako X alebo ako . ?
-5.4.2 - prepisat zaciatok podla hentoho zdroja
-6.3.2 - troöka prekopaù

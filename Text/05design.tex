@@ -115,9 +115,9 @@ Narozdiel od elementárnych úloh, synoptické alebo skôr prehľadové úlohy z
 
 \subsection{Prehľad štatistík {\small(\textit{Farebná mapa})}}
 \label{sec:colormap}
-Ako sme spomenuli vyššie, na vizualizáciu časových radov sa bežne používa čiarový diagram. Z našej skúsenosti vieme, že táto technika nie je vhodná pre porovnávanie mnohých chronologicky usporiadaných radov súčasne. Problémom je, že ak umiestnime viacero radov do jedného grafu, tak strácame informáciu o chronologickom poradí. Ak však umiestnime rady do grafov jednotlivo, tak pre väčšie množstvo dát nebudeme mať dostatočne veľký priestor.
+Ako sme spomenuli vyššie, na vizualizáciu časových radov sa bežne používa čiarový diagram. Z našej skúsenosti vieme, že táto technika nie je vhodná pre porovnávanie mnohých chronologicky usporiadaných radov súčasne. Problémom je, že ak umiestnime viacero radov do jedného grafu, tak strácame informáciu o chronologickom poradí. Ak však umiestnime rady do jednotlivých grafov, tak narážame na problémy s nedostatočným priestorom alebo s čitateľnosťou grafu. 
 
-Zvolili sme preto pomerne jednoduché a účinné riešenie, zobraziť štatistiky na iný vizuálny parameter, konkrétne na farbu. Jednotlivé hodnoty sa teda v grafe zobrazia ako tesne za sebou umiestnené farebné obdĺžniky \footnote{Experimentovali sme taktiež s inými tvarmi (kruhy a obdĺžniky so zaoblenými hranami), ale aj s rôznymi veľkosťami medzier medzi tvarmi. Použité nastavenie sa však ukázalo ako najvhodnejšie pri porovnávaní hodnôt vo vertikálnom aj horizontálnom smere.}, ktoré vytvoria jeden celistvý pás (pozri porovnanie s čiarovým diagramom na obrázku \ref{fig:colormap}a. Umiestnením takýchto pásov pod seba vytvoríme farebnú mapu štatistík. Výslednú vizualizáciu možno vidieť na obrázku \ref{fig:colormap}b. 
+Medzi techniky na vizualizáciu viacerých časových radov súčasne patria \textit{prepletený graf} (\textit{braided graph}), \textit{malé násobky} (\textit{small multiples}) alebo \textit{horizon graf} \cite{MultipleTimeSeries}. My sme vzhľadom na vyššie spomenuté problémy zvolili pomerne jednoduché a účinné riešenie, zobraziť štatistiky na iný vizuálny parameter, konkrétne na farbu. Jednotlivé hodnoty sa teda v grafe zobrazia ako tesne za sebou umiestnené farebné obdĺžniky \footnote{Experimentovali sme taktiež s inými tvarmi (kruhy a obdĺžniky so zaoblenými hranami), ale aj s rôznymi veľkosťami medzier medzi tvarmi. Použité nastavenie sa však ukázalo ako najvhodnejšie pri porovnávaní hodnôt vo vertikálnom aj horizontálnom smere.}, ktoré vytvoria jeden celistvý pás (pozri porovnanie s čiarovým diagramom na obrázku \ref{fig:colormap}a. Umiestnením takýchto pásov pod seba vytvoríme farebnú mapu štatistík. Výslednú vizualizáciu možno vidieť na obrázku \ref{fig:colormap}b. 
 
 V našej aplikácii sa tento spôsob vizualizácie použil v dvoch prípadoch. Prvým prípadom bolo zobrazenie mesačných štatistík, pre 48 hodinové predpovede. Teda sme mali 12 mesiacov v roku a pre každý mesiac 48 hodnôt, čo sa nám zobrazilo ako farebná mapa $ 12 \times 48 $ (pozri obrázok \ref{fig:colormap}b). Druhým prípadom bolo zobrazenie chýb pre konkrétne predpovede, ktorých mohlo byť variabilný počet podľa nastavení systému. Zvyčajne však išlo približne o 30 predpovedí pre každý mesiac.
 
@@ -213,8 +213,10 @@ Na obrázku \ref{fig:densitycompare} vidno porovnanie vizualizácií s použití
 \end{figure}
 
 \subsection{Pruhový kvantilový diagram} 
-Z časti \ref{subsec:qqplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram [ref] zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
-Prirodzeným rozšírením je zobrazovať nielen jeden kvantil, ale mnoho kvantilov súčasne. Zvyčajne sú to tieto kvantily $ Q_{0.02}, Q_{0.98}, Q_{0.25}, Q_{0.75}, Q_{0.5} $. V našej práci sme využili toto rozšírenie na lepšie zobrazenie distribúcie a navrhli sme takzvaný \textit{pruhový kvantilový diagram}.
+Z časti \ref{subsec:qqplot} sme už dobre oboznámený s pojmom kvantil. Klasický kvantilový diagram zobrazuje kvantil hodnôt pre jednu dimenziu. Ak si vezmeme naše dáta, kde pre každý čas je niekoľko chýb predpovedí, tak kvantilový diagram skonštruujeme tak, že pre každý čas vypočítame kvantil, ktorý zobrazíme ako bod alebo ako súčasť lomenej čiary v grafe.
+Prirodzeným rozšírením je zobrazovať nielen jeden kvantil, ale mnoho kvantilov súčasne. Zvyčajne sú to kvantily $Q_{0.25}, Q_{0.75}, Q_{0.5} $, teda kvartily z ktorých sa konštruuje krabicový diagram, a taktiež kvantily $ Q_{0.02}, Q_{0.98} $. V článku od Bade et al. \cite{Bade} ja navrhnutý spôsob rozšírenia krabicového diagramu odstránením krabíc a ponechaním kvartilov a extrémov.
+
+V našej práci sme využili toto rozšírenie na lepšie zobrazenie distribúcie a navrhli sme takzvaný \textit{pruhový kvantilový diagram}, ktorý sa neobmedzuje iba na kvartily.
 
 Jeden \textit{pruh} v grafe definujeme pomocou dvojíc hodnôt v čase - spodným a jeho protiľahlým kvantilom. Spodným kvantilom je kvantil $ Q_{\alpha} $ a k nemu protiľahlý je kvantil $ Q_{1 - \alpha} $, kde $ 0 \leq \alpha \leq \frac{1}{2} $. Vidíme teda, že pruh ohraničuje hodnoty v okolí stredu usporiadanej množiny dát. Špeciálnym prípadom pruhu je pre $ \alpha = \frac{1}{2} $, vtedy spodný aj horný kvantil je $ Q_{0.5} $, čo je vlastne medián.
 
@@ -231,11 +233,17 @@ a množina všetkých pruhov grafu pre hĺbku delenia $ d $ je definovaná takto
 \]
 Aby sme sa vyhli rekruzii, vypočítali sme si krok medzi susednými kvantilmi pri hĺbke $ d $, ktorý je $ (0.5)^d $, a jednotlivé pruhy sme generovali s týmto krokom. Pri rekruzívnom delení sa vygeneruje $ 2^d $ kvantilov a z nich je možné vyrobiť $ 2^{d - 1} $ pruhov, preto sme index $ i $ obmedzili na $ i \leq 2^{d-1} $. Z tohto vidíme, že počet pruhov grafe s rastúcou hĺbkou rastie exponenciálne, preto odporúčame, aby $ d $ bolo maximálne 4, kedy sa nám množina rozdelí na 16 častí 15 hexadecilmi a tak vznikne 8 pruhov.
 
-% TODO obrázok 
-Na obrázku \ref{fig:pruh} vidíme, že takto definovaný pruh sa potom vizualizuje, ako plocha medzi krivkami, ktoré tvoria dvojice hodnôt patriace danému pruhu, s výnimkou špeciálneho prípadu $ Q_{0.5} $, ktorý vizualizujeme ako krivku.
+Na obrázku \ref{fig:stripe} vidíme, že takto definovaný pruh sa potom vizualizuje, ako plocha medzi krivkami, ktoré tvoria dvojice hodnôt patriace danému pruhu, s výnimkou špeciálneho prípadu $ Q_{0.5} $, ktorý vizualizujeme ako krivku.
 
 
+\begin{figure}
+	\centering
+	\includegraphics[width = 5.0in]{stripe}
+	\caption{Pruhový kvantilový diagram so 4 pruhmi a extrémami. Medián je zvýraznený žltou farbou.}
+	\label{fig:stripe}
+\end{figure}
 
+ 
 %TODO toto musím ešte celé premyslieť!
 
 
@@ -336,18 +344,18 @@ Jednotlivé hodnoti sa zobrazia vo vizualizácii ako kruhy rôznej veľkosti v z
 \]
 kde $ k $ je koeficient škálovania. Nemusíme sa báť záporných hodnôt pod odmocninou, keďže $ \sigma $ nemôže nadobúdať záporné hodnoty a $ k > 0 $.
 
-Takýmto spôsobom dodáme užívateľovi rýchly prehľad o tom, ako môže štatistikám z chýb dôverovať, aké sú trendy alebo vzory v disperzii a podobne. Tento typ vizualizácie sa dá kombinovať s farebnou mapou, ale môže existovať aj samostatne podľa preferencií užívateľa. Na obrázku \ref{fig:XYZ} je znázornený príklad výslednej vizualizácie.
+Takýmto spôsobom dodáme užívateľovi rýchly prehľad o tom, ako môže štatistikám z chýb dôverovať, aké sú trendy alebo vzory v disperzii a podobne. Tento typ vizualizácie sa dá kombinovať s farebnou mapou, ale môže existovať aj samostatne podľa preferencií užívateľa. Na obrázku \ref{fig:distributionmap} je znázornený príklad výslednej vizualizácie.
 
-\subsection{Porovnanie metód}
 
-Tu bude pekný obrázok a obkeci. \\
-Graf hustoty je presnejsi, ale menej citatelny. \\
-Pruhovy kvantilovy diagram nahradzuje krabicovy diagram. \\
-Funkcionalny krabicovy riesi distribuciu funkcii. \\
+\begin{figure}
+	\centering
+	\includegraphics[width = 5.5in]{distributionmap}
+	\caption{Mapa distribúcií a) Bez farebnej mapy b) Spolu s farebnou mapou} 
+	\label{fig:distributionmap}
+\end{figure}
 
-Pre pruhovy nezabudnut, ze \cite{Bade} spravil nieco podobne.
+%TODO \subsection{Porovnanie metód}Tu bude pekný obrázok a obkeci. Graf hustoty je presnejsi, ale menej citatelny. Pruhovy kvantilovy diagram nahradzuje krabicovy diagram. Funkcionalny krabicovy riesi distribuciu funkcii. \\
 
-alebo to sem vobec nedam! 
 
 \section{Návrh farebnej palety}
 Farba je pravdepodobne najviac podceňovaný a nesprávne používaný vizuálny parameter vo vizualizácii dát. V tejto časti opisujeme návrh farebnej palety pre vyššie spomenuté vizualizačné techniky.
@@ -449,11 +457,12 @@ Na obrázku \ref{fig:multilevellayout} máme pomocou ikon z obrázka \ref{fig:de
 
 \subsection{Plochý návrh rozloženia prvkov} %TODO o tomto píšu aj v jednom článku - treba kuknut explaratory weather bla bla bla
 Pre užívateľa nie je príjemné, keď sa na obrazovke prvky zväčšujú, zmenšujú, posúvajú, objavujú alebo miznú, pretože pri každej modifikácii obrazovky sa užívateľ musí zoznamovať s obrazovkou znova.
-Preto sme navrhli iný spôsob rozloženia, ktorý tento problém rieši tak, že zobrazí všetky prvky súčasne na jednej úrovni, a teda pojem \textit{úroveň} už nie je potrebný. Spôsob, akým sme umiestnili jednotlivé prvky je schematicky znázornený na obrázku \ref{fig:flatlayout}. Ak potrebujeme vidieť detailnejšie informácie o výkone modelu v mesiaci, tak kliknutím na konkrétny mesiac v prvku \textit{Prehľad}, sa zobrazí \textit{Detail štatistík}, \textit{Distribúcia chýb}, \textit{Detail chýb} pre daný mesiac.
+Preto sme navrhli iný spôsob rozloženia, ktorý tento problém rieši tak, že zobrazí všetky prvky súčasne na jednej úrovni, a teda pojem \textit{úroveň} už nie je potrebný. Takýto návrh rozloženia nie je ničím novým a vo vizualizačnej praxi má názov \textit{multiple views}, teda \textit{viacero pohľadov} na dáta súčasne. Wang Baldonado et al. vo svojej práci navrhol niekoľko pokynov, ktorých sa držať pri dobrom návrhu takéhoto prístupu \cite{Baldonado}.
+
+Spôsob, akým sme umiestnili jednotlivé prvky je schematicky znázornený na obrázku \ref{fig:flatlayout}. Ak potrebujeme vidieť detailnejšie informácie o výkone modelu v mesiaci, tak kliknutím na konkrétny mesiac v prvku \textit{Prehľad}, sa zobrazí \textit{Detail štatistík}, \textit{Distribúcia chýb}, \textit{Detail chýb} pre daný mesiac.
 
 Nevýhodou tohto návrhu je, že nemožno zobraziť viacero prvkov jedného typu súčasne. Z tohto dôvodu nie je možné porovnávať viacero rokov súčasne a preto nie je potrebný komponent \textit{Zjednodušený prehľad}. Zvyšné potrebné porovnávania pre mesiace a distribúciu zaobstará v zníženom, ale dostatočnom detaile, prvok \textit{Prehľad}. 
 
-Pri návrhu rozmiestnenia prvkov vizualizácie sme chápali komponent \textit{Prehľad} ako hlavnú časť obrazovky vizualizácie, preto sme sa snažili ostatné prvky rozmiestniť odvíjajúc sa od jeho polohy. V prvom rade sme 2 komponenty s rovnakou škálou ako \textit{Prehľad} (\textit{Detail štatistík}, \textit{Distribúcia chýb}) umiestnili pod neho, tak aby jednotlivé škály boli na seba zarovnané. Smerom nadol teda stúpa úroveň detailu skúmaných dát. Rovnako sme uvažovali aj pri umiestňovaní prvku \textit{Celkový priebeh} do hornej časti obrazovky, keďže ho chápeme ako prvok s najnižším detailom. Tento prvok sme sa taktiež snažili rozšíriť čo najviac, keďže škála na \mbox{$ x $-ovej} osi má zvyčajne až 365 hodnôt. Na záver sme umiestnili \textit{Detail chýb} v pravej časti popri ostatným prvkom, kvôli jeho vertikálne predĺženom tvare.
 
 \begin{figure}
 	\centering
@@ -461,3 +470,5 @@ Pri návrhu rozmiestnenia prvkov vizualizácie sme chápali komponent \textit{Pr
 	\caption{Schematické zobrazenie plochého návrhu rozloženia prvkov vizualizácie}
 	\label{fig:flatlayout}
 \end{figure}
+
+Pri návrhu rozmiestnenia prvkov vizualizácie sme chápali komponent \textit{Prehľad} ako hlavnú časť obrazovky vizualizácie, preto sme sa snažili ostatné prvky rozmiestniť odvíjajúc sa od jeho polohy. V prvom rade sme 2 komponenty s rovnakou škálou ako \textit{Prehľad} (\textit{Detail štatistík}, \textit{Distribúcia chýb}) umiestnili pod neho, tak aby jednotlivé škály boli na seba zarovnané. Smerom nadol teda stúpa úroveň detailu skúmaných dát. Rovnako sme uvažovali aj pri umiestňovaní prvku \textit{Celkový priebeh} do hornej časti obrazovky, keďže ho chápeme ako prvok s najnižším detailom. Tento prvok sme sa taktiež snažili rozšíriť čo najviac, keďže škála na \mbox{$ x $-ovej} osi má zvyčajne až 365 hodnôt. Na záver sme umiestnili \textit{Detail chýb} v pravej časti popri ostatným prvkom, kvôli jeho vertikálne predĺženom tvare.
