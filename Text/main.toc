@@ -88,11 +88,11 @@
 \contentsline {chapter}{\numberline {7}V\IeC {\'y}sledky a Z\IeC {\'a}ver}{69}
 \contentsline {section}{\numberline {7.1}Testovanie}{69}
 \contentsline {subsection}{\numberline {7.1.1}Testovacia proced\IeC {\'u}ra}{69}
-\contentsline {subsection}{\numberline {7.1.2}V\IeC {\'y}sledky testovania}{70}
-\contentsline {section}{\numberline {7.2}Z\IeC {\'a}ver}{70}
-\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{71}
-\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{71}
-\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{73}
-\contentsline {section}{\numberline {A.1}GUI}{73}
-\contentsline {section}{\numberline {A.2}Testovac\IeC {\'\i } formul\IeC {\'a}r}{74}
-\contentsline {section}{\numberline {A.3}CD}{75}
+\contentsline {subsection}{\numberline {7.1.2}V\IeC {\'y}sledky testovania}{69}
+\contentsline {section}{\numberline {7.2}Z\IeC {\'a}ver}{71}
+\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{72}
+\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{72}
+\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{75}
+\contentsline {section}{\numberline {A.1}GUI}{75}
+\contentsline {section}{\numberline {A.2}Testovac\IeC {\'\i } formul\IeC {\'a}r}{76}
+\contentsline {section}{\numberline {A.3}CD}{77}

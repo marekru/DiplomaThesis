@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  23 APR 2015 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  25 APR 2015 11:42
 entering extended mode
 **main.tex
 (main.tex
@@ -1552,20 +1552,34 @@ Package pdftex.def Info: tree.pdf used on input line 116.
 ) (07results.tex
 [68 <./tree.pdf>]
 Kapitola 7.
+[69
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+]
+Overfull \hbox (5.45728pt too wide) in paragraph at lines 41--42
+[]\OT1/cmr/m/n/12 Dlhe trva-nie ulohy 2 pri-su-dzu-jeme vyssej zlozitosti 
+ulohy oproti os-tatnym. Pre uzvatel[]ov
+ []
 
 
-Overfull \hbox (1.8112pt too wide) in paragraph at lines 36--37
+Overfull \hbox (16.6001pt too wide) in paragraph at lines 45--46
+[]\OT1/cmr/m/n/12 Vysledky nasho tes-to-va-nia povazujeme cel-kovo za uspo-
+ko-jive, ked[]ze aj neskusen uzvatelia
+ []
+
+<resultchart.pdf, id=1147, 541.82423pt x 384.23549pt>
+File: resultchart.pdf Graphic file (type pdf)
+ <use resultchart.pdf>
+Package pdftex.def Info: resultchart.pdf used on input line 49.
+(pdftex.def)             Requested size: 361.34999pt x 256.25212pt.
+
+Overfull \hbox (1.8112pt too wide) in paragraph at lines 57--58
 \OT1/cmr/m/n/12 statisticke metody na me-ra-nie chyby pred-po-vede a na-vrhl
 i sme sp^osob vseobecneho vypoctu
  []
 
-[69
-
-] [70]) (attachments.tex [71]
+[70] [71 <./resultchart.pdf>] [72]) (attachments.tex [73]
 Dodatok A.
-<gui.png, id=1154, 1274.7625pt x 893.3375pt>
+<gui.png, id=1182, 1274.7625pt x 893.3375pt>
 File: gui.png Graphic file (type png)
  <use gui.png>
 Package pdftex.def Info: gui.png used on input line 6.
@@ -1580,13 +1594,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
 
-[72
+[74
 
 ]
 Overfull \vbox (4.66103pt too high) has occurred while \output is active []
 
 
-[73 <./gui.png (PNG copy)>] <testform.pdf, id=1161, 597.23125pt x 845.1575pt>
+[75 <./gui.png (PNG copy)>] <testform.pdf, id=1189, 597.23125pt x 845.1575pt>
 File: testform.pdf Graphic file (type pdf)
 
 <use testform.pdf>
@@ -1606,15 +1620,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--16
 Overfull \vbox (194.94461pt too high) has occurred while \output is active []
 
 
-[74 <./testform.pdf>]) (main.bbl [75] [76
+[76 <./testform.pdf>]) (main.bbl [77] [78
 
-] [77] [78] [79] [80] [81] [82])
-[83] (main.aux) ) 
+] [79] [80] [81] [82] [83] [84])
+[85] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 11999 strings out of 493698
- 158029 string characters out of 3151686
- 259358 words of memory out of 3000000
- 15025 multiletter control sequences out of 15000+200000
+ 12005 strings out of 493698
+ 158136 string characters out of 3151686
+ 259369 words of memory out of 3000000
+ 15030 multiletter control sequences out of 15000+200000
  24063 words of font info for 91 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,19n,47p,1368b,1204s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1634,9 +1648,9 @@ msy10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/miktex/fonts/
 type1/public/amsfonts/cm/cmti10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/c
 mti12.pfb><C:/miktex/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/miktex/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (98 pages, 5204853 bytes).
+Output written on main.pdf (100 pages, 5241857 bytes).
 PDF statistics:
- 1283 PDF objects out of 1440 (max. 8388607)
+ 1311 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
