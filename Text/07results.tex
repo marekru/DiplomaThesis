@@ -1,4 +1,4 @@
-\chapter{Výsledky a Záver}
+\chapter{Výsledky}
 
 \section{Testovanie}
 Pri testovaní vizualizácie sme postupovali podľa článku od Elmqvist et al. \cite{Patterns}, ktorý opisuje najpoužívanejšie vzory testovania vizualizácie a článok od Vogel et al., v ktorom autori testujú webovú vizualizáciu \cite{WebBasedUserTest}.
@@ -51,27 +51,4 @@ Výsledky nášho testovania považujeme celkovo za uspokojivé, keďže aj nesk
 	\label{fig:results} 
 \end{figure}
 
-%TODO \section{Demonštrácia}
-
-\section{Záver}
-V našej práci sme uviedli problém verifikácie predpovedných modelov počasia so zameraním na verifikáciu predpovede spojitej premennej v jednom bode. Zhrnuli sme používané štatistické metódy na meranie chyby predpovede a navrhli sme spôsob všeobecného výpočtu kumulovanej chyby, ktorý sme v závere využili aj pri implementácii.
-
-Taktiež sme preskúmali doterajšie riešenia jednak z pohľadu verifikačného softvéru, ale aj z pohľadu vizualizačných techník vo verifikácii. Uviedli sme slabé a silné stránky jednotlivých softvérových riešení a zhrnuli sme ich v prehľadnej tabuľke. Taktiež sme opísali a analyzovali vizualizácie používané vo verifikácii a načrtli ich zameranie a spôsob použitia.
-
-Ďalej sme charakterizovali vstupné dáta a špecifikovali požiadavky používateľov, na základe ktorých sme navrhli rôzne spôsoby vizualizácie, ktoré sme implementovali ako doplnok JavaScriptovej knižnice D3. V závere práce sme následne vykonali testovanie našej vizualizácie na základe čoho sme zhodnotili jej úspešnosť.
-
-Výsledkom práce je teda verifikačný nástroj schopný spracovávať dáta z rôznych zdrojov, ponúkajúc funkcionalitu pre verifikáciu predpovedí spojitej premennej s použitím špeciálne navrhnutej vizualizácie pre tieto účely. 
-
-\subsubsection{Prínos}
-
-Za hlavný prínos tejto práce považujeme práve návrh špecializovanej vizualizácie, ktorá síce nevyniká obrovskou inováciou, ale pri jej vzniku sme navrhli mnoho drobných originálnych vylepšení smerujúcim k lepšiemu, rýchlejšiemu a jednoduchšiemu porozumeniu dát. Príkladom môže byť návrh prehľadovej vizualizácie verifikačných dát, návrh riešenia viacerých škál pri \mbox{mnoho-čiarovom} diagrame, zovšeobecnenie re-dizajnu krabicového diagramu od \mbox{Bada et. al.} \cite{Bade} na takzvaný \textit{Pruhový diagram}, využitie dvojtónového pseudofarbenia pri kompaktnej vizualizácii distribúcie dát pomocou grafu hustoty a podobne.
-
-\subsubsection{Budúca práca}
-
-Na výskum a vývoj neustále existuje priestor a v našej práci ho vidíme určite mnoho obzvlášť v štyroch oblastiach:
-\begin{enumerate}
-	\item \textit{Získavanie dát} - V práci sme implementovali 3 typy zdrojov: Grib, CSV a Web. Avšak existuje mnoho ďalších zdrojov dát, z kade možno získať pozorovania, rovnako ako aj predpovede. Príkladom je napríklad \textit{databáza}, \textit{XML}, alebo \textit{XLS} súbory, takzvané \textit{bloky} systému IMS4, kde sú aj merania a mnohé iné ďalšie zdroje. 
-	\item \textit{Konfigurácia systému a vizualizácie} - Konfigurovanie systému v momentálnom stave nie je veľmi user-friendly úloha. V budúcej práci očakávame návrh riešenia, ktoré skryje pred užívateľom pomerne neprehľadné nastavenia systému.
-	\item \textit{Interaktívna manipulácia s dátami} - Momentálne riešenie neponúka veľmi dôležitú súčasť moderných vizualizačných nástrojov a tým je manipulácia s dátami priamo na obrazovke. Príkladmi operácií môže byť filtrovanie dát na základe rôznych kľúčov alebo selekcia vybranej vzorky dát pomocou \textit{brushingu} a podobne.
-	\item \textit{Porovnávanie modelov a staníc} - Pri návrhu vizualizácie sme nezvažovali možnosť porovnávania výkonu viacerých predpovedných modelov alebo porovnávanie predpovedí pre rôzne stanice súčasne. Riešenie takéhoto problému by pravdepodobne vyžadovalo zásadný re-dizajn vizualizácie.
-\end{enumerate}
+\section{Demonštrácia}

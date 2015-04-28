@@ -358,10 +358,7 @@ Takýmto spôsobom dodáme užívateľovi rýchly prehľad o tom, ako môže št
 
 
 \section{Návrh farebnej palety}
-Farba je pravdepodobne najviac podceňovaný a nesprávne používaný vizuálny parameter vo vizualizácii dát. V tejto časti opisujeme návrh farebnej palety pre vyššie spomenuté vizualizačné techniky.
-
-\subsection{Farebná mapa}
-Návrhu farebnej palety pre farebnú mapu sme venovali zvýšenú pozornosť, keďže farba hrá pri tomto type vizualizácie najpodstatnejšiu úlohu.
+Farba je pravdepodobne najviac podceňovaný a nesprávne používaný vizuálny parameter vo vizualizácii dát. V tejto časti opisujeme návrh farebnej palety pre vizuallizáciu pomocou farebnej mapy (pozri sekciu \ref{sec:colormap}).
 
 V prvom momente sme siahli po veľmi prvoplánovom riešení a použili sme takzvanú \textit{dúhovú farebnú škálu}, ktorú možno vidieť v sekcii \ref{sec:colormap} na obrázku \ref{fig:colormap}. Výskum ukázal a mnohý vedci sa na tom zhodujú, že tento typ farebnej palety je len zriedkakedy najlepšia voľba pri vizualizácii. Dúhové farebné palety majú niekoľko slabých stránok, ktoré zhŕňa David Borland a Russell M. Taylor II vo svojom článku \cite{RainbowHarmful}.
 
@@ -379,26 +376,6 @@ Tento typ palety už lepšie zodpovedal našim požiadavkám. Testovaním sme v�
 	\label{fig:colorpalettes}
 \end{figure}
 
-%TODO ?- ekvalizacia histogramom / boxplotom ???  skor buduce prace
-
-\subsection{Ďalšie diagramy}
-Podobné uvažovanie ako pre farebnú mapu sme aplikovali aj pre ďalšie diagramy. Vzhľadom na to, že vo zvyšných diagramoch nehrajú farby takú výraznú úlohu, v tejto kapitole stručne zhrnieme dôvody, ktoré nás viedli k výberu farieb pre jednotlivé diagramy.
-
-\subsubsection{Mnoho-čiarový diagram} 
-Tento typ diagramu sme použili v dvoch prípadoch. Pre hodnoty štatistík na jeden mesiac a pre priebeh chýb počas roka.
-
-V prvom prípade na farbe takmer vôbec nezáleží, jedine pri použití rôznych škál, kedy sme volili tmavšie odtiene, aby bolo vidieť biele indikátory hodnôt zobrazené na škálach.
-
-V druhom prípade sme sa snažili zvýrazniť kĺzavý priemer červenou farbou, zatiaľ čo surové dáta sme nechali pomocou tmavo šedej ustúpiť do pozadia.
-
-\subsubsection{Graf hustoty} 
-Tento diagram zobrazuje výlučne kladné hodnoty, preto sme zvolili jednoduchú monochromatickú škálu. V tomto prípade nám poslúžil internetový nástroj \textit{Color Brewer} (\url{http://colorbrewer2.org/}), kde sme zvolili škálu v modrých odtieňoch.
-
-\subsubsection{Pruhový diagram} 
-Taktiež v tomto prípade sme zvolili monochromatickú škálu. Farby sa smerom k stredu diagramu postupne stmavujú. Pruh pre medián sme však zvýraznili žltou, ktorá vystúpila na tmavou pozadí do popredia.
-
-\subsubsection{Funkčný krabicový diagram} 
-Pri návrhu farebnej palety pre tento diagram sme vychádzali z farieb dizajnu systému, teda z modrej a bielej. Centrálne pásmo $ C_{0.5} $ má tmavomodrú farbu, priemer je biely a medián tmavo šedý. Outliere sme zámerne zvýraznili červenou farbou.
 
 \section{Návrh rozloženia prvkov vizualizácie}
 Výsledná obrazovka systému sa nebude skladať iba z jedného typu vizualizácie, ale z viacerých grafov a iných častí, ktoré spolu užívateľovi vytvoria dostatočne dobrú predstavu o dátach. Tieto časti budeme nazývať prvky alebo komponenty vizualizácie. Jednotlivým prvkom sme dali nasledovné pomenovania: 

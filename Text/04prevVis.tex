@@ -69,47 +69,45 @@ Konštanty $ c $ a $ C $ sú v niektorých zdrojoch definované rôzne. Najčast
 	\label{fig:boxplot}
 \end{figure}
 
+%TODO tohle som musel zakomentit, lebo to bolo dlhe :(
+%\subsection{Ďalšie variácie krabicového diagramu}
+%Popularita krabicového diagramu nevyhnutne viedla k jeho vývoji a modifikáciám. Môžeme hovoriť o dvoch druhoch modifikácií. Jednak \textit{syntaktickej} (vizuálnej), kedy sa zachovávajú všetky vlastnosti a informácie ako v pôvodnom diagrame, len sa menia vizuálne prvky grafu. A modifikácii \textit{sémantickej} pridaním ďalšej popisnej informácie do grafu, čo má na záver vplyv aj na jeho vizuálnu stránku.
 
-\subsection{Ďalšie variácie krabicového diagramu}
-
-Popularita krabicového diagramu nevyhnutne viedla k jeho vývoji a modifikáciám. Môžeme hovoriť o dvoch druhoch modifikácií. Jednak \textit{syntaktickej} (vizuálnej), kedy sa zachovávajú všetky vlastnosti a informácie ako v pôvodnom diagrame, len sa menia vizuálne prvky grafu. A modifikácii \textit{sémantickej} pridaním ďalšej popisnej informácie do grafu, čo má na záver vplyv aj na jeho vizuálnu stránku.
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width = 4in]{boxplot2}
-	\caption{ a) Klasický krabicový diagram  b-f) Vizuálne variácie krabicového diagramu \mbox{b-c) 2 variácie pre kvartilový graf \cite{Tufte83}} \mbox{c) Skrátený krabicový diagram \cite{VisualSummaryPotter}} \mbox{e) \mbox{Range-bar} chart \cite{Spear}} \mbox{f) Farebná variácia \cite{Carr}}  }
-	\label{fig:boxplotmodif1}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\includegraphics[width = 4in]{boxplot2}
+%	\caption{ a) Klasický krabicový diagram  b-f) Vizuálne variácie krabicového diagramu \mbox{b-c) 2 variácie pre kvartilový graf \cite{Tufte83}} \mbox{c) Skrátený krabicový diagram \cite{VisualSummaryPotter}} \mbox{e) \mbox{Range-bar} chart \cite{Spear}} \mbox{f) Farebná variácia \cite{Carr}}  }
+%	\label{fig:boxplotmodif1}
+%\end{figure}
 
 
-\paragraph{}
-{\large \textbf{\textit{N}}}a obrázkoch \ref{fig:boxplotmodif1} b-f) môžme vidieť niektoré vizuálne variácie krabicového diagramu. Vznik prvých troch motivovala snaha maximalizovať takzvaný \textit{data-ink} \cite{Tufte83}, teda množstvo atramentu alebo počet pixlov, ktoré zodpovedajú nejakým dátam. Autori sa teda snažili čo najviac znížiť počet vizuálnych prvkov a ponechať len tie, ktoré skutočne nesú nejakú informáciu. 
+%\paragraph{}
+%{\large \textbf{\textit{N}}}a obrázkoch \ref{fig:boxplotmodif1} b-f) môžme vidieť niektoré vizuálne variácie krabicového diagramu. Vznik prvých troch motivovala snaha maximalizovať takzvaný \textit{data-ink} \cite{Tufte83}, teda množstvo atramentu alebo počet pixlov, ktoré zodpovedajú nejakým dátam. Autori sa teda snažili čo najviac znížiť počet vizuálnych prvkov a ponechať len tie, ktoré skutočne nesú nejakú informáciu. 
 
-Na obrázku \ref{fig:boxplotmodif1} b) a c) vidíme dve z viacero riešení navrhnutých v knihe \textit{The Visual Display of Quantitative} \cite{Tufte83}, ktoré autor nazýva \textit{kvartilový graf}. Preceptuálne štúdie \cite{Stock} však ukázali, že tieto variácie sú výrazne menej presné ako originálny návrh.
+%Na obrázku \ref{fig:boxplotmodif1} b) a c) vidíme dve z viacero riešení navrhnutých v knihe \textit{The Visual Display of Quantitative} \cite{Tufte83}, ktoré autor nazýva \textit{kvartilový graf}. Preceptuálne štúdie \cite{Stock} však ukázali, že tieto variácie sú výrazne menej presné ako originálny návrh.
 
-Návrh d) ukazuje skrátený krabicový diagram \cite{VisualSummaryPotter}, ktorý sa taktiež snažil zredukovať množstvo okupovaného vizuálneho priestoru. Rozdielom je však to, že jeho účelom nie je existovať samostatne, ale ako súčasť \mbox{\textit{summary plot}-u}, ktorý zahŕňa histogram a ďalšie glify znázorňujúce informácie ako priemer, štandardná odchylka alebo koeficient asymetrie.
+%Návrh d) ukazuje skrátený krabicový diagram \cite{VisualSummaryPotter}, ktorý sa taktiež snažil zredukovať množstvo okupovaného vizuálneho priestoru. Rozdielom je však to, že jeho účelom nie je existovať samostatne, ale ako súčasť \mbox{\textit{summary plot}-u}, ktorý zahŕňa histogram a ďalšie glify znázorňujúce informácie ako priemer, štandardná odchylka alebo koeficient asymetrie.
 
-Obrázok \ref{fig:boxplotmodif1} e) znázorňuje predchodcu krabicového diagramu \textit{range} graf alebo tiež nazývaný \mbox{\textit{range-bar}} graf, ktorého autorkou je Mary Eleanor Spear \cite{Spear}.
+%Obrázok \ref{fig:boxplotmodif1} e) znázorňuje predchodcu krabicového diagramu \textit{range} graf alebo tiež nazývaný \mbox{\textit{range-bar}} graf, ktorého autorkou je Mary Eleanor Spear \cite{Spear}.
 
-Ako posledný príklad vizuálnej modifikácie uvádzame pridanie farieb do krabicového diagramu. Táto farebná variácia uchováva tvar diagramu, avšak časť nad mediánom je zafarbená inou farbou ako hodnoty pod. Autori článku odporúčajú červenú a modrú farbu, tak ako na obrázku \ref{fig:boxplotmodif1} f). Cieľom tohto prístupu bolo chápať krabicový diagram ako jednu percepčnú jednotku a nahradiť 5 symbolov jedným, čím sa mala znížiť námaha pozorovateľa pri analýze a taktiež uľahčiť porovnávanie viacerých diagramov navzájom. 
+%Ako posledný príklad vizuálnej modifikácie uvádzame pridanie farieb do krabicového diagramu. Táto farebná variácia uchováva tvar diagramu, avšak časť nad mediánom je zafarbená inou farbou ako hodnoty pod. Autori článku odporúčajú červenú a modrú farbu, tak ako na obrázku \ref{fig:boxplotmodif1} f). Cieľom tohto prístupu bolo chápať krabicový diagram ako jednu percepčnú jednotku a nahradiť 5 symbolov jedným, čím sa mala znížiť námaha pozorovateľa pri analýze a taktiež uľahčiť porovnávanie viacerých diagramov navzájom. 
 
-\begin{figure}
-	\centering
-	\includegraphics[width = 6in]{boxplot3}
-	\caption{Krabicové diagramy s pridanou informáciou a) Krabicový diagram s variabilnou šírkou \cite{McGill} b) Vrúbkovaný krabicový diagram \cite{McGill} c) Krabicový diagram s informáciou o šikmosti dát \cite{Chamnein}}
-	\label{fig:boxplotmodif2}
-\end{figure}
+%\begin{figure}
+%	\centering
+%	\includegraphics[width = 6in]{boxplot3}
+%	\caption{Krabicové diagramy s pridanou informáciou a) Krabicový diagram s variabilnou šírkou \cite{McGill} b) Vrúbkovaný krabicový diagram \cite{McGill} c) Krabicový diagram s informáciou o šikmosti dát \cite{Chamnein}}
+%	\label{fig:boxplotmodif2}
+%\end{figure}
 
-\paragraph{}
-{\large \textbf{\textit{K}}}rabicový diagram umožňuje svojim vzhľadom zakódovanie ďalšej informácie do grafu. Na obrázku \ref{fig:boxplotmodif2} vidíme aspoň niektoré najčastejšie úpravy krabicového diagramu, ktoré dopĺňajú dodatočnú informáciu zmenou parametrov vizuálnych prvkov krabicového diagramu.
+%\paragraph{}
+%{\large \textbf{\textit{K}}}rabicový diagram umožňuje svojim vzhľadom zakódovanie ďalšej informácie do grafu. Na obrázku \ref{fig:boxplotmodif2} vidíme aspoň niektoré najčastejšie úpravy krabicového diagramu, ktoré dopĺňajú dodatočnú informáciu zmenou parametrov vizuálnych prvkov krabicového diagramu.
 
-Len rok po oficiálnom publikovaní krabicového diagramu vznikol článok \cite{McGill}, ktorý zhŕňa jeho tri najčastejšie používané modifikácie, z ktorých prvé dve môžme vidieť na obrázkoch \ref{fig:boxplotmodif2}a) a \ref{fig:boxplotmodif2}b) a tretí je ich kombináciou. V prvom prípade sa využíva šírka boxu na zakódovanie veľkosti množiny, ktorú skrýva za sebou diagram. Takýto graf sa nazýva \textit{Krabicový diagram s variabilnou šírkou}.  
-V druhom prípade ide o takzvaný \textit{Vrúbkovaný krabicový diagram}. V tomto grafe sú pridané \textit{vrúbky}, ktoré zhruba naznačujú ako výrazné sú rozdiely v miere spoľahlivosti rôznych dátových množín. 
+%Len rok po oficiálnom publikovaní krabicového diagramu vznikol článok \cite{McGill}, ktorý zhŕňa jeho tri najčastejšie používané modifikácie, z ktorých prvé dve môžme vidieť na obrázkoch \ref{fig:boxplotmodif2}a) a \ref{fig:boxplotmodif2}b) a tretí je ich kombináciou. V prvom prípade sa využíva šírka boxu na zakódovanie veľkosti množiny, ktorú skrýva za sebou diagram. Takýto graf sa nazýva \textit{Krabicový diagram s variabilnou šírkou}.  
+%V druhom prípade ide o takzvaný \textit{Vrúbkovaný krabicový diagram}. V tomto grafe sú pridané \textit{vrúbky}, ktoré zhruba naznačujú ako výrazné sú rozdiely v miere spoľahlivosti rôznych dátových množín. 
 
-V niektorých prípadoch krabicový diagram zakrýva skutočný tvar dát, teda jeho šikmosť alebo modalitu, keďže jeho vzhľad nabáda k tomu, aby si užívateľ myslel, že sú dát zacentrované na stred a unimodálne. V práci s názvom \textit{Can the Box Plot be Improved?} \cite{Chamnein} autor uvádza príklad kedy skutočne rôznorodé dáta generujú rovnaký krabicový diagram. Tento problém rieši elegantným a čistým spôsobom pridaním hrubej čiary na základe koeficientu asymetrickosti $ \gamma $. Na obrázku \ref{fig:boxplotmodif2}c) môžme vidieť zľava asymetrické dáta, na stred zarovnané dáta a bimodálne dáta.
+%V niektorých prípadoch krabicový diagram zakrýva skutočný tvar dát, teda jeho šikmosť alebo modalitu, keďže jeho vzhľad nabáda k tomu, aby si užívateľ myslel, že sú dát zacentrované na stred a unimodálne. V práci s názvom \textit{Can the Box Plot be Improved?} \cite{Chamnein} autor uvádza príklad kedy skutočne rôznorodé dáta generujú rovnaký krabicový diagram. Tento problém rieši elegantným a čistým spôsobom pridaním hrubej čiary na základe koeficientu asymetrickosti $ \gamma $. Na obrázku \ref{fig:boxplotmodif2}c) môžme vidieť zľava asymetrické dáta, na stred zarovnané dáta a bimodálne dáta.
 
-Krabicový diagram umožňuje mnoho ďalších rozšírení napríklad pridaním informácie o hustote dát (histogramový krabicový diagram, vázový diagram \cite{HistVasePlot} , huslový diagram \cite{ViolinPlot}), rozšírením pre viacrozmerné dáta (vrecový graf \cite{Bagplot}, 2D krabicový diagram \cite{Boxplot2D} ) alebo zobrazením hodnôt v inej súradnicovej sústave (napríklad polárnej - vejárový graf \cite{FanChart}). Opis týchto techník je však nad rámec tejto práce, preto ho tu ani nebudeme uvádzať.
+%Krabicový diagram umožňuje mnoho ďalších rozšírení napríklad pridaním informácie o hustote dát (histogramový krabicový diagram, vázový diagram \cite{HistVasePlot} , huslový diagram \cite{ViolinPlot}), rozšírením pre viacrozmerné dáta (vrecový graf \cite{Bagplot}, 2D krabicový diagram \cite{Boxplot2D} ) alebo zobrazením hodnôt v inej súradnicovej sústave (napríklad polárnej - vejárový graf \cite{FanChart}). Opis týchto techník je však nad rámec tejto práce, preto ho tu ani nebudeme uvádzať.
 
 \subsection{Úloha krabicového diagramu vo verifikácii}
 

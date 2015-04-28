@@ -11,29 +11,30 @@ Začiatkom 20. storočia sa o matematický prístup k predpovedaniu počasia naj
 
 Následný vývoj vo výpočtovej sile počítačov, používanie satelitných pozorovaní a vývoj samotnej meteorológie ako vedy zapríčinil, že je numerická predpoveď počasia (NWP) dnes najúspešnejším prístupom ako predpovedať počasie \cite{Golding}.  
 
-Odvtedy vzniklo veľké množstvo modelov, ako sú napríklad GFS, NAM, RUC, WRF, SREF, GEFS, ECMWF, ALADIN a mnoho ďalších. Naša práca sa zameriava konkrétne na verifikáciu modelu \textit{WRF}. Taktiež pokračuje neustály vývoj aj vďaka novým modelovacím technikám, novým parametrizáciám, a zvyšovaniu výkonu výpočtových zdrojov.
+Odvtedy vzniklo veľké množstvo modelov, ako sú napríklad GFS, NAM, RUC, WRF, SREF, GEFS, ECMWF, ALADIN a mnoho ďalších. Naša práca sa zameriava konkrétne na verifikáciu modelu \textit{WRF}, avšak použitie nášho nástroja je univerzálne vďaka spoločnému formátu vystupujúceho z modelov - \textit{Gribu}.
 
-\begin{figure}
-	\centering
-	\includegraphics[width = 3.8in]{ForecastModelDiagramNew}
-	\caption{Flowchart systému predpovedného model počasia od edukačného programu The COMET \cite{Comet}. Na obrázku je zvýraznená časť, ktorej sa venujeme v tejto práci.}
-	\label{fig:fcstmodel}
-\end{figure}
+%Taktiež pokračuje neustály vývoj aj vďaka novým modelovacím technikám, novým parametrizáciám, a zvyšovaniu výkonu výpočtových zdrojov.
 
-Ako môžeme vidieť na obrázku \ref{fig:fcstmodel} proces predpovedania počasia má okrem numerického modelu, ktorý je jej jadrom, aj iné časti. Ako príklad môžme spomenúť získavanie vstupných dát, ich predspracovanie, následné spracovanie, spracovanie výstupu a následne poskladanie samotnej predpovede. Cieľom nášho záujmu, celého procesu predpovedania, je \textit{verifikácia}. Ako môžme vidieť z obrázka, verifikácia vplýva na vyladenie parametrov modelu, avšak tento proces sa nedeje automaticky, ale vyžaduje prácu meteorológov a ich chápanie základných meteorologických princípov.
+%\begin{figure}
+%	\centering
+%	\includegraphics[width = 3.8in]{ForecastModelDiagramNew}
+%	\caption{Flowchart systému predpovedného model počasia od edukačného programu The COMET \cite{Comet}. Na obrázku je zvýraznená časť, ktorej sa venujeme v tejto práci.}
+%	\label{fig:fcstmodel}
+%\end{figure}
+
+%Ako môžeme vidieť na obrázku \ref{fig:fcstmodel} proces predpovedania počasia má okrem numerického modelu, ktorý je jej jadrom, aj iné časti. Ako príklad môžme spomenúť získavanie vstupných dát, ich predspracovanie, následné spracovanie, spracovanie výstupu a následne poskladanie samotnej predpovede. Cieľom nášho záujmu, celého procesu predpovedania, je \textit{verifikácia}. Ako môžme vidieť z obrázka, verifikácia vplýva na vyladenie parametrov modelu, avšak tento proces sa nedeje automaticky, ale vyžaduje prácu meteorológov a ich chápanie základných meteorologických princípov.
 
 \subsection{WRF model}
 \label{subsec:wrf}
-Ako sme už spomenuli \textit{The Weather Research and Forecasting} (WRF) model je \textit{numerická predpoveď počasia} (NWP) a systém atmosferickej simulácie.
+Ako sme už spomenuli \textit{The Weather Research and Forecasting} (WRF) model je systém atmosferickej simulácie, ktorým sa realizuje \textit{numerická predpoveď počasia} (NWP).
 
-WRF je podporovaný, ako bežný nástroj pre univerzity, výskum a operačné komunity, pričom sa usiluje o splnenie všetkých ich požiadaviek súčasne.
-Vývoj WRF modelu bol snahou mnohých spoločností ako napríklad \textit{The National Center for Atmospheric Research’s} (NCAR), \textit{Mesoscale and Microscale
-Meteorology} (MMM), \textit{The National Oceanic and Atmospheric Administration’s} (NOAA) \textit{National Centers for Environmental Prediction} (NCEP) a \textit{Earth System Research Laboratory} (ESRL), oddelenie ministerstva obrany \textit{Air Force Weather Agency} (AFWA) a \textit{Naval
-Research Laboratory} (NRL), \textit{The Center for Analysis and Prediction of Storms} (CAPS) \cite{WRF}. 
+WRF je podporovaný, ako bežný nástroj pre univerzity, výskum a operatívne komunity, pričom sa usiluje o splnenie všetkých ich požiadaviek súčasne.
 
-WRF model je vhodný pre širokú škálu aplikácií od \textit{metódy vzdušných vírov} (Large Eddy Simulation - LES) až po globálne simulácie počasia. Takéto aplikácie vyžadujú numerické predpovede v reálnom čase, vývoj a štúdium asimilácie dát, výskum parametrizovanej fyziky ,modelovanie kvality ovzdušia a idealizované simulácie, čo všetko WRF model spĺňa.
+%Vývoj WRF modelu bol snahou mnohých spoločností ako napríklad \textit{The National Center for Atmospheric Research’s} (NCAR), \textit{Mesoscale and Microscale Meteorology} (MMM), \textit{The National Oceanic and Atmospheric Administration’s} (NOAA) \textit{National Centers for Environmental Prediction} (NCEP) a \textit{Earth System Research Laboratory} (ESRL), oddelenie ministerstva obrany \textit{Air Force Weather Agency} (AFWA) a \textit{Naval Research Laboratory} (NRL), \textit{The Center for Analysis and Prediction of Storms} (CAPS) \cite{WRF}. 
 
-V roku 2008 evidovala WRF viac ako 6000 užívateľov, no dnes (2015) eviduje viac ako 25000 užívateľov vo viac ako 130 krajinách sveta. Tieto fakty poukazujú na to, že WRF model má nie len veľkú základňu užívateľov, ale aj vývojárov a má v budúcnosti istotne svoje miesto a preto si myslíme, že sa oplatí investovať čas a úsilie do verifikácie tohto modelu.
+WRF model je vhodný pre širokú škálu aplikácií od simulácie jedného búrkového oblaku až po globálne predpovede počasia. Aplikácie modelu WRF vyžadujú numerické predpovede v reálnom čase, vývoj a štúdium asimilácie dát, výskum parametrizovanej fyziky, modelovanie kvality ovzdušia a idealizované simulácie.
+
+V roku 2008 mal model WRF viac ako 6000 užívateľov, no dnes (2015) je evidovaných viac ako 25000 užívateľov vo viac ako 130 krajinách sveta. Tieto fakty poukazujú na to, že WRF model má nie len veľkú základňu užívateľov, ale aj vývojárov\footnote{Aktívne na vývoji WRF pracuje mnoho ľudí, avšak zasahovať do kódu môže ktokoľvek, keďže je WRF \textit{opensource}.} a má v budúcnosti istotne svoje miesto a preto si myslíme, že sa oplatí investovať čas a úsilie do verifikácie tohto modelu.
 
 \section{Dáta}
 \label{sec:data}
@@ -46,23 +47,23 @@ Doteraz boli vyvinuté 3 verzie tohoto formátu od 0 po 2. Verzia 0 bola určen�
 
 Medzi verziami 1 a 2 nie sú žiadne rozdiely v obsahovej filozofii, preto popis obsahu gribovského formátu, ktorý tu uvádzame je spoločný pre obe tieto verzie. 
 \textit{Gribovský súbor} (ďalej iba \textit{Grib}) pozostáva z viacerých \textit{Gribovských záznamov}, pričom jeden záznam môže existovať ako samostatný Grib. Vďaka tomu je možné ľahko spájať Griby, a to tiež v ľubovoľnom poradí, bez toho, aby sme ich nejako poškodili. Samozrejme musí byť zachovaná homogenita, čo sa týka verzií Gribov, teda verziu 1 nemožno miešať s verziou 2 a naopak.
-Už samotný názov \textit{Gridded Binary} nám napovedá, že dáta sú usporiadané v pravidelnej mriežke. Každý Gribovský záznam obsahuje dvojrozmernú mriežku (zemepisná šírka x zemepisná dĺžka) hodnôt v určitom čase a vertikálnej hladine. Taktiež v hlavičke záznamu sa nachádzajú \textit{meta-informácie}, ktoré nám hovoria o aké dáta ide, teda o akú premennú sa jedná, čas predpovede, výškovú hladinu a podobne. Grib je zvyčajne z tohto dôvodu 2 až 5 rozmerná dátová štruktúra s veľkým množstvom veličín ako je napríklad teplota, tlak, relatívna vlhkosť, rosný bod, \textit{u} a \textit{v} súradnice vetra a ďalšie, ktoré sú definované v rôznych hladinách. Taktiež je dôležité povedať, že Grib zriedkakedy zachytáva povrch celej planéty, ale iba vymedzenú skúmanú oblasť - \textit{doménu}.
+Už samotný názov \textit{Gridded Binary} nám napovedá, že dáta sú usporiadané v pravidelnej mriežke. Každý Gribovský záznam obsahuje dvojrozmernú mriežku (zemepisná šírka x zemepisná dĺžka) hodnôt v určitom čase a vertikálnej hladine. Taktiež v hlavičke záznamu sa nachádzajú \textit{meta-informácie}, ktoré nám hovoria o aké dáta ide, teda o akú premennú sa jedná, čas predpovede, výškovú hladinu a podobne. Grib je zvyčajne z tohto dôvodu 2 až 5 rozmerná dátová štruktúra s veľkým množstvom veličín ako je napríklad teplota, tlak, relatívna vlhkosť, rosný bod, \textit{u} a \textit{v} súradnice vetra a ďalšie, ktoré sú definované v rôznych hladinách. Taktiež je dôležité povedať, že Grib môže zachytávať povrch celej planéty alebo iba vymedzenú skúmanú oblasť - \textit{doménu}.
 
 \subsection{Pozorované dáta}
-Pozorovania sa získavajú meraním priamo v teréne pomocou špecializovaných meracích zariadení, ktoré sú súčasťou meteo staníc. Každá stanica môže obsahovať iné vybavenie, ku príkladu teplomer, zrážkomer, barometer, vetromer a im podobné \cite{WeatherStation}, ktorými môžme zachytávať informácie o rôznych skúmaných veličinách. 
+Pozorovania sa získavajú meraním priamo v teréne pomocou špecializovaných meracích zariadení, ktoré sú súčasťou meteorologických staníc. Každá stanica môže obsahovať iné vybavenie, napríklad teplomer, zrážkomer, barometer, vetromer a im podobné \cite{WeatherStation}, ktorými môžme zachytávať informácie o rôznych skúmaných veličinách. 
 %http://www.weathergraphics.com/dl/obsman.pdf
 % http://en.wikipedia.org/wiki/Weather_station
 
-Majoritná časť meraní sa deje pri povrchu zeme priamo na meteo staniciach a nazývajú sa \textit{surface} merania. Tieto merania najlepšie popisujú dianie v oblasti najväčšieho záujmu (biosfére), avšak neobsahujú informáciu o dianí v iných výškových hladinách. Pozorovania týchto hladín sa dejú pomocou \textit{radiosondy}, ktorá je pripojená k meteo balónu alebo vypustená z lietadla smerom k zemi. Takéto pozorovania sa nazývajú \textit{upper air} merania.
+Majoritná časť meraní sa deje pri povrchu zeme priamo na meteorologických staniciach a nazývajú sa \textit{prízemné} (surface) merania. Tieto merania najlepšie popisujú dianie v oblasti najväčšieho záujmu (biosfére), avšak neobsahujú informáciu o dianí v iných výškových hladinách. Pozorovania týchto hladín sa dejú pomocou \textit{radiosondy}, ktorá je pripojená k meteo balónu alebo vypustená z lietadla smerom k zemi. Takéto pozorovania sa nazývajú \textit{aerologické} (upper air) merania.
 
 Narozdiel od predpovedaných dát, pozorované dáta nemajú štandardizovaný formát a zvyčajne sa ukladajú do databázy.
-Aby sme zhrnuli charakteristiku týchto dát, jedná sa o niekoľko meraných veličín, nameraných v konštantných časových krokoch - napríklad každú minútu alebo každú hodinu - v jednom konkrétnom geografickom bode a zvyčajne pri povrchu zeme, teda ak sa nejedná o upper air merania, ktoré sa uskutočňujú v štandardných výškových hladinách, ktoré sa merajú v hPa.
+Aby sme zhrnuli charakteristiku týchto dát, jedná sa o niekoľko meraných veličín, nameraných v konštantných časových krokoch - napríklad každú minútu alebo každú hodinu - v jednom konkrétnom geografickom bode a zvyčajne pri povrchu zeme, teda ak sa nejedná o aerologické merania, ktoré sa uskutočňujú v štandardných výškových hladinách (V meteorológii či letectve sú to hladiny konštantného tlaku). 
 
 \subsection{Párovanie dát}
 \label{subsec:pairing}
 Z predpovedného modelu a rovnako aj z merania získame veľké množstvo hodnôt. Aby sme mohli korektne porovnať predpovede s pozorovaniami, je nevyhnutné nájsť správne párovanie týchto hodnôt, teda zistiť, ktorú hodnotu porovnať s ktorou, aby sme získali zmysluplný výsledok.
 
-Vždy sa snažíme nájsť správne pozorovanie predpoveď a nie naopak.
+Vždy sa snažíme nájsť správne pozorovanie pre predpoveď a nie naopak.
 % Vzhľadom na charakter dát sa 
 % chceme skúmať vzťah predpovede s realitou a preto v párovaní musí byť zahrnutých čo najviac \textbf{meraných} hodnôt, ak nie všetky.
 Dôvodom je, že pre jedno pozorovanie existuje viacero predpovedí a taktiež usporadúvame hodnoty podľa predpovedných hodín a nie chronologicky podľa časovej známky.
@@ -74,7 +75,7 @@ Pre čas pozorovania, čas predpovede a výškovú hladinu existujú štandardy,
 
 V prípade polohy zo samozrejmých dôvodov neexistuje žiaden štandard a hustota mriežky v Gribe nemôže byť nikdy tak veľká, aby poloha našej stanice vždy dopadla na presný bod mriežky. Z tohoto dôvodu získavame hodnoty z mriežky z okolitých bodov a to dvoma metódami \textit{Point-to-Grid} a \textit{Grid-to-Point} \cite{IntroToVerif}, ktoré sú znázornené na obrázku \ref{fig:pointmethods}. Jedná sa vlastne o dve interpolačné metódy. Point-to-Grid predstavuje metódu \textit{najbližší sused} (\textit{Nearest Neighbour}) a Grid-to-Point \textit{bilineárnu interpolačnú metódu}. 
 
-Výber správnej metódy môže značne ovplyvniť výsledok. Dôvodom je, že môžu byť veľké rozdiely hodnôt v okolitých mrežových bodoch a tak, ak pomocou Point-To-Grid metódy získame nízku hodnotu, tak pomocou Grid-To-Point môžeme získať hodnotu omnoho väčšiu, vplyvom zvyšných troch bodov, ktoré vstúpili do interpolácie. Nemožno však jednoznačne povedať, ktorá z metód je lepšia, keďže obe môžu v istých prípadoch dávať lepšie výsledky. 
+Výber správnej metódy môže značne ovplyvniť výsledok. Dôvodom je, že môžu byť veľké rozdiely hodnôt v okolitých mrežových bodoch (napríklad v členitom teréne) a tak, ak pomocou Point-To-Grid metódy získame nízku hodnotu, tak pomocou Grid-To-Point môžeme získať hodnotu omnoho väčšiu, vplyvom zvyšných troch bodov, ktoré vstúpili do interpolácie. Nemožno však jednoznačne povedať, ktorá z metód je lepšia, keďže obe môžu v istých prípadoch dávať lepšie výsledky. 
 
 \begin{figure}
 	\centering
@@ -99,11 +100,11 @@ Metódy verifikácie sa delia podľa typu predpovede na 3 druhy \cite{RecommendO
 \end{easylist}
 
 \noindent Kategorické predpovede nám rozdeľujú udalosti, v prípade \textit{binárnej predpovede} do dvoch a, v prípade \textit{mnoho-kategorickej predpovede}, do viacero kategórií. 
-Binárne predpovede alebo inak áno/nie predpovede nám hovoria, či sa daná udalosť udiala alebo nie. Slúžia teda ako upozornenie na javy ako hmla, búrka, blesky, silný vietor a podobne. Na ich verifikáciu slúžia $ 2\times2 $ kontingenčné tabuľky, z ktorých možno počítať rôzne štatistiky. Mnoho-kategorické predpovede nám rozdeľujú udalosti do viacerých kategórií (zvyčajne 3-4), napríklad v prípade dažďa na: \textit{dážď}/\textit{sneženie}/\textit{mrznúci dážď}. 
+Binárne predpovede alebo inak áno/nie predpovede nám hovoria, či sa daná udalosť udiala alebo nie. Slúžia teda ako upozornenie na javy ako hmla, búrka, blesky, silný vietor a podobne. Na ich verifikáciu slúžia $ 2\times2 $ kontingenčné tabuľky, z ktorých možno počítať rôzne štatistiky. Mnoho-kategorické predpovede nám rozdeľujú udalosti do viacerých kategórií (zvyčajne 3-4), napríklad v prípade zrážok na: \textit{dážď}/\textit{sneženie}/\textit{mrznúci dážď}. 
 
 Pravdepodobnostné predpovede nám dávajú pravdepodobnosť výskytu nejakej udalosti hodnotami v intervale $ \langle0, 1\rangle $. Týmto nám umožňujú ľahkú konverziu medzi pravdepodobnostnými a kategorickými predpoveďami s použitím \textit{tresholdu}.
 
-V našej práci riešime verifikáciu spojitých premenných, ktorá zvyčajne poskytuje štatistiky určujúce ako veľmi sa daná predpoveď líši od pozorovania. Tieto štatistiky opisujeme v ďalšej sekcii tejto kapitoly.
+V našej práci riešime verifikáciu spojitých premenných, ktorá zvyčajne využíva štatistické metódy určujúce ako veľmi sa daná predpoveď líši od pozorovania. Tieto metódy opisujeme v ďalšej sekcii tejto kapitoly.
 
 \pagebreak
 
@@ -181,7 +182,7 @@ Pre \textit{MSE}:
 \[ \Phi(x) = \frac{x}{n} \]
 \[ \varepsilon(e) = e^2 \] 
 
-Ako sme spomenuli, je možné rozšírenie o ďalšie metódy a to napríklad o Brownov a Triggov \textit{signál chybných predikcií}, ktorý budeme označovať ako \textit{TS} z anglického \textit{Tracking Signal}. Tieto metódy sme vyššie nespomenuli, keďže sa v meteorologickej praxi nepoužívajú. Uvádzame ich však ako možné rozšírenie, keďže sú tieto metódy bežne používané pri verifikácii iných predpovedných modeloch, ako sú tie meteorologické.
+Ako sme spomenuli, je možné rozšírenie o ďalšie metódy a to napríklad o Brownov a Triggov \textit{signál chybných predikcií}, ktorý budeme označovať ako \textit{TS} z anglického \textit{Tracking Signal}. Tieto metódy sme vyššie nespomenuli, keďže sa v meteorologickej praxi nepoužívajú. Uvádzame ich však ako možné rozšírenie, keďže sú tieto metódy bežne používané pri verifikácii iných predpovedných modelov, ako sú tie meteorologické.
 
 \subsection{Medián absolútnych chýb}
 \label{subsec:mad}
