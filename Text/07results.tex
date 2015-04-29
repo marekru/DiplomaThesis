@@ -72,7 +72,7 @@ V prípade, že užívateľ potrebuje získať informáciu o veľkosti a aj smer
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 6.5in]{detail}
+	\includegraphics[width = 6in]{detail}
 	\caption{Zobrazenie RMSE, MFE, MAE a SD (Standard Deviation) na jednom grafe súčasne}
 	\label{fig:detail} 
 \end{figure}
@@ -82,18 +82,26 @@ V prípade, že užívateľ potrebuje získať informáciu o veľkosti a aj smer
 
 Súčasťou obrazovky vizualizácie je aj zobrazenie jednotlivých chýb, z ktorých sa počítali štatistiky, či už pomocou farebnej mapy alebo pomocou grafov pre vizualizáciu distribúcie chyby.
 
-Farebná mapa na obrázku \ref{fig:errors} nám dáva dobrý obraz o chybách v chronologicky zoradených predpovediach pre mesiac Február. Na tomto grafe si ľahko môžme všimnúť predpovede, ktoré sa nejakým spôsobom odlišujú od ostatných. Napríklad väčšina predpovedí podhodnocuje, ale predpoveď ABC vo väčšine nadhodnocuje, čo môže byť zapríčinené rôznymi vplyvmi. Taktiež si môžme všimnúť, že predpoveď ABC v okoli Xtej hodiny má výrazný výkyv hodnôt a naopak predpoveď ABC v okolí Ytej hodiny výrazne podhodnocuje.
+Farebná mapa na obrázku \ref{fig:errors} nám dáva dobrý obraz o chybách v chronologicky zoradených predpovediach pre mesiac Február. Na tomto grafe si môžme všimnúť niektoré predpovede, ktoré boli celkom úspešné - napríklad predpovede 4,5 a 12 majú chyby pomerne blízko 0, ale aj predpovede, ktoré sa nejakým spôsobom odlišujú od ostatných. Napríklad väčšina predpovedí podhodnocuje v hodinách 23-31, zatiaľ čo predpoveď 8 a 13 nadhodnocuje. Ďalej vidíme, že predpoveď 13 v okolí štvrtej hodiny má výrazný výkyv hodnôt a predpoveď 2 celkovo výrazne podhodnocuje.
+
+Tento typ vizualizácie odporúčame kombinovať s jedným z grafom distribúcie, ktoré sú na obrázku \ref{fig:distrib}. Konkrétne na funkčnom krabicovom diagrame (obrázok \ref{fig:distrib}c) je veľmi dobre vidieť tri predpovede, znázornené červenou prerušovanou čiarou, ktoré sa výrazne líšia od ostatných. Sú to už spomínané predpovede 2, 8 a 13. Výrazný oblúk v okolí tretej hodiny patrí výkyvu hodnôt pre predpoveď 13, ktorý je ľahké si objaviť v grafe na obrázku \ref{fig:errors}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 3.5in]{errors}
+	\caption{Farebná mapa chýb predpovedí pre mesiac Február. Na \mbox{$ y $-ovej} osi je poradie predpovede.}
+	\label{fig:errors} 
+\end{figure}
+
+Grafy na obrázkoch \ref{fig:distrib}a a \ref{fig:distrib}b nám podávajú rovnakú informáciu, avšak v rozdielnom detaile.
 
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 6.5in]{errors}
-	\caption{}
-	\label{fig:errors} 
+	\includegraphics[width = 4in]{distrib}
+	\caption{Grafy distribúcie pre mesiac Február a) Graf hustoty b) Pruhový kvantilový diagram c) Funkčný krabicový diagram}
+	\label{fig:distrib} 
 \end{figure}
-
-Odporúčame tento typ vizualizácie kombinovať s grafom distribúcie, ako je napríklad na obrázku \ref{fig:XYZ}.
-
 
   
 

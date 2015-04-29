@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{WCSDG{\etalchar{+}}08}
+\begin{thebibliography}{VWvH{\etalchar{+}}07}
 
 \bibitem[AA05]{Andrienko}
 Natalia Andrienko and Gennady Andrienko.
@@ -47,12 +47,6 @@ Ragnar Bade, Stefan Schlechtweg, and Silvia Miksch.
 \newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
   Computing Systems}, CHI '04, pages 105--112, New York, NY, USA, 2004. ACM.
 
-\bibitem[Car94]{Carr}
-Daniel~B. Carr.
-\newblock {A Colorful Variation On Box Plots}.
-\newblock {\em Statistical Computing \& Statistical Graphics Newsletter},
-  5(3):19--23, December 1994.
-
 \bibitem[Cas09]{ContinuousVerif}
 Barbara Casati.
 \newblock {\em Verification of continuous predictands}.
@@ -68,12 +62,6 @@ Yu-Hsuan Chan, Carlos~D. Correa, and Kwan-Liu Ma.
 Developmental~Testbed Center.
 \newblock {\em Model Evaluation Tools Version 5.0, User’s Guide 5.0}.
 \newblock DTC, September 2014.
-
-\bibitem[CM05]{Chamnein}
-Chamnein Choonpradub and Don McNeil.
-\newblock Can the box plot be improved?
-\newblock {\em Songklanakarin Journal of Science and Technology},
-  27(3):649--657, 2005.
 
 \bibitem[CWS{\etalchar{+}}08]{MET:MET52}
 B.~Casati, L.~J. Wilson, D.~B. Stephenson, P.~Nurmi, A.~Ghelli, M.~Pocernich,
@@ -98,11 +86,6 @@ Niklas Elmqvist and Ji~Soo Yi.
 Stephen Few.
 \newblock {Solutions to the Problem of Over-Plotting in Graphs}.
 \newblock {\em Perceptual Edge}, 2008.
-
-\bibitem[Fis10]{FanChart}
-Wolfram Fischer.
-\newblock {\em Neue Grafiken zur Datenvisualisierung}.
-\newblock Z I M – Zentrum für Informatik und wirtschaftliche Medizin., 2010.
 
 \bibitem[FJB12]{IntroToVerif}
 Tressa~L. Fowler, Tara~L .Jensen, and Barbara~G. Brown.
@@ -129,11 +112,6 @@ Professor~Brian Golding.
   \url{http://www.rmets.org/weather-and-climate/weather/weather-forecasting}.
 \newblock [Prístupné online: 6.12.2014].
 
-\bibitem[HN98]{ViolinPlot}
-Jerry~L. Hintze and Ray~D. Nelson.
-\newblock Violin plots: A box plot-density trace synergism.
-\newblock {\em The American Statistician}, 52(2):181--184, Máj 1998.
-
 \bibitem[Ins15]{SAS}
 SAS Institute.
 \newblock {Statistical Analysis Software}.
@@ -157,11 +135,6 @@ Waqas Javed, Bryan McDonnel, and Niklas Elmqvist.
 NCAR Research~Applications Laboratory.
 \newblock {\em Weather Forecast Verification Utilities}.
 \newblock NCAR, Júl 2014.
-
-\bibitem[LE11]{Comet}
-Dr.~Arlene Laing and Dr. Jenni-Louise Evans.
-\newblock {\em Introduction to Tropical Meteorology 2nd Edition}.
-\newblock UCAR, Október 2011.
 
 \bibitem[LPR09]{BandDepth}
 Sara López-Pintado and Juan Romo.
@@ -204,11 +177,6 @@ Michael~C. Minnotte and David~W. Scott.
   features.
 \newblock {\em Journal of Computational and Graphical Statistics}, 2:51--68,
   1993.
-
-\bibitem[MTL78]{McGill}
-Robert McGill, John~W. Tukey, and Wayne~A. Larsen.
-\newblock Variations of box plots.
-\newblock {\em The American Statistician}, 32(1):12--16, Február 1978.
 
 \bibitem[NCE14]{Products}
 NCEP.
@@ -259,11 +227,6 @@ K.~{Pearson}.
 \newblock {\em Royal Society of London Philosophical Transactions Series A},
   186:343--414, 1895.
 
-\bibitem[PKR07]{VisualSummaryPotter}
-Kristin Potter, Joe Kniss, and Richard Riesenfeld.
-\newblock Visual summary statistics.
-\newblock Technical Report UUCS-07-004, University of Utah, 2007.
-
 \bibitem[Poc11]{VerifSoft}
 Matthew Pocernich.
 \newblock {\em Forecast Verification: A Practitioner's Guide in Atmospheric
@@ -282,17 +245,6 @@ Murray Rosenblatt.
 \newblock {Remarks on Some Nonparametric Estimates of a Density Function}.
 \newblock {\em The Annals of Mathematical Statistics}, 27(3):832--837,
   September 1956.
-
-\bibitem[RRT99]{Bagplot}
-Peter~J. Rousseeuw, Ida Ruts, and John~W. Tukey.
-\newblock The bagplot: A bivariate boxplot.
-\newblock {\em The American Statistician}, 53(4):382--287, November 1999.
-
-\bibitem[SB91]{Stock}
-William Stock and John Behrens.
-\newblock {Box, Line, and Midgap Plots: Effects of Display Characteristics on
-  the Accuracy and Bias of Estimates of Whisker Length}.
-\newblock {\em Journal of Educational Statistics}, 16(1):1--20, 1991.
 
 \bibitem[Sco92]{Scott}
 David~W. Scott.
@@ -329,11 +281,6 @@ Exelis Visual~Information Solutions.
 \newblock \url{http://www.exelisvis.com/ProductsServices/IDL.aspx}, Marec 2015.
 \newblock [Prístupné online: 19.3. 2015].
 
-\bibitem[Spe52]{Spear}
-Mary~Eleanor Spear.
-\newblock {\em Charting Statistics}.
-\newblock McGraw-Hill Book Company, Inc., 1952.
-
 \bibitem[SS07]{OptBinSize}
 Hideaki Shimazaki and Shigeru Shinomoto.
 \newblock A method for selecting the bin size of a time histogram.
@@ -356,17 +303,6 @@ Inc. The~MathWorks.
 \newblock Matlab the language of technical computing.
 \newblock \url{http://www.mathworks.com/products/matlab/}, Marec 2015.
 \newblock [Prístupné online: 18.3. 2015].
-
-\bibitem[Ton05]{Boxplot2D}
-Phattrawan Tongkumchum.
-\newblock Two-dimensional box plot.
-\newblock {\em Songklanakarin Journal of Science and Technology},
-  27(4):859--866, 2005.
-
-\bibitem[Tuf83]{Tufte83}
-Edward~R. Tufte.
-\newblock {\em The Visual Display of Quantitative Information}.
-\newblock Graphics Press, Cheshire, Connecticut, 1983.
 
 \bibitem[Tuk77]{Tukey}
 John~W. Tukey.
@@ -414,12 +350,6 @@ Michelle~Q. Wang~Baldonado, Allison Woodruff, and Allan Kuchinsky.
 \newblock In {\em Proceedings of the Working Conference on Advanced Visual
   Interfaces}, AVI '00, pages 110--119, New York, NY, USA, 2000. ACM.
 
-\bibitem[WCSDG{\etalchar{+}}08]{WRF}
-Joseph B.~Klemp William C.~Skamarock, Jimy Dudhia, David~O. Gill, Dale~M.
-  Barker, Michael~G. Duda, Xiang-Yu Huang, Wei Wang, and Jordan~G. Powers.
-\newblock {\em A Description of the Advanced Research WRF Version 3}.
-\newblock National Center for Atmospheric Research, Jún 2008.
-
 \bibitem[Wei14]{StatMedian}
 Eric~W. Weisstein.
 \newblock {Statistical Median}.
@@ -439,10 +369,5 @@ WMO.
 Hadley Wickham and Lisa Stryjewski.
 \newblock 40 years of boxplots.
 \newblock Technical report, had.co.nz, 2012.
-
-\bibitem[Yoa88]{HistVasePlot}
-YoavBenjamini.
-\newblock Opening the box of a boxplot.
-\newblock {\em The American Statistician}, 42(4):257--262, November 1988.
 
 \end{thebibliography}
