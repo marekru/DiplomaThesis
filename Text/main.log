@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  28 APR 2015 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.24)  29 APR 2015 20:19
 entering extended mode
 **main.tex
 (main.tex
@@ -1144,14 +1144,15 @@ LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 30.
 File: ot1zi4.fd 2014/06/22 OT1/zi4 (Inconsolata)
 ))
 \tf@lof=\write4
- (main.lot)
+ (main.lot [8])
 \tf@lot=\write5
- (skratky.tex [8]
+ (skratky.tex
+[9]
 Overfull \hbox (1.20375pt too wide) in paragraph at lines 12--53
 \OT1/cmr/m/n/12 ECMWF 
  []
 
-) [9] (01intro.tex) (02verification.tex [1
+) [10] (01intro.tex) (02verification.tex [1
 
 ]
 Kapitola 1.
@@ -1164,13 +1165,13 @@ OT1/cmr/m/it/12 Ne-arest Ne-igh-bour\OT1/cmr/m/n/12 ) a Grid-to-Point \OT1/cmr/
 m/it/12 bi-linearnu in-ter-polacnu metodu\OT1/cmr/m/n/12 . 
  []
 
-<PointtoGrid.jpg, id=80, 669.50125pt x 556.0775pt>
+<PointtoGrid.jpg, id=83, 669.50125pt x 556.0775pt>
 File: PointtoGrid.jpg Graphic file (type jpg)
  <use PointtoGrid.jpg>
 Package pdftex.def Info: PointtoGrid.jpg used on input line 83.
 (pdftex.def)             Requested size: 180.67499pt x 150.06656pt.
 
-<GridToPoint.jpg, id=81, 669.50125pt x 556.0775pt>
+<GridToPoint.jpg, id=84, 669.50125pt x 556.0775pt>
 File: GridToPoint.jpg Graphic file (type jpg)
  <use GridToPoint.jpg>
 Package pdftex.def Info: GridToPoint.jpg used on input line 84.
@@ -1235,7 +1236,7 @@ Overfull \hbox (8.37859pt too wide) in paragraph at lines 19--20
 jsie pouzvanymi su [],
  []
 
-<scattervsqq.pdf, id=131, 765.35184pt x 275.41086pt>
+<scattervsqq.pdf, id=134, 765.35184pt x 275.41086pt>
 File: scattervsqq.pdf Graphic file (type pdf)
  <use scattervsqq.pdf>
 Package pdftex.def Info: scattervsqq.pdf used on input line 28.
@@ -1246,31 +1247,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-[22] <boxplot.pdf, id=174, 230.8625pt x 200.75pt>
+[22] <boxplot.pdf, id=178, 230.8625pt x 200.75pt>
 File: boxplot.pdf Graphic file (type pdf)
  <use boxplot.pdf>
 Package pdftex.def Info: boxplot.pdf used on input line 67.
 (pdftex.def)             Requested size: 252.94499pt x 219.95265pt.
- [23 <./boxplot.pdf>] <histogram.pdf, id=223, 371.3875pt x 341.275pt>
+ [23 <./boxplot.pdf>] <histogram.pdf, id=226, 371.3875pt x 341.275pt>
 File: histogram.pdf Graphic file (type pdf)
  <use histogram.pdf>
 Package pdftex.def Info: histogram.pdf used on input line 130.
 (pdftex.def)             Requested size: 180.67499pt x 166.02849pt.
 
-[24] <binsizehistogram.pdf, id=227, 220.825pt x 281.05pt>
+[24] <binsizehistogram.pdf, id=230, 220.825pt x 281.05pt>
 File: binsizehistogram.pdf Graphic file (type pdf)
 
 <use binsizehistogram.pdf>
 Package pdftex.def Info: binsizehistogram.pdf used on input line 145.
 (pdftex.def)             Requested size: 267.39877pt x 340.3417pt.
- [25 <./histogram.pdf>] [26 <./binsizehistogram.pdf>] <linegraph.pdf, id=294, 7
+ [25 <./histogram.pdf>] [26 <./binsizehistogram.pdf>] <linegraph.pdf, id=297, 7
 02.625pt x 552.0625pt>
 File: linegraph.pdf Graphic file (type pdf)
  <use linegraph.pdf>
 Package pdftex.def Info: linegraph.pdf used on input line 169.
 (pdftex.def)             Requested size: 216.8037pt x 108.40567pt.
  [27]
-[28 <./linegraph.pdf>] <taylortriangle.pdf, id=323, 250.9375pt x 170.6375pt>
+[28 <./linegraph.pdf>] <taylortriangle.pdf, id=327, 250.9375pt x 170.6375pt>
 File: taylortriangle.pdf Graphic file (type pdf)
 
 <use taylortriangle.pdf>
@@ -1283,7 +1284,7 @@ a jed-nej. Vzdia-le-nost[] od pociatocneho
  []
 
 [29 <./taylortriangle.pdf>]
-<taylordiagram.pdf, id=363, 451.6376pt x 451.08942pt>
+<taylordiagram.pdf, id=366, 451.6376pt x 451.08942pt>
 File: taylordiagram.pdf Graphic file (type pdf)
  <use taylordiagram.pdf>
 Package pdftex.def Info: taylordiagram.pdf used on input line 212.
@@ -1340,7 +1341,7 @@ Overfull \hbox (3.14964pt too wide) in paragraph at lines 122--123
  v dvoch prpadoch. Prvym prpadom
  []
 
-<colormap.pdf, id=404, 1017.07089pt x 246.1775pt>
+<colormap.pdf, id=407, 1017.07089pt x 246.1775pt>
 File: colormap.pdf Graphic file (type pdf)
  <use colormap.pdf>
 Package pdftex.def Info: colormap.pdf used on input line 127.
@@ -1350,19 +1351,19 @@ Overfull \hbox (18.16536pt too wide) in paragraph at lines 126--128
  []|  [] 
  []
 
-[38 <./colormap.pdf>] <multilinegraph.pdf, id=422, 542.025pt x 230.8625pt>
+[38 <./colormap.pdf>] <multilinegraph.pdf, id=425, 542.025pt x 230.8625pt>
 File: multilinegraph.pdf Graphic file (type pdf)
 
 <use multilinegraph.pdf>
 Package pdftex.def Info: multilinegraph.pdf used on input line 146.
 (pdftex.def)             Requested size: 361.34999pt x 153.91264pt.
  [39 <./multilinegraph.pdf>] [40] [41]
-<twotone.png, id=553, 291.708pt x 158.994pt>
+<twotone.png, id=556, 291.708pt x 158.994pt>
 File: twotone.png Graphic file (type png)
  <use twotone.png>
 Package pdftex.def Info: twotone.png used on input line 199.
 (pdftex.def)             Requested size: 252.94499pt x 137.86755pt.
- [42 <./twotone.png>] <densitycompare.png, id=557, 775.09575pt x 150.5625pt>
+ [42 <./twotone.png>] <densitycompare.png, id=560, 775.09575pt x 150.5625pt>
 File: densitycompare.png Graphic file (type png)
 
 <use densitycompare.png>
@@ -1373,7 +1374,7 @@ Overfull \hbox (29.01501pt too wide) in paragraph at lines 209--211
  []|  [] 
  []
 
-[43 <./densitycompare.png>] <stripe.png, id=563, 1125.20375pt x 330.23375pt>
+[43 <./densitycompare.png>] <stripe.png, id=566, 1125.20375pt x 330.23375pt>
 File: stripe.png Graphic file (type png)
 
 <use stripe.png>
@@ -1396,12 +1397,12 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 262.
 
-[45] [46] <band.pdf, id=573, 226.1323pt x 197.28076pt>
+[45] [46] <band.pdf, id=577, 226.1323pt x 197.28076pt>
 File: band.pdf Graphic file (type pdf)
  <use band.pdf>
 Package pdftex.def Info: band.pdf used on input line 302.
 (pdftex.def)             Requested size: 216.81pt x 189.15257pt.
- [47 <./band.pdf>] <functionalboxplot.pdf, id=595, 552.21106pt x 189.81013pt>
+ [47 <./band.pdf>] <functionalboxplot.pdf, id=598, 552.21106pt x 189.81013pt>
 File: functionalboxplot.pdf Graphic file (type pdf)
 
 <use functionalboxplot.pdf>
@@ -1412,7 +1413,7 @@ Overfull \hbox (21.78867pt too wide) in paragraph at lines 325--327
  []|  [] 
  []
 
-[48] <distributionmap.png, id=599, 1042.49475pt x 466.74374pt>
+[48] <distributionmap.png, id=602, 1042.49475pt x 466.74374pt>
 File: distributionmap.png Graphic file (type png)
 
 <use distributionmap.png>
@@ -1425,27 +1426,27 @@ zvo-lit[] inu fa-rebnu pa-letu. Konkretne
  []
 
 [50 <./distributionmap.png>]
-<colorpalettes.pdf, id=644, 476.57773pt x 85.95735pt>
+<colorpalettes.pdf, id=647, 476.57773pt x 85.95735pt>
 File: colorpalettes.pdf Graphic file (type pdf)
  <use colorpalettes.pdf>
 Package pdftex.def Info: colorpalettes.pdf used on input line 374.
 (pdftex.def)             Requested size: 361.34999pt x 65.1761pt.
 
 [51 <./colorpalettes.pdf>]
-<designicons.pdf, id=671, 1154.3125pt x 800.42336pt>
+<designicons.pdf, id=674, 1154.3125pt x 800.42336pt>
 File: designicons.pdf Graphic file (type pdf)
  <use designicons.pdf>
 Package pdftex.def Info: designicons.pdf used on input line 405.
 (pdftex.def)             Requested size: 325.215pt x 225.50934pt.
 
-[52] <multilevellayout.pdf, id=675, 1023.825pt x 983.675pt>
+[52] <multilevellayout.pdf, id=679, 1023.825pt x 983.675pt>
 File: multilevellayout.pdf Graphic file (type pdf)
 
 <use multilevellayout.pdf>
 Package pdftex.def Info: multilevellayout.pdf used on input line 429.
 (pdftex.def)             Requested size: 252.94499pt x 243.02129pt.
  [53 <./designicons.pdf>]
-<flatlayout.pdf, id=722, 732.7375pt x 742.775pt>
+<flatlayout.pdf, id=725, 732.7375pt x 742.775pt>
 File: flatlayout.pdf Graphic file (type pdf)
  <use flatlayout.pdf>
 Package pdftex.def Info: flatlayout.pdf used on input line 446.
@@ -1461,13 +1462,13 @@ ili os-tatne prvky roz-miest-nit[] odvjajuc
 Kapitola 5.
 [56
 
-] <system.pdf, id=806, 652.4375pt x 381.425pt>
+] <system.pdf, id=809, 652.4375pt x 381.425pt>
 File: system.pdf Graphic file (type pdf)
  <use system.pdf>
 Package pdftex.def Info: system.pdf used on input line 16.
 (pdftex.def)             Requested size: 361.34999pt x 211.25687pt.
 
-<pipeline.png, id=807, 524.71031pt x 163.3603pt>
+<pipeline.png, id=810, 524.71031pt x 163.3603pt>
 File: pipeline.png Graphic file (type png)
  <use pipeline.png>
 Package pdftex.def Info: pipeline.png used on input line 27.
@@ -1478,20 +1479,20 @@ Overfull \hbox (10.44656pt too wide) in paragraph at lines 56--57
  sme sa snazili, aby bolo uzvatel[]ovi
  []
 
-<dataextractor.pdf, id=851, 371.3875pt x 138.5175pt>
+<dataextractor.pdf, id=854, 371.3875pt x 138.5175pt>
 File: dataextractor.pdf Graphic file (type pdf)
  <use dataextractor.pdf>
 Package pdftex.def Info: dataextractor.pdf used on input line 70.
 (pdftex.def)             Requested size: 433.62pt x 161.73297pt.
 
-[60] [61 <./dataextractor.pdf>] <stats.pdf, id=874, 376.65909pt x 138.55391pt>
+[60] [61 <./dataextractor.pdf>] <stats.pdf, id=877, 376.65909pt x 138.55391pt>
 File: stats.pdf Graphic file (type pdf)
 
 <use stats.pdf>
 Package pdftex.def Info: stats.pdf used on input line 85.
 (pdftex.def)             Requested size: 361.34999pt x 132.92143pt.
  [62 <./stats.pdf>]
-<tree.pdf, id=1030, 732.97086pt x 226.57588pt>
+<tree.pdf, id=1033, 732.97086pt x 226.57588pt>
 File: tree.pdf Graphic file (type pdf)
  <use tree.pdf>
 Package pdftex.def Info: tree.pdf used on input line 116.
@@ -1513,23 +1514,54 @@ Overfull \hbox (16.6001pt too wide) in paragraph at lines 45--46
 ko-jive, ked[]ze aj neskusen uzvatelia
  []
 
-<resultchart.pdf, id=1045, 541.82423pt x 384.23549pt>
+<resultchart.pdf, id=1049, 541.82423pt x 384.23549pt>
 File: resultchart.pdf Graphic file (type pdf)
  <use resultchart.pdf>
 Package pdftex.def Info: resultchart.pdf used on input line 49.
 (pdftex.def)             Requested size: 361.34999pt x 256.25212pt.
-)
-(08conclusion.tex [65] [66 <./resultchart.pdf>]
+
+[65] [66 <./resultchart.pdf>] <overview.png, id=1077, 1108.14pt x 850.377pt>
+File: overview.png Graphic file (type png)
+
+<use overview.png>
+Package pdftex.def Info: overview.png used on input line 66.
+(pdftex.def)             Requested size: 361.34999pt x 277.29053pt.
+ <detail.png, id=1078, 798.5835pt x 189.1065pt>
+File: detail.png Graphic file (type png)
+
+<use detail.png>
+Package pdftex.def Info: detail.png used on input line 75.
+(pdftex.def)             Requested size: 469.75499pt x 111.24002pt.
+
+Overfull \hbox (11.95013pt too wide) in paragraph at lines 75--76
+ [][] 
+ []
+
+[67 <./overview.png>] <errors.png, id=1082, 458.9145pt x 325.215pt>
+File: errors.png Graphic file (type png)
+
+<use errors.png>
+Package pdftex.def Info: errors.png used on input line 90.
+(pdftex.def)             Requested size: 469.75499pt x 332.90091pt.
+
+Overfull \hbox (11.95013pt too wide) in paragraph at lines 90--91
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:XYZ' on page 68 undefined on input line 95.
+
+) (08conclusion.tex [68 <./detail.png>] [69 <./errors.png>]
 Overfull \hbox (1.8112pt too wide) in paragraph at lines 4--5
 \OT1/cmr/m/n/12 statisticke metody na me-ra-nie chyby pred-po-vede a na-vrhl
 i sme sp^osob vseobecneho vypoctu
  []
 
-[67
+[70
 
-]) (attachments.tex [68]
+]) (attachments.tex [71]
 Dodatok A.
-<gui.png, id=1080, 1274.7625pt x 893.3375pt>
+<gui.png, id=1096, 1274.7625pt x 893.3375pt>
 File: gui.png Graphic file (type png)
  <use gui.png>
 Package pdftex.def Info: gui.png used on input line 7.
@@ -1544,7 +1576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-<testform.pdf, id=1081, 597.23125pt x 845.1575pt>
+<testform.pdf, id=1097, 597.23125pt x 845.1575pt>
 File: testform.pdf Graphic file (type pdf)
  <use testform.pdf>
 Package pdftex.def Info: testform.pdf used on input line 14.
@@ -1559,43 +1591,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--17
 
  []
 
-[69
+[72
 
  <./gui.png (PNG copy)>]
 Overfull \vbox (194.94461pt too high) has occurred while \output is active []
 
 
-[70 <./testform.pdf>]) (main.bbl [71] [72
+[73 <./testform.pdf>]) (main.bbl [74] [75
 
-] [73] [74] [75] [76] [77] [78])
-[79] (main.aux) ) 
+] [76] [77] [78] [79] [80] [81])
+[82] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 11989 strings out of 493698
- 157797 string characters out of 3151686
- 259335 words of memory out of 3000000
- 15014 multiletter control sequences out of 15000+200000
+ 12008 strings out of 493698
+ 158061 string characters out of 3151686
+ 259368 words of memory out of 3000000
+ 15030 multiletter control sequences out of 15000+200000
  23704 words of font info for 90 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,19n,47p,1368b,1204s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\marekru\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\tcrm1200.pk>{C:/miktex/fonts/enc/dvips/inconsolata/i4-ot1-0.en
-c}<C:/miktex/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/miktex/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/miktex/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/miktex/
-fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/miktex/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/mikte
-x/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/miktex/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/miktex/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/miktex/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/miktex/font
-s/type1/public/amsfonts/cm/cmr8.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/miktex/fonts/
-type1/public/amsfonts/cm/cmti10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/c
-mti12.pfb><C:/miktex/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/miktex/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (93 pages, 4563660 bytes).
+ <C:\Users\marekru\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\tcrm1200.pk>{C:/miktex/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}<C:/miktex/fo
+nts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/miktex/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/miktex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/miktex/fonts/type1/pub
+lic/amsfonts/cm/cmcsc10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><C:/miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/miktex/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/miktex/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
+:/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/miktex/fonts/type1/public/
+amsfonts/cm/cmr8.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/m
+iktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/miktex/fonts/type1/public/am
+sfonts/cm/cmti10.pfb><C:/miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/m
+iktex/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/miktex/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (97 pages, 4701380 bytes).
 PDF statistics:
- 1206 PDF objects out of 1440 (max. 8388607)
+ 1222 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

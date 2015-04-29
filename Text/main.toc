@@ -81,10 +81,12 @@
 \contentsline {subsection}{\numberline {6.1.1}Testovacia proced\IeC {\'u}ra}{64}
 \contentsline {subsection}{\numberline {6.1.2}V\IeC {\'y}sledky testovania}{64}
 \contentsline {section}{\numberline {6.2}Demon\IeC {\v s}tr\IeC {\'a}cia}{66}
-\contentsline {chapter}{Z\IeC {\'a}ver}{67}
-\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{67}
-\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{68}
-\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{69}
-\contentsline {section}{\numberline {A.1}GUI}{69}
-\contentsline {section}{\numberline {A.2}Testovac\IeC {\'\i } formul\IeC {\'a}r}{70}
-\contentsline {section}{\numberline {A.3}CD}{71}
+\contentsline {subsection}{\numberline {6.2.1}\IeC {\v S}tatistiky}{66}
+\contentsline {subsection}{\numberline {6.2.2}Chyby}{67}
+\contentsline {chapter}{Z\IeC {\'a}ver}{70}
+\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{70}
+\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{71}
+\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{72}
+\contentsline {section}{\numberline {A.1}GUI}{72}
+\contentsline {section}{\numberline {A.2}Testovac\IeC {\'\i } formul\IeC {\'a}r}{73}
+\contentsline {section}{\numberline {A.3}CD}{74}

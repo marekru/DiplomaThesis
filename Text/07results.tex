@@ -55,19 +55,42 @@ Výsledky nášho testovania považujeme celkovo za uspokojivé, keďže aj nesk
 V tejto časti chceme demonštrovať príklad analýzy fungovania predpovedného modelu pomocou nami navrhnutých techník vizualizácie. Rovnako ako pri testovaní vizualizácie aj tu sme použili predpovedané dáta z modelu WRF. Konkrétne sa jednalo o tlak pri povrchu zeme v hektopaskaloch.
 
 \subsection{Štatistiky}
-Na obrázku \ref{fig:XYZ}a môžme vidieť farebnú mapu (Prehľad) zobrazujúcu RMSE pre celý rok 2012. Ako už vieme zo sekcie \ref{sec:errormeasurement}, RMSE nadobúda iba kladné hodnoty a teda nehovorí nič o smeru chyby, ale iba o jej veľkosti. 
+Na obrázku \ref{fig:overview}a môžme vidieť farebnú mapu (Prehľad) zobrazujúcu RMSE pre celý rok 2012. Ako už vieme zo sekcie \ref{sec:errormeasurement}, RMSE nadobúda iba kladné hodnoty a teda nehovorí nič o smeru chyby, ale iba o jej veľkosti. 
 
 Z daného obrázka ľahko vyčítať niektoré zaujímavé vzory. Ku príkladu je veľmi dobre vidno, že model predpovedá najlepšie v okolí šiestej hodiny predpovede a v okolí poludnia zaznamenávame prudký pokles presnosti predpovedí. Fakt, že model predpovedá najlepšie až okolo šiestej hodiny a nie ihneď na začiatku predpovede trocha nabúra náš predpoklad, že smerom do budúcnosti sa predpoveď zhoršuje. Tu sa potvrdzuje dôležitosť vizualizácie, ktorá slúži nie len na to, aby sme \textit{zistili očakávané}, ale aj \textit{objavili neočakávané}.
 
-Na obrázku \ref{fig:XYZ}b máme zobrazenú priemernú chybu (MFE), ktorá sa počítala z rovnakých dát ako RMSE na obrázku \ref{fig:XYZ}a. Na tomto grafe je ihneď vidieť to, či model podhodnocuje alebo nadhodnocuje predpovede. Ako vidíme väčšina grafu je zafarbená na modro, čo značí záporné hodnoty, a teda podhodnotenie predpovedí. Taktiež vďaka dobre zvolenej farebnej škále môžme vidieť, že niektoré hodnoty (napríklad ...) sú kladné, avšak stále blízko nuly.
+Na obrázku \ref{fig:overview}b máme zobrazenú priemernú chybu (MFE), ktorá sa počítala z rovnakých dát ako RMSE na obrázku \ref{fig:overview}a. Na tomto grafe je ihneď vidieť to, či model podhodnocuje alebo nadhodnocuje predpovede. Ako vidíme väčšina grafu je zafarbená na modro, čo značí záporné hodnoty, a teda podhodnotenie predpovedí. Taktiež vďaka dobre zvolenej farebnej škále môžme vidieť, že niektoré hodnoty (napríklad 6 hodina v Januári) sú kladné, avšak stále blízko nuly.
 
-V prípade, že užívateľ potrebuje získať informáciu o veľkosti a aj smere chyby súčasne, po kliknutí na konkrétny mesiac sa mu zobrazia všetky vypočítané štatistiky súčasne (pozri obrázok \ref{fig:XYZ}). O aké štatistika sa jedná vidíme v \textit{tooltipe} podľa farebného rozlíšenia.
+\begin{figure}
+	\centering
+	\includegraphics[width = 5in]{overview}
+	\caption{a) Farebná mapa zobrazujúca RMSE b) Farebná mapa zobrazujúca MFE}
+	\label{fig:overview} 
+\end{figure}
+
+V prípade, že užívateľ potrebuje získať informáciu o veľkosti a aj smere chyby súčasne, po kliknutí na konkrétny mesiac sa mu zobrazia všetky vypočítané štatistiky súčasne (pozri obrázok \ref{fig:detail}). O aké štatistika sa jedná vidíme v \textit{tooltipe} podľa farebného rozlíšenia.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 6.5in]{detail}
+	\caption{Zobrazenie RMSE, MFE, MAE a SD (Standard Deviation) na jednom grafe súčasne}
+	\label{fig:detail} 
+\end{figure}
+
 
 \subsection{Chyby}
 
 Súčasťou obrazovky vizualizácie je aj zobrazenie jednotlivých chýb, z ktorých sa počítali štatistiky, či už pomocou farebnej mapy alebo pomocou grafov pre vizualizáciu distribúcie chyby.
 
-Farebná mapa na obrázku \ref{fig:XYZa} nám dáva dobrý obraz o chybách v chronologicky zoradených predpovediach pre mesiac ???. Na tomto grafe si ľahko môžme všimnúť predpovede, ktoré sa nejakým spôsobom odlišujú od ostatných. Napríklad väčšina predpovedí podhodnocuje, ale predpoveď ABC vo väčšine nadhodnocuje, čo môže byť zapríčinené rôznymi vplyvmi. Taktiež si môžme všimnúť, že predpoveď ABC v okoli Xtej hodiny má výrazný výkyv hodnôt a naopak predpoveď ABC v okolí Ytej hodiny výrazne podhodnocuje.
+Farebná mapa na obrázku \ref{fig:errors} nám dáva dobrý obraz o chybách v chronologicky zoradených predpovediach pre mesiac Február. Na tomto grafe si ľahko môžme všimnúť predpovede, ktoré sa nejakým spôsobom odlišujú od ostatných. Napríklad väčšina predpovedí podhodnocuje, ale predpoveď ABC vo väčšine nadhodnocuje, čo môže byť zapríčinené rôznymi vplyvmi. Taktiež si môžme všimnúť, že predpoveď ABC v okoli Xtej hodiny má výrazný výkyv hodnôt a naopak predpoveď ABC v okolí Ytej hodiny výrazne podhodnocuje.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 6.5in]{errors}
+	\caption{}
+	\label{fig:errors} 
+\end{figure}
 
 Odporúčame tento typ vizualizácie kombinovať s grafom distribúcie, ako je napríklad na obrázku \ref{fig:XYZ}.
 
