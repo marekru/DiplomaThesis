@@ -2,11 +2,10 @@ k A.1 by som napisal aj jednu vetu aspon
 Graficke uzivatelske rozhranie nasej apliakcie pozostava z
 ... V pravej casti si uzivatel navoli ...
 
-Nejaky obrazok, kde ukazeme prstikom a vidime ze aha tato predpoved bola
-zla. A na dalsom obrazku vidime predpoved a hla, ta bola dobra.
+------------------Nejaky obrazok, kde ukazeme prstikom a vidime ze aha tato predpoved bola zla. A na dalsom obrazku vidime predpoved a hla, ta bola dobra.
 
 
-praca ma strasne vela stran ale Testovanie a vysledky su na dvoch
+------------------praca ma strasne vela stran ale Testovanie a vysledky su na dvoch
 
 testovanie neporovnava nas system s inymi. otestuje sa ze nieco to robi
 ze je to dobre nie zle ale nevieme ci je to lepsie alebo horsie
@@ -17,11 +16,9 @@ nez u ostatnych.
 
 ------------------74 je prazdna strana
 
-v kapitole o testovani mi chyba nejaka previazanost s WRF modelom, nieco co by dokazovalo ze:
+------------------v kapitole o testovani mi chyba nejaka previazanost s WRF modelom, nieco co by dokazovalo ze:
 
-Pr·ca bude zah‡Úaù taktieû
-implement·ciu samotnej verifik·cie v˝sledkov konkrÈtneho predpovednÈho
-modelu (WRF).
+------------------Pr·ca bude zah‡Úaù taktieû implement·ciu samotnej verifik·cie v˝sledkov konkrÈtneho predpovednÈho modelu (WRF).
 
 
 Na testovanie mi napada napr. Unit test kde nejaku verif zratame pracne rucne v exceli a porovname. Ak sa rata to, ze som to ako expert v domene testoval a vratil na opravu veci co sa mi nezdali, tak to treba uviest.
@@ -33,7 +30,7 @@ takje to dobre"
 
 (a toto by tiez uviedol, i ked zase nejakych akademikov to moze popudit tak len na spravnom mieste, napr v zavere (nie v testovani))
 
-Tych verifikacii na WRF Dubai to uz zratalo dost, takze Marek urcite treba pridat priklady.
+-----------------Tych verifikacii na WRF Dubai to uz zratalo dost, takze Marek urcite treba pridat priklady.
 
 Nejaka skorsia verzia bola pouzita na posteri EGU (european geophysical union) vo viedni , porovnaval sa tam Wrf, ECMWF a merania, pavoln ti ho vie poslat  alebo jeho referenciu.
 

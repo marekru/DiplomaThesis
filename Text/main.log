@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  29 APR 2015 23:16
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.25)  30 APR 2015 13:03
 entering extended mode
 **main.tex
 (S:\School\DiplomaThesis\Text\main.tex
@@ -1537,64 +1537,67 @@ Package pdftex.def Info: tree.pdf used on input line 116.
 ) (S:\School\DiplomaThesis\Text\07results.tex [63 <S:/School/DiplomaThesis/Text
 /tree.pdf>]
 Kapitola 6.
+
+LaTeX Warning: Reference `fig:oldsys' on page 64 undefined on input line 9.
+
 [64
 
 ]
-Overfull \hbox (5.45728pt too wide) in paragraph at lines 41--42
-[]\OT1/cmr/m/n/12 Dlhe trva-nie ulohy 2 pri-su-dzu-jeme vyssej zlozitosti 
-ulohy oproti os-tatnym. Pre uzvatel[]ov
- []
-
-
-Overfull \hbox (16.6001pt too wide) in paragraph at lines 45--46
-[]\OT1/cmr/m/n/12 Vysledky nasho tes-to-va-nia povazujeme cel-kovo za uspo-
-ko-jive, ked[]ze aj neskusen uzvatelia
+Overfull \hbox (15.9982pt too wide) in paragraph at lines 20--21
+[]\OT1/cmr/m/n/12 Ked[]ze sme ro-bili po-rovnavacie tes-to-va-nie dvoch syst
+emov s rov-na-kou mnozinou uzvatel[]ov,
  []
 
 <resultchart.pdf, id=1049, 541.82423pt x 384.23549pt>
 File: resultchart.pdf Graphic file (type pdf)
  <use resultchart.pdf>
-Package pdftex.def Info: resultchart.pdf used on input line 49.
+Package pdftex.def Info: resultchart.pdf used on input line 60.
 (pdftex.def)             Requested size: 361.34999pt x 256.25212pt.
 
 [65] [66 <S:/School/DiplomaThesis/Text/resultchart.pdf>]
 <overview.png, id=1077, 1108.14pt x 850.377pt>
 File: overview.png Graphic file (type png)
  <use overview.png>
-Package pdftex.def Info: overview.png used on input line 66.
+Package pdftex.def Info: overview.png used on input line 77.
 (pdftex.def)             Requested size: 361.34999pt x 277.29053pt.
 
 <detail.png, id=1078, 798.5835pt x 189.1065pt>
 File: detail.png Graphic file (type png)
  <use detail.png>
-Package pdftex.def Info: detail.png used on input line 75.
+Package pdftex.def Info: detail.png used on input line 86.
 (pdftex.def)             Requested size: 433.62pt x 102.68443pt.
  [67 <S:/School/DiplomaThesis/Text/overview.png>]
 <errors.png, id=1082, 458.9145pt x 325.215pt>
 File: errors.png Graphic file (type png)
  <use errors.png>
-Package pdftex.def Info: errors.png used on input line 91.
+Package pdftex.def Info: errors.png used on input line 102.
 (pdftex.def)             Requested size: 252.94499pt x 179.2509pt.
 
 <distrib.png, id=1083, 696.201pt x 595.023pt>
 File: distrib.png Graphic file (type png)
  <use distrib.png>
-Package pdftex.def Info: distrib.png used on input line 101.
+Package pdftex.def Info: distrib.png used on input line 112.
 (pdftex.def)             Requested size: 289.07999pt x 247.06613pt.
+ [68 <S:/School/DiplomaThesis/Text/detail.png>] [69 <S:/School/DiplomaThesis/Te
+xt/errors.png> <S:/School/DiplomaThesis/Text/distrib.png>]
+<progress.png, id=1091, 981.6675pt x 220.4235pt>
+File: progress.png Graphic file (type png)
+ <use progress.png>
+Package pdftex.def Info: progress.png used on input line 125.
+(pdftex.def)             Requested size: 433.62pt x 97.36333pt.
 )
-(S:\School\DiplomaThesis\Text\08conclusion.tex [68 <S:/School/DiplomaThesis/Tex
-t/detail.png>] [69 <S:/School/DiplomaThesis/Text/errors.png> <S:/School/Diploma
-Thesis/Text/distrib.png>]
+(S:\School\DiplomaThesis\Text\08conclusion.tex [70 <S:/School/DiplomaThesis/Tex
+t/progress.png>]
 Overfull \hbox (1.8112pt too wide) in paragraph at lines 4--5
 \OT1/cmr/m/n/12 statisticke metody na me-ra-nie chyby pred-po-vede a na-vrhl
 i sme sp^osob vseobecneho vypoctu
  []
 
-[70
+[71
 
-]) (S:\School\DiplomaThesis\Text\attachments.tex [71]
+]) (S:\School\DiplomaThesis\Text\attachments.tex [72]
 Dodatok A.
-<gui.png, id=1098, 1274.7625pt x 893.3375pt>
+<gui.png, id=1103, 1274.7625pt x 893.3375pt>
 File: gui.png Graphic file (type png)
  <use gui.png>
 Package pdftex.def Info: gui.png used on input line 7.
@@ -1609,7 +1612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-<testform.pdf, id=1099, 597.23125pt x 845.1575pt>
+<testform.pdf, id=1104, 597.23125pt x 845.1575pt>
 File: testform.pdf Graphic file (type pdf)
  <use testform.pdf>
 Package pdftex.def Info: testform.pdf used on input line 14.
@@ -1624,50 +1627,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--17
 
  []
 
-[72
+[73
 
  <S:/School/DiplomaThesis/Text/gui.png (PNG copy)>]
 Overfull \vbox (194.94461pt too high) has occurred while \output is active []
 
 
-[73 <S:/School/DiplomaThesis/Text/testform.pdf>])
-(S:\School\DiplomaThesis\Text\main.bbl [74] [75
+[74 <S:/School/DiplomaThesis/Text/testform.pdf>])
+(S:\School\DiplomaThesis\Text\main.bbl [75] [76
 
-] [76] [77] [78] [79] [80])
-[81] (S:\School\DiplomaThesis\Text\main.aux) ) 
+] [77] [78] [79] [80] [81])
+[82] (S:\School\DiplomaThesis\Text\main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 11812 strings out of 493921
- 159799 string characters out of 3147293
- 249591 words of memory out of 3000000
- 14806 multiletter control sequences out of 15000+200000
+ 11819 strings out of 493921
+ 159904 string characters out of 3147293
+ 249602 words of memory out of 3000000
+ 14812 multiletter control sequences out of 15000+200000
  23304 words of font info for 88 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,19n,47p,1368b,1204s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/font
-s/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dv
-ips/inconsolata/fi4-ot1tt.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/i
-nconsolata/Inconsolata.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/euler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/cm-super/sfrm1200.pfb>
-Output written on main.pdf (96 pages, 4905520 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{C:/Pr
+ogram Files/MiKTeX 2.9/fonts/enc/dvips/inconsolata/fi4-ot1tt.enc}<C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (97 pages, 4984034 bytes).
 PDF statistics:
- 1218 PDF objects out of 1440 (max. 8388607)
+ 1224 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

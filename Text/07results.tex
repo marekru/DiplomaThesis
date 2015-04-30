@@ -4,45 +4,56 @@
 Pri testovaní vizualizácie sme postupovali podľa článku od Elmqvist et al. \cite{Patterns}, ktorý opisuje najpoužívanejšie vzory testovania vizualizácie a článok od Vogel et al., v ktorom autori testujú webovú vizualizáciu \cite{WebBasedUserTest}.
 
 \subsection{Testovacia procedúra}
-Testovanie prebiehalo prostredníctvom niekoľkých úloh, ktoré sme navrhli na základe špecifikácie požiadaviek na vizualizáciu uvedených v sekcii \ref{sec:spec}. 
+Testovanie prebiehalo v dvoch častiach prostredníctvom niekoľkých úloh, ktoré sme navrhli na základe špecifikácie požiadaviek na vizualizáciu uvedených v sekcii \ref{sec:spec}.
 
-Každému subjektu bola predstavená základná funkcionalita systému v krátkom 15 minútovom návode. Následne subjekt obdržal testovací formulár (pozri prílohu \ref{sec:testform}) obsahujúci 7 rôznych úloh, ktoré mal subjekt vykonať a po vykonaní každej z nich do formulára zapísať výsledok svojho skúmania.
+V prvej časti sme testovali náš systém a v časti druhej starý používaný spôsob pozostávajúci z čiarových diagramov pre jednotlivé mesiace v roku (pozri obrázok \ref{fig:oldsys}).
 
-Pri testovaní sme jednak vyhodnocovali správnosť odpovedí ale aj rýchlosť vykonania jednotlivých úloh. Taktiež sme dokumentovali interakciu s vizualizáciou počas vykonávania úlohy pomocou \textit{screen capture}.
+V oboch časti bola každému testovaciemu subjektu vysvetlená podstata verifikácie a predstavená základná funkcionalita systému v krátkom 15 minútovom návode. Následne subjekt obdržal testovací formulár (pozri prílohu \ref{sec:testform}) obsahujúci 7 rôznych úloh, ktoré mal subjekt vykonať a po vykonaní každej z nich do formulára zapísať výsledok svojho skúmania.
+
+Jednotlivé časti testovania boli vykonané následne za sebou na rovnakých testovacích subjektoch. Teda po testovaní prvého systému rovnaký subjekt testoval druhý systém.
+
+Pri testovaní sme jednak skúmali správnosť odpovedí ale aj rýchlosť vykonania jednotlivých úloh. Taktiež sme dokumentovali interakciu s vizualizáciou počas vykonávania úlohy pomocou \textit{screen capture}.
+
+\subsection{Testovacie dáta}
+Na testovanie sme použili reálne dáta predpovedí modelu \textbf{WRF} pokrývajúce celý Arabský poloostrov a pozorovania (merania) z konkrétnych meteorologických staníc v meste Dubaj.
+
+Keďže sme robili porovnávacie testovanie dvoch systémov s rovnakou množinou užívateľov, rozhodli sme sa pre rôzne systémy použiť rôzne dáta. Takýmto spôsobom sme sa snažili vylúčiť to, že subjekt použije už naučené poznatky z predošlého pokusu, keďže našou snahou bolo získať, čo najpravdivejšie výsledky testovania. 
+
+Náš systém sme testovali na predpovediach \textit{tlaku} z roku \textit{2012} pre Dubajskú stanicu \textit{Al Faqa}, zatiaľ čo starý systém sme testovali na predpovediach \textit{teploty} z roku \textit{2013} pre stanicu \textit{Jebel Ali}. Použili sme teda dáta pre rozdielnu veličinu, rok a stanicu.
 
 \subsection{Výsledky testovania}
 
 Vizualizáciu sme testovali na 6 subjektoch bez vyššieho meteorologického, matematického alebo informatického vzdelania. Taktiež žiaden užívateľ nemal skúsenosti s verifikáciou predpovedí a náš systém videl prvýkrát v živote. Všetky tieto faktory vplývali na výsledok nášho testu, keďže sme sa často stretali s nepochopením respektíve s pomalým pochopením zadania a teda čas riešenia úlohy sa značne natiahol.
 
-V tabuľke \ref{table:results} môžme vidieť, že všetci testovaní užívatelia vyriešili všetky úlohy správne a výsledky riešenia sa líšili iba v nameranom čase. V tabuľke je hrubým písmom zvýraznený najdlhší a najkratší priemerný čas pre dané úlohy. 
-V priemere každá úloha trvala asi pol minúty (26s) a všetky úlohy užívatelia vykonali v priemere za 3 minúty.
+%V tabuľke \ref{table:results} môžme vidieť, že všetci testovaní užívatelia vyriešili všetky úlohy správne a výsledky riešenia sa líšili iba v nameranom čase. V tabuľke je hrubým písmom zvýraznený najdlhší a najkratší priemerný čas pre dané úlohy. 
+%V priemere každá úloha trvala asi pol minúty (26s) a všetky úlohy užívatelia vykonali v priemere za 3 minúty.
 
 
 \begin{table}[h]
 \centering
 \caption{Výsledky testovania}
 \label{table:results}
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
-\rowcolor[HTML]{9B9B9B} \textbf{Úloha} & \textbf{Počet správnych} & \textbf{Počet nesprávnych} & \textbf{Priemerný čas} \\ \hline
-1              &            6             &             0              &         23.85s                       \\ \hline
-2              &            6             &             0              &         37.27s                      \\ \hline
-3              &            6             &             0              &         24.66s                      \\ \hline
-4              &            6             &             0              &         \textbf{40.36}s                      \\ \hline
-5              &            6             &             0              &         24.69s                      \\ \hline
-6              &            6             &             0              &         \textbf{9.73}s                      \\ \hline
-7              &            6             &             0              &         23.27s                       \\ \hline
-\rowcolor[HTML]{C0C0C0} \textbf{Suma}  &           \textbf{42}             &             \textbf{0}              &        \textbf{183.83}                      \\ \hline
+\rowcolor[HTML]{9B9B9B} \textbf{Úloha} & \textbf{Systém 1} & \textbf{Systém 2} & \textbf{Priemerný čas 1} & \textbf{Priemerný čas 2} \\ \hline
+1  &  6/6   &  ?/6 	 &  23.85s 		    &  44.81s   \\ \hline
+2  &  6/6   &\textemdash&  37.27s 		    &  \textemdash   \\ \hline
+3  &  6/6   &  ?/6   &  24.66s 		    &  \textbf{15.2s}   \\ \hline
+4  &  6/6   &  ?/6   &  \textbf{40.36}s &  48.69s   \\ \hline
+5  &  6/6   &\textemdash&  24.69s          &   \textemdash   \\ \hline
+6  &  6/6   &  ?/6   &  \textbf{9.73}s  &  73.37s   \\ \hline
+7  &  6/6   &  ?/6   &  23.27s          &  \textbf{127.53s}   \\ \hline
+\rowcolor[HTML]{C0C0C0} \textbf{Suma}  & \textbf{42/42} & \textbf{?/42} & \textbf{183.83s} & \textbf{312.5s}\\ \hline
 \end{tabular}
 \end{table}
 
-V grafe na obrázku \ref{fig:results} môžme lepšie vidieť sumárne porovnanie časov pre jednotlivé úlohy a užívateľov. Môžme si ľahko všimnúť, že úlohy 1, 2, 5 a 7 majú približne rovnaký priemerný čas, zatiaľ čo úlohy 2, 4 mali výrazne dlhšie trvanie a úloha 9 trvala v priemere najkratšie.
+%V grafe na obrázku \ref{fig:results} môžme lepšie vidieť sumárne porovnanie časov pre jednotlivé úlohy a užívateľov. Môžme si ľahko všimnúť, že úlohy 1, 2, 5 a 7 majú približne rovnaký priemerný čas, zatiaľ čo úlohy 2, 4 mali výrazne dlhšie trvanie a úloha 9 trvala v priemere najkratšie.
 
-Dlhé trvanie úlohy 2 prisudzujeme vyššej zložitosti úlohy oproti ostatným. Pre užívateľov bolo odhalenie outlierov pomerne rýchle, avšak väčšinu času zabralo užívateľom odčítanie z grafu o akú presnú hodnotu a predpoveď ide.
+%Dlhé trvanie úlohy 2 prisudzujeme vyššej zložitosti úlohy oproti ostatným. Pre užívateľov bolo odhalenie outlierov pomerne rýchle, avšak väčšinu času zabralo užívateľom odčítanie z grafu o akú presnú hodnotu a predpoveď ide.
 
-Pri úlohe 4 bolo problémom rýchle odčítanie z grafu, o aký dátum sa jedná. Dôvodom bolo nedobré označenie dátumov na \mbox{$ x $-ovej} škále, kedy sa jednotlivé dni v roku označujú číslami 0-364. Užívateľ uvidel konkrétny dátum, až keď nadišiel myšou na dané miesto, kedy sa mu presné hodnoty ukázali v \textit{tooltipe}. Lepším riešením by bola redšia škála s mesačnými intervalmi alebo konkrétnymi dátumami.
+%Pri úlohe 4 bolo problémom rýchle odčítanie z grafu, o aký dátum sa jedná. Dôvodom bolo nedobré označenie dátumov na \mbox{$ x $-ovej} škále, kedy sa jednotlivé dni v roku označujú číslami 0-364. Užívateľ uvidel konkrétny dátum, až keď nadišiel myšou na dané miesto, kedy sa mu presné hodnoty ukázali v \textit{tooltipe}. Lepším riešením by bola redšia škála s mesačnými intervalmi alebo konkrétnymi dátumami.
 
-Výsledky nášho testovania považujeme celkovo za uspokojivé, keďže aj neskúsení užívatelia dosahovali pri všetkých úlohách dobré časy. Taktiež nám tieto výsledky poukázali na slabiny našej práce, ktorými sú hlavne zlé alebo slabé označenia škál, grafov a legiend.
+%Výsledky nášho testovania považujeme celkovo za uspokojivé, keďže aj neskúsení užívatelia dosahovali pri všetkých úlohách dobré časy. Taktiež nám tieto výsledky poukázali na slabiny našej práce, ktorými sú hlavne zlé alebo slabé označenia škál, grafov a legiend.
 
 \begin{figure}
 	\centering
@@ -84,7 +95,7 @@ Súčasťou obrazovky vizualizácie je aj zobrazenie jednotlivých chýb, z ktor
 
 Farebná mapa na obrázku \ref{fig:errors} nám dáva dobrý obraz o chybách v chronologicky zoradených predpovediach pre mesiac Február. Na tomto grafe si môžme všimnúť niektoré predpovede, ktoré boli celkom úspešné - napríklad predpovede 4,5 a 12 majú chyby pomerne blízko 0, ale aj predpovede, ktoré sa nejakým spôsobom odlišujú od ostatných. Napríklad väčšina predpovedí podhodnocuje v hodinách 23-31, zatiaľ čo predpoveď 8 a 13 nadhodnocuje. Ďalej vidíme, že predpoveď 13 v okolí štvrtej hodiny má výrazný výkyv hodnôt a predpoveď 2 celkovo výrazne podhodnocuje.
 
-Tento typ vizualizácie odporúčame kombinovať s jedným z grafom distribúcie, ktoré sú na obrázku \ref{fig:distrib}. Konkrétne na funkčnom krabicovom diagrame (obrázok \ref{fig:distrib}c) je veľmi dobre vidieť tri predpovede, znázornené červenou prerušovanou čiarou, ktoré sa výrazne líšia od ostatných. Sú to už spomínané predpovede 2, 8 a 13. Výrazný oblúk v okolí tretej hodiny patrí výkyvu hodnôt pre predpoveď 13, ktorý je ľahké si objaviť v grafe na obrázku \ref{fig:errors}.
+Tento typ vizualizácie odporúčame kombinovať s jedným z grafom distribúcie, ktoré sú na obrázku \ref{fig:distrib}. Konkrétne na funkčnom krabicovom diagrame (obrázok \ref{fig:distrib}c) je veľmi dobre vidieť tri predpovede, znázornené červenou prerušovanou čiarou, ktoré sa výrazne líšia od ostatných. Sú to už spomínané predpovede 2, 8 a 13. Výrazný oblúk v okolí tretej hodiny patrí výkyvu hodnôt pre predpoveď 13, ktorý je ľahký objaviť aj v grafe na obrázku \ref{fig:errors}. Okrem tohto výkyvu nám graf ukazuje, že predpoveď 13 sa zvyšnou časťou krivky nachádza v centrálnej oblasti grafu, teda jej úspešnosť pre iné neskoršie hodiny je podobná ostatným predpovediam.
 
 \begin{figure}
 	\centering
@@ -93,7 +104,7 @@ Tento typ vizualizácie odporúčame kombinovať s jedným z grafom distribúcie
 	\label{fig:errors} 
 \end{figure}
 
-Grafy na obrázkoch \ref{fig:distrib}a a \ref{fig:distrib}b nám podávajú rovnakú informáciu, avšak v rozdielnom detaile.
+Grafy na obrázkoch \ref{fig:distrib}a a \ref{fig:distrib}b nám podávajú rovnakú informáciu, avšak v rozdielnom detaile. Na oboch grafoch vidíme, že v okolí deviatej predpovednej hodiny majú chyby najmenší rozptyl. Vidíme aj, že v okolí štvrtej hodiny je naopak rozptyl väčší, avšak najväčšia hustota chýb sa stále nachádza blízko priemernej hodnoty, teda napriek výkyvom sú štatistiky z týchto dát pomerne dôveryhodné. Z grafu na obrázku \ref{fig:distrib}a možno vyčítať, že chyby pre niektoré hodiny majú už takmer bimodálnu distribúciu - druhá a posledná hodina predpovede.
 
 
 \begin{figure}
@@ -103,5 +114,15 @@ Grafy na obrázkoch \ref{fig:distrib}a a \ref{fig:distrib}b nám podávajú rovn
 	\label{fig:distrib} 
 \end{figure}
 
-  
+\subsection{Ročný priebeh}
+Posledným grafom, ktorý sa objavil na našej vizualizačnej obrazovke verifikácie je čiarový graf pre ročný priebeh chýb predpovedí (pozri obrázok \ref{fig:progress}). Na \mbox{$ x $-ovej} osi grafu máme jednotlivé dni v roku (0-364) a na \mbox{$ y $-ovej} veľkosť chyby v hPa. Tento graf zobrazuje denné štatistiky šedou čiarou a červenou je vyhladená táto krivka pomocou kĺzavého priemeru.
 
+Na obrázku \ref{fig:progress} máme konkrétne RMSE. Celkovo môžme vidieť, že v strede roka (v lete) sú chyby najväčšie a niekedy v Novembri sú chyby najnižšie. Dôvodom však môžu byť aj chýbajúce dáta, keďže šedá krivka je podozrivo konštantná rovno na nule. Veľké skoky hodnôt môžme pozorovať aj niekdy začiatkom Februára respektíve koncom januára a taktiež aj koncom Decembra.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 6in]{progress}
+	\caption{Graf ročného priebehu chýb predpovedí. Šedou čiarou sú zobrazené denné štatistiky (konkrétne RMSE) a červenou je kĺzavý priemer vypočítaný z týchto štatistík. }
+	\label{fig:progress} 
+\end{figure}
