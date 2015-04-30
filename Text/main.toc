@@ -81,14 +81,16 @@
 \contentsline {subsection}{\numberline {6.1.1}Testovacia proced\IeC {\'u}ra}{64}
 \contentsline {subsection}{\numberline {6.1.2}Testovacie d\IeC {\'a}ta}{65}
 \contentsline {subsection}{\numberline {6.1.3}V\IeC {\'y}sledky testovania}{65}
-\contentsline {section}{\numberline {6.2}Demon\IeC {\v s}tr\IeC {\'a}cia}{66}
-\contentsline {subsection}{\numberline {6.2.1}\IeC {\v S}tatistiky}{66}
-\contentsline {subsection}{\numberline {6.2.2}Chyby}{67}
-\contentsline {subsection}{\numberline {6.2.3}Ro\IeC {\v c}n\IeC {\'y} priebeh}{70}
-\contentsline {chapter}{Z\IeC {\'a}ver}{71}
-\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{71}
-\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{72}
-\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{73}
-\contentsline {section}{\numberline {A.1}GUI}{73}
-\contentsline {section}{\numberline {A.2}Testovac\IeC {\'\i } formul\IeC {\'a}r}{74}
-\contentsline {section}{\numberline {A.3}CD}{75}
+\contentsline {subsubsection}{Zhodnotene v\IeC {\'y}sledkov n\IeC {\'a}\IeC {\v s}ho syst\IeC {\'e}mu}{67}
+\contentsline {section}{\numberline {6.2}Demon\IeC {\v s}tr\IeC {\'a}cia}{68}
+\contentsline {subsection}{\numberline {6.2.1}\IeC {\v S}tatistiky}{68}
+\contentsline {subsection}{\numberline {6.2.2}Chyby}{70}
+\contentsline {subsection}{\numberline {6.2.3}Ro\IeC {\v c}n\IeC {\'y} priebeh}{72}
+\contentsline {chapter}{Z\IeC {\'a}ver}{73}
+\contentsline {subsubsection}{Pr\IeC {\'\i }nos}{73}
+\contentsline {subsubsection}{Bud\IeC {\'u}ca pr\IeC {\'a}ca}{74}
+\contentsline {chapter}{\numberline {A}Pr\IeC {\'\i }lohy}{75}
+\contentsline {section}{\numberline {A.1}GUI}{75}
+\contentsline {section}{\numberline {A.2}Pr\IeC {\'\i }klad vizualiz\IeC {\'a}cie star\IeC {\'e}ho syst\IeC {\'e}mu}{76}
+\contentsline {section}{\numberline {A.3}Testovac\IeC {\'\i } formul\IeC {\'a}r}{77}
+\contentsline {section}{\numberline {A.4}CD}{78}

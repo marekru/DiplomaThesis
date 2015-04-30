@@ -6,13 +6,13 @@ Pri testovaní vizualizácie sme postupovali podľa článku od Elmqvist et al. 
 \subsection{Testovacia procedúra}
 Testovanie prebiehalo v dvoch častiach prostredníctvom niekoľkých úloh, ktoré sme navrhli na základe špecifikácie požiadaviek na vizualizáciu uvedených v sekcii \ref{sec:spec}.
 
-V prvej časti sme testovali náš systém a v časti druhej starý používaný spôsob pozostávajúci z čiarových diagramov pre jednotlivé mesiace v roku (pozri obrázok \ref{fig:oldsys}).
+V prvej časti sme testovali náš systém a v časti druhej starý používaný spôsob pozostávajúci z čiarových diagramov pre jednotlivé mesiace v roku (pozri prílohu \ref{sec:oldsys}).
 
 V oboch časti bola každému testovaciemu subjektu vysvetlená podstata verifikácie a predstavená základná funkcionalita systému v krátkom 15 minútovom návode. Následne subjekt obdržal testovací formulár (pozri prílohu \ref{sec:testform}) obsahujúci 7 rôznych úloh, ktoré mal subjekt vykonať a po vykonaní každej z nich do formulára zapísať výsledok svojho skúmania.
 
 Jednotlivé časti testovania boli vykonané následne za sebou na rovnakých testovacích subjektoch. Teda po testovaní prvého systému rovnaký subjekt testoval druhý systém.
 
-Pri testovaní sme jednak skúmali správnosť odpovedí ale aj rýchlosť vykonania jednotlivých úloh. Taktiež sme dokumentovali interakciu s vizualizáciou počas vykonávania úlohy pomocou \textit{screen capture}.
+Pri testovaní sme jednak skúmali správnosť odpovedí ale aj rýchlosť vykonania jednotlivých úloh.
 
 \subsection{Testovacie dáta}
 Na testovanie sme použili reálne dáta predpovedí modelu \textbf{WRF} pokrývajúce celý Arabský poloostrov a pozorovania (merania) z konkrétnych meteorologických staníc v meste Dubaj.
@@ -25,40 +25,55 @@ Náš systém sme testovali na predpovediach \textit{tlaku} z roku \textit{2012}
 
 Vizualizáciu sme testovali na 6 subjektoch bez vyššieho meteorologického, matematického alebo informatického vzdelania. Taktiež žiaden užívateľ nemal skúsenosti s verifikáciou predpovedí a náš systém videl prvýkrát v živote. Všetky tieto faktory vplývali na výsledok nášho testu, keďže sme sa často stretali s nepochopením respektíve s pomalým pochopením zadania a teda čas riešenia úlohy sa značne natiahol.
 
-%V tabuľke \ref{table:results} môžme vidieť, že všetci testovaní užívatelia vyriešili všetky úlohy správne a výsledky riešenia sa líšili iba v nameranom čase. V tabuľke je hrubým písmom zvýraznený najdlhší a najkratší priemerný čas pre dané úlohy. 
-%V priemere každá úloha trvala asi pol minúty (26s) a všetky úlohy užívatelia vykonali v priemere za 3 minúty.
-
-
 \begin{table}[h]
-\centering
-\caption{Výsledky testovania}
-\label{table:results}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\rowcolor[HTML]{9B9B9B} \textbf{Úloha} & \textbf{Systém 1} & \textbf{Systém 2} & \textbf{Priemerný čas 1} & \textbf{Priemerný čas 2} \\ \hline
-1  &  6/6   &  ?/6 	 &  23.85s 		    &  44.81s   \\ \hline
-2  &  6/6   &\textemdash&  37.27s 		    &  \textemdash   \\ \hline
-3  &  6/6   &  ?/6   &  24.66s 		    &  \textbf{15.2s}   \\ \hline
-4  &  6/6   &  ?/6   &  \textbf{40.36}s &  48.69s   \\ \hline
-5  &  6/6   &\textemdash&  24.69s          &   \textemdash   \\ \hline
-6  &  6/6   &  ?/6   &  \textbf{9.73}s  &  73.37s   \\ \hline
-7  &  6/6   &  ?/6   &  23.27s          &  \textbf{127.53s}   \\ \hline
-\rowcolor[HTML]{C0C0C0} \textbf{Suma}  & \textbf{42/42} & \textbf{?/42} & \textbf{183.83s} & \textbf{312.5s}\\ \hline
-\end{tabular}
+	\centering
+	\caption{Výsledky testovania}
+	\label{table:results}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} \textbf{Úloha} & \textbf{Systém 1} & \textbf{Systém 2} & \textbf{Priemerný čas 1} & \textbf{Priemerný čas 2} \\ \hline
+		1  &  6/6   &  3/6 	 &  23.85s 		    &  44.81s   \\ \hline
+		2  &  6/6   &\textemdash&  37.27s 		    &  \textemdash   \\ \hline
+		3  &  6/6   &  4/6   &  24.66s 		    &  \textbf{15.2s}   \\ \hline
+		4  &  6/6   &  2/6   &  \textbf{40.36}s &  48.69s   \\ \hline
+		5  &  6/6   &\textemdash&  24.69s          &   \textemdash   \\ \hline
+		6  &  6/6   &  4/6   &  \textbf{9.73}s  &  73.37s   \\ \hline
+		7  &  6/6   &  1/6   &  23.27s          &  \textbf{127.53s}   \\ \hline
+		\rowcolor[HTML]{C0C0C0} \textbf{Suma}  & \textbf{42/42} & \textbf{14/30} & \textbf{183.83s} & \textbf{312.5s}\\ \hline
+	\end{tabular}
 \end{table}
 
-%V grafe na obrázku \ref{fig:results} môžme lepšie vidieť sumárne porovnanie časov pre jednotlivé úlohy a užívateľov. Môžme si ľahko všimnúť, že úlohy 1, 2, 5 a 7 majú približne rovnaký priemerný čas, zatiaľ čo úlohy 2, 4 mali výrazne dlhšie trvanie a úloha 9 trvala v priemere najkratšie.
+\pagebreak
 
-%Dlhé trvanie úlohy 2 prisudzujeme vyššej zložitosti úlohy oproti ostatným. Pre užívateľov bolo odhalenie outlierov pomerne rýchle, avšak väčšinu času zabralo užívateľom odčítanie z grafu o akú presnú hodnotu a predpoveď ide.
+V tabuľke \ref{table:results} vidíme, že v našom systéme \mbox{(Systém 1)} boli všetci užívatelia stopercentne úspešný a teda všetky úlohy vyriešili správne. Avšak v starom systéme \mbox{(Systém 2)} bola úspešnosť len polovičná, pričom dve úlohy nebolo možné vyriešiť pomocou danej vizualizácie vôbec.
 
-%Pri úlohe 4 bolo problémom rýchle odčítanie z grafu, o aký dátum sa jedná. Dôvodom bolo nedobré označenie dátumov na \mbox{$ x $-ovej} škále, kedy sa jednotlivé dni v roku označujú číslami 0-364. Užívateľ uvidel konkrétny dátum, až keď nadišiel myšou na dané miesto, kedy sa mu presné hodnoty ukázali v \textit{tooltipe}. Lepším riešením by bola redšia škála s mesačnými intervalmi alebo konkrétnymi dátumami.
+Rovnako aj v nameraných časoch bol náš systém výrazne lepší. Celkový čas potrebný na riešenie 7 úloh zabral testovaným užívateľom v priemere 3 minúty, a vykonanie jednej zabralo v priemere asi pol minúty (26s), zatiaľ čo v starom systéme vyriešenie 5 úloh trvalo vyše 5 minút a každá úloha zabrala v priemere 1 minútu (62s).
 
-%Výsledky nášho testovania považujeme celkovo za uspokojivé, keďže aj neskúsení užívatelia dosahovali pri všetkých úlohách dobré časy. Taktiež nám tieto výsledky poukázali na slabiny našej práce, ktorými sú hlavne zlé alebo slabé označenia škál, grafov a legiend.
+V tabuľke sme tiež zvýraznili najdlhší a najkratší priemerný čas z vykonávaných úloh. Vidíme, že úloha, ktorá bola v našom systéme očividne najjednoduchšie riešiteľná mala v starom systéme druhý najhorší priemerný čas. Avšak úloha, ktorá zabrala v našom systéme najviac času trvala podobný (aj keď o niečo lepší) čas ako pre starý systém, nehladiac na to, že riešenie úlohy v starom systéme bolo pomerne neúspešné a to iba 2 z 6 subjektov odpovedalo správne. Lepšie porovnanie jednotlivých časov pre dané úlohy môžme vidieť v grafe na obrázku \ref{fig:times}.
+
+Ak by sme mali zhodnotiť náš systém v porovnaní so starým na základe výsledkov testovania, môžme povedať, že riešenie jednotlivých úloh analýzy dát je v našom systéme pomocou nami navrhnutej vizualizácie výrazne jednoduchšie a presnejšie.
 
 \begin{figure}
 	\centering
-	\includegraphics[width = 5in]{resultchart}
-	\caption{Výsledky testovania.}
+	\includegraphics[width = 3in]{times}
+	\caption{Porovnanie časov nášho (Systém 1) a starého systému (Systém 2)}
+	\label{fig:times} 
+\end{figure}
+
+\subsubsection{Zhodnotene výsledkov nášho systému}
+V grafe na obrázku \ref{fig:results} môžme lepšie vidieť sumárne porovnanie časov pre jednotlivé úlohy a užívateľov. Môžme si ľahko všimnúť, že úlohy 1, 2, 5 a 7 majú približne rovnaký priemerný čas, zatiaľ čo úlohy 2, 4 mali výrazne dlhšie trvanie a úloha 9 trvala v priemere najkratšie.
+
+Dlhé trvanie úlohy 2 prisudzujeme vyššej zložitosti úlohy oproti ostatným. Pre užívateľov bolo odhalenie outlierov pomerne rýchle, avšak väčšinu času zabralo užívateľom odčítanie z grafu o akú presnú hodnotu a predpoveď ide.
+
+Pri úlohe 4 bolo problémom rýchle odčítanie z grafu, o aký dátum sa jedná. Dôvodom bolo nedobré označenie dátumov na \mbox{$ x $-ovej} škále, kedy sa jednotlivé dni v roku označujú číslami 0-364. Užívateľ uvidel konkrétny dátum, až keď nadišiel myšou na dané miesto, kedy sa mu presné hodnoty ukázali v \textit{tooltipe}. Lepším riešením by bola redšia škála s mesačnými intervalmi alebo konkrétnymi dátumami.
+
+Výsledky nášho testovania považujeme celkovo za uspokojivé, keďže aj neskúsení užívatelia dosahovali pri všetkých úlohách dobré časy. Taktiež nám tieto výsledky poukázali na slabiny našej práce, ktorými sú hlavne zlé alebo slabé označenia škál, grafov a legiend.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 4in]{resultchart}
+	\caption{Výsledky testovania nášho systému pre jednotlivých užívateľov.}
 	\label{fig:results} 
 \end{figure}
 

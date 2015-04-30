@@ -7,9 +7,7 @@ Graficke uzivatelske rozhranie nasej apliakcie pozostava z
 
 ------------------praca ma strasne vela stran ale Testovanie a vysledky su na dvoch
 
-testovanie neporovnava nas system s inymi. otestuje sa ze nieco to robi
-ze je to dobre nie zle ale nevieme ci je to lepsie alebo horsie
-nez u ostatnych.
+------------------testovanie neporovnava nas system s inymi. otestuje sa ze nieco to robi ze je to dobre nie zle ale nevieme ci je to lepsie alebo horsie nez u ostatnych.
 
 ------------------ prvy raz v zivote vidim pracu co nema samostanu kapitolu Zaver to by som odporucal vyvat z kapitoly 7
 
@@ -23,12 +21,10 @@ nez u ostatnych.
 
 Na testovanie mi napada napr. Unit test kde nejaku verif zratame pracne rucne v exceli a porovname. Ak sa rata to, ze som to ako expert v domene testoval a vratil na opravu veci co sa mi nezdali, tak to treba uviest.
 
-Verif tool sme predali do Singapuru Radmon.
-pokial tento softver bude vyuzity vo firme, v zavere by som to uviedol
-je to tiez nejaky indikator kvality "ak to niekto prakticky pouzije
-takje to dobre"
+--------------------Verif tool sme predali do Singapuru Radmon.
+-------------------pokial tento softver bude vyuzity vo firme, v zavere by som to uviedol je to tiez nejaky indikator kvality "ak to niekto prakticky pouzije takje to dobre"
 
-(a toto by tiez uviedol, i ked zase nejakych akademikov to moze popudit tak len na spravnom mieste, napr v zavere (nie v testovani))
+-------------------(a toto by tiez uviedol, i ked zase nejakych akademikov to moze popudit tak len na spravnom mieste, napr v zavere (nie v testovani))
 
 -----------------Tych verifikacii na WRF Dubai to uz zratalo dost, takze Marek urcite treba pridat priklady.
 

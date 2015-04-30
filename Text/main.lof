@@ -32,10 +32,11 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Triedny UML diagram pre triedy typu ContinuousStatistics.\relax }}{62}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Pr\IeC {\'\i }klad \IeC {\v s}trukt\IeC {\'u}ry modulov pre vytvorenie mnoho-\IeC {\v c}iarov\IeC {\'e}ho diagramu.\relax }}{63}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces V\IeC {\'y}sledky testovania.\relax }}{66}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces a) Farebn\IeC {\'a} mapa zobrazuj\IeC {\'u}ca RMSE b) Farebn\IeC {\'a} mapa zobrazuj\IeC {\'u}ca MFE\relax }}{67}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Zobrazenie RMSE, MFE, MAE a SD (Standard Deviation) na jednom grafe s\IeC {\'u}\IeC {\v c}asne\relax }}{68}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Farebn\IeC {\'a} mapa ch\IeC {\'y}b predpoved\IeC {\'\i } pre mesiac Febru\IeC {\'a}r. Na \unhbox \voidb@x \hbox {$ y $-ovej} osi je poradie predpovede.\relax }}{69}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Grafy distrib\IeC {\'u}cie pre mesiac Febru\IeC {\'a}r a) Graf hustoty b) Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram c) Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram\relax }}{69}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Graf ro\IeC {\v c}n\IeC {\'e}ho priebehu ch\IeC {\'y}b predpoved\IeC {\'\i }. \IeC {\v S}edou \IeC {\v c}iarou s\IeC {\'u} zobrazen\IeC {\'e} denn\IeC {\'e} \IeC {\v s}tatistiky (konkr\IeC {\'e}tne RMSE) a \IeC {\v c}ervenou je k\IeC {\'l}zav\IeC {\'y} priemer vypo\IeC {\v c}\IeC {\'\i }tan\IeC {\'y} z t\IeC {\'y}chto \IeC {\v s}tatist\IeC {\'\i }k. \relax }}{70}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Porovnanie \IeC {\v c}asov n\IeC {\'a}\IeC {\v s}ho (Syst\IeC {\'e}m 1) a star\IeC {\'e}ho syst\IeC {\'e}mu (Syst\IeC {\'e}m 2)\relax }}{66}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces V\IeC {\'y}sledky testovania n\IeC {\'a}\IeC {\v s}ho syst\IeC {\'e}mu pre jednotliv\IeC {\'y}ch u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov.\relax }}{67}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces a) Farebn\IeC {\'a} mapa zobrazuj\IeC {\'u}ca RMSE b) Farebn\IeC {\'a} mapa zobrazuj\IeC {\'u}ca MFE\relax }}{69}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Zobrazenie RMSE, MFE, MAE a SD (Standard Deviation) na jednom grafe s\IeC {\'u}\IeC {\v c}asne\relax }}{69}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Farebn\IeC {\'a} mapa ch\IeC {\'y}b predpoved\IeC {\'\i } pre mesiac Febru\IeC {\'a}r. Na \unhbox \voidb@x \hbox {$ y $-ovej} osi je poradie predpovede.\relax }}{71}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Grafy distrib\IeC {\'u}cie pre mesiac Febru\IeC {\'a}r a) Graf hustoty b) Pruhov\IeC {\'y} kvantilov\IeC {\'y} diagram c) Funk\IeC {\v c}n\IeC {\'y} krabicov\IeC {\'y} diagram\relax }}{71}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Graf ro\IeC {\v c}n\IeC {\'e}ho priebehu ch\IeC {\'y}b predpoved\IeC {\'\i }. \IeC {\v S}edou \IeC {\v c}iarou s\IeC {\'u} zobrazen\IeC {\'e} denn\IeC {\'e} \IeC {\v s}tatistiky (konkr\IeC {\'e}tne RMSE) a \IeC {\v c}ervenou je k\IeC {\'l}zav\IeC {\'y} priemer vypo\IeC {\v c}\IeC {\'\i }tan\IeC {\'y} z t\IeC {\'y}chto \IeC {\v s}tatist\IeC {\'\i }k. \relax }}{72}
 \addvspace {10\p@ }
