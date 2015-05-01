@@ -1,6 +1,4 @@
-k A.1 by som napisal aj jednu vetu aspon
-Graficke uzivatelske rozhranie nasej apliakcie pozostava z
-... V pravej casti si uzivatel navoli ...
+-------k A.1 by som napisal aj jednu vetu aspon Graficke uzivatelske rozhranie nasej apliakcie pozostava z ... V pravej casti si uzivatel navoli ...
 
 ------------------Nejaky obrazok, kde ukazeme prstikom a vidime ze aha tato predpoved bola zla. A na dalsom obrazku vidime predpoved a hla, ta bola dobra.
 
