@@ -7,11 +7,11 @@ Medzi \textit{administratívne ciele} patrí monitorovanie úspešnosti predpove
 \section{Predpovedný model počasia}
 
 Už v 19. storočí vývoj termodynamiky na základe Newtonovskej fyziky vyvrcholil v ucelení množiny fundamentálnych princípov, ktoré riadia prúdenie plynov v atmosfére. 
-Začiatkom 20. storočia sa o matematický prístup k predpovedaniu počasia najviac zaslúžili osobnosti ako Vilhelm Bjerknes alebo Lewis F.Richardson. Avšak na ďalší úspech, v tejto oblasti, sa muselo čakať až na vynájdenie prvých počítačov počas 2. svetovej vojny ako bol IAS alebo ENIAC \cite{Origins}. Prvá úspešná predpoveď bola vykonaná v 50. rokoch minulého storočia a to hlavne vďaka práci Jula Charneyho.
+Začiatkom 20. storočia sa o matematický prístup k predpovedaniu počasia najviac zaslúžili osobnosti ako Vilhelm Bjerknes alebo Lewis F.Richardson. Na ďalší úspech, v tejto oblasti, sa však muselo čakať až na vynájdenie prvých počítačov počas 2. svetovej vojny ako bol IAS alebo ENIAC \cite{Origins}. Prvá úspešná predpoveď bola vykonaná v 50. rokoch minulého storočia a to hlavne vďaka práci Jula Charneyho.
 
 Následný vývoj vo výpočtovej sile počítačov, používanie satelitných pozorovaní a vývoj samotnej meteorológie ako vedy zapríčinil, že je numerická predpoveď počasia (NWP) dnes najúspešnejším prístupom ako predpovedať počasie \cite{Golding}.  
 
-Odvtedy vzniklo veľké množstvo modelov, ako sú napríklad GFS, NAM, RUC, WRF, SREF, GEFS, ECMWF, ALADIN a mnoho ďalších. Naša práca sa zameriava konkrétne na verifikáciu modelu \textit{WRF}, avšak použitie nášho nástroja je univerzálne vďaka spoločnému formátu vystupujúceho z modelov - \textit{Gribu}.
+Od tej doby vzniklo už veľké množstvo modelov, ako sú napríklad GFS, NAM, RUC, WRF, SREF, GEFS, ECMWF, ALADIN a mnoho ďalších. Naša práca sa zameriava konkrétne na verifikáciu modelu \textit{WRF}, avšak použitie nášho nástroja je univerzálne vďaka spoločnému formátu vystupujúceho z modelov - \textit{Gribu}.
 
 %Taktiež pokračuje neustály vývoj aj vďaka novým modelovacím technikám, novým parametrizáciám, a zvyšovaniu výkonu výpočtových zdrojov.
 
@@ -32,9 +32,9 @@ WRF je podporovaný, ako bežný nástroj pre univerzity, výskum a operatívne 
 
 %Vývoj WRF modelu bol snahou mnohých spoločností ako napríklad \textit{The National Center for Atmospheric Research’s} (NCAR), \textit{Mesoscale and Microscale Meteorology} (MMM), \textit{The National Oceanic and Atmospheric Administration’s} (NOAA) \textit{National Centers for Environmental Prediction} (NCEP) a \textit{Earth System Research Laboratory} (ESRL), oddelenie ministerstva obrany \textit{Air Force Weather Agency} (AFWA) a \textit{Naval Research Laboratory} (NRL), \textit{The Center for Analysis and Prediction of Storms} (CAPS) \cite{WRF}. 
 
-WRF model je vhodný pre širokú škálu aplikácií od simulácie jedného búrkového oblaku až po globálne predpovede počasia. Aplikácie modelu WRF vyžadujú numerické predpovede v reálnom čase, vývoj a štúdium asimilácie dát, výskum parametrizovanej fyziky, modelovanie kvality ovzdušia a idealizované simulácie.
+Tento model je vhodný pre širokú škálu aplikácií od simulácie jedného búrkového oblaku až po globálne predpovede počasia. Aplikácie modelu WRF vyžadujú numerické predpovede v reálnom čase, vývoj a štúdium asimilácie dát, výskum parametrizovanej fyziky, modelovanie kvality ovzdušia a idealizované simulácie.
 
-V roku 2008 mal model WRF viac ako 6000 užívateľov, no dnes (2015) je evidovaných viac ako 25000 užívateľov vo viac ako 130 krajinách sveta. Tieto fakty poukazujú na to, že WRF model má nie len veľkú základňu užívateľov, ale aj vývojárov\footnote{Aktívne na vývoji WRF pracuje mnoho ľudí, avšak zasahovať do kódu môže ktokoľvek, keďže je WRF \textit{opensource}.} a má v budúcnosti istotne svoje miesto a preto si myslíme, že sa oplatí investovať čas a úsilie do verifikácie tohto modelu.
+V roku 2008 mal model WRF viac ako 6000 užívateľov, no dnes (2015) je evidovaných viac ako 25000 užívateľov vo viac ako 130 krajinách sveta. Tieto fakty poukazujú na to, že WRF model má nie len veľkú základňu užívateľov, ale aj vývojárov\footnote{Aktívne na vývoji WRF pracuje mnoho ľudí, avšak zasahovať do kódu môže ktokoľvek, keďže je WRF model \textit{opensource}.} a má v budúcnosti istotne svoje miesto a preto si myslíme, že sa oplatí investovať čas a úsilie do verifikácie tohto modelu.
 
 \section{Dáta}
 \label{sec:data}
@@ -90,6 +90,7 @@ Výber správnej metódy môže značne ovplyvniť výsledok. Dôvodom je, že m
 
 
 \section{Metódy verifikácie}
+\label{sec:verifmethods}
 Metódy verifikácie sa delia podľa typu predpovede na 3 druhy \cite{RecommendOnVerif}: 
 \begin{easylist}[itemize]
 	# Verifikácia kategorickej predpovede

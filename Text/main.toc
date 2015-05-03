@@ -33,10 +33,10 @@
 \contentsline {subsection}{\numberline {3.1.3}\IeC {\'U}loha bodov\IeC {\'e}ho grafu vo verifik\IeC {\'a}cii}{21}
 \contentsline {section}{\numberline {3.2}Krabicov\IeC {\'y} diagram}{21}
 \contentsline {subsection}{\numberline {3.2.1}Kon\IeC {\v s}trukcia krabicov\IeC {\'e}ho diagramu}{22}
-\contentsline {subsection}{\numberline {3.2.2}\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{23}
+\contentsline {subsection}{\numberline {3.2.2}\IeC {\'U}loha krabicov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{24}
 \contentsline {section}{\numberline {3.3}Histogram}{24}
-\contentsline {subsection}{\numberline {3.3.1}Kon\IeC {\v s}trukcia histogramu}{24}
-\contentsline {subsection}{\numberline {3.3.2}\IeC {\'U}loha histogramu vo verifik\IeC {\'a}cii}{25}
+\contentsline {subsection}{\numberline {3.3.1}Kon\IeC {\v s}trukcia histogramu}{25}
+\contentsline {subsection}{\numberline {3.3.2}\IeC {\'U}loha histogramu vo verifik\IeC {\'a}cii}{26}
 \contentsline {section}{\numberline {3.4}\IeC {\v C}iarov\IeC {\'y} diagram}{27}
 \contentsline {subsection}{\numberline {3.4.1}Kon\IeC {\v s}trukcia \IeC {\v c}iarov\IeC {\'e}ho diagramu}{27}
 \contentsline {subsection}{\numberline {3.4.2}\IeC {\'U}loha \IeC {\v c}iarov\IeC {\'e}ho diagramu vo verifik\IeC {\'a}cii}{27}
@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {4.6.2}Ploch\IeC {\'y} n\IeC {\'a}vrh rozlo\IeC {\v z}enia prvkov}{53}
 \contentsline {chapter}{\numberline {5}N\IeC {\'a}vrh syst\IeC {\'e}mu a Implement\IeC {\'a}cia}{56}
 \contentsline {section}{\numberline {5.1}N\IeC {\'a}vrh syst\IeC {\'e}mu}{56}
-\contentsline {section}{\numberline {5.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{57}
+\contentsline {section}{\numberline {5.2}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{58}
 \contentsline {subsection}{\numberline {5.2.1}Java}{58}
 \contentsline {subsection}{\numberline {5.2.2}JavaScript}{59}
 \contentsline {subsubsection}{D3}{59}

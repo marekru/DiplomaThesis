@@ -3,18 +3,18 @@
 
 \section{Bodový graf}
 \label{sec:scatterplot}
-Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram} a známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}. Bodový graf je vhodný na štúdium kolerácie dvoch premenných a taktiež je výborný pri odhaľovaní takzvaných \mbox{\textit{outlier}-ov}, teda hodnôt, ktoré sa nejakým spôsobom výrazne odlišujú od tých ostatných. Taktiež nám nepriamo podáva správu o distribúcii hodnôt, čo však pri ich veľkom počte môže byť skreslené, keďže sa body začnú postupne prekrývať, a tak nemožno určiť v akej oblasti je viacej, či menej bodov. Tento jav sa nazýva \textit{overplotting}.
+Najjednoduchším spôsobom ako analyzovať vzťah dvoch náhodných premenných je \textit{bodový graf}, ktorý je inak nazývaný aj \textit{korelačný diagram} a známy je tiež pod svojim anglickým pomenovaním \textit{scatter plot}. Bodový graf je vhodný na štúdium kolerácie dvoch premenných a taktiež je výborný pri odhaľovaní takzvaných \mbox{\textit{outlier}-ov}, teda hodnôt, ktoré sa nejakým spôsobom výrazne odlišujú od tých ostatných. Taktiež nám nepriamo podáva správu o distribúcii, čo však pri veľkom počte hodnôt môže byť skreslené, keďže sa body začnú postupne prekrývať, a tak nemožno určiť v akej oblasti je viacej, či menej bodov. Tento jav sa nazýva \textit{overplotting}.
 
 
 \subsection{Konštrukcia bodového grafu}
 Skonštruovanie bodového grafu je veľmi jednoduché a aj preto je často používaným prostriedkom na vizualizáciu. Na svoju konštrukciu využíva karteziánsku sústavu súradníc. Dve náhodné premenné, ktoré chceme porovnať, vizualizujeme tak, že spravíme zobrazenie jednej premennej na \mbox{$ x $-ovú} súradnicovú os a zobrazenie druhej premennej na \mbox{$ y $-ovú} os. Následne v danom bode nakreslíme určený symbol, čo zvyčajne býva čierna bodka alebo krúžok. 
-Na obrázku \ref{fig:scattervsqq}a) vidíme príklad výsledného bodového grafu, ktorý vznikne takýmto postupom.
+Na obrázku \ref{fig:scattervsqq}a vidíme príklad výsledného bodového grafu, ktorý vznikne takýmto postupom.
 
 Bodový graf ponúka mnoho spôsobov, ako pridať ďalší rozmer informácie do vizualizácie. Môžeme zvoliť odlišnú súradnicovú sústavu, čím veľmi jednoducho vytvoríme napríklad 3D bodový graf pre trojrozmerné dáta. Ďalšou možnosťou rozšírenia je zmena vykresľovaného symbolu, ktorému môžme nastavovať rôzne parametre, do ktorých možno zakódovať nové informácie. Zvyčajne sú týmito parametrami farba, \mbox{alfa-transparencia} \cite{SolutionToOverplotting}, veľkosť \cite{Viegas}, tvar \cite{GenSensScatterplot, EnhanceScatterplot} a podobne. Tieto modifikácie si v komunite vizuálnej analýzy vyslúžili aj vlastné názvy a teoretické zázemie, avšak v našej práci sa týmto druhom diagramov nebudeme venovať.
 
 \subsection{Kantil-kvantil graf}
 \label{subsec:qqplot}
-Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil-kvantil graf}, skrátene \textit{\mbox{Q-Q} graf} (Q z anglického \textit{quantil}). Jediným rozdielom medzi bodovým grafom a \mbox{Q-Q} grafom je, že zatiaľ, čo bodový graf vizualizuje surové dáta, \mbox{Q-Q} graf zobrazuje iba kvantily z oboch dátových množín. 
+Dôležitou a často využívanou variáciou pre bodový graf je \textit{kvantil-kvantil graf}, skrátene \textit{\mbox{Q-Q} graf} (Q z anglického \textit{quantil}). Jediným rozdielom medzi bodovým grafom a \mbox{Q-Q} grafom je, že zatiaľ čo bodový graf vizualizuje surové dáta, \mbox{Q-Q} graf zobrazuje iba kvantily z oboch dátových množín. 
 
 Kvantilmi sú hodnoty, ktoré rozdeľujú usporiadanú dátovú množinu na niekoľko rovnako veľkých častí. Pre jednu dátovú množinu je $ (q - 1) $ $ q $-kvantilov. Najznámejším príkladom je \mbox{2-kvantil}, ktorý sa nazýva medián. Ďalšími bežnejšie používanými sú \mbox{4-kvantily}, \mbox{10-kvantily} a \mbox{100-kvantily}, čo sú vlastne kvartily, decily a percentily. 
 
@@ -37,7 +37,7 @@ Dôležitým faktorom teda zostáva aké premenné umiestnime na \mbox{$ x $-ov�
 
 \section{Krabicový diagram}
 \label{sec:boxplot}
-Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartil s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 \cite{Tukey}, uplynulo už takmer 40 rokov a dnes ho považujeme už za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{\mbox{5-number} summary}) \cite{Potter}, ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor \cite{Wickham}, ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky. 
+Krabicový diagram je v anglickej literatúre zvyčajne nazývaný \textit{box plot} alebo na niektorých miestach označovaný tiež ako \textit{box and whisker\footnote{Slovo \textit{whisker} znamená po slovensky fúz, čo naznačuje, že čiary, ktoré spájajú horný a dolný kvartil s hraničnými hodnotami pripomínajú fúzy.} plot}. Odkedy bol prvýkrát publikovaný v roku 1977 \cite{Tukey}, uplynulo už takmer 40 rokov a dnes ho považujeme za štandardnú techniku ako vizualizovať distribúciu hodnôt kompaktným spôsobom. Na svoju reprezentáciu využíva súbor 5 čísel (tzv. \textit{\mbox{5-number} summary}) \cite{Potter}, ktoré charakterizujú distribúciu dát robustným spôsobom. Tým, že zredukujeme zvyčajne veľkú dátovú množinu na týchto pár hodnôt ušetríme nielen vzácny vizuálny priestor \cite{Wickham}, ale taktiež námahu analytika, ktorý sa snaží preskúmať iba niektoré vybrané charakteristiky dát. 
 
 \subsection{Konštrukcia krabicového diagramu}
 
@@ -51,7 +51,7 @@ IQR = Q3 - Q1
 \]
 IQR nám hovorí o vzdialenosti týchto dvoch kvartilov, preto nám môže byť tento vzorec na pohľad podozrivý, keďže sa javí, že IQR by mohlo nadobúdať aj záporné hodnoty. My však vieme z definície Q3 a Q1, že $ Q3 > Q1 $ a ich rozdiel je teda vždy nezáporný (Hovoríme o rozdiele Q3 od Q1, tak ako je definované IQR).
 
-Malú obmenu pôvodného návrhu krabicového diagramu od Tukeyho, vidíme na obrázku \ref{fig:boxplot} b), kde malé bodky znázorňujú hodnoty nazývané \textit{outlier}, teda hodnoty ležiace ďaleko od hlavného dátového tela, a hviezdička v strede diagramu určuje priemer hodnôt. Môžme si všimnúť, že konce čiar vychádzajúcich z boxu nemôžu byť extrémy celej množiny dát, ale sú iba extrémami vypočítaných z dát bez \mbox{\textit{outlier}-ov}.
+Malú obmenu pôvodného návrhu krabicového diagramu od Tukeyho, vidíme na obrázku \ref{fig:boxplot}b, kde malé bodky znázorňujú hodnoty nazývané \textit{outlier}, teda hodnoty ležiace ďaleko od hlavného dátového tela, a hviezdička v strede diagramu určuje priemer hodnôt. Môžme si všimnúť, že konce čiar vychádzajúcich z boxu nemôžu byť extrémy celej množiny dát, ale sú iba extrémami vypočítaných z dát bez \mbox{\textit{outlier}-ov}.
 
 Otázkou zostáva ako určiť, ktorá hodnota je \textit{outlier} a ktorá nie je. Na zodpovedanie tejto otázky sa využíva už spomínaný rozsah IQR. Pomocou neho sa definujú hranice \textit{inner fences} ($f_{1}, f_{2}$) a \textit{outer fences} ($F_{1}, F_{2}$), za ktorými hovoríme už o \mbox{\textit{outlier}-och} alebo o ďalekých \mbox{\textit{outlier}-och} \cite{Schwertman}. Definované sú nasledovne:
 \\
@@ -68,6 +68,9 @@ Konštanty $ c $ a $ C $ sú v niektorých zdrojoch definované rôzne. Najčast
 	\caption{Pôvodný návrh krabicového diagramu, ako bol prezentovaný v práci \textit{Exploratory Data Analysis}(1977) \cite{Tukey} }
 	\label{fig:boxplot}
 \end{figure}
+
+Okrem pridania outlierov do grafu, boli pre krabicový diagram navrhnuté ďalšie modifikácie. Jednak sú to \textit{syntaktické} (vizuálne), ktoré nepridávajú novú informáciu, ale iba menia vizuálne prvky grafu a taktiež modifikácie \textit{sémantické}, ktoré pridávajú ďalšiu popisnú informáciu, čo má na záver vplyv aj na jeho vizuálnu stránku. Významnými vizuálnymi modifikáciami sú návrhy maximalizujúce takzvaný \textit{data-ink} \cite{Tufte83}, a tými sú 2 variácie pre kvartilový graf \cite{Tufte83} a skrátený krabicový diagram \cite{VisualSummaryPotter}. Ďalej môžme spomenúť predchodcu krabicového diagramu  \mbox{range-bar} chart \cite{Spear} a farebnú variácia, ktorá sa snaží chápať krabicový diagram ako jednu percepčnú jednotku a nie ako 5 \cite{Carr}.
+Medzi sémantické modifikácie patria krabicový diagram s variabilnou šírkou \cite{McGill}, ktorá hovorí o veľkosti dátových množín, ďalej vrúbkovaný krabicový diagram \cite{McGill}, ktorý do vrúbok kóduje spoľahlivosť dát a na záver krabicový diagram s informáciou o šikmosti dát \cite{Chamnein}.
 
 %TODO tohle som musel zakomentit, lebo to bolo dlhe :(
 %\subsection{Ďalšie variácie krabicového diagramu}
@@ -123,7 +126,7 @@ V prvom rade ide o porovnanie distribúcie predpovedí s distribúciou pozorovan
 Ďalším veľmi bežným spôsobom, ako vizualizovať distribúciu dát je pomocou \textit{histogramu}, ktorého existencia sa datuje do roku 1895, kedy ho uviedol vo svojej práci Karl Pearson \cite{histogram}. Histogram využíva veľmi jednoduchú myšlienku vizualizovať frekvencie hodnôt ako stĺpce rôznej výšky, ktorá sa v priebehu histórie analýzy dát ukázala ako veľmi užitočná.
 
 \subsection{Konštrukcia histogramu}
-Konštrukcia histogramu je pomerne jednoduchá. V prvom rade potrebujeme rozdeliť interval hodnôt na disjunktné podintervaly rovnakej dĺžky. Na vygenerovanie týchto intervalov využíva autor diagramu počiatok $ O $ a veľkosť intervalu $ w $. Prvý interval je $ \langle O, O + w) $ a všetky nasledujúce vzniknú posúvaním intervalu o dĺžku $ w $ v kladnom smere. Ďalej pre každý takto vzniknutý interval vypočítame koľko hodnôt doň spadá. Potom už môžme vykresliť jednotlivé stĺpce pre každý interval ako obdĺžniky so šírkou $ w $ a výškou, ktorá sa určí na základe početnosti hodnôt pre daný interval. Na obrázku \ref{fig:histogram} môžeme vidieť takýmto spôsobom vygenerovaný histogram.
+Konštrukcia histogramu je pomerne jednoduchá. V prvom rade potrebujeme rozdeliť interval hodnôt na disjunktné podintervaly rovnakej dĺžky. Na vygenerovanie týchto intervalov využíva autor diagramu počiatok $ O $ a veľkosť intervalu $ w $. Prvý interval je $ \langle O, O + w) $ a všetky nasledujúce vzniknú posúvaním intervalu o dĺžku $ w $ v kladnom smere. Ďalej pre každý takto vzniknutý interval vypočítame koľko hodnôt doň spadá. Potom už môžeme vykresliť jednotlivé stĺpce pre každý interval ako obdĺžniky so šírkou $ w $ a výškou, ktorá sa určí na základe početnosti hodnôt pre daný interval. Na obrázku \ref{fig:histogram} môžeme vidieť takýmto spôsobom vygenerovaný histogram.
 
 \begin{figure}
 	\centering
@@ -172,7 +175,7 @@ Vo verifikácii je účelom čiarového diagramu vizualizácia časových radov.
 \end{figure}
 
 \section{Taylorov diagram}
-\textit{Taylorov diagram} bol špeciálne navrhnutý pre verifikáciu modelov počasia, ktorého autorom je Karl. E. Taylor \cite{Taylor}. Podľa slov autora úlohou diagramu je štatistické zhrnutie, ako dobre si dátové vzory zodpovedajú v zmysle troch metrík: koeficient korelácie, stredná kvadratická chyba a smerodajná odchýlka. Použitie taylorovho diagramu nie je tak časté ako pri predchádzajúcich vizualizačných technikách, možno aj z dôvodu horšej čitateľnosti grafu a taktiež nemá takú veľkú tradíciu v štatistike, ako predošlé techniky. Podobnú snahu zobraziť tri štatistiky súčasne v jednom grafe mal aj Boer a Lambert vo svojom BLT diagrame \cite{Boer}. Tento typ grafu je veľmi podobný taylorovmu grafu, a keďže jeho použitie je ešte zriedkavejšie, tak sa mu v tejto práci nebudeme venovať.
+\textit{Taylorov diagram} bol špeciálne navrhnutý pre verifikáciu modelov počasia, ktorého autorom je Karl. E. Taylor \cite{Taylor}. Podľa slov autora úlohou diagramu je štatistické zhrnutie toho, ako dobre si dátové vzory zodpovedajú v zmysle troch metrík: koeficient korelácie, stredná kvadratická chyba a smerodajná odchýlka. Použitie taylorovho diagramu nie je tak časté ako pri predchádzajúcich vizualizačných technikách, možno aj z dôvodu horšej čitateľnosti grafu a taktiež nemá takú veľkú tradíciu v štatistike, ako predošlé techniky. Podobnú snahu zobraziť tri štatistiky súčasne v jednom grafe mal aj Boer a Lambert vo svojom BLT diagrame \cite{Boer}. Tento typ grafu je veľmi podobný taylorovmu grafu, a keďže jeho použitie je ešte zriedkavejšie, tak sa mu v tejto práci nebudeme venovať.
   
 \subsection{Konštrukcia taylorovho diagramu}
 Taylorov graf porovnáva jednu alebo viacero dátových množín ($ f $) s jednou referenčnou množinou $ r $. Označme si hodnoty v porovnávanej množine $ f_{n} $ a s nimi spárované referenčné hodnoty $ r_{n} $, ktoré sú definované na $ N $ diskrétnych bodoch (napríklad v čase alebo priestore). Ako sme už spomenuli, taylorov graf vizualizuje 3 štatistiky súčasne, na čo využíva ich vzájomný geometrický vzťah. Týmito štatistikami sú: koeficient korelácie $ R $, centrovaná stredná kvadratická chyba $ E' $ a smerodajné odchýlky $ \sigma_{f} $ a $ \sigma_{r} $ pre $ f, r $.  Vzorce na výpočet sú nasledovné:
@@ -185,7 +188,7 @@ Taylorov graf porovnáva jednu alebo viacero dátových množín ($ f $) s jedno
 \]
 Pre pripomenutie chceme upozorniť, že nejde o strednú kvadratickú chybu, ktorá bola spomenutá v časti \ref{sec:errormeasurement}, ale o \textit{centrovanú} strednú kvadratickú chybu, ktorá je relatívna k stredu, teda priemeru skúmaných množín.
 
-Rovnako pre $ \sigma_{f} $ aj $ \sigma_{r} $ je výpočet nasledovný:
+\noindent Rovnako pre $ \sigma_{f} $ aj $ \sigma_{r} $ je výpočet nasledovný:
 \[
 \sigma_{x} = \sqrt{\frac{1}{N} \sum_{n=1}^{N}[(x_{n} - \bar{x})]^2 }
 \]
@@ -197,7 +200,7 @@ Rovnako pre $ \sigma_{f} $ aj $ \sigma_{r} $ je výpočet nasledovný:
 	\label{fig:gemrelationship}
 \end{figure}
 
-Kľúčovým bodom v konštrukcii diagramu je, že s využitím týchto troch respektíve štyroch štatistík môžme skonštruovať nasledovný vzťah:
+\noindent Kľúčovým bodom v konštrukcii diagramu je, že s využitím týchto troch respektíve štyroch štatistík môžme skonštruovať nasledovný vzťah:
 \[
 	E^{\prime2} = \sigma_{f}^{2} + \sigma_{r}^{2} - 2\sigma_{f}\sigma_{r}R
 \]
@@ -219,9 +222,9 @@ Popísaným spôsobom vytvoríme základný taylorov diagram, ktorý však ponú
 \begin{singlespacing}
 \begin{itemize} 
 	\item Diagram môže byť rozšírený o ďalší kvadrant vľavo, na zobrazenie zápornej kolerácie 
-	\item Štatistiky porovnávaných hodnôt môžu byť normalizované pomocou štatistík referenčných, čím dosiahneme, že na jednom diagrame možno zobraziť rôzne jednotky veličín.
+	\item Štatistiky porovnávaných hodnôt môžu byť normalizované pomocou štatistík referenčnej dátovej množiny, čím dosiahneme, že na jednom diagrame možno zobraziť rôzne jednotky veličín.
 	\item Izočiary sa vynechávajú, aby bolo možné lepšie vidieť zobrazené body.
-	\item Pri porovnávaní výsledkov z viacerých verzií predpovedných modelov sa zvykne nakresliť šípka medzi týmito bodmi, aby bolo lepšie vidieť vzťah medzi nimi.
+	\item Pri porovnávaní výsledkov z viacerých verzií predpovedných modelov sa zvykne nakresliť šípka medzi týmito bodmi, aby bolo lepšie vidieť, že existuje vzťah medzi nimi.
 	\item Miera $ E' $ môže byť nahradená inou. Niektoré príklady mier možno nájsť v Taylorovom článku \cite{Taylor}
 	\item Do grafu je možno pridať ďalšiu informáciu modifikovaním vizuálnych vlastností bodu podobne ako v bodovom diagrame. Jedným z príkladov je zobrazenie percentuálnej priemernej chyby pomocou rôznych symbolov.
 \end{itemize}
