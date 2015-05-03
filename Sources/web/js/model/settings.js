@@ -11,7 +11,7 @@
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: settings.js,v 1.18 2015/02/23 15:39:48 marekru Exp $
+ * @version $Id: settings.js,v 1.20 2015/04/21 13:23:28 marekru Exp $
  *
  */ 
 function set(attrName, value){
@@ -362,6 +362,13 @@ function ColorPlotSettings(){
 }
 utils_extend(PlotSettings, ColorPlotSettings);
 
+function BubblePlotSettings(){
+	PlotSettings.call(this);
+	
+	this.generator = d3.modelvis.plotting.bubble;
+}
+utils_extend(PlotSettings, BubblePlotSettings);
+
 
 function LinePlotSettings(){
 	PlotSettings.call(this);
@@ -386,10 +393,10 @@ utils_extend(PlotSettings, ScatterPlotSettings);
 
 function DistributionPlotSettings(){
 	PlotSettings.call(this);
-	this.generator = d3.modelvis.plotting.functionalbox; //distribution; TODO toto je len docasne
+	this.generator = d3.modelvis.plotting.distribution;
 	
 	this.alphaJump = 0.25;
-	this.lineColor = "#FFC200";// "red";
+	this.lineColor = "#FFC200";
 	this.percents = [ 1, 0.8, 0.5, 0.3 ];
 	
 }
@@ -400,10 +407,40 @@ function DensityPlotSettings(){
 	PlotSettings.call(this);
 	this.generator = d3.modelvis.plotting.density;
 	
-	// TODO
+	this.colors = ["white", "#bdd7e7", "#6baed6", "#2171b5", "navy"]; // moznoze bez navy
+	this.linecolor = "white";
+	this.linewidth = 0.5;
 	
 }
 utils_extend(PlotSettings, DensityPlotSettings);
+
+
+function StripePlotSettings(){
+	PlotSettings.call(this);
+	this.generator = d3.modelvis.plotting.stripe;
+	
+	this.alphaJump = 0.25;
+	this.depth = 3;
+	this.color = "black";
+	this.extremecolor = "navy";
+	this.mediancolor = "#FFC200"; //"black";
+	
+}
+utils_extend(PlotSettings, StripePlotSettings);
+
+function FunctionalboxPlotSettings(){
+	PlotSettings.call(this);
+	this.generator = d3.modelvis.plotting.functionalbox;
+	
+	this.color = [100, 150, 230];
+	this.envelopeColor = [50, 50, 50];
+	this.outlierColor = "red";
+	this.meanColor = "white";
+	this.medianColor = [20,20,20];
+	this.regions = [0.5];
+	
+}
+utils_extend(PlotSettings, FunctionalboxPlotSettings);
 
 function GraphSettings(){
 	PlotSettings.call(this);
@@ -418,6 +455,9 @@ function GraphSettings(){
 	// Axis
 	this.hAxis = d3.modelvis.settings.axis().set("orientation", "bottom").set("tickCountAdaptive", true);
 	this.vAxis = d3.modelvis.settings.axis().set("orientation", "left");
+	
+	this.xLabel = "Hour";
+	this.xDisplay = d3.modelvis.tooltip.display.plotHour;
 
 }
 utils_extend(PlotSettings, GraphSettings);
@@ -429,6 +469,7 @@ function ColorGraphSettings(){
 	
 	this.barHeight = 0;
 	this.palette = d3.modelvis.settings.colorplot().palette;
+	this.showdistribution = true; // radsej false
 	// TODO
 }
 utils_extend(GraphSettings, ColorGraphSettings);
@@ -453,10 +494,10 @@ utils_extend(GraphSettings, ScatterGraphSettings);
 function DistributionGraphSettings(){
 	GraphSettings.call(this);
 	this.generator = d3.modelvis.graphs.distribution;
+	this.plot = d3.modelvis.distributionplot;
 	
 }
 utils_extend(GraphSettings, DistributionGraphSettings);
-
 
 if( !d3.modelvis ){
 	d3.modelvis = {}; 
@@ -548,6 +589,10 @@ d3.modelvis.settings.colorplot = function(){
   return new ColorPlotSettings();
 };
 
+d3.modelvis.settings.bubbleplot = function(){
+  return new BubblePlotSettings();
+};
+
 d3.modelvis.settings.lineplot = function(){
   return new LinePlotSettings();
 };
@@ -563,6 +608,15 @@ d3.modelvis.settings.distributionplot = function(){
 d3.modelvis.settings.densityplot = function(){
   return new DensityPlotSettings();
 };
+
+d3.modelvis.settings.stripeplot = function(){
+  return new StripePlotSettings();
+};
+
+d3.modelvis.settings.functionalboxplot = function(){
+  return new FunctionalboxPlotSettings();
+};
+
 // Graphs
 
 d3.modelvis.settings.graph = function(){

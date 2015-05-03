@@ -11,7 +11,7 @@
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: tooltip.js,v 1.10 2014/09/16 12:24:18 marekru Exp $
+ * @version $Id: tooltip.js,v 1.12 2015/04/21 13:24:11 marekru Exp $
  *
  */ 
 
@@ -81,6 +81,16 @@ d3.modelvis.tooltip.display.plotValueY = function(s, args){
 	return d3.modelvis.tooltip.display.plotValueGeneralY(s, args, xToHour, 2);
 };
 
+d3.modelvis.tooltip.display.dayInYear = function(s, args){
+	var days = (s.data) ? s.data.length : 365;
+	var year = (days == 365)? 2015 : 2016;
+	var day  = 2 + getPlotIndex(s, args, xToHour);
+	var date = new Date(year, 0); 
+    date = new Date( date.setDate(day) );
+	var format =  s.format || "d. MMM";
+	return 	"" + JTime.format(date, format);
+};
+
 
 d3.modelvis.tooltip.display.length = function(s, args){
 	var index = getPlotIndex(s, args, xToHour);
@@ -93,8 +103,9 @@ d3.modelvis.tooltip.display.data = function(s,args){
 	
 
 function getPlotIndex(s, args, indexFun){
+	var length = (s.data) ? s.data.length : ( s.length || 48 );	
 	var x = args[0][0];
-	var index = indexFun(x, s.xScale, s.data.length - 1, Math.floor);
+	var index = indexFun(x, s.xScale, length - 1, Math.floor);
 	return index;
 }
 

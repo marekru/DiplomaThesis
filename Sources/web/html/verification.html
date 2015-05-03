@@ -1,0 +1,101 @@
+<!--
+  Copyright 2011, MicroStep-MIS spol. s r.o. (www.microstep-mis.com)
+  All rights reserved.
+
+  This program/code is the exclusive and proprietary property of MicroStep-MIS.
+  Any unauthorized use, reproduction or modification of this program/code
+  without the prior written consent of MicroStep-MIS is strictly prohibited.
+
+  $Id: verification.html,v 1.12 2014/09/05 10:07:44 marekru Exp $
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<i18n key="XMLlang=">en</i18n>">
+<head>
+
+<title><i18n>Model Verification Display</i18n></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="<i18n key="HTTPcontentLanguage=">en-us</i18n>" />
+<meta http-equiv='Expires' content='0'>
+<meta http-equiv="pragma" content="no-cache"> 
+
+<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="../../../css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="../../../css/verification.css" rel="stylesheet" type="text/css" media="screen">
+
+<!--[if IE]> 
+	<link href="../css/main_fixed4ie.css" rel="stylesheet" type="text/css" media="screen"/> 
+	<script type="text/javascript"> onload = function() { content.focus() } </script> 
+<![endif]-->  
+
+<script language="JavaScript" type="text/javascript" src="../../../js/JTime.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/utils.js"></script> 
+<script language="JavaScript" type="text/javascript" src="../../../js/sprintf.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/hashtable.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/xmlhttp.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/xplatform.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/dictio.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/RPCCall.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/BITEBlock.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/heartbeat.js"></script> 
+<!-- Verification includes -->
+<script language="JavaScript" type="text/javascript" src="../../../js/Stations.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/ModelVerificationCfg.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/VisualizationCfg.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/ContingencyTable.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/VisDataRequest.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/VisDataResponse.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/d3/d3.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/colors.js"></script> 
+<script language="JavaScript" type="text/javascript" src="../../../js/model/plot.js"></script> 
+<script language="JavaScript" type="text/javascript" src="../../../js/model/visualization.js"></script> 
+<script language="JavaScript" type="text/javascript" src="../../../js/model/tooltip.js"></script> 
+<script language="JavaScript" type="text/javascript" src="../../../js/model/verificationPlots.js"></script> 
+<script language="JavaScript" type="text/javascript" src="../../../js/model/verification.js"></script> 
+ 
+
+</head>
+
+<body>
+	
+
+	<div id="header_window">
+	<span class="header_title"> 
+		<img src="../../../img/index/i_graph_16.png" width="16" height="16" border="0" align="absmiddle" />				
+		<span class="header_station"><a href="../../index.html"> <i18n key="ID">IMS</i18n> </a>&nbsp;<i18n>Model Verification</i18n></span>
+	</span> 
+	<a href="javascript:history.go(-1)" class="header_back">
+	  <img src="../../../img/index/header_back.gif" width="16" height="16" border="0" align="absmiddle" />
+	</a>
+	<a href="javascript:help_openWindow('NONE')" class="header_help">
+		<img src="../../../img/index/header_help.png" width="16" height="16" border="0" align="absmiddle"/>
+	</a>
+	<span class="header_actualized_label"><i18n>Model Verification Display</i18n></span>
+	<span class="header_logo"> <img src="../../../img/index/header_logo_microstep_actual.png" width="172" height="16" border="0" align="absmiddle"/></span></div>
+
+  <div id="footer_window"> <span id ="footer_utc" class="footer_utc"><i18n>Browser //://:// LT //://:// UTC</i18n> </span> </div>
+
+	<script language="JavaScript">
+		utils_clock.show_dual_clock_i18n( "footer_utc","<i18n>Browser</i18n>", "<i18n>LT</i18n>", "<i18n>UTC</i18n>" );
+	</script>
+	
+	<div id="content" class="center group">
+		<div id="graph" class="center group">
+			<i18n>Loading graph</i18n> ...
+		</div>
+		<form>
+			<input type="checkbox" id="uniformScaleCheckBox" name="scale" value="uniform" checkced="true"><label for="uniformScaleCheckBox">Uniform Scale</label>
+			<button id="toggle" type="button">
+				<i18n>Toggle All</i18n>
+			</button>
+			<!-- TODO -->
+		</form>
+	</div>
+	
+	<script language="JavaScript" type="text/javascript">		
+		init();
+	</script>
+</body>
+
+</html>

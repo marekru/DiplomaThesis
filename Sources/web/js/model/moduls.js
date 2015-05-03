@@ -11,7 +11,7 @@
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: moduls.js,v 1.10 2014/11/04 13:02:33 marekru Exp $
+ * @version $Id: moduls.js,v 1.12 2015/04/21 13:23:28 marekru Exp $
  *
  */ 
 
@@ -143,6 +143,10 @@ d3.modelvis.colorplot = function(){
 	return d3.modelvis.any("colorplot");
 }
 
+d3.modelvis.bubbleplot = function(){
+	return d3.modelvis.any("bubbleplot");
+}
+
 d3.modelvis.barplot = function(){
 	return d3.modelvis.any("barplot");
 }
@@ -161,6 +165,14 @@ d3.modelvis.distributionplot = function(){
 
 d3.modelvis.densityplot = function(){
 	return d3.modelvis.any("densityplot");
+}
+
+d3.modelvis.stripeplot = function(){
+	return d3.modelvis.any("stripeplot");
+}
+
+d3.modelvis.functionalboxplot = function(){
+	return d3.modelvis.any("functionalboxplot");
 }
 
 // graphs
@@ -183,4 +195,19 @@ d3.modelvis.scattergraph = function(){
 
 d3.modelvis.distributiongraph = function(){
 	return d3.modelvis.any("distributiongraph");
+}
+
+d3.modelvis.densitygraph = function(){
+	var densityplot = d3.modelvis.densityplot;
+	return d3.modelvis.any("distributiongraph").set("plot", densityplot);
+}
+
+d3.modelvis.stripegraph = function(){
+	var stripeplot = d3.modelvis.stripeplot;
+	return d3.modelvis.any("distributiongraph").set("plot", stripeplot);
+}
+
+d3.modelvis.functionalboxgraph = function(){
+	var functionalboxplot = d3.modelvis.functionalboxplot;
+	return d3.modelvis.any("distributiongraph").set("plot", functionalboxplot);
 }
