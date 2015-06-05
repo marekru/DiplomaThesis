@@ -1,0 +1,286 @@
+/*
+  Copyright 2006, MicroStep-MIS spol. s r.o. (www.microstep-mis.com)
+  All rights reserved.
+
+  This program/code is the exclusive and proprietary property of MicroStep-MIS.
+  Any unauthorized use, reproduction or modification of this program/code
+  without the prior written consent of MicroStep-MIS is strictly prohibited.
+
+  $Id: verification.css,v 1.29 2015/04/20 14:47:17 marekru Exp $
+*/
+
+#content{
+	padding: 1em;
+	width: 102em;
+	min-width: 20em;
+	color: black;
+}
+
+#content table tr td {
+    color: black;
+}
+
+#graph {
+    margin: 0;
+    width: auto;
+	background: white;
+	color: black;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+
+button{
+	margin: 1em 1em 0em 1em;
+}
+
+select {
+    border: 0;
+    font-family: Arial;
+    font-size: 9pt;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    color: white;
+    font-weight: normal;
+    background: #555;
+}
+
+
+/*
+	SVG properties
+*/
+
+table{
+	border-collapse: collapse;
+}
+
+table td{
+	vertical-align: top;
+}
+
+svg{
+	stroke: black;
+	fill: rgb(150,150,150);
+    stroke-width: 0;
+	background: white;
+	border: 0em solid white;
+	font-size: 8pt;
+	font-family: Verdana, sans-serif;
+	stroke: rgb(150,150,150);
+    color: rgb(150,150,150);
+	overflow: visible;
+	font-weight: lighter;
+    shape-rendering: geometricPrecision;
+	display: block;
+}
+
+svg rect {
+    shape-rendering: crispEdges;
+}
+
+.group circle{ 
+	fill: black;
+	fill-opacity: 0.2;
+}
+
+.mean circle {
+    fill: rgb(200,0,0);
+    fill-opacity: 1;
+}
+
+.grid {
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+      stroke-width: 0;
+}
+
+.grid line {
+      stroke-width: 1;
+}
+
+.colorLegend{
+	font-size: 5pt;
+	margin-left: 0.5em;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+.nostroke{
+      stroke-width: 0;
+}
+
+.nostroke path {
+    stroke-width: 0;
+}
+
+.plotline {
+    fill: none;
+    stroke: rgb(20,30,127);
+    stroke-width: 1px;
+}
+
+.combined .plotline{
+	stroke: black;
+    stroke-width: 2px;
+}
+
+.tooltip .dot {
+    fill: white;
+    fill-opacity: 1;
+}
+
+.tooltip .rect {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+	stroke-opacity: 0.8;
+}
+
+/*
+
+.tooltip{
+	overflow: visible;
+	font-size: 7pt;
+	fill: white;
+	fill-opacity: 1;
+	pointer-events: none; 
+    transition: opacity 0.3s;
+}
+
+
+.tooltip .bg{
+	fill: black;
+	opacity: 0.5;
+}
+*/
+
+.tooltipHTML {
+    font-family: Tahoma;
+    font-size: 9pt;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    padding: 1em;
+    margin: 0;
+	pointer-events: none; 
+	text-align: left;
+    /*box-shadow: 1px 1px 17px -2px black;*/
+}
+
+
+.tooltipHTML * {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.tooltipHTML .label {
+    color: skyblue;
+	padding-left: 0.4em;
+}
+
+.tooltipHTML .label:after , #metainfo th:after{
+    content: ':';
+}
+
+.tooltipHTML .value {
+    color: white;
+}
+
+.tooltipHTML caption {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+
+.eventGroup{
+	cursor:pointer;
+	pointer-events: all;
+}
+
+.rule{
+	width: 1px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: white;
+	z-index: 2;
+	pointer-events: none; 
+}
+
+.axis.color path {
+    stroke-width: 0;
+}
+
+.axis.color text {
+    font-size: 7pt;
+}
+
+#metainfo {
+    background: white;
+    color: #555;
+    font-family: Arial;
+    text-align: left;
+    text-transform: capitalize;
+    border-collapse: collapse;
+	margin: 1em 1em 0 1em;
+}
+
+#metainfo td {
+    border-left: 1px solid #aaa;
+    color: #777;
+    font-weight: normal;
+}
+
+#metainfo caption {
+    color: steelblue;
+    background: gainsboro;
+}
+
+#metainfo tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#metainfo td, th {
+    padding: 0 0.5em;
+}
+
+#metainfo th {
+    width: 9em;
+}
+
+.unit {
+    text-transform: none;
+    font-size: smaller;
+}
+
+.bar.plot rect:hover {
+    fill-opacity: 0.5;
+}
+
+#legendCell{
+	padding: 1em;
+	padding-right: 0em;
+	padding-top: 2.5em;
+}
+
+#LineplotCell{
+	padding: 2em 0;
+}
+
+
+#ProgressCell{
+	padding: 1em 0;
+}

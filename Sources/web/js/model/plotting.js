@@ -11,7 +11,7 @@
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: plotting.js,v 1.21 2015/02/23 15:39:41 marekru Exp $
+ * @version $Id: plotting.js,v 1.24 2015/04/21 13:23:28 marekru Exp $
  *
  */
 
@@ -247,9 +247,6 @@ d3.modelvis.plotting.colorlegend = function(selection, data, settings){
 	return svg;	
 }
 
-
-
-// TODO
 d3.modelvis.plotting.color = function(selection, data, settings){
 	var group = d3.modelvis.svg.createGroup(selection, settings);		
 	var svg = d3.select(group.node().parentNode); 
@@ -298,6 +295,47 @@ d3.modelvis.plotting.color = function(selection, data, settings){
 	
 	return svg;
 }
+
+
+d3.modelvis.plotting.bubble = function(selection, data, settings){
+	var group = d3.modelvis.svg.createGroup(selection, settings);		
+	var svg = d3.select(group.node().parentNode); 
+	
+	
+	group.classed(CLASS_PLOT, true)
+	   .classed("bubble", true);
+	
+	var xScale = settings.xScale || makeScale([0, data.length], [0, settings.width]);
+	
+	var colWidth  = xScale(1) - xScale(0);
+	var colHeight = settings.height;
+	
+	var minDim = Math.min(colWidth, colHeight);		
+			
+	var minS = Math.PI;
+	var maxS = minDim * minDim * 0.7853981633974483; // PI * (dim/2)^2
+			
+	
+	var min = d3.min(data);
+	var max = d3.max(data);
+	var sScale = settings.yScale || makeScale([min, max], [minS, maxS]);		
+			
+	group.selectAll("circle")
+		.data(data)
+		.enter()
+		.append("circle")
+		.attr("r", function(d){ return Math.sqrt( (sScale(d)) / Math.PI ); } ) 
+		.attr("cx", function(d,i){ return xScale(i) + colWidth * 0.5; })
+		.attr("cy", colHeight * 0.5)
+		.attr("fill", "white");			   
+	
+	d3.modelvis.svg.fitToContent(svg, settings);
+	
+	return svg;
+}
+
+
+
 
 // TODO:
 d3.modelvis.plotting.bar = function(selection, data, settings){
@@ -557,27 +595,36 @@ d3.modelvis.plotting.functionalbox = function(selection, data, settings){
 	var median = indeces[0];
 	var band = d3.modelvis.stats.band().data(data);
 	var filter = d3.modelvis.stats.filterIndeces().indeces(indeces);
+	var bands = {};
 	
+	for(var i = 0;i < settings.regions.length;i++){
+		var region = settings.regions[i];
+		var regionname = ("c" + region).replace(".","");
+		bands[regionname] = band( filter(region) );
+	}
+	
+	/*
 	var c025 = band( filter(0.25) );
 	var c05 = band( filter(0.5) );
 	var c075 = band( filter(0.75) );
+	*/
 	
-	var findOutliers = d3.modelvis.stats.outliers().region(c05);
+	var findOutliers = d3.modelvis.stats.outliers().region(bands["c05"]);
 	var outliers = findOutliers(data);
 	
 	var envelope = band( filter(1.0, outliers) );
 	
-	var regions = [c05]; //[c025, c05, c075];
 	
-	
-	for(var i = 0;i < regions.length;i++){
+	for(var i = 0;i < settings.regions.length;i++){
+		var alpha = (i + 1)/settings.regions.length;
+		var regionname = ("c" + settings.regions[i]).replace(".","");
 		group.append("path")
-				 .attr("d", area(regions[i]))
-				 .style("fill", colorToString([100,150,230])) //colorToString(settings.color) )
-				 .style("fill-opacity", 1.0); // settings.alphaJump
+				 .attr("d", area(bands[regionname]))
+				 .style("fill", colorToString(settings.color))
+				 .style("fill-opacity", alpha);
 	}
 	
-	var envelopeColor = [50,50,50];
+	var envelopeColor = settings.envelopeColor;
 	
 	var lineL = d3.svg.line()
 			.interpolate(settings.interpolationTypes.cardinal) // basis ?
@@ -602,19 +649,19 @@ d3.modelvis.plotting.functionalbox = function(selection, data, settings){
 			.attr("d", lineL(envelope))
 			.style("stroke", colorToString(envelopeColor) );	
 	
+	var outline = d3.svg.line()
+			.interpolate(settings.interpolationTypes.cardinal) // basis ?
+			.x(function(d, i) { return xScale(i); })
+			.y(function(d) { return yScale(d[index]); });
+	
 	for(var j = 0;j < outliers.length;j++){
 		
 		var index = outliers[j];
 		
-		var line = d3.svg.line()
-			.interpolate(settings.interpolationTypes.cardinal) // basis ?
-			.x(function(d, i) { return xScale(i); })
-			.y(function(d) { return yScale(d[index]); });
-			
 		group.append("path")
 			.classed(CLASS_PLOTLINE, true)
-			.attr("d", line(data))
-			.style("stroke", "red" )
+			.attr("d", outline(data))
+			.style("stroke", settings.outlierColor )
 			.style("stroke-dasharray", "5,5")
 			.style("stroke-width", 0.8);	
 	}
@@ -634,13 +681,13 @@ d3.modelvis.plotting.functionalbox = function(selection, data, settings){
 	group.append("path")
 		 .classed(CLASS_PLOTLINE, true)
 		 .attr("d", line(data))
-		 .style("stroke", colorToString([20,20,20]) );
+		 .style("stroke", colorToString(settings.medianColor) );
 	
 	
 	group.append("path")
 		 .classed(CLASS_PLOTLINE, true)
 		 .attr("d", meanline(data))
-		 .style("stroke", colorToString("white") );
+		 .style("stroke", colorToString(settings.meanColor) );
 	
 	/*
 	for(var j= 0;j <= Math.floor(data[0].length * 0.5);j++){
@@ -664,8 +711,8 @@ d3.modelvis.plotting.functionalbox = function(selection, data, settings){
 	return svg;
 }
 
-/*
-d3.modelvis.plotting.functionalbox = function(selection, data, settings){
+
+d3.modelvis.plotting.stripe = function(selection, data, settings){
 		var group = d3.modelvis.svg.createGroup(selection, settings);		
 	var svg = d3.select(group.node().parentNode); 
 	
@@ -691,7 +738,7 @@ d3.modelvis.plotting.functionalbox = function(selection, data, settings){
 			
 											
 	var fun = function(x){
-				var f = d3.modelvis.stats.quantiles().depth(2);
+				var f = d3.modelvis.stats.quantiles().depth(settings.depth);
 				return f(x);
 			  }
     
@@ -699,8 +746,19 @@ d3.modelvis.plotting.functionalbox = function(selection, data, settings){
 	var quantiles = mapedData.map( function(x){  return x.Qpairs; } );
 	var n = quantiles[0].length;
 	
+	var jthValue = function(x){ return x[j]; };
+	
+	
+	
+	group.append("path")
+		.attr("d", area(data.map(function(a){ return d3.extent(a); })))
+		.style("fill", colorToString(settings.color) )
+		.style("fill-opacity", settings.alphaJump);
+	
+	
+	
 	for(var j = 0; j < n; j++){
-		var quantil = quantiles.map( function(x){ return x[j]; } );
+		var quantil = quantiles.map( jthValue );
 		group.append("path")
 			 .attr("d", area(quantil))
 			 .style("fill", colorToString(settings.color) )
@@ -728,25 +786,25 @@ d3.modelvis.plotting.functionalbox = function(selection, data, settings){
 	group.append("path")
 		 .classed(CLASS_PLOTLINE, true)
 		 .attr("d", line(mapedData))
-		 .style("stroke", "black" );
+		 .style("stroke", colorToString(settings.mediancolor));
 		 
-	
+	/*
 	group.append("path")
 		 .classed(CLASS_PLOTLINE, true)
 		 .attr("d", lineMin(data))
-		 .style("stroke", "blue" );
+		 .style("stroke", colorToString(settings.extremecolor) );
 		 
 	
 	group.append("path")
 		 .classed(CLASS_PLOTLINE, true)
 		 .attr("d", lineMax(data))
-		 .style("stroke", "blue" );	 
-	
+		 .style("stroke", colorToString(settings.extremecolor) );	 
+	*/
 	// TODO outliers
 	
 	return svg;
 }
-*/
+
 
 d3.modelvis.plotting.density = function(selection, data, settings){
 	var width = settings.width;
@@ -788,14 +846,8 @@ d3.modelvis.plotting.density = function(selection, data, settings){
 		values[i] = kde(points);
 	}				 
 		
-	var colors = ["white", "#bdd7e7", "#6baed6", "#2171b5"]; // "#c6dbef", "#9ecae1", "#6baed6", "#3182bd" , "#055691"];
+	var colors = settings.colors;
 	
-	/*
-		#eff3ff
-		#bdd7e7
-		#6baed6
-		#2171b5
-	*/
 	
 	//var extent = d3.extent (values);
 	var min = d3.min(values, function(array) {
@@ -845,8 +897,8 @@ d3.modelvis.plotting.density = function(selection, data, settings){
 		}	
 		
 		context.beginPath();
-		context.lineWidth = 1.5;
-		context.strokeStyle = "white";
+		context.lineWidth = settings.linewidth;
+		context.strokeStyle = settings.linecolor;
 		context.moveTo(x0,0);
 		context.lineTo(x0,height);
 		

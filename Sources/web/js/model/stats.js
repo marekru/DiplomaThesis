@@ -11,7 +11,7 @@
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: stats.js,v 1.4 2015/02/16 16:09:10 marekru Exp $
+ * @version $Id: stats.js,v 1.5 2015/04/20 14:30:16 marekru Exp $
  *
  *
  * Multivariate kernel density estimation

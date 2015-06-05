@@ -11,7 +11,7 @@
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: metainfo.js,v 1.2 2015/02/17 16:06:02 marekru Exp $
+ * @version $Id: metainfo.js,v 1.3 2015/04/20 14:40:06 marekru Exp $
  *
  */ 
 

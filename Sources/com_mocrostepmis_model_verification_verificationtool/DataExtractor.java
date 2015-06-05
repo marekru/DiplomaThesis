@@ -18,7 +18,7 @@ import com.microstepmis.model.verification.verificationtool.VerificationTables.V
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: DataExtractor.java,v 1.13 2015/01/27 15:37:46 marekru Exp $
+ * @version $Id: DataExtractor.java,v 1.14 2015/04/21 08:22:53 marekru Exp $
  * 
  * Abstraktna trieda na ziskavanie predpovedi a pozorovani. Sluzi aj ako factory na vytvaranie dcerskych tried.
  */
@@ -95,27 +95,35 @@ public abstract class DataExtractor {
 	 */
 	public static DataExtractor getInstance(DataSource source){
 		if(source instanceof ForecastSource){
-			if(source == ForecastSource.LocalGrib){
-				return new GribDataExtractor(false);
-			}else if(source == ForecastSource.RemoteGrib){
-				return new GribDataExtractor(true);
-			}else if(source == ForecastSource.Block){
-				return new BlockDataExtractor();
-			}else if(source == ForecastSource.EnviDB){
-				return new DBDataExtractor(DBType.EnviDB);
-			}else if(source == ForecastSource.CSVFile){
-				return new CSVDataExtractor(source);
-			}
-			return null;
+			return getInstance((ForecastSource)source);
 		}else if(source instanceof ObservationSource){
-			if(source == ObservationSource.WebSource){
-				return new WebDataExtractor();
-			}else if(source == ObservationSource.CLDB){
-				return new DBDataExtractor(DBType.CLDB);
-			}else if(source == ObservationSource.CSVFile){
-				return new CSVDataExtractor(source);
-			}
-			return null;
+			return getInstance((ObservationSource)source);
+		}
+		return null;
+	}
+	
+	private static DataExtractor getInstance(ForecastSource source){
+		if(source == ForecastSource.LocalGrib){
+			return new GribDataExtractor(false);
+		}else if(source == ForecastSource.RemoteGrib){
+			return new GribDataExtractor(true);
+		}else if(source == ForecastSource.Block){
+			return new BlockDataExtractor();
+		}else if(source == ForecastSource.EnviDB){
+			return new DBDataExtractor(DBType.EnviDB);
+		}else if(source == ForecastSource.CSVFile){
+			return new CSVDataExtractor(source);
+		}
+		return null;
+	}
+	
+	private static DataExtractor getInstance(ObservationSource source){
+		if(source == ObservationSource.WebSource){
+			return new WebDataExtractor();
+		}else if(source == ObservationSource.CLDB){
+			return new DBDataExtractor(DBType.CLDB);
+		}else if(source == ObservationSource.CSVFile){
+			return new CSVDataExtractor(source);
 		}
 		return null;
 	}

@@ -11,7 +11,7 @@
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: graphs.js,v 1.10 2015/02/23 15:39:41 marekru Exp $
+ * @version $Id: graphs.js,v 1.12 2015/04/21 13:23:28 marekru Exp $
  *
  */
 
@@ -109,6 +109,7 @@ d3.modelvis.graphs.color = function(selection, data, settings){
 	d = convertToArray(d, 2);
 	var intervals = ("intervals" in data) ? data["intervals"] : Array.apply(null, {length: d.length}).map(function(c, i){ return i + 1; });
 	var clickFunctions = ("clickfuns" in data) ? data["clickfuns"] : [];
+	var deviations = ("deviations" in data) ? data["deviations"] : null;
 	
 	
 	var width = settings.width;
@@ -173,7 +174,6 @@ d3.modelvis.graphs.color = function(selection, data, settings){
 		
 	for(var i = 0;i < d.length;i++){
 		
-		
 		var colorplot = d3.modelvis.colorplot()
 						  .data(d[i])
 						  .set("width", width)
@@ -181,6 +181,16 @@ d3.modelvis.graphs.color = function(selection, data, settings){
 						  .set("yScale", yScale)
 						  .set("xScale", s)
 						  .set("tooltipDiv", tooltipDiv);
+						  
+		if(settings.showdistribution && deviations){				  				  
+				var bubbleplot = d3.modelvis.bubbleplot()
+								  .data(deviations[i])
+								  .set("width", width)
+								  .set("height", barHeight)
+								  .set("xScale", s);
+								  
+				colorplot.addChild(bubbleplot);
+		}
 					  
 		var ordScale = d3.scale.ordinal()
 							   .domain([intervals[i]])
@@ -298,6 +308,19 @@ d3.modelvis.graphs.line = function(selection, data, settings){
 	//.set("group", selection) // TODO dacok insie treba samozrejme :/
 						
 	var tooltip = d3.modelvis.tooltip.generate(tooltipSettings);
+	
+	var source = {
+		"length": xMax, 
+		"xScale": hAxisSettings.scale
+	}
+	
+	var lineSettings = d3.modelvis.settings.tooltipline()
+		.set("label", settings.xLabel) //"Hour"
+		.set("fun",  settings.xDisplay)  //d3.modelvis.tooltip.display.plotHour
+		.set("source", source);
+		
+	var line = d3.modelvis.tooltip.createLine(lineSettings);
+	tooltip.addLine(line);
 	
 	var i = 0;
 	for(var method in data){
@@ -433,8 +456,8 @@ d3.modelvis.graphs.distribution = function(selection, data, settings){
 	
 	var axisD = d3.modelvis.axis()
 						  .set("orientation", "bottom")
-						  .set("scale", makeScale([0, 47],[0, width - 6]))
-						  .set("tickCount", 48)
+						  .set("scale", makeScale([0, data.length - 1],[0, width]))
+						  .set("tickCount", data.length)
 						  .set("label", "Forecast Hours")
 						  .set("width", width)
 						  .set("tickFormat", d3.modelvis.formatting.every2nd);
@@ -454,10 +477,10 @@ d3.modelvis.graphs.distribution = function(selection, data, settings){
 					.set("textSize", 11)
 					.set("height", height);
 	
-	var plot = d3.modelvis.distributionplot()
-						  .data(data)
-						  .set("width", width)
-						  .set("height", height);
+	var plot = settings.plot()
+				       .data(data)
+				       .set("width", width)
+					   .set("height", height);
 						  
 				
 	var root = d3.modelvis.root();

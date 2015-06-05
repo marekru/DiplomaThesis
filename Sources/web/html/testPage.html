@@ -1,0 +1,418 @@
+<!--
+  Copyright 2011, MicroStep-MIS spol. s r.o. (www.microstep-mis.com)
+  All rights reserved.
+
+  This program/code is the exclusive and proprietary property of MicroStep-MIS.
+  Any unauthorized use, reproduction or modification of this program/code
+  without the prior written consent of MicroStep-MIS is strictly prohibited.
+
+  $Id: testPage.html,v 1.21 2015/04/21 13:26:03 marekru Exp $
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<i18n key="XMLlang=">en</i18n>">
+<head>
+
+<title><i18n>Model Verification Display</i18n></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="<i18n key="HTTPcontentLanguage=">en-us</i18n>" />
+<meta http-equiv='Expires' content='0'>
+<meta http-equiv="pragma" content="no-cache"> 
+
+<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="../../../css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="../../../css/verification.css" rel="stylesheet" type="text/css" media="screen">
+
+<!--[if IE]> 
+	<link href="../css/main_fixed4ie.css" rel="stylesheet" type="text/css" media="screen"/> 
+	<script type="text/javascript"> onload = function() { content.focus() } </script> 
+<![endif]-->  
+
+<script language="JavaScript" type="text/javascript" src="../../../js/JTime.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/utils.js"></script> 
+<script language="JavaScript" type="text/javascript" src="../../../js/sprintf.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/hashtable.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/xmlhttp.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/xplatform.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/dictio.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/RPCCall.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/BITEBlock.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/heartbeat.js"></script> 
+<script language="JavaScript" type="text/javascript" src="../../../js/select.js"></script>
+
+<!-- LIBS includes -->
+<script language="JavaScript" type="text/javascript" src="../../../js/jquery/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/jquery/jquery-ui.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/jquery/jquery.noConflict.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/d3/d3.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/d3/science.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/d3/science.stats.js"></script>
+
+<!-- Generated includes -->
+<script language="JavaScript" type="text/javascript" src="../../../js/Stations.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/ModelVerificationCfg.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/VisualizationCfg.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/ContingencyTable.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/VisDataRequest.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/VisDataResponse.js"></script>
+<!-- Verif includes -->
+<script language="JavaScript" type="text/javascript" src="../../../js/model/d3.modelvis.js"></script> 
+
+
+<script language="JavaScript" type="text/javascript" src="../../../js/model/stats.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/formatting.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/moduls.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/settings.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/svg.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/layout.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/plotting.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/graphs.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/metainfo.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/colors.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/plot.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/visualization.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/tooltip.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/verificationPlots.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../../js/model/verification.js"></script>
+
+<style type="text/css">
+</style>
+
+</head>
+
+<body>
+	
+
+	<div id="header_window">
+	<span class="header_title"> 
+		<img src="../../../img/index/i_graph_16.png" width="16" height="16" border="0" align="absmiddle" />				
+		<span class="header_station"><a href="../../index.html"> <i18n key="ID">IMS</i18n> </a>&nbsp;<i18n>Model Verification</i18n></span>
+	</span> 
+	<a href="javascript:history.go(-1)" class="header_back">
+	  <img src="../../../img/index/header_back.gif" width="16" height="16" border="0" align="absmiddle" />
+	</a>
+	<a href="javascript:help_openWindow('NONE')" class="header_help">
+		<img src="../../../img/index/header_help.png" width="16" height="16" border="0" align="absmiddle"/>
+	</a>
+	<span class="header_actualized_label"><i18n>Model Verification TEST PAGE</i18n></span>
+	<span class="header_logo"> <img src="../../../img/index/header_logo_microstep_actual.png" width="172" height="16" border="0" align="absmiddle"/></span></div>
+
+  <div id="footer_window"> <span id ="footer_utc" class="footer_utc"><i18n>Browser //://:// LT //://:// UTC</i18n> </span> </div>
+
+	<script language="JavaScript">
+		utils_clock.show_dual_clock_i18n( "footer_utc","<i18n>Browser</i18n>", "<i18n>LT</i18n>", "<i18n>UTC</i18n>" );
+	</script>
+	
+		<div id="content" class="center group">
+			<div id="graph" class="center group">
+				<i18n>Loading graph</i18n> ...
+			</div>
+		</div>
+	<script language="JavaScript" type="text/javascript">
+		jQuery( document ).ready(function() {
+				
+			
+			$(GRAPH_ID).innerHTML = "Loading configuration ...";
+	 
+			/* Na zaciatku nacitam konfiguraky*/
+			RPCCall(null, 
+					"com.microstepmis.model.verification.verificationtool.ModelVerificationCfg",
+					"readConfiguration",
+					null, 
+					handleVerificationConfig);  
+
+			RPCCall(null, 
+					"com.microstepmis.model.verification.verificationtool.VerificationVisCfg",
+					"readConfiguration",
+					null, 
+					handleVisualizationConfig); 
+			
+			$(GRAPH_ID).innerHTML = "Loading data ...";
+			
+			
+		    var variables = [ "pressure", "temperature" , "humidity", "windspeed", "winddirection" ];
+		    var units     = [ "hPa", "degC", "%", "m/s", "deg" ];
+				
+			
+			function display(inModel, inMethod, inStation, inVariable){
+				$(GRAPH_ID).innerHTML = "";
+				
+				var model = inModel || "WRF";
+				var method = inMethod || ContinuousStatisticsMethod.RMSE;
+				var station = inStation || "Al Faqaa";
+				var variable = inVariable || "pressure";
+				
+				var index = variables.indexOf(variable);
+				var unit = units[index].replace("deg", "\u00B0"); 
+			
+				var width = 600;
+				var barHeightScale = 1.5;
+				var colors = DEFAULT_CATEGORICAL_COLORS;
+					
+				var d = document.getElementById(TOOLTIP_ID);
+				if(! d){
+					d = document.createElement("div");
+					d.id = TOOLTIP_ID;
+					var body = document.getElementsByTagName("body")[0];
+					body.appendChild(d);
+				}
+					
+					
+				// TODO na zaklade configu sa rozhodnut ako to vizualizovat !!!
+				var pressData = data.modelData[model][station][variable].continuousStatsSurface;
+				var credData = data.modelData[model][station][variable].credibilitySurface;
+				var intervals = data.modelData[model][station][variable].intervalsSurface;
+				var errors = data.modelData[model][station][variable].errorsSurface;
+				var varData = data.modelData[model][station][variable];
+				var intervalsErrors = data.modelData[model][station][variable].errorsSurface;
+				var errorTables = data.modelData[model][station][variable].errorTablesSurface;
+				var progressData = data.modelData[model][station][variable].continuousStatsProgress;
+				
+				var deviations = [];
+				for(var i = 0;i < pressData.length;i++){
+					deviations.push(pressData[i]["SD"]);		
+				}
+				
+				var barHeight = barHeightScale * Math.floor(width / pressData[0][method].length); 
+				
+				
+				var root = d3.modelvis.root();
+				var row1 = d3.modelvis.row();
+				var row2 = d3.modelvis.row();
+				var col1 = d3.modelvis.col();
+				var col2 = d3.modelvis.col();
+				
+				var infoAndPorgressRoot = d3.modelvis.root();
+				var infoAndProgressRow = d3.modelvis.row();
+				
+				var graphRoot = d3.modelvis.root();
+				var graphRow = d3.modelvis.row();
+				var graphLeft = d3.modelvis.col();
+				var leftRoot = d3.modelvis.root();
+				
+				var metainfoCell     = d3.modelvis.col().set("id", "MetainfoCell");
+				var progressCell     = d3.modelvis.col().set("id", "ProgressCell");	
+				var lineplotCell     = d3.modelvis.col().set("id", "LineplotCell");
+				var distributionCell = d3.modelvis.col().set("id", "DistributionCell");
+				var detailCell 		 = d3.modelvis.col().set("id", "DetailCell");
+				var graphCell 		 = d3.modelvis.col().set("id", "GraphCell");
+				
+				
+				var r1 = d3.modelvis.row();
+				var r2 = d3.modelvis.row();
+				var r3 = d3.modelvis.row();
+					
+				
+				var metainfo = d3.modelvis.metainfo().set("variable", variable)
+						.set("model", model)
+						.set("statistics", method)
+						.set("unit", unit)
+						.set("station.name", station)
+						.set("station.lat", 24.73)
+						.set("station.lon", 55.62)
+						.set("station.alt", 218);
+						
+				
+				metainfoCell.addChild(metainfo);
+				
+				var movingAvarage = d3.modelvis.stats.movingAvarage(progressData[method], verifCfg.movingAverageStep.count);
+				movingAvarage = movingAvarage.map(function(a){ return a || 0.0; });
+				
+				var pData = [
+									progressData[method],
+									movingAvarage
+							 ];
+				
+				var grid = d3.modelvis.grid()
+									  .set("horizontal", true)
+									  .set("lineType", "dotted");
+				
+				var progressplot = d3.modelvis.linegraph()
+								.data(pData)
+								.set("width", 840)
+								.set("height", 150)
+								.set("vGrid", false)
+								.set("hGrid", grid) 
+								.set("hAxis.tickCountAdaptive", false)
+								.set("hAxis.tickCount", 18)
+								.set("hAxis.label","Days")
+								.set("strokeWidths", [1,2])
+								.set("colors", PROGRESS_CATEGORICAL_COLORS)
+								.set("interpolations", ["linear", "linear"])
+								.set("labels", ["Avarage", "Moving Avarage " + verifCfg.movingAverageStep.count + " days"])
+								.set("xLabel", "Date")
+								.set("xDisplay", d3.modelvis.tooltip.display.dayInYear);
+								
+				progressCell.addChild(progressplot).set("alignment.horizontal", "right");
+				
+			
+				var lineplot = d3.modelvis.linegraph()
+								.data(pressData[0]) 
+								.set("width", width)
+								.set("height", 100)
+								.set("hAxis.tickFormat", d3.modelvis.formatting.every2nd);
+										  
+				lineplotCell.addChild(lineplot).set("alignment.horizontal", "right");
+				
+				var scatterplot = d3.modelvis.scattergraph()
+									.data(intervalsErrors[0])
+									.set("width", width)
+									.set("height", 150);
+				
+				distributionCell.addChild(scatterplot).set("alignment.horizontal", "right");
+				
+				
+				var graph2 = d3.modelvis.colorgraph()
+								.data(errorTables[0]) // prvy mesiac skusim
+								.set("width", width * 0.65)
+								.set("height", 300)
+								.set("xLabel", "Forecast Hoursss");
+									   
+				//detailCell.addChild(graph2);
+				
+				var methodData = new Array(pressData.length);
+				for(var j = 0;j < pressData.length;j++){
+					methodData[j] = pressData[j][method];
+				}
+				
+				var clicks = new Array(pressData.length);
+				for(var j = 0;j < pressData.length;j++){
+					
+					var displayLine = d3.modelvis.display()
+								   .data(pressData[j])
+								   .id("LineplotCell")
+								   .graph(d3.modelvis.linegraph()
+										  .set("width", width)
+										  .set("height", 100)
+										  .set("hAxis.tickFormat", d3.modelvis.formatting.every2nd)
+									);
+					
+					var displayColor = d3.modelvis.display()
+								   .data(errorTables[j])
+								   .id("DetailCell")
+								   .graph(d3.modelvis.colorgraph()
+										  .set("width", width * 0.65)
+										  .set("height", 300) // TODO adaptivne podla poctu riadkov
+										  .set("xLabel", "Forecast Hours")
+									);	
+					
+					var displayScatter = d3.modelvis.display()
+								   .data(errors[j])
+								   .id("DistributionCell")
+								   .graph(d3.modelvis.scattergraph()
+										  .set("width", width)
+										  .set("height", 150)
+									);	
+									
+					var displayDistribution = d3.modelvis.display()
+								   .data(errors[j])
+								   .id("DistributionCell")
+								   .graph(d3.modelvis.stripegraph() // stripegraph distributiongraph
+										  .set("width", width)
+										  .set("height", 150)
+									);
+										   
+					
+					var displayFun = d3.modelvis.functions()
+									.data([pressData[j], errors[j], errorTables[j]])
+									.addDisplay(displayLine,0)
+									.addDisplay(displayDistribution,1)
+									.addDisplay(displayColor,2);			
+									
+					clicks[j] = displayFun; //displayScatter; //displayDistribution; //displayScatter; //displayColor; //displayLine; 
+				}
+				
+				
+				var graph = d3.modelvis.colorgraph()
+								.data({ "data": methodData, 
+										"intervals": intervals,
+										"clickfuns": clicks,
+										"deviations": deviations
+										 })
+								.set("width", width)
+								.set("height", 250)
+								.set("xLabel", "Forecast Hours");
+				
+				
+				
+				root.addChild(row1.addChild(col1))
+					.addChild(row2.addChild(col2));
+					
+				col1.addChild(
+					infoAndPorgressRoot.addChild(
+						infoAndProgressRow.addChild(progressCell).addChild(metainfoCell)
+					)
+				);
+				
+				col2.addChild(
+					graphRoot.addChild(
+						graphRow.addChild(graphCell)
+								.addChild(detailCell)
+					)
+				);
+					
+				graphCell.addChild(
+					graph.addChild(r2)
+						 .addChild(r3)
+				);
+				
+				r2.addChild(lineplotCell);
+				r3.addChild(distributionCell);
+				
+				
+				d3.select("#" + GRAPH_ID).call(root);
+				
+			
+			}
+			
+				
+			var handler = function(result, response, request){
+				if(!result) {
+					alertError(response);
+					return;
+				}
+				data = result;
+				
+				$(GRAPH_ID).innerHTML = "Loading graph ...";
+				display();
+				
+				var toggleBubbles = function(){
+										var actual = d3.select(".bubble").style("visibility");
+										var visibility = (actual == "hidden") ? "visible" : "hidden";
+										d3.selectAll(".bubble").style("visibility", visibility);
+								}
+				
+				var clickFun = function(){
+					var model = $("modelSelect").selectedOptions[0].value;
+					var method = $("statsSelect").selectedOptions[0].value;
+					var station = $("stationSelect").selectedOptions[0].value;
+					var variable = $("variableSelect").selectedOptions[0].value;
+					console.log("Log: " + [model , method , station, variable].join() );
+					display(model, method, station, variable);
+					
+					utils_addEvent($("modelSelect"), "change", clickFun, false);
+					utils_addEvent($("statsSelect"), "change", clickFun, false);
+					utils_addEvent($("stationSelect"), "change", clickFun, false);
+					utils_addEvent($("variableSelect"), "change", clickFun, false);	
+					
+					utils_addEvent($("legendCell"), "click", toggleBubbles, false);		
+				
+				};
+				utils_addEvent($("modelSelect"), "change", clickFun, false);
+				utils_addEvent($("statsSelect"), "change", clickFun, false);
+				utils_addEvent($("stationSelect"), "change", clickFun, false);
+				utils_addEvent($("variableSelect"), "change", clickFun, false);
+				
+				utils_addEvent($("legendCell"), "click", toggleBubbles, false);
+				
+			}
+			
+			var request = createRequest();
+			requestData(request, handler);
+		});
+		
+	</script>
+</body>
+
+</html>

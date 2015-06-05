@@ -11,7 +11,7 @@
  * <p>
  * @author $Author: marekru $
  *         
- * @version $Id: verification.js,v 1.36 2015/02/16 16:09:10 marekru Exp $
+ * @version $Id: verification.js,v 1.37 2015/04/21 13:24:46 marekru Exp $
  *
  */ 
 
@@ -151,6 +151,7 @@ function createRequest(){
 	request.surface.continuousMethods.push(ContinuousStatisticsMethod.MFE);
 	request.surface.continuousMethods.push(ContinuousStatisticsMethod.MAE);
 	request.surface.continuousMethods.push(ContinuousStatisticsMethod.RMSE);
+	request.surface.continuousMethods.push(ContinuousStatisticsMethod.SD);
 	//request.surface.continuousMethods.push(ContinuousStatisticsMethod.TS);
 	
 	
@@ -170,6 +171,7 @@ function createRequest(){
 	request.progress.continuousMethods.push(ContinuousStatisticsMethod.MFE);
 	request.progress.continuousMethods.push(ContinuousStatisticsMethod.MAE);
 	request.progress.continuousMethods.push(ContinuousStatisticsMethod.RMSE);
+	request.progress.continuousMethods.push(ContinuousStatisticsMethod.SD);
 	
 	
 	request.upperair.wantThis = false;
